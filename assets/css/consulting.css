@@ -1,0 +1,670 @@
+.consulting-hero {
+    background: url('../img/consulting/home.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    font-family: Georgia, serif;
+  }
+  
+  .consulting-hero .hero-content {
+    z-index: 2;
+  }
+  
+  .consulting-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+  }
+  
+  .hero-content h1 {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+  }
+  
+  .hero-content p {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 1.5rem;
+  }
+  
+  .arrow-down {
+    animation: bounce 1.5s infinite;
+  }
+  
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+
+  /* Featured In */
+  
+  .featured-in-section p {
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    color: #000;
+  }
+  
+
+  .featured-title {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    position: relative;
+    display: inline-block;
+    padding: 0 1.5rem;
+  }
+  
+  .featured-title::before,
+  .featured-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 70px;
+    height: 1px;
+    background-color: #000;
+  }
+  
+  .featured-title::before {
+    left: -80px;
+  }
+  
+  .featured-title::after {
+    right: -80px;
+  }
+  
+  .grayscale-logo {
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .grayscale-logo:hover {
+    filter: none;
+    opacity: 1;
+  }
+
+
+  /* Section3 */
+
+  .meet-chanelle-section {
+    font-family: Georgia, serif;
+  }
+  
+  .welcome-text {
+    color: #f2b100;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .btn-custom {
+    background-color: #f2b100;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 0;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-custom:hover {
+    background-color: #d99800;
+    color: #fff;
+  }
+
+
+  /* section4 */
+
+  .consulting-intro {
+    background-color: #ffffff;
+    color: #000;
+    font-family: Georgia, serif;
+  }
+  
+  .hi-there-line {
+    font-size: 1.1rem;
+    font-weight: normal;
+    letter-spacing: 0.05rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+  
+  .hi-script {
+    font-family: 'Pacifico', cursive; 
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  
+  .hi-subtext {
+    font-family: 'Georgia', serif;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .next-phase-heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+    line-height: 1.4;
+  }
+  
+  @media (min-width: 768px) {
+    .next-phase-heading {
+      font-size: 3.2rem;
+    }
+  }
+
+  .story-section {
+    background-color: #fff;
+    color: #000;
+    font-family: Georgia, serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .story-paragraph {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+  }
+  
+  .story-signature-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  
+  .story-signature {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #000;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .story-signature span {
+    font-size: 3rem;
+  }
+  
+  .gold-splash-img {
+    position: absolute;
+    top: -50px;
+    right: -80px;
+    width: 250px;
+    max-width: 100%;
+    z-index: 1;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+  
+  @media (max-width: 768px) {
+    .story-signature {
+      font-size: 2rem;
+    }
+  
+    .story-signature span {
+      font-size: 2.3rem;
+    }
+  
+    .gold-splash-img {
+      top: -30px;
+      right: -30px;
+      width: 180px;
+    }
+  }
+
+  /* Section5 */
+
+  .story-block {
+    background-color: #fff;
+    font-family: Georgia, serif;
+    color: #222;
+  }
+  
+  .story-block p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 1.2rem;
+  }
+  
+  .story-block p strong {
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .image-border {
+    border: 1px solid #d3a65d;
+    padding: 5px;
+    display: inline-block;
+    background-color: #fff;
+  }
+  
+  .image-border img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+   /* section6  */
+
+   .story-block {
+    background-color: #fff;
+    font-family: Georgia, serif;
+    color: #222;
+  }
+  
+  .story-block .content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .story-block img.beach-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+  }
+  
+  .story-block p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+
+ 
+
+
+  /* section8 */
+
+  .consulting-values-section {
+    background-color: #fff;
+    font-family: Georgia, serif;
+    color: #222;
+    padding: 60px 0;
+  }
+  
+  .consulting-values-section .crazy-title {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .consulting-values-section .main-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #000;
+    margin-bottom: 2rem;
+  }
+  
+  .consulting-values-section .content-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .consulting-values-section .consulting-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+    color: #222;
+  }
+  
+  .consulting-values-section .consulting-list {
+    font-size: 1.1rem;
+    line-height: 2;
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #222;
+  }
+  
+  @media (max-width: 768px) {
+    .consulting-values-section .crazy-title {
+      font-size: 2rem;
+    }
+    .consulting-values-section .main-title {
+      font-size: 1.4rem;
+    }
+    .consulting-values-section .consulting-paragraph {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  /* section9 */
+  .expect-section {
+    background-color: #fff;
+    font-family: Georgia, serif;
+    color: #000;
+  }
+  
+  .expect-container {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+  
+  .expect-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .expect-list li {
+    margin-bottom: 1rem;
+  }
+  
+    /* section10 */
+
+.truth-section {
+  font-family: Georgia, serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.truth-section h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  z-index: 2;
+  position: relative;
+}
+
+.brush-img {
+  position: absolute;
+  right: -60px;
+  top: -20px;
+  max-width: 250px;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+
+
+.truth-text {
+  max-width: 850px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 15px;
+  color: #000;
+}
+
+.truth-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.truth-text ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.truth-text ul li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #000;
+  list-style-type: disc;
+}
+  
+
+  
+  /* section11 */
+  .transform-section {
+    font-family: Georgia, serif;
+    color: #222;
+  }
+  
+  .quote-text {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #333;
+  }
+  
+  .bold-serif {
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: normal;
+    vertical-align: baseline;
+  }
+  
+  .main-heading {
+    font-family: Georgia, serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+  }
+  
+  .paragraph-text {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    margin-bottom: 1.5rem;
+  }
+  
+  .signature-script {
+    font-family: 'YourCursiveFont', cursive; 
+    font-size: 3rem;
+    color: #999;
+    margin-bottom: -0.5rem;
+  }
+  
+  .signature-serif {
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  
+  .align-btn {
+    background-color: #c99c3e;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  /* Register */
+
+  .hero-form-section {
+    font-family: Georgia, serif;
+    background-color: #f6f6f6;
+  }
+  
+  .script-heading {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  
+  .description-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .form-field {
+    border: 1px solid #dcb56a;
+    border-radius: 0;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .register-btn {
+    background-color: #dcb56a;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .object-cover {
+    object-fit: cover;
+  }
+
+  /* › Work with me page */
+
+  .service-section {
+    font-family: Georgia, serif;
+  }
+  
+  .text-highlight {
+    color: #d09c28;
+    font-weight: bold;
+  }
+  
+  .service-card img {
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  
+  .number-badge {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    padding: 0.25rem 1rem;
+    border-radius: 50px 50px 0 0;
+    font-size: 1rem;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .work-btn {
+    background-color: #d09c28;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  /* Latest Blog Posts */
+
+  .blog-title {
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    color: #000;
+  }
+  
+  .blog-heading {
+    font-family: "Georgia", serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-description {
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #222;
+  }
+  
+  .blog-read-btn {
+    background-color: #d4af66;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    background-color: #d4af66;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  
+  .carousel-indicators .active {
+    opacity: 1;
+  }
+
+  /* instagram life */
+  .instagram-section {
+    background-color: #fff;
+    position: relative;
+    font-family: Georgia, serif;
+  }
+  
+  .gold-splash-bg {
+    background: url('../img/consulting/newgold.webp') center/cover no-repeat;
+    padding: 100px 0;
+  }
+  
+  .insta-heading {
+    font-size: 3rem;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .insta-heading .script-font {
+    font-family: 'Pacifico', cursive;
+    color: #c69c43;
+    font-size: 3.5rem;
+    margin-right: 10px;
+  }
+  
+  .insta-heading .serif-font {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+  
+  .join-btn {
+    background-color: #c69c43;
+    color: #fff;
+    padding: 12px 30px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 0;
+    transition: background-color 0.3s;
+    letter-spacing: 1px;
+  }
+  
+  .join-btn:hover {
+    background-color: #a67c2e;
+    color: #fff;
+  }
+  
+  
+  
+  
+  
+  
