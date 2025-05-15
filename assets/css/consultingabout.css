@@ -57,7 +57,7 @@
     padding: 0 20px;
   }
   
-  /* Title Block Animation */
+  
   .title-block {
     text-align: center;
     margin-bottom: 60px;
@@ -183,7 +183,7 @@
     background-size: contain;
   }
   
-  /* Headings styling */
+
   .career-intro {
     text-align: center;
     padding: 60px 20px;
@@ -370,7 +370,7 @@
   
   .aspire-text-block h1 {
     white-space: nowrap;
-    font-size: clamp(2rem, 5vw, 4.5rem); /* Responsive heading */
+    font-size: clamp(2rem, 5vw, 4.5rem);
   }
   
  

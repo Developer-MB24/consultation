@@ -1,0 +1,29 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #ffffff;
+  }
+  
+  .payment-box {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    margin-top: 4rem;
+  }
+  
+  label {
+    font-weight: 600;
+  }
+  
+  input.form-control {
+    border-radius: 4px;
+  }
+  
+  
+  
+  button.btn-primary {
+    background-color: #1c2d59;
+  }
+  button.btn-primary:hover {
+    background-color: #f27b21;
+    border: none;
+  }
+  

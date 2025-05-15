@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourCourse</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/your-courses.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <!--  Contact Info -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="contact-links">
+          <a href="/newagency.html" class="agency-link">NEW AGENCY SIGNUP</a>
+          <a href="tel:+1(888)-404-6348">
+            <i class="fa-solid fa-phone icon-orange me-1"></i>+1(888)-404-6348
+          </a>
+          <a href="tel:+1(480)-351-2333">
+            <i class="fa-solid fa-phone icon-orange me-1"></i>+1 (480)-351-2333
+          </a>
+          <a href="/signin.html">
+            <i class="fa-solid fa-right-to-bracket icon-orange me-1"></i>Login
+          </a>
+          <a href="/signup.html">
+            <i class="fa-solid fa-user-plus icon-orange me-1"></i>Register
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg bg-light shadow-sm sticky-top">
+      <div class="container py-3">
+        <!-- Left Section: Logo + Institute Info -->
+        <div class="d-flex align-items-center flex-grow-1 flex-wrap">
+          <a href="/home.html">
+            <img
+              src="assets/img/home/newlogo.jpeg"
+              alt="Logo"
+              class="logo-img"
+              style="width: 100%; height: auto"
+            />
+          </a>
+        </div>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav text-nowrap">
+            <li class="nav-item">
+              <a href="/allcourse.html" class="nav-link fw-semibold text-dark"
+                >ALL COURSES
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link fw-semibold text-dark"
+                >ABOUT</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle fw-semibold text-dark"
+                data-bs-toggle="dropdown"
+                >LOCATION</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Arizona</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link fw-semibold text-dark"
+                >CONTACT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="faq.html" class="nav-link fw-semibold text-dark">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="consulting.html" class="nav-link fw-semibold text-dark"
+                >CONSULTING</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="career.html" class="nav-link fw-semibold text-dark"
+                >CAREER</a
+              >
+            </li>
+          </ul>
+
+          <!-- Right Icons -->
+          <div class="d-flex align-items-center gap-3 ms-3">
+            <div class="position-relative">
+              <input
+                type="text"
+                class="form-control form-control-sm ps-3 pe-5 rounded-pill"
+                placeholder="Search"
+                style="background-color: #d9e2d6"
+              />
+              <i
+                class="fas fa-search position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
+              ></i>
+            </div>
+            <a href="/signin" class="text-dark">
+              <i class="fas fa-user fa-lg"></i>
+            </a>
+            <a href="/cart" class="text-dark position-relative">
+              <i class="fas fa-cart-shopping fa-lg"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >2</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5" style="font-family: Georgia, serif">
+      <div class="container">
+        <div class="row">
+          <!-- Your Courses Section -->
+          <div class="col-md-8 mb-4">
+            <div class="card p-4 h-100 shadow-sm">
+              <h4 class="fw-bold">Your Courses</h4>
+              <p class="mb-4">1 course in cart</p>
+
+              <div class="d-flex gap-3 align-items-start">
+                <img
+                  src="assets/img/home/course1.png"
+                  alt="Course"
+                  class="course-img"
+                />
+
+                <div class="flex-grow-1">
+                  <h5 class="fw-bold">Food Handler's Card</h5>
+                  <p class="mb-1">
+                    Food Handler Card training equips employees of food service
+                    environments with the skills and knowledge required for
+                    safely handling products while preventing foodborne illness.
+                    This course addresses safe food handling practices as well
+                    as personal hygiene considerations within foodservice
+                    environments.
+                  </p>
+                  <span class="fw-bold">$10.00</span>
+                </div>
+
+                <a href="#" class="text-danger fw-semibold">Remove</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Summary Section -->
+          <div class="col-md-4">
+            <div class="card p-4 shadow-sm">
+              <h5 class="fw-bold">Order Summary</h5>
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <span>Total Price:</span>
+                <strong>$10</strong>
+              </div>
+              <button class="btn btn-primary w-100">Checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Over Top-notch Care Providers -->
+    <section
+      class="py-5 text-white text-center"
+      style="background-color: #1c2d59; font-family: Georgia, serif"
+    >
+      <div class="container">
+        <!-- Headings -->
+        <h2 class="fw-bold mb-3">Join Over Top-notch Care Providers</h2>
+        <h3 class="fw-bold mb-4">
+          Supercharge Your Skills with Dignity Medical Training Institute!
+        </h3>
+        <p class="mb-4 fs-5">
+          Join our community of caregivers and healthcare professionals
+          dedicated to continuous learning. Stay informed about new courses,
+          special promotions, and exclusive events tailored to enhance your
+          professional growth.
+        </p>
+
+        <!-- Email Form -->
+        <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First Name"
+            style="max-width: 250px; font-family: Georgia, serif"
+          />
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email Address"
+            style="max-width: 300px; font-family: Georgia, serif"
+          />
+          <button
+            class="btn fw-bold text-white"
+            style="background-color: #f27b21"
+          >
+            Submit
+          </button>
+        </div>
+
+        <!-- Secondary CTA -->
+        <p class="fw-bold fs-5 mb-2">
+          Sign Up Now to unlock new opportunities in your career journey!
+        </p>
+        <p class="fs-5 mb-1">
+          Connect with Dignity Medical Training Institute Today
+        </p>
+        <p class="fs-5 mb-4">
+          Follow us on social media for updates, tips, and more!
+        </p>
+
+        <!-- Social Icons -->
+        <div class="d-flex justify-content-center gap-4 mb-4 fs-3">
+          <a href="#" class="text-white"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <!-- Footer Text -->
+        <p class="fs-5 mb-0">
+          Transform your life with Dignity Medical Training Institute.
+          Excellence in education, dedication to your success.
+        </p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container py-5">
+        <div class="row gy-5">
+          <!-- Logo & Social -->
+          <div class="col-md-3 text-center text-md-start">
+            <img
+              src="assets/img/home/flogo.png"
+              alt="Logo"
+              class="footer-logo mb-4"
+            />
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-4 fs-4"
+            >
+              <a href="#" class="text-dark"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!-- Courses -->
+          <div class="col-md-3">
+            <h5 class="footer-heading">Courses</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a href="#" class="footer-link">All Courses</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer-link">Online - Self Paced</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer-link">Classroom Courses</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer-link">Zoom Classes</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-md-3">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3"><a href="#" class="footer-link">About Us</a></li>
+              <li class="mb-3">
+                <a href="#" class="footer-link">Leadership</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer-link">Instructors</a>
+              </li>
+              <li class="mb-3">
+                <a href="#" class="footer-link">Testimonials</a>
+              </li>
+              <li class="mb-3"><a href="#" class="footer-link">FAQ</a></li>
+              <li class="mb-3">
+                <a href="privacy.html" class="footer-link">Privacy Policy</a>
+              </li>
+              <li class="mb-3">
+                <a href="termsofservices.html" class="footer-link"
+                  >Terms of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-3 contact-column">
+            <h5 class="footer-heading">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex align-items-start">
+                <i class="fas fa-envelope me-2 pt-1"></i>
+                <span>contact@dignitymedicaltraining.com</span>
+              </li>
+              <li class="mb-3 d-flex align-items-start">
+                <i class="fas fa-phone me-2 pt-1"></i>
+                <span>+1(888)-404-6348</span>
+              </li>
+              <li class="mb-3 d-flex align-items-start">
+                <i class="fas fa-phone me-2 pt-1"></i>
+                <span>+1 (480)-351-2333</span>
+              </li>
+              <li class="mb-3 d-flex align-items-start">
+                <i class="fas fa-map-marker-alt me-2 pt-1"></i>
+                <span>45720 W Tucker Rd, Maricopa, AZ 85139</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="text-center py-4 border-top footer-copy">
+        Copyright 2024 © Dignity. All Rights Reserved. <br />
+        Website Design by: <strong>Master Bazar</strong>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

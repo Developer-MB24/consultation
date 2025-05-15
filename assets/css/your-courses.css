@@ -1,0 +1,267 @@
+/*  Top Bar  */
+.top-bar {
+    background-color: #1c2d59;
+    color: white;
+    padding: 1rem 0;
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+  }
+  
+  .top-bar .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    text-align: center;
+  }
+  
+  .agency-link {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .agency-link:hover {
+    background-color: #f27b21;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+  }
+  .institute-info .institute-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #1c2d59;
+    font-family: Georgia, serif;
+  }
+  
+  .institute-info .institute-subtitle {
+    font-size: 1.05rem;
+    font-family: Georgia, serif;
+  }
+  
+  .institute-info .highlight-orange {
+    color: #f27b21;
+  }
+  
+  
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .contact-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Navbar  */
+  
+  .logo-img {
+    width: 60px;
+    height: auto;
+  }
+  
+  .navbar-nav {
+    flex-wrap: nowrap;
+    font-family: Georgia, serif;
+  }
+  
+  /* Search wrapper */
+  .search-wrapper {
+    max-width: 250px;
+    width: 100%;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar .container-fluid {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo-img {
+      width: 50px;
+    }
+  
+    .navbar-collapse {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .search-wrapper {
+      width: 100%;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+  }
+  
+
+/* middle section  */
+
+.course-img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+  }
+  
+  .btn-primary {
+    background-color: #1c2d59;
+    border-color: #1c2d59;
+    font-family: Georgia, serif;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f27b21;
+    border-color: #162349;
+  }
+  
+
+
+/* Join Over Top-notch Care Providers  */
+
+.cta-section {
+    background-color: #1c2d59;
+    font-family: Georgia, serif;
+    padding: 3rem 0;
+  }
+  
+  .cta-section h2,
+  .cta-section h3,
+  .cta-section p {
+    color: white;
+  }
+  
+  .cta-input {
+    max-width: 250px;
+    font-family: Georgia, serif;
+  }
+  
+  .cta-input[type="email"] {
+    max-width: 300px;
+  }
+  
+  .cta-btn {
+    background-color: #f27b21;
+    font-weight: bold;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+  }
+  
+  .cta-btn:hover {
+    background-color: #d66612;
+  }
+  
+  .cta-section .fs-3 a {
+    transition: color 0.3s;
+  }
+  
+  .cta-section .fs-3 a:hover {
+    color: #f27b21;
+  }
+  
+
+  
+  /* Footer  */
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+}
+
+.footer-logo {
+  max-width: 120px;
+}
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.footer-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 1.1rem;
+}
+
+
+.footer .row.gy-5 {
+  --bs-gutter-x: 1rem;
+}
+
+.footer .col-md-3.contact-column {
+  flex: 0 0 auto;
+  width: 30%;
+}
+
+.footer .col-md-3:not(.contact-column) {
+  flex: 0 0 auto;
+  width: 23.33%;
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+  
+  .footer .col-md-3 {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  
+  .footer .contact-column {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+ 
+  .footer .contact-column ul li.d-flex {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center;
+    text-align: center !important;
+  }
+
+  .footer .contact-column ul li.d-flex i {
+    margin-bottom: 0.5rem;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+
+  .footer .contact-column ul li.d-flex span {
+    display: block;
+    text-align: center;
+  }
+
+  .footer .contact-column * {
+    text-align: center !important;
+  }
+}
+
