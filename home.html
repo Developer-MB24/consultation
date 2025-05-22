@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Slider</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Carousel Container -->
+    <div class="carousel-wrapper position-relative">
+      <!-- Hero Carousel -->
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <section
+              class="hero-slide"
+              style="background-image: url('assets/img/home/course1.png')"
+            >
+              <div class="container text-container">
+                <p class="subheading">INNOVATIVE SOLUTIONS</p>
+                <h1>Turning Vision Into The<br />Actionable Results</h1>
+                <p class="description">
+                  We are a team of dedicated professionals with decades of
+                  experience across various industries.
+                </p>
+                <a href="#" class="btn btn-discover">DISCOVER MORE</a>
+              </div>
+            </section>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <section
+              class="hero-slide"
+              style="
+                background-image: url('assets/img/consulting/What-I-bring-to-the-table.jpeg');
+              "
+            >
+              <div class="container text-container">
+                <p class="subheading">INNOVATIVE SOLUTIONS</p>
+                <h1>Empowering Ideas<br />Through Execution</h1>
+                <p class="description">
+                  Delivering results with commitment and strategy tailored for
+                  your business.
+                </p>
+                <a href="#" class="btn btn-discover">DISCOVER MORE</a>
+              </div>
+            </section>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <section
+              class="hero-slide"
+              style="
+                background-image: url('assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg');
+              "
+            >
+              <div class="container text-container">
+                <p class="subheading">INNOVATIVE SOLUTIONS</p>
+                <h1>Driving Growth With<br />Strategic Innovation</h1>
+                <p class="description">
+                  Trusted by enterprises for end-to-end transformation
+                  solutions.
+                </p>
+                <a href="#" class="btn btn-discover">DISCOVER MORE</a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon bg-dark rounded-circle"
+          ></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon bg-dark rounded-circle"
+          ></span>
+        </button>
+      </div>
+
+      <!-- Arrow Button OUTSIDE slides (Fixed at bottom of carousel only) -->
+      <div class="static-arrow-button" onclick="scrollToNextSection()">
+        <span>&#8595;</span>
+      </div>
+    </div>
+
+    <!-- WHAT ABOUT US section2  -->
+    <section id="next" class="about-section mt-5">
+      <div class="container-fluid">
+        <div class="row gx-0 align-items-center position-relative">
+          <!-- Left Image Column -->
+          <div class="col-lg-6">
+            <div class="about-image">
+              <img
+                src="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+                alt="Support Team"
+                class="img-fluid w-100 h-100 object-cover"
+              />
+            </div>
+          </div>
+
+          <!-- Right Content Column -->
+          <div class="col-lg-6">
+            <div class="about-content p-5">
+              <p class="about-subheading">
+                <i class="me-2">&#9654;</i> WHAT ABOUT US
+              </p>
+              <h2 class="about-heading">
+                Innovating Solutions For<br />Your Business Growth
+              </h2>
+              <p class="about-description">
+                We are a team of dedicated professionals with decades of
+                experience across various industries. Our mission is to provide
+                innovative solutions that drive growth, efficiency, and lasting
+                success. From strategic planning way.
+              </p>
+
+              <div class="testimonial-box d-flex align-items-center gap-3 mb-4">
+                <img
+                  src="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+                  alt="Testimonial"
+                  class="testimonial-img"
+                />
+                <blockquote class="mb-0">
+                  <p class="fst-italic mb-1">
+                    “Find It Marketing In Use! Privacy Friendly Always Facts.
+                    Unlimited Access.”
+                  </p>
+                  <cite class="d-block">MIKADO SINSON</cite>
+                </blockquote>
+              </div>
+
+              <hr />
+
+              <div
+                class="d-flex align-items-center justify-content-between flex-wrap"
+              >
+                <a href="#" class="btn btn-about">ABOUT US</a>
+                <div class="support-info mt-3 mt-lg-0">
+                  <strong>Get Support</strong><br />
+                  <a href="mailto:info@peacefulqode.com"
+                    >info@peacefulqode.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our servives section3 -->
+
+    <section class="services-section py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-subtitle"><i>&#9660;</i> OUR SERVICE</p>
+          <h2 class="section-title">
+            Tailored Solutions For Your<br />Unique Business
+          </h2>
+        </div>
+
+        <div class="service-list">
+          <!-- Service 1 -->
+          <div
+            class="service-box hover-slide"
+            data-bg="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+          >
+            <div class="hover-bg"></div>
+            <div class="icon"><i class="bi bi-person-gear"></i></div>
+            <div class="text">
+              <h5>Expert Consultation</h5>
+              <p>
+                This ensures that the solutions we provide are not only
+                effective but sustainable for long-term growth.
+              </p>
+            </div>
+            <div class="arrow">&rarr;</div>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="service-box hover-slide"
+            data-bg="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+          >
+            <div class="hover-bg"></div>
+            <div class="icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+            <div class="text">
+              <h5>Marketing Research</h5>
+              <p>
+                This ensures that the solutions we provide are not only
+                effective but sustainable for long-term growth.
+              </p>
+            </div>
+            <div class="arrow">&rarr;</div>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="service-box hover-slide"
+            data-bg="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+          >
+            <div class="hover-bg"></div>
+            <div class="icon"><i class="bi bi-cash-coin"></i></div>
+            <div class="text">
+              <h5>Financial Management</h5>
+              <p>
+                This ensures that the solutions we provide are not only
+                effective but sustainable for long-term growth.
+              </p>
+            </div>
+            <div class="arrow">&rarr;</div>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="service-box hover-slide"
+            data-bg="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+          >
+            <div class="hover-bg"></div>
+            <div class="icon"><i class="bi bi-kanban"></i></div>
+            <div class="text">
+              <h5>Project Management</h5>
+              <p>
+                This ensures that the solutions we provide are not only
+                effective but sustainable for long-term growth.
+              </p>
+            </div>
+            <div class="arrow">&rarr;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="process-section py-5">
+      <div class="container text-center">
+        <p class="text-success fw-semibold mb-1">PROCESS</p>
+        <h2 class="fw-bold mb-5">
+          Creative Solutions For The Everything Client
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Step 1 -->
+          <div class="col-md-4">
+            <div class="process-card position-relative">
+              <div class="circle-img mx-auto position-relative">
+                <img
+                  src="assets/img/home/process1.webp"
+                  alt="Engage"
+                  class="img-fluid rounded-circle"
+                />
+                <div class="icon-overlay">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <span class="step-label">STEP 01</span>
+              </div>
+              <h5 class="mt-4 fw-bold">Engage</h5>
+              <p>
+                We tailor our strategies to meet your unique business needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-4">
+            <div class="process-card position-relative">
+              <div class="circle-img mx-auto position-relative">
+                <img
+                  src="assets/img/home/process1.webp"
+                  alt="Develop"
+                  class="img-fluid rounded-circle"
+                />
+                <div class="icon-overlay">
+                  <i class="fas fa-users"></i>
+                </div>
+                <span class="step-label">STEP 02</span>
+              </div>
+              <h5 class="mt-4 fw-bold">Develop</h5>
+              <p>
+                We tailor our strategies to meet your unique business needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-4">
+            <div class="process-card position-relative">
+              <div class="circle-img mx-auto position-relative">
+                <img
+                  src="assets/img/home/process1.webp"
+                  alt="Succeed"
+                  class="img-fluid rounded-circle"
+                />
+                <div class="icon-overlay">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <span class="step-label">STEP 03</span>
+              </div>
+              <h5 class="mt-4 fw-bold">Succeed</h5>
+              <p>
+                We tailor our strategies to meet your unique business needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio-section py-5">
+      <div class="container text-center">
+        <p class="text-success fw-semibold mb-1">PORTFOLIO</p>
+        <h2 class="fw-bold mb-5 text-white">
+          Crafting Impactful Projects With Lasting Results
+        </h2>
+
+        <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-6">
+            <div class="portfolio-card position-relative">
+              <img
+                src="assets/img/home/process1.webp"
+                class="img-fluid"
+                alt="Project 1"
+              />
+              <div class="overlay-icon">
+                <div class="arrow-up-right"></div>
+              </div>
+              <span class="tag-badge">OPTIMIZATION</span>
+              <h6 class="title">Importing The Database</h6>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6">
+            <div class="portfolio-card position-relative">
+              <img
+                src="assets/img/home/process1.webp"
+                class="img-fluid"
+                alt="Project Image"
+              />
+              <div class="overlay-icon">
+                <div class="arrow-up-right"></div>
+              </div>
+              <span class="tag-badge">BUSINESS</span>
+              <h6 class="title">Partnering For Progress</h6>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-6">
+            <div class="portfolio-card position-relative">
+              <img
+                src="assets/img/home/process1.webp"
+                class="img-fluid"
+                alt="Project 1"
+              />
+              <div class="overlay-icon">
+                <div class="arrow-up-right"></div>
+              </div>
+              <span class="tag-badge">OPTIMIZATION</span>
+              <h6 class="title">Importing The Database</h6>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-md-6">
+            <div class="portfolio-card position-relative">
+              <img
+                src="assets/img/home/process1.webp"
+                class="img-fluid"
+                alt="Project Image"
+              />
+              <div class="overlay-icon">
+                <div class="arrow-up-right"></div>
+              </div>
+              <span class="tag-badge">BUSINESS</span>
+              <h6 class="title">Partnering For Progress</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <button class="btn btn-outline-light px-4 py-2 rounded-pill">
+            LOAD MORE
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+
+    <section>
+      <section class="services-section py-5">
+        <div class="container">
+          <div class="row align-items-start">
+            <!-- Left Column -->
+            <div class="col-md-4 mb-4">
+              <p class="text-success fw-semibold mb-1">OUR SERVICE</p>
+              <h2 class="fw-bold mb-4">Provide Services<br />Consulting</h2>
+              <button class="btn btn-dark-green px-4 py-2 rounded-pill">
+                VIEW MORE
+              </button>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-8">
+              <div class="row g-4">
+                <!-- Item 1 -->
+                <div class="col-sm-6">
+                  <div
+                    class="service-item position-relative"
+                    data-img="assets/img/home/process1.webp"
+                  >
+                    <h6 class="number">01</h6>
+                    <h5 class="fw-bold">Finance Instruments</h5>
+                    <p>
+                      Our market analysis and financial forecasting tools allow
+                      you to make growix markit informed decisions with
+                      confidence.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-sm-6">
+                  <div
+                    class="service-item position-relative"
+                    data-img="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
+                  >
+                    <h6 class="number">02</h6>
+                    <h5 class="fw-bold">Technology Growth</h5>
+                    <p>
+                      Our market analysis and financial forecasting tools allow
+                      you to make growix markit informed decisions with
+                      confidence.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-sm-6">
+                  <div
+                    class="service-item position-relative"
+                    data-img="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+                  >
+                    <h6 class="number">03</h6>
+                    <h5 class="fw-bold">Expert Consultation</h5>
+                    <p>
+                      Our market analysis and financial forecasting tools allow
+                      you to make growix markit informed decisions with
+                      confidence.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-sm-6">
+                  <div
+                    class="service-item position-relative"
+                    data-img="assets/img/home/process1.webp"
+                  >
+                    <h6 class="number">04</h6>
+                    <h5 class="fw-bold">Business Planning</h5>
+                    <p>
+                      Our market analysis and financial forecasting tools allow
+                      you to make growix markit informed decisions with
+                      confidence.
+                    </p>
+                  </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="col-sm-6">
+                  <div
+                    class="service-item position-relative"
+                    data-img="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+                  >
+                    <h6 class="number">03</h6>
+                    <h5 class="fw-bold">Expert Consultation</h5>
+                    <p>
+                      Our market analysis and financial forecasting tools allow
+                      you to make growix markit informed decisions with
+                      confidence.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-sm-6">
+                  <div
+                    class="service-item position-relative"
+                    data-img="assets/img/home/process1.webp"
+                  >
+                    <h6 class="number">04</h6>
+                    <h5 class="fw-bold">Business Planning</h5>
+                    <p>
+                      Our market analysis and financial forecasting tools allow
+                      you to make growix markit informed decisions with
+                      confidence.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Floating image -->
+      <div class="hover-image"></div>
+    </section>
+
+    <!-- video section  -->
+
+    <section>
+      <!-- Video Section -->
+      <section class="video-section position-relative text-center">
+        <img
+          src="assets/img/home/process1.webp"
+          class="w-100 img-fluid"
+          alt="Video Background"
+        />
+
+        <div class="video-overlay">
+          <button class="play-btn" id="playBtn">
+            <div class="play-icon"></div>
+          </button>
+        </div>
+      </section>
+
+      <!-- Modal Popup -->
+      <div class="video-modal" id="videoModal">
+        <div class="video-backdrop" id="closeModal"></div>
+        <div class="video-content">
+          <iframe
+            id="videoIframe"
+            width="100%"
+            height="100%"
+            src=""
+            title="YouTube video"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          ></iframe>
+          <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR TEAM -->
+    <section class="team-section py-5">
+      <div class="container text-center">
+        <p class="text-success fw-semibold mb-1">OUR TEAM</p>
+        <h2 class="fw-bold mb-5">
+          Collaboration, Innovation, And<br />Excellence In Action
+        </h2>
+
+        <div class="team-list position-relative">
+          <!-- Row 1 -->
+          <div
+            class="team-row active"
+            data-image="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
+          >
+            <div class="team-info">
+              <h5>
+                Alex Jhon Martin <span>/</span> <small>Market Analyst</small>
+              </h5>
+            </div>
+            <div class="team-arrow"><span class="arrow">&#8594;</span></div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="team-row" data-image="assets/img/home/process1.webp">
+            <div class="team-info">
+              <h5>
+                David Green <span>/</span> <small>Client Relations</small>
+              </h5>
+            </div>
+            <div class="team-arrow"><span class="arrow">&#8594;</span></div>
+          </div>
+
+          <!-- Row 3 -->
+          <div
+            class="team-row"
+            data-image="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+          >
+            <div class="team-info">
+              <h5>Sarah Lee <span>/</span> <small>Client Relations</small></h5>
+            </div>
+            <div class="team-arrow"><span class="arrow">&#8594;</span></div>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="team-row" data-image="assets/img/home/process1.webp">
+            <div class="team-info">
+              <h5>
+                Michael Johnson <span>/</span> <small>Chief Officer</small>
+              </h5>
+            </div>
+            <div class="team-arrow"><span class="arrow">&#8594;</span></div>
+          </div>
+
+          <!-- Floating image -->
+          <div class="floating-image-wrapper">
+            <img
+              src="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
+              alt="Team"
+              id="floatingImage"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial-section py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <p class="text-success fw-semibold">TESTIMONIAL</p>
+          <h2 class="fw-bold">
+            Proven Results From Satisfied<br />Clients Worldwide
+          </h2>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Left Review Card -->
+          <div class="col-md-5 d-flex">
+            <div
+              class="review-card w-100 d-flex flex-column overflow-hidden rounded"
+            >
+              <div class="review-image">
+                <img
+                  src="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
+                  class="img-fluid w-100"
+                  alt="Review"
+                />
+              </div>
+              <div
+                class="review-footer bg-dark-green text-white text-center py-4 px-3"
+              >
+                <div class="avatar-group mb-2">
+                  <img src="assets/img/home/process1.webp" class="avatar" />
+                  <img src="assets/img/home/process1.webp" class="avatar" />
+                  <img src="assets/img/home/process1.webp" class="avatar" />
+                </div>
+                <h5 class="fw-bold mb-1">25k Reviews</h5>
+                <div class="stars text-warning">★ ★ ★ ★ ★</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Testimonial -->
+          <div class="col-md-7 d-flex">
+            <div
+              class="testimonial-box bg-white w-100 p-4 rounded d-flex flex-column justify-content-between"
+            >
+              <p class="mb-4" id="testimonial-text">
+                Stay one step ahead of your competition with our thorough market
+                research and competitive analysis...
+              </p>
+              <hr />
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-3">
+                  <img
+                    src="assets/img/home/process1.webp"
+                    class="rounded-circle"
+                    width="50"
+                    height="50"
+                    alt="Author"
+                    id="testimonial-image"
+                  />
+                  <div class="text-start">
+                    <h6 class="mb-0 fw-bold" id="testimonial-name">
+                      James Walker
+                    </h6>
+                    <small class="text-success" id="testimonial-title"
+                      >CLIENT MANAGER</small
+                    >
+                  </div>
+                </div>
+                <div class="dots" id="testimonial-dots">
+                  <span class="dot active" data-index="0"></span>
+                  <span class="dot" data-index="1"></span>
+                  <span class="dot" data-index="2"></span>
+                  <span class="dot" data-index="3"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us  -->
+    <section class="contact-section py-5">
+      <div class="container">
+        <!-- Heading -->
+        <div class="mb-4">
+          <p class="text-success fw-semibold">CONTACT US</p>
+          <h2 class="fw-bold">Our Team Will Respond</h2>
+        </div>
+
+        <div class="row g-5 align-items-center">
+          <!-- Left Form -->
+          <div class="col-md-6">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    rows="5"
+                    class="form-control custom-input"
+                    placeholder="How Can We Help You? Get In Touch"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-dark-green rounded-pill px-4 py-2 fw-bold text-white"
+                  >
+                    SEND MESSAGE
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right: World Map with Overlay -->
+          <div class="col-md-6 position-relative">
+            <div class="map-wrapper position-relative">
+              <img
+                src="assets/img/home/map-dot.webp"
+                alt="World Map"
+                class="img-fluid"
+              />
+              <!-- <img
+                src="assets/img/team-round.jpg"
+                alt="Team"
+                class="team-marker"
+              /> -->
+              <!-- Pin locations -->
+              <span class="map-dot" style="top: 40%; left: 52%"></span>
+              <span class="map-dot" style="top: 22%; left: 12%"></span>
+              <span class="map-dot" style="top: 28%; left: 65%"></span>
+              <span class="map-dot" style="top: 42%; left: 75%"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer-section text-white py-5">
+      <div class="container">
+        <!-- Top Heading -->
+        <div class="row mb-4">
+          <div class="col-md-10">
+            <h3 class="fw-bold mb-0">
+              Expert Guidance For Long Term Business Success.
+            </h3>
+          </div>
+          <div class="col-md-2 text-md-end mt-3 mt-md-0">
+            <img src="assets/img/logo-badge.png" alt="Badge" width="100" />
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <!-- Footer Columns -->
+        <div class="row py-4">
+          <!-- Logo + Description -->
+          <div class="col-md-4 mb-4 mb-md-0">
+            <div class="mb-3">
+              <img src="assets/img/logo-white.png" alt="Rowix" width="120" />
+            </div>
+            <p>
+              At Dignity, we believe in the power of collaboration, innovation,
+              and decisions and capturegrowth ourselves.
+            </p>
+            <div class="social-icons d-flex gap-3 mt-3">
+              <a href="#" class="icon-circle"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="icon-circle"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="icon-circle"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Useful Links -->
+          <div class="col-md-5 mb-4 mb-md-0 border-start border-light ps-md-4">
+            <div class="row">
+              <div class="col-6">
+                <h6 class="fw-semibold">Used For Link</h6>
+                <ul class="list-unstyled small">
+                  <li>– Home</li>
+                  <li>– About Us</li>
+                  <li>– Checkout</li>
+                  <li>– Portfolio</li>
+                  <li>– Contact Us</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h6 class="fw-semibold invisible">Used For Link</h6>
+                <ul class="list-unstyled small">
+                  <li>– Blog</li>
+                  <li>– Blog Details</li>
+                  <li>– Service</li>
+                  <li>– Service Details</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="col-md-3">
+            <h6 class="fw-semibold">Contact Info</h6>
+            <ul class="list-unstyled small">
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> Address: 1801 S
+                Extension Rd, Mesa Az 85210
+              </li>
+              <li><i class="fas fa-phone-alt me-2"></i> +1 (888) 404-6348</li>
+              <li>
+                <i class="fas fa-envelope me-2"></i>
+                contact@dignitymedicaltraining.com
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <!-- Bottom -->
+        <div class="text-center small mt-3">
+          Copyright 2024 © Dignity. All Rights Reserved. Website Design by:
+          Master Bazar
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>
