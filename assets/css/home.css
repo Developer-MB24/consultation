@@ -380,7 +380,7 @@ h1 {
 }
 
 /* portfolio  */
-/* Global Setup */
+
 body {
   background-color: #1c2d59;
   font-family: Georgia, serif;
@@ -435,7 +435,7 @@ body {
   opacity: 1;
 }
 
-/* Pure CSS Arrow */
+/*  Arrow */
 .arrow-up-right {
   width: 12px;
   height: 12px;
