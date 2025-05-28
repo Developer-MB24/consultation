@@ -1,0 +1,377 @@
+.about-hero {
+  background-color: #f9f7f3;
+  background-image: url("../img/home/process1.webp");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+/* REMOVE THIS OVERLAY */
+.about-hero::before {
+  /* content: ''; */
+  /* position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: 2; */
+}
+
+/* Keep this so text stays visible */
+.about-hero .content {
+  position: relative;
+  z-index: 3;
+}
+
+.breadcrumb-box {
+  background-color: #1c2d59;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.breadcrumb-box a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb-box a:hover {
+  text-decoration: underline;
+}
+
+/* WHAT ABOUT US */
+.about-strategy-section ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* our skills  */
+.skills-section {
+  background-color: #1c4a38;
+}
+
+.skill-box {
+  height: 120px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-content,
+.hover-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skill-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+img.hover-image {
+  height: 90px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+/* Circular Icon Style */
+.icon-circle {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Hover effect */
+.hover-content {
+  display: none;
+}
+
+.skill-box.hovered .skill-content {
+  display: none;
+}
+
+.skill-box.hovered .hover-content {
+  display: flex;
+}
+
+/* Our Award */
+.award-section {
+  background-color: #fff;
+}
+
+.award-img {
+  width: 80px;
+  height: auto;
+}
+
+.award-link {
+  color: #1c4a38;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #1c4a38;
+  padding-bottom: 2px;
+}
+
+.award-link:hover {
+  color: #f27b21;
+  border-color: #f27b21;
+}
+
+/* video section  */
+
+.video-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play-btn {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Inner triangle */
+.play-icon {
+  width: 0;
+  height: 0;
+  border-left: 20px solid #1c2d59;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 5px;
+}
+
+/* Outer circle ring 1 */
+.play-btn::before,
+.play-btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.play-btn::before {
+  width: 130px;
+  height: 130px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.play-btn::after {
+  width: 160px;
+  height: 160px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Modal Styles */
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.video-modal.active {
+  display: block;
+}
+
+.video-backdrop {
+  position: absolute;
+  inset: 0;
+}
+
+.video-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  margin: 100px auto;
+  background: #000;
+}
+
+.video-content iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #1c2d59;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+
+/* Our Skill */
+
+.our-skill-section {
+  background-color: #fefcf6;
+}
+
+.skill-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #212529;
+}
+
+/* Special initial color for the 3rd circle */
+.skill-circle.bg-success {
+  background-color: #285a48 !important;
+  color: #fff;
+  border: none;
+}
+
+/* On hover: all turn into consistent green theme */
+.skill-circle:hover {
+  background-color: #1c4a38 !important;
+  color: #fff !important;
+  border-color: #1c4a38;
+}
+
+.skill-circle:hover p,
+.skill-circle:hover i,
+.skill-circle:hover h2 {
+  color: #fff !important;
+}
+
+/* Blog */
+.blog-section {
+  background-color: #fefcf6;
+}
+
+.featured-blog-card {
+  height: 220px;
+}
+
+.featured-blog-card img {
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.blog-list-item {
+  overflow: hidden;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-hover-bg {
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.blog-list-item:hover .blog-hover-bg {
+  opacity: 0.2;
+}
+
+.blog-list-item:hover .blog-date {
+  display: none;
+}
+
+.blog-list-item:hover::after {
+  content: "\f35d"; /* Font Awesome arrow-up-right */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #1c4a38;
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* footer  */
+.footer-section {
+  background-color: #1c2d59;
+  color: #fff;
+  font-family: Georgia, serif;
+}
+
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.icon-circle {
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  color: #1c2d59;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.icon-circle:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
