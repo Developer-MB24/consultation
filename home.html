@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Consulting</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="consulting.css" />
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- nav  -->
@@ -33,7 +37,7 @@
           <div class="dropdown">
             <a
               href="home.html"
-              class="nav-link dropdown-toggle active"
+              class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
               >HOME</a
             >
@@ -47,7 +51,7 @@
           <div class="dropdown">
             <a
               href="#"
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle active"
               data-bs-toggle="dropdown"
               >PAGES</a
             >
@@ -166,1268 +170,722 @@
         </div>
       </div>
     </header>
-    <!-- Carousel Container -->
-    <div class="carousel-wrapper position-relative">
-      <!-- Hero Carousel -->
-      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <section
-              class="hero-slide"
-              style="background-image: url('assets/img/home/course1.png')"
-            >
-              <div class="container text-container">
-                <p class="subheading">INNOVATIVE SOLUTIONS</p>
-                <h1>Turning Vision Into The<br />Actionable Results</h1>
-                <p class="description">
-                  We are a team of dedicated professionals with decades of
-                  experience across various industries.
-                </p>
-                <a href="#" class="btn btn-discover">DISCOVER MORE</a>
-              </div>
-            </section>
-          </div>
-
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <section
-              class="hero-slide"
-              style="
-                background-image: url('assets/img/consulting/What-I-bring-to-the-table.jpeg');
-              "
-            >
-              <div class="container text-container">
-                <p class="subheading">INNOVATIVE SOLUTIONS</p>
-                <h1>Empowering Ideas<br />Through Execution</h1>
-                <p class="description">
-                  Delivering results with commitment and strategy tailored for
-                  your business.
-                </p>
-                <a href="#" class="btn btn-discover">DISCOVER MORE</a>
-              </div>
-            </section>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <section
-              class="hero-slide"
-              style="
-                background-image: url('assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg');
-              "
-            >
-              <div class="container text-container">
-                <p class="subheading">INNOVATIVE SOLUTIONS</p>
-                <h1>Driving Growth With<br />Strategic Innovation</h1>
-                <p class="description">
-                  Trusted by enterprises for end-to-end transformation
-                  solutions.
-                </p>
-                <a href="#" class="btn btn-discover">DISCOVER MORE</a>
-              </div>
-            </section>
-          </div>
-        </div>
-
-        <!-- Carousel Controls -->
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="prev"
-        >
-          <span
-            class="carousel-control-prev-icon bg-dark rounded-circle"
-          ></span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#heroCarousel"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon bg-dark rounded-circle"
-          ></span>
-        </button>
-      </div>
-
-      <!-- Arrow Button OUTSIDE slides (Fixed at bottom of carousel only) -->
-      <div class="static-arrow-button" onclick="scrollToNextSection()">
-        <span>&#8595;</span>
-      </div>
-    </div>
-
-    <!-- WHAT ABOUT US section2  -->
-    <section id="next" class="about-section mt-5">
-      <div class="container-fluid">
-        <div class="row gx-0 align-items-center position-relative">
-          <!-- Left Image Column -->
-          <div class="col-lg-6">
-            <div class="about-image">
-              <img
-                src="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-                alt="Support Team"
-                class="img-fluid w-100 h-100 object-cover"
-              />
-            </div>
-          </div>
-
-          <!-- Right Content Column -->
-          <div class="col-lg-6">
-            <div class="about-content p-5">
-              <p class="about-subheading">
-                <i class="me-2">&#9654;</i> WHAT ABOUT US
-              </p>
-              <h2 class="about-heading animated-title">
-                <span style="--char-index: 0">I</span
-                ><span style="--char-index: 1">n</span
-                ><span style="--char-index: 2">n</span
-                ><span style="--char-index: 3">o</span
-                ><span style="--char-index: 4">v</span
-                ><span style="--char-index: 5">a</span
-                ><span style="--char-index: 6">t</span
-                ><span style="--char-index: 7">i</span
-                ><span style="--char-index: 8">n</span
-                ><span style="--char-index: 9">g</span>
-                <span style="--char-index: 10"> </span>
-                <span style="--char-index: 11">S</span
-                ><span style="--char-index: 12">o</span
-                ><span style="--char-index: 13">l</span
-                ><span style="--char-index: 14">u</span
-                ><span style="--char-index: 15">t</span
-                ><span style="--char-index: 16">i</span
-                ><span style="--char-index: 17">o</span
-                ><span style="--char-index: 18">n</span
-                ><span style="--char-index: 19">s</span>
-                <span style="--char-index: 20"> </span>
-                <span style="--char-index: 21">F</span
-                ><span style="--char-index: 22">o</span
-                ><span style="--char-index: 23">r</span>
-                <br />
-                <span style="--char-index: 24">Y</span
-                ><span style="--char-index: 25">o</span
-                ><span style="--char-index: 26">u</span
-                ><span style="--char-index: 27">r</span>
-                <span style="--char-index: 28"> </span>
-                <span style="--char-index: 29">B</span
-                ><span style="--char-index: 30">u</span
-                ><span style="--char-index: 31">s</span
-                ><span style="--char-index: 32">i</span
-                ><span style="--char-index: 33">n</span
-                ><span style="--char-index: 34">e</span
-                ><span style="--char-index: 35">s</span
-                ><span style="--char-index: 36">s</span>
-                <span style="--char-index: 37"> </span>
-                <span style="--char-index: 38">G</span
-                ><span style="--char-index: 39">r</span
-                ><span style="--char-index: 40">o</span
-                ><span style="--char-index: 41">w</span
-                ><span style="--char-index: 42">t</span
-                ><span style="--char-index: 43">h</span>
-              </h2>
-
-              <p class="about-description">
-                We are a team of dedicated professionals with decades of
-                experience across various industries. Our mission is to provide
-                innovative solutions that drive growth, efficiency, and lasting
-                success. From strategic planning way.
-              </p>
-
-              <div class="testimonial-box d-flex align-items-center gap-3 mb-4">
-                <img
-                  src="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-                  alt="Testimonial"
-                  class="testimonial-img"
-                />
-                <blockquote class="mb-0">
-                  <p class="fst-italic mb-1">
-                    “Find It Marketing In Use! Privacy Friendly Always Facts.
-                    Unlimited Access.”
-                  </p>
-                  <cite class="d-block">MIKADO SINSON</cite>
-                </blockquote>
-              </div>
-
-              <hr />
-
-              <div
-                class="d-flex align-items-center justify-content-between flex-wrap"
-              >
-                <a href="#" class="btn btn-about">ABOUT US</a>
-                <div class="support-info mt-3 mt-lg-0">
-                  <strong>Get Support</strong><br />
-                  <a href="mailto:info@peacefulqode.com"
-                    >info@peacefulqode.com</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+    <!-- Hero section  -->
+    <section class="hero-section">
+      <div class="hero-overlay">
+        <div class="hero-content text-center text-white">
+          <h1 class="display-4 fw-bold">
+            Welcome to a space built with PURPOSE
+          </h1>
+          <div class="arrow-down mt-3 fs-2" onclick="scrollToNext()">↓</div>
         </div>
       </div>
     </section>
 
-    <!-- Our servives section3 -->
-
-    <section class="services-section py-5">
-      <div class="container">
-        <div class="text-center mb-5">
-          <p class="section-subtitle"><i>&#9660;</i> OUR SERVICE</p>
-          <h2 class="section-title animated-title">
-            <span style="--char-index: 0">T</span
-            ><span style="--char-index: 1">a</span
-            ><span style="--char-index: 2">i</span
-            ><span style="--char-index: 3">l</span
-            ><span style="--char-index: 4">o</span
-            ><span style="--char-index: 5">r</span
-            ><span style="--char-index: 6">e</span
-            ><span style="--char-index: 7">d</span>
-            <span style="--char-index: 8"> </span>
-            <span style="--char-index: 9">S</span
-            ><span style="--char-index: 10">o</span
-            ><span style="--char-index: 11">l</span
-            ><span style="--char-index: 12">u</span
-            ><span style="--char-index: 13">t</span
-            ><span style="--char-index: 14">i</span
-            ><span style="--char-index: 15">o</span
-            ><span style="--char-index: 16">n</span
-            ><span style="--char-index: 17">s</span>
-            <span style="--char-index: 18"> </span>
-            <span style="--char-index: 19">F</span
-            ><span style="--char-index: 20">o</span
-            ><span style="--char-index: 21">r</span>
-            <span style="--char-index: 22"> </span>
-            <span style="--char-index: 23">Y</span
-            ><span style="--char-index: 24">o</span
-            ><span style="--char-index: 25">u</span
-            ><span style="--char-index: 26">r</span>
-            <br />
-            <span style="--char-index: 27">U</span
-            ><span style="--char-index: 28">n</span
-            ><span style="--char-index: 29">i</span
-            ><span style="--char-index: 30">q</span
-            ><span style="--char-index: 31">u</span
-            ><span style="--char-index: 32">e</span>
-            <span style="--char-index: 33"> </span>
-            <span style="--char-index: 34">B</span
-            ><span style="--char-index: 35">u</span
-            ><span style="--char-index: 36">s</span
-            ><span style="--char-index: 37">i</span
-            ><span style="--char-index: 38">n</span
-            ><span style="--char-index: 39">e</span
-            ><span style="--char-index: 40">s</span
-            ><span style="--char-index: 41">s</span>
-          </h2>
-        </div>
-
-        <div class="service-list">
-          <!-- Service 1 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-          >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-person-gear"></i></div>
-            <div class="text">
-              <h5>Expert Consultation</h5>
-              <p>
-                This ensures that the solutions we provide are not only
-                effective but sustainable for long-term growth.
-              </p>
-            </div>
-            <div class="arrow">&rarr;</div>
-          </div>
-
-          <!-- Service 2 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-          >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-bar-chart-line-fill"></i></div>
-            <div class="text">
-              <h5>Marketing Research</h5>
-              <p>
-                This ensures that the solutions we provide are not only
-                effective but sustainable for long-term growth.
-              </p>
-            </div>
-            <div class="arrow">&rarr;</div>
-          </div>
-
-          <!-- Service 3 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-          >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-cash-coin"></i></div>
-            <div class="text">
-              <h5>Financial Management</h5>
-              <p>
-                This ensures that the solutions we provide are not only
-                effective but sustainable for long-term growth.
-              </p>
-            </div>
-            <div class="arrow">&rarr;</div>
-          </div>
-
-          <!-- Service 4 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-          >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-kanban"></i></div>
-            <div class="text">
-              <h5>Project Management</h5>
-              <p>
-                This ensures that the solutions we provide are not only
-                effective but sustainable for long-term growth.
-              </p>
-            </div>
-            <div class="arrow">&rarr;</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Process -->
-    <section class="process-section py-5">
+    <!-- Featured In -->
+    <section id="next-section" class="featured-in-section py-5 bg-light">
       <div class="container text-center">
-        <p class="text-success fw-semibold mb-1">PROCESS</p>
-        <h2 class="fw-bold mb-5 animated-title">
-          <span style="--char-index: 0">C</span
-          ><span style="--char-index: 1">r</span
-          ><span style="--char-index: 2">e</span
-          ><span style="--char-index: 3">a</span
-          ><span style="--char-index: 4">t</span
-          ><span style="--char-index: 5">i</span
-          ><span style="--char-index: 6">v</span
-          ><span style="--char-index: 7">e</span>
-          <span style="--char-index: 8"> </span>
-          <span style="--char-index: 9">S</span
-          ><span style="--char-index: 10">o</span
-          ><span style="--char-index: 11">l</span
-          ><span style="--char-index: 12">u</span
-          ><span style="--char-index: 13">t</span
-          ><span style="--char-index: 14">i</span
-          ><span style="--char-index: 15">o</span
-          ><span style="--char-index: 16">n</span
-          ><span style="--char-index: 17">s</span>
-          <span style="--char-index: 18"> </span>
-          <span style="--char-index: 19">F</span
-          ><span style="--char-index: 20">o</span
-          ><span style="--char-index: 21">r</span>
-          <span style="--char-index: 22"> </span>
-          <span style="--char-index: 23">T</span
-          ><span style="--char-index: 24">h</span
-          ><span style="--char-index: 25">e</span>
-          <span style="--char-index: 26"> </span>
-          <span style="--char-index: 27">E</span
-          ><span style="--char-index: 28">v</span
-          ><span style="--char-index: 29">e</span
-          ><span style="--char-index: 30">r</span
-          ><span style="--char-index: 31">y</span
-          ><span style="--char-index: 32">t</span
-          ><span style="--char-index: 33">h</span
-          ><span style="--char-index: 34">i</span
-          ><span style="--char-index: 35">n</span
-          ><span style="--char-index: 36">g</span>
-          <span style="--char-index: 37"> </span>
-          <span style="--char-index: 38">C</span
-          ><span style="--char-index: 39">l</span
-          ><span style="--char-index: 40">i</span
-          ><span style="--char-index: 41">e</span
-          ><span style="--char-index: 42">n</span
-          ><span style="--char-index: 43">t</span>
-        </h2>
-
-        <div class="row g-4 justify-content-center">
-          <!-- Step 1 -->
-          <div class="col-md-4">
-            <div class="process-card position-relative">
-              <div class="circle-img mx-auto position-relative">
-                <img
-                  src="assets/img/home/process1.webp"
-                  alt="Engage"
-                  class="img-fluid rounded-circle"
-                />
-                <div class="icon-overlay">
-                  <i class="fas fa-chart-line"></i>
-                </div>
-                <span class="step-label">STEP 01</span>
-              </div>
-              <h5 class="mt-4 fw-bold">Engage</h5>
-              <p>
-                We tailor our strategies to meet your unique business needs.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 2 -->
-          <div class="col-md-4">
-            <div class="process-card position-relative">
-              <div class="circle-img mx-auto position-relative">
-                <img
-                  src="assets/img/home/process1.webp"
-                  alt="Develop"
-                  class="img-fluid rounded-circle"
-                />
-                <div class="icon-overlay">
-                  <i class="fas fa-users"></i>
-                </div>
-                <span class="step-label">STEP 02</span>
-              </div>
-              <h5 class="mt-4 fw-bold">Develop</h5>
-              <p>
-                We tailor our strategies to meet your unique business needs.
-              </p>
-            </div>
-          </div>
-
-          <!-- Step 3 -->
-          <div class="col-md-4">
-            <div class="process-card position-relative">
-              <div class="circle-img mx-auto position-relative">
-                <img
-                  src="assets/img/home/process1.webp"
-                  alt="Succeed"
-                  class="img-fluid rounded-circle"
-                />
-                <div class="icon-overlay">
-                  <i class="fas fa-bullseye"></i>
-                </div>
-                <span class="step-label">STEP 03</span>
-              </div>
-              <h5 class="mt-4 fw-bold">Succeed</h5>
-              <p>
-                We tailor our strategies to meet your unique business needs.
-              </p>
-            </div>
-          </div>
+        <div class="section-title mb-4">
+          <p class="fs-5 fw-semibold text-dark">
+            I’m Lydia, and I’m here to help you move from confusion to clarity,
+            from uncertainty to growth, and from where you are —
+            <br class="d-none d-md-block" />
+            to where you’re meant to be.
+          </p>
         </div>
-      </div>
-    </section>
-
-    <!-- portfolio -->
-    <section class="portfolio-section py-5">
-      <div class="container text-center">
-        <p class="text-success fw-semibold mb-1">PORTFOLIO</p>
-        <h2 class="fw-bold mb-5 text-white animated-title">
-          <span style="--char-index: 0">C</span
-          ><span style="--char-index: 1">r</span
-          ><span style="--char-index: 2">a</span
-          ><span style="--char-index: 3">f</span
-          ><span style="--char-index: 4">t</span
-          ><span style="--char-index: 5">i</span
-          ><span style="--char-index: 6">n</span
-          ><span style="--char-index: 7">g</span>
-          <span style="--char-index: 8"> </span>
-          <span style="--char-index: 9">I</span
-          ><span style="--char-index: 10">m</span
-          ><span style="--char-index: 11">p</span
-          ><span style="--char-index: 12">a</span
-          ><span style="--char-index: 13">c</span
-          ><span style="--char-index: 14">t</span
-          ><span style="--char-index: 15">f</span
-          ><span style="--char-index: 16">u</span
-          ><span style="--char-index: 17">l</span>
-          <span style="--char-index: 18"> </span>
-          <span style="--char-index: 19">P</span
-          ><span style="--char-index: 20">r</span
-          ><span style="--char-index: 21">o</span
-          ><span style="--char-index: 22">j</span
-          ><span style="--char-index: 23">e</span
-          ><span style="--char-index: 24">c</span
-          ><span style="--char-index: 25">t</span
-          ><span style="--char-index: 26">s</span>
-          <span style="--char-index: 27"> </span>
-          <span style="--char-index: 28">W</span
-          ><span style="--char-index: 29">i</span
-          ><span style="--char-index: 30">t</span
-          ><span style="--char-index: 31">h</span>
-          <span style="--char-index: 32"> </span>
-          <span style="--char-index: 33">L</span
-          ><span style="--char-index: 34">a</span
-          ><span style="--char-index: 35">s</span
-          ><span style="--char-index: 36">t</span
-          ><span style="--char-index: 37">i</span
-          ><span style="--char-index: 38">n</span
-          ><span style="--char-index: 39">g</span>
-          <span style="--char-index: 40"> </span>
-          <span style="--char-index: 41">R</span
-          ><span style="--char-index: 42">e</span
-          ><span style="--char-index: 43">s</span
-          ><span style="--char-index: 44">u</span
-          ><span style="--char-index: 45">l</span
-          ><span style="--char-index: 46">t</span
-          ><span style="--char-index: 47">s</span>
-        </h2>
-
-        <div class="row g-4 justify-content-center">
-          <!-- Card 1 -->
-          <div class="col-md-6">
-            <div class="portfolio-card position-relative">
-              <img
-                src="assets/img/home/process1.webp"
-                class="img-fluid"
-                alt="Project 1"
-              />
-              <div class="overlay-icon">
-                <div class="arrow-up-right"></div>
-              </div>
-              <span class="tag-badge">OPTIMIZATION</span>
-              <h6 class="title">Importing The Database</h6>
-            </div>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-md-6">
-            <div class="portfolio-card position-relative">
-              <img
-                src="assets/img/home/process1.webp"
-                class="img-fluid"
-                alt="Project Image"
-              />
-              <div class="overlay-icon">
-                <div class="arrow-up-right"></div>
-              </div>
-              <span class="tag-badge">BUSINESS</span>
-              <h6 class="title">Partnering For Progress</h6>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="col-md-6">
-            <div class="portfolio-card position-relative">
-              <img
-                src="assets/img/home/process1.webp"
-                class="img-fluid"
-                alt="Project 1"
-              />
-              <div class="overlay-icon">
-                <div class="arrow-up-right"></div>
-              </div>
-              <span class="tag-badge">OPTIMIZATION</span>
-              <h6 class="title">Importing The Database</h6>
-            </div>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-md-6">
-            <div class="portfolio-card position-relative">
-              <img
-                src="assets/img/home/process1.webp"
-                class="img-fluid"
-                alt="Project Image"
-              />
-              <div class="overlay-icon">
-                <div class="arrow-up-right"></div>
-              </div>
-              <span class="tag-badge">BUSINESS</span>
-              <h6 class="title">Partnering For Progress</h6>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-4">
-          <button class="btn btn-outline-light px-4 py-2 rounded-pill">
-            LOAD MORE
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!--  services -->
-
-    <section>
-      <section class="services-section py-5">
-        <div class="container">
-          <div class="row align-items-start">
-            <!-- Left Column -->
-            <div class="col-md-4 mb-4">
-              <p class="text-success fw-semibold mb-1">OUR SERVICE</p>
-              <h2 class="fw-bold mb-4 animated-title">
-                <span style="--char-index: 0">P</span
-                ><span style="--char-index: 1">r</span
-                ><span style="--char-index: 2">o</span
-                ><span style="--char-index: 3">v</span
-                ><span style="--char-index: 4">i</span
-                ><span style="--char-index: 5">d</span
-                ><span style="--char-index: 6">e</span>
-                <span style="--char-index: 7"> </span>
-                <span style="--char-index: 8">S</span
-                ><span style="--char-index: 9">e</span
-                ><span style="--char-index: 10">r</span
-                ><span style="--char-index: 11">v</span
-                ><span style="--char-index: 12">i</span
-                ><span style="--char-index: 13">c</span
-                ><span style="--char-index: 14">e</span
-                ><span style="--char-index: 15">s</span>
-                <br />
-                <span style="--char-index: 16">C</span
-                ><span style="--char-index: 17">o</span
-                ><span style="--char-index: 18">n</span
-                ><span style="--char-index: 19">s</span
-                ><span style="--char-index: 20">u</span
-                ><span style="--char-index: 21">l</span
-                ><span style="--char-index: 22">t</span
-                ><span style="--char-index: 23">i</span
-                ><span style="--char-index: 24">n</span
-                ><span style="--char-index: 25">g</span>
-              </h2>
-
-              <button class="btn btn-dark-green px-4 py-2 rounded-pill">
-                VIEW MORE
-              </button>
-            </div>
-
-            <!-- Right Column -->
-            <div class="col-md-8">
-              <div class="row g-4">
-                <!-- Item 1 -->
-                <div class="col-sm-6">
-                  <div
-                    class="service-item position-relative"
-                    data-img="assets/img/home/process1.webp"
-                  >
-                    <h6 class="number">01</h6>
-                    <h5 class="fw-bold">Finance Instruments</h5>
-                    <p>
-                      Our market analysis and financial forecasting tools allow
-                      you to make growix markit informed decisions with
-                      confidence.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="col-sm-6">
-                  <div
-                    class="service-item position-relative"
-                    data-img="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
-                  >
-                    <h6 class="number">02</h6>
-                    <h5 class="fw-bold">Technology Growth</h5>
-                    <p>
-                      Our market analysis and financial forecasting tools allow
-                      you to make growix markit informed decisions with
-                      confidence.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="col-sm-6">
-                  <div
-                    class="service-item position-relative"
-                    data-img="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-                  >
-                    <h6 class="number">03</h6>
-                    <h5 class="fw-bold">Expert Consultation</h5>
-                    <p>
-                      Our market analysis and financial forecasting tools allow
-                      you to make growix markit informed decisions with
-                      confidence.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="col-sm-6">
-                  <div
-                    class="service-item position-relative"
-                    data-img="assets/img/home/process1.webp"
-                  >
-                    <h6 class="number">04</h6>
-                    <h5 class="fw-bold">Business Planning</h5>
-                    <p>
-                      Our market analysis and financial forecasting tools allow
-                      you to make growix markit informed decisions with
-                      confidence.
-                    </p>
-                  </div>
-                </div>
-                <!-- Item 3 -->
-                <div class="col-sm-6">
-                  <div
-                    class="service-item position-relative"
-                    data-img="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-                  >
-                    <h6 class="number">03</h6>
-                    <h5 class="fw-bold">Expert Consultation</h5>
-                    <p>
-                      Our market analysis and financial forecasting tools allow
-                      you to make growix markit informed decisions with
-                      confidence.
-                    </p>
-                  </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="col-sm-6">
-                  <div
-                    class="service-item position-relative"
-                    data-img="assets/img/home/process1.webp"
-                  >
-                    <h6 class="number">04</h6>
-                    <h5 class="fw-bold">Business Planning</h5>
-                    <p>
-                      Our market analysis and financial forecasting tools allow
-                      you to make growix markit informed decisions with
-                      confidence.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Floating image -->
-      <div class="hover-image"></div>
-    </section>
-
-    <!-- video section  -->
-
-    <section>
-      <!-- Video Section -->
-      <section class="video-section position-relative text-center">
-        <img
-          src="assets/img/home/process1.webp"
-          class="w-100 img-fluid"
-          alt="Video Background"
-        />
-
-        <div class="video-overlay">
-          <button class="play-btn" id="playBtn">
-            <div class="play-icon"></div>
-          </button>
-        </div>
-      </section>
-
-      <!-- Modal Popup -->
-      <div class="video-modal" id="videoModal">
-        <div class="video-backdrop" id="closeModal"></div>
-        <div class="video-content">
-          <iframe
-            id="videoIframe"
-            width="100%"
-            height="100%"
-            src=""
-            title="YouTube video"
-            frameborder="0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>
-          <button class="close-btn" id="closeBtn">&times;</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- OUR TEAM -->
-    <section class="team-section py-5">
-      <div class="container text-center">
-        <p class="text-success fw-semibold mb-1">OUR TEAM</p>
-        <h2 class="fw-bold mb-5 animated-title">
-          <span style="--char-index: 0">C</span
-          ><span style="--char-index: 1">o</span
-          ><span style="--char-index: 2">l</span
-          ><span style="--char-index: 3">l</span
-          ><span style="--char-index: 4">a</span
-          ><span style="--char-index: 5">b</span
-          ><span style="--char-index: 6">o</span
-          ><span style="--char-index: 7">r</span
-          ><span style="--char-index: 8">a</span
-          ><span style="--char-index: 9">t</span
-          ><span style="--char-index: 10">i</span
-          ><span style="--char-index: 11">o</span
-          ><span style="--char-index: 12">n</span
-          ><span style="--char-index: 13">,</span>
-          <span style="--char-index: 14"> </span>
-          <span style="--char-index: 15">I</span
-          ><span style="--char-index: 16">n</span
-          ><span style="--char-index: 17">n</span
-          ><span style="--char-index: 18">o</span
-          ><span style="--char-index: 19">v</span
-          ><span style="--char-index: 20">a</span
-          ><span style="--char-index: 21">t</span
-          ><span style="--char-index: 22">i</span
-          ><span style="--char-index: 23">o</span
-          ><span style="--char-index: 24">n</span
-          ><span style="--char-index: 25">,</span>
-          <span style="--char-index: 26"> </span>
-          <span style="--char-index: 27">A</span
-          ><span style="--char-index: 28">n</span
-          ><span style="--char-index: 29">d</span>
-          <br />
-          <span style="--char-index: 30">E</span
-          ><span style="--char-index: 31">x</span
-          ><span style="--char-index: 32">c</span
-          ><span style="--char-index: 33">e</span
-          ><span style="--char-index: 34">l</span
-          ><span style="--char-index: 35">l</span
-          ><span style="--char-index: 36">e</span
-          ><span style="--char-index: 37">n</span
-          ><span style="--char-index: 38">c</span
-          ><span style="--char-index: 39">e</span>
-          <span style="--char-index: 40"> </span>
-          <span style="--char-index: 41">I</span
-          ><span style="--char-index: 42">n</span>
-          <span style="--char-index: 43"> </span>
-          <span style="--char-index: 44">A</span
-          ><span style="--char-index: 45">c</span
-          ><span style="--char-index: 46">t</span
-          ><span style="--char-index: 47">i</span
-          ><span style="--char-index: 48">o</span
-          ><span style="--char-index: 49">n</span>
-        </h2>
-
-        <div class="team-list position-relative">
-          <!-- Row 1 -->
-          <div
-            class="team-row active"
-            data-image="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
-          >
-            <div class="team-info">
-              <h5>
-                Alex Jhon Martin <span>/</span> <small>Market Analyst</small>
-              </h5>
-            </div>
-            <div class="team-arrow"><span class="arrow">&#8594;</span></div>
-          </div>
-
-          <!-- Row 2 -->
-          <div class="team-row" data-image="assets/img/home/process1.webp">
-            <div class="team-info">
-              <h5>
-                David Green <span>/</span> <small>Client Relations</small>
-              </h5>
-            </div>
-            <div class="team-arrow"><span class="arrow">&#8594;</span></div>
-          </div>
-
-          <!-- Row 3 -->
-          <div
-            class="team-row"
-            data-image="assets/img/consulting/What-I-bring-to-the-table.jpeg"
-          >
-            <div class="team-info">
-              <h5>Sarah Lee <span>/</span> <small>Client Relations</small></h5>
-            </div>
-            <div class="team-arrow"><span class="arrow">&#8594;</span></div>
-          </div>
-
-          <!-- Row 4 -->
-          <div class="team-row" data-image="assets/img/home/process1.webp">
-            <div class="team-info">
-              <h5>
-                Michael Johnson <span>/</span> <small>Chief Officer</small>
-              </h5>
-            </div>
-            <div class="team-arrow"><span class="arrow">&#8594;</span></div>
-          </div>
-
-          <!-- Floating image -->
-          <div class="floating-image-wrapper">
+        <div class="row justify-content-center g-4">
+          <div class="col-6 col-sm-4 col-md-2">
             <img
-              src="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
-              alt="Team"
-              id="floatingImage"
+              src="assets/img/consulting/home.jpeg"
+              class="img-fluid grayscale-logo"
+              alt="Logo 1"
+            />
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <img
+              src="assets/img/consulting/home.jpeg"
+              class="img-fluid grayscale-logo"
+              alt="Logo 2"
+            />
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <img
+              src="assets/img/consulting/home.jpeg"
+              class="img-fluid grayscale-logo"
+              alt="Logo 3"
+            />
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <img
+              src="assets/img/consulting/home.jpeg"
+              class="img-fluid grayscale-logo"
+              alt="Logo 4"
+            />
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <img
+              src="assets/img/consulting/home.jpeg"
+              class="img-fluid grayscale-logo"
+              alt="Logo 5"
+            />
+          </div>
+          <div class="col-6 col-sm-4 col-md-2">
+            <img
+              src="assets/img/consulting/home.jpeg"
+              class="img-fluid grayscale-logo"
+              alt="Logo 6"
             />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Testimonial -->
-    <section class="testimonial-section py-5">
+    <!-- Section3 -->
+    <section class="meet-chanelle-section py-5 bg-white">
       <div class="container">
-        <div class="text-center mb-4">
-          <p class="text-success fw-semibold">TESTIMONIAL</p>
-          <h2 class="fw-bold animated-title">
-            <span style="--char-index: 0">P</span
-            ><span style="--char-index: 1">r</span
-            ><span style="--char-index: 2">o</span
-            ><span style="--char-index: 3">v</span
-            ><span style="--char-index: 4">e</span
-            ><span style="--char-index: 5">n</span>
-            <span style="--char-index: 6"> </span>
-            <span style="--char-index: 7">R</span
-            ><span style="--char-index: 8">e</span
-            ><span style="--char-index: 9">s</span
-            ><span style="--char-index: 10">u</span
-            ><span style="--char-index: 11">l</span
-            ><span style="--char-index: 12">t</span
-            ><span style="--char-index: 13">s</span>
-            <span style="--char-index: 14"> </span>
-            <span style="--char-index: 15">F</span
-            ><span style="--char-index: 16">r</span
-            ><span style="--char-index: 17">o</span
-            ><span style="--char-index: 18">m</span>
-            <span style="--char-index: 19"> </span>
-            <span style="--char-index: 20">S</span
-            ><span style="--char-index: 21">a</span
-            ><span style="--char-index: 22">t</span
-            ><span style="--char-index: 23">i</span
-            ><span style="--char-index: 24">s</span
-            ><span style="--char-index: 25">f</span
-            ><span style="--char-index: 26">i</span
-            ><span style="--char-index: 27">e</span
-            ><span style="--char-index: 28">d</span>
-            <br />
-            <span style="--char-index: 29">C</span
-            ><span style="--char-index: 30">l</span
-            ><span style="--char-index: 31">i</span
-            ><span style="--char-index: 32">e</span
-            ><span style="--char-index: 33">n</span
-            ><span style="--char-index: 34">t</span
-            ><span style="--char-index: 35">s</span>
-            <span style="--char-index: 36"> </span>
-            <span style="--char-index: 37">W</span
-            ><span style="--char-index: 38">o</span
-            ><span style="--char-index: 39">r</span
-            ><span style="--char-index: 40">l</span
-            ><span style="--char-index: 41">d</span
-            ><span style="--char-index: 42">w</span
-            ><span style="--char-index: 43">i</span
-            ><span style="--char-index: 44">d</span
-            ><span style="--char-index: 45">e</span>
-          </h2>
-        </div>
-
-        <div class="row g-4 align-items-stretch">
-          <!-- Left Review Card -->
-          <div class="col-md-5 d-flex">
-            <div
-              class="review-card w-100 d-flex flex-column overflow-hidden rounded"
-            >
-              <div class="review-image">
-                <img
-                  src="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
-                  class="img-fluid w-100"
-                  alt="Review"
-                />
-              </div>
-              <div
-                class="review-footer bg-dark-green text-white text-center py-4 px-3"
-              >
-                <div class="avatar-group mb-2">
-                  <img src="assets/img/home/process1.webp" class="avatar" />
-                  <img src="assets/img/home/process1.webp" class="avatar" />
-                  <img src="assets/img/home/process1.webp" class="avatar" />
-                </div>
-                <h5 class="fw-bold mb-1">25k Reviews</h5>
-                <div class="stars text-warning">★ ★ ★ ★ ★</div>
-              </div>
-            </div>
+        <div class="row align-items-center">
+          <!-- Left Image Column -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <img
+              src="assets/img/consulting/What-i-Do.jpeg"
+              class="img-fluid"
+              alt="Meet Chanelle"
+            />
           </div>
 
-          <!-- Right Testimonial -->
-          <div class="col-md-7 d-flex">
-            <div
-              class="testimonial-box bg-white w-100 p-4 rounded d-flex flex-column justify-content-between"
-            >
-              <p class="mb-4" id="testimonial-text">
-                Stay one step ahead of your competition with our thorough market
-                research and competitive analysis...
-              </p>
-              <hr />
-              <div class="d-flex align-items-center justify-content-between">
-                <div class="d-flex align-items-center gap-3">
-                  <img
-                    src="assets/img/home/process1.webp"
-                    class="rounded-circle"
-                    width="50"
-                    height="50"
-                    alt="Author"
-                    id="testimonial-image"
-                  />
-                  <div class="text-start">
-                    <h6 class="mb-0 fw-bold" id="testimonial-name">
-                      James Walker
-                    </h6>
-                    <small class="text-success" id="testimonial-title"
-                      >CLIENT MANAGER</small
-                    >
-                  </div>
-                </div>
-                <div class="dots" id="testimonial-dots">
-                  <span class="dot active" data-index="0"></span>
-                  <span class="dot" data-index="1"></span>
-                  <span class="dot" data-index="2"></span>
-                  <span class="dot" data-index="3"></span>
-                </div>
-              </div>
+          <!-- Right Text Column -->
+          <div class="col-lg-6">
+            <h4 class="welcome-text">Welcome!</h4>
+            <h2 class="fw-bold mb-3" style="font-family: Georgia, serif">
+              Why I Do What I Do
+            </h2>
+            <!-- <h6 class="fw-semibold mb-3" style="font-family: Georgia, serif">
+              Business Coach & Personal Branding Expert
+            </h6> -->
+            <p class="mb-3">
+              Throughout my career as a Licensed Nursing Home Administrator
+              (LNHA), MBA graduate, and seasoned Healthcare Executive, I’ve worn
+              many hats — and each one has reinforced a deep truth: there’s a
+              powerful need for clear guidance, structured mentorship, and
+              authentic leadership in the healthcare industry.
+            </p>
+            <p class="mb-4">
+              From hospitals and long-term care facilities to behavioral health
+              centers, I’ve witnessed incredibly talented individuals struggle
+              to align their skills with their career goals — not because they
+              lacked potential, but because they lacked support.
+            </p>
+            <p class="mb-4">That’s why this platform exists.</p>
+            <p class="mb-4">
+              I created this space to be your professional compass. Whether
+              you're a nursing student unsure of your next step, a new graduate
+              overwhelmed by options, or a healthcare professional seeking a
+              purposeful pivot — I’m here for you.
+            </p>
+            <a href="#" class="btn btn-custom">LEARN MORE ABOUT ME ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section4 -->
+
+    <!-- <section class="consulting-intro text-center py-5">
+      <div class="container">
+        <p class="hi-there-line mb-3">
+          <span class="hi-script">Hi there...</span>
+          <span class="hi-subtext"
+            >DO YOU FEEL LIKE YOU'RE AT A TURNING POINT IN YOUR LIFE AND
+            BUSINESS?</span
+          >
+        </p>
+        <h2 class="next-phase-heading">
+          If you’re ready to stop guessing and start growing, we’ll work
+          together to get you aligned, confident, and thriving. <br />
+        </h2>
+      </div>
+    </section> -->
+
+    <section class="story-section py-5 text-center">
+      <div class="container">
+        <!-- <p class="story-paragraph mb-5">
+          You've been around the block, you've done your time, you're an expert
+          in your field and the time has come for you to lead, mentor and coach
+          the next generation and teach what you know.
+        </p> -->
+        <div class="story-signature-container">
+          <p class="story-signature">
+            If you’re ready to stop guessing and start growing, we’ll work
+            together to get you aligned, confident, and thriving.
+            <span>let me tell you my story</span> ...
+          </p>
+          <img
+            src="assets/img/consulting/goldsplash.jpg"
+            alt="Gold Splash"
+            class="gold-splash-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- section5 -->
+
+    <section class="story-block py-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <!-- Text Content -->
+          <div class="col-lg-7">
+            <h1 class="fw-bold text-black">Who I Help</h1>
+            <p>
+              <strong
+                >This isn’t a one-size-fits-all coaching model. I work
+                specifically with:
+              </strong>
+            </p>
+            <p>
+              • Healthcare students looking to design a career roadmap with
+              clarity
+            </p>
+            <p>
+              • New graduates exploring clinical or administrative healthcare
+              pathways
+            </p>
+            <p>
+              • Nurses and practitioners transitioning into leadership roles
+            </p>
+            <p>
+              • International medical graduates navigating U.S. healthcare
+              systems
+            </p>
+            <p>
+              • Behavioral health professionals seeking regulatory and
+              operational expertise
+            </p>
+            <p>
+              • Aspiring administrators pursuing LNHA licensure or healthcare
+              leadership roles
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="col-lg-5 text-center">
+            <div class="image-border">
+              <img
+                src="assets/img/consulting/Who-I-help.jpeg"
+                alt="Mother on beach"
+                class="img-fluid"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- contact us  -->
-    <section class="contact-section py-5">
+    <!-- section6 -->
+    <section class="story-block py-5">
       <div class="container">
-        <!-- Heading -->
-        <div class="mb-4">
-          <p class="text-success fw-semibold">CONTACT US</p>
-          <h2 class="fw-bold animated-title">
-            <span style="--char-index: 0">O</span
-            ><span style="--char-index: 1">u</span
-            ><span style="--char-index: 2">r</span>
-            <span style="--char-index: 3"> </span>
-            <span style="--char-index: 4">T</span
-            ><span style="--char-index: 5">e</span
-            ><span style="--char-index: 6">a</span
-            ><span style="--char-index: 7">m</span>
-            <span style="--char-index: 8"> </span>
-            <span style="--char-index: 9">W</span
-            ><span style="--char-index: 10">i</span
-            ><span style="--char-index: 11">l</span
-            ><span style="--char-index: 12">l</span>
-            <span style="--char-index: 13"> </span>
-            <span style="--char-index: 14">R</span
-            ><span style="--char-index: 15">e</span
-            ><span style="--char-index: 16">s</span
-            ><span style="--char-index: 17">p</span
-            ><span style="--char-index: 18">o</span
-            ><span style="--char-index: 19">n</span
-            ><span style="--char-index: 20">d</span>
+        <div class="content-wrapper">
+          <img
+            src="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+            alt="Beach walk"
+            class="img-fluid beach-img mb-4"
+          />
+
+          <h2
+            class="text-center fw-bold text-black mb-4"
+            style="font-size: 2rem"
+          >
+            What I Bring to the Table
           </h2>
+
+          <p class="text-dark mb-4" style="font-size: 1rem">
+            With over 15 years of leadership in healthcare administration, I
+            blend operational expertise with a heart for mentorship. Here’s what
+            sets me apart:
+          </p>
+
+          <div class="mb-4">
+            <h3
+              class="fw-bold text-start text-black"
+              style="font-size: 1.25rem"
+            >
+              Strategic Career Planning
+            </h3>
+            <p class="text-dark" style="font-size: 1rem">
+              I don’t offer cookie-cutter advice. I offer you a tailored action
+              plan that aligns with your values, your lifestyle, and your
+              long-term goals.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3
+              class="fw-bold text-start text-black"
+              style="font-size: 1.25rem"
+            >
+              Real-World Experience
+            </h3>
+            <p class="text-dark" style="font-size: 1rem">
+              From overseeing multi-million dollar facilities to spearheading
+              quality improvement initiatives — I bring the insights that only
+              come from doing the work.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3
+              class="fw-bold text-start text-black"
+              style="font-size: 1.25rem"
+            >
+              Regulatory & Compliance Expertise
+            </h3>
+            <p class="text-dark" style="font-size: 1rem">
+              I help clients understand the “unseen” side of healthcare —
+              licensing, compliance, survey readiness, and the strategic
+              decisions that shape careers and businesses alike.
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <h3
+              class="fw-bold text-start text-black"
+              style="font-size: 1.25rem"
+            >
+              Behavioral Health & Long-Term Care Specialization
+            </h3>
+            <p class="text-dark" style="font-size: 1rem">
+              With hands-on leadership in both fields, I bring a deep
+              understanding of the evolving demands — and how you can meet them.
+            </p>
+          </div>
+
+          <div>
+            <h3
+              class="fw-bold text-start text-black"
+              style="font-size: 1.25rem"
+            >
+              Authentic Mentorship
+            </h3>
+            <p class="text-dark" style="font-size: 1rem">
+              I’ve mentored dozens of emerging professionals, helping them
+              secure jobs, navigate licensure processes, and land leadership
+              roles they once thought were out of reach.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section8 -->
+    <section class="consulting-values-section py-5">
+      <div class="container">
+        <!-- Top Heading -->
+        <div class="text-center mb-5">
+          <h2 class="crazy-title">My Story</h2>
+          <!-- <h3 class="main-title">
+            There had to be a better way to do this <br />
+            mom + passionate career thing!
+          </h3> -->
         </div>
 
-        <div class="row g-5 align-items-center">
-          <!-- Left Form -->
-          <div class="col-md-6">
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input
-                    type="email"
-                    class="form-control custom-input"
-                    placeholder="Email Address"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="email"
-                    class="form-control custom-input"
-                    placeholder="Email Address"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    class="form-control custom-input"
-                    placeholder="Phone"
-                  />
-                </div>
-                <div class="col-md-6">
-                  <input
-                    type="text"
-                    class="form-control custom-input"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div class="col-12">
-                  <textarea
-                    rows="5"
-                    class="form-control custom-input"
-                    placeholder="How Can We Help You? Get In Touch"
-                  ></textarea>
-                </div>
-                <div class="col-12">
-                  <button
-                    type="submit"
-                    class="btn btn-dark-green rounded-pill px-4 py-2 fw-bold text-white"
-                  >
-                    SEND MESSAGE
-                  </button>
-                </div>
+        <!-- Bottom Content  -->
+        <div class="content-wrapper mx-auto">
+          <p class="consulting-paragraph">
+            I started my journey like many others — filled with passion for
+            healthcare and a drive to make a difference. But as I stepped into
+            roles with greater responsibility, I realized something critical:
+            great clinicians don’t always know how to become great leaders.
+          </p>
+
+          <p class="consulting-paragraph">
+            I’ve led teams. I’ve turned around facilities. I’ve created systems
+            that work — and I’ve helped people rediscover their "why" in a
+            system that often forgets the human side of healthcare.
+          </p>
+
+          <p class="consulting-paragraph">
+            Now, I want to bring that same transformation to your life and your
+            career.
+          </p>
+
+          <p class="consulting-paragraph">
+            Because if you’re going to pour your heart into this work — you
+            deserve to do it with direction, fulfillment, and confidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section9 -->
+    <section class="expect-section py-5">
+      <div class="expect-container text-start">
+        <h2 class="text-center fw-bold mb-4">
+          What You Can Expect When We Work Together
+        </h2>
+
+        <ul class="expect-list">
+          <li>
+            <strong>A Safe Space to Ask Questions:</strong> There are no “dumb”
+            questions here — just real conversations and practical answers.
+          </li>
+          <li>
+            <strong>Actionable Roadmaps:</strong> We’ll break down big dreams
+            into doable steps, with tools, timelines, and accountability.
+          </li>
+          <li>
+            <strong>Access to Industry Insight:</strong> From career advancement
+            to compliance strategy, I’ll share what actually works in today’s
+            healthcare environment.
+          </li>
+          <li>
+            <strong>Results That Matter:</strong> Whether you want to land your
+            dream job, pursue licensure, or pivot into administration, we’ll set
+            goals that lead to outcomes.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- section10 -->
+
+    <section class="truth-section py-5">
+      <div class="container text-center">
+        <!-- Heading with Brush Image -->
+        <div class="position-relative d-inline-block mb-5">
+          <h1 class="display-5 fw-normal mb-3 text-black">
+            Are You Feeling Stuck or Scattered?<br />
+            You’re not alone.
+          </h1>
+          <img
+            src="assets/img/consulting/goldbrush.jpg"
+            alt="Brush"
+            class="brush-img"
+          />
+        </div>
+
+        <!--  Paragraph -->
+        <div class="truth-text mx-auto text-start">
+          <p>I meet so many professionals who feel:</p>
+          <ul class="truth-list">
+            <li>Overwhelmed by too many options</li>
+            <li>Frustrated by rejection or lack of clarity</li>
+            <li>Eager to grow but unsure how to take the next step</li>
+            <li>Afraid of making the “wrong” move</li>
+          </ul>
+          <p class="mt-4">
+            Together, we’ll turn that frustration into a plan. A plan built just
+            for you.
+          </p>
+
+          <h4 class="fw-bold mt-5">Ready to Start?</h4>
+          <p>This is more than coaching. This is a partnership.</p>
+          <p>
+            If you’re ready to take your career seriously, I’m ready to walk
+            alongside you with honest feedback, empowering insights, and a deep
+            commitment to your growth.
+          </p>
+        </div>
+        <a href="#" class="btn align-btn mt-3">› BOOK AN ALIGNMENT CALL</a>
+      </div>
+    </section>
+
+    <!-- section10 -->
+    <!-- <section class="transform-section text-center py-5">
+      <div class="container">
+        <p class="quote-text">
+          THE POINT IS YOU CAN TRANSFORM, EVOLVE AND STEP INTO WHO YOU WANT TO
+          BECOME <span class="bold-serif">both</span>
+        </p>
+
+        <h2 class="main-heading">in your life and business.</h2>
+
+        <div class="mx-auto mt-4" style="max-width: 750px">
+          <p class="paragraph-text">
+            I know how scary it can be to follow your dreams and go for it. I've
+            moved continents 3 times, launched 3 new successful businesses,
+            traveled to 25 countries and had a baby in the middle of all of
+            this!
+          </p>
+
+          <p class="paragraph-text">
+            I know that the dream you have for your extraordinary life is
+            possible if you get clear, get support and then take action!
+          </p>
+        </div>
+
+        <div class="signature mt-5">
+          <h3 class="signature-script">Chanelle</h3>
+          <p class="signature-serif">Segerius-Bruce</p>
+        </div>
+
+        <a href="#" class="btn align-btn mt-3">› BOOK AN ALIGNMENT CALL</a>
+      </div>
+    </section> -->
+
+    <!-- section 11 Register -->
+
+    <section class="hero-form-section">
+      <div class="container-fluid">
+        <div class="row g-0 align-items-center">
+          <!-- Left Side: Image -->
+          <div class="col-md-6 d-none d-md-block">
+            <img
+              src="assets/img/consulting/Let’s-Build-the-Career-You-Deserve.jpeg"
+              class="img-fluid h-100 w-100 object-cover"
+              alt="Keyboard Image"
+            />
+          </div>
+
+          <!-- Right Side: Form -->
+          <div class="col-md-6 p-5 form-area">
+            <div class="text-center">
+              <h1 class="script-heading">Let’s Build the Career You Deserve</h1>
+              <!-- <h5 class="text-uppercase tracking-wide mt-2 mb-3">
+                Free Instant Access Masterclass
+              </h5> -->
+              <p class="description-text px-3">
+                If you're done playing small, second-guessing your path, or
+                waiting for opportunities to find you, let’s change that
+                narrative.
+              </p>
+            </div>
+
+            <form class="mt-4 px-3">
+              <input
+                type="text"
+                class="form-control form-field mb-3"
+                placeholder="First Name*"
+                required
+              />
+              <input
+                type="email"
+                class="form-control form-field mb-3"
+                placeholder="Email*"
+                required
+              />
+
+              <!-- <div class="form-check mb-4 text-start">
+                <input class="form-check-input" type="checkbox" id="consent" />
+                <label class="form-check-label small" for="consent">
+                  I agree to receiving occasional marketing emails from
+                  Segerius-Bruce Coaching and the
+                  <a href="#">T&Cs</a> & <a href="#">privacy policy</a>.
+                </label>
+              </div> -->
+
+              <div class="text-center">
+                <button type="submit" class="btn register-btn w-100">
+                  REGISTER NOW!
+                </button>
               </div>
             </form>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Right: World Map with Overlay -->
-          <div class="col-md-6 position-relative">
-            <div class="map-wrapper position-relative">
-              <img
-                src="assets/img/home/map-dot.webp"
-                alt="World Map"
-                class="img-fluid"
-              />
-              <!-- <img
-                src="assets/img/team-round.jpg"
-                alt="Team"
-                class="team-marker"
-              /> -->
-              <!-- Pin locations -->
-              <span class="map-dot" style="top: 40%; left: 52%"></span>
-              <span class="map-dot" style="top: 22%; left: 12%"></span>
-              <span class="map-dot" style="top: 28%; left: 65%"></span>
-              <span class="map-dot" style="top: 42%; left: 75%"></span>
+    <!-- section12 › Work with me page -->
+    <!-- <section class="service-section py-5">
+      <div class="container text-center">
+        <div class="row g-5">
+          
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="image-wrapper position-relative">
+                <img
+                  src="assets/img/consulting/home.jpeg"
+                  class="img-fluid rounded"
+                  alt="Voice Coaching"
+                />
+                <div class="number-badge">01</div>
+              </div>
+              <h5 class="mt-4 text-uppercase text-highlight">
+                Voice Coaching + Reviews
+              </h5>
+              <p>
+                Mentorship in your pocket with access Mon – Friday plus weekly
+                reviews for copy and so on
+              </p>
             </div>
+          </div>
+
+       
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="image-wrapper position-relative">
+                <img
+                  src="assets/img/consulting/home.jpeg"
+                  class="img-fluid rounded"
+                  alt="Launch Template"
+                />
+                <div class="number-badge">02</div>
+              </div>
+              <h5 class="mt-4 text-uppercase text-highlight">
+                Live Launch Template
+              </h5>
+              <p>
+                Every single task you need to do to have a successful course or
+                group program launch done for you
+              </p>
+            </div>
+          </div>
+
+         
+          <div class="col-md-4">
+            <div class="service-card">
+              <div class="image-wrapper position-relative">
+                <img
+                  src="assets/img/consulting/home.jpeg"
+                  class="img-fluid rounded"
+                  alt="Amplify Brand"
+                />
+                <div class="number-badge">03</div>
+              </div>
+              <h5 class="mt-4 text-uppercase text-highlight">
+                Amplify Your Brand
+              </h5>
+              <p>
+                1:1 custom package where you walk away with a brand + website
+                that attracts your dream clients
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <a href="work-with-me.html" class="btn work-btn"
+            >› Work With Me Page</a
+          >
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Latest Blog Posts section13 -->
+    <section class="blog-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 blog-title">Latest Blog Posts</h2>
+
+        <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <img
+                    src="assets/img/consulting/gold-brush.jpg"
+                    class="img-fluid rounded"
+                    alt="Blog Image 1"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h4 class="blog-heading">
+                    4 Steps to Personal Brand Embodiment
+                  </h4>
+                  <p class="blog-description">
+                    Apart from your logo, website, videos, and photos, your
+                    personal brand includes the way you connect to your
+                    audience, your...
+                  </p>
+                  <a href="#" class="btn blog-read-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <img
+                    src="assets/img/consulting/goldsplash.jpg"
+                    class="img-fluid rounded"
+                    alt="Blog Image 1"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h4 class="blog-heading">
+                    4 Steps to Personal Brand Embodiment
+                  </h4>
+                  <p class="blog-description">
+                    Apart from your logo, website, videos, and photos, your
+                    personal brand includes the way you connect to your
+                    audience, your...
+                  </p>
+                  <a href="#" class="btn blog-read-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- Slide 3 .. -->
+            <div class="carousel-item">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <img
+                    src="assets/img/consulting/home.jpeg"
+                    class="img-fluid rounded"
+                    alt="Blog Image 1"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h4 class="blog-heading">
+                    4 Steps to Personal Brand Embodiment
+                  </h4>
+                  <p class="blog-description">
+                    Apart from your logo, website, videos, and photos, your
+                    personal brand includes the way you connect to your
+                    audience, your...
+                  </p>
+                  <a href="#" class="btn blog-read-btn">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel indicators -->
+          <div class="carousel-indicators justify-content-center mt-4">
+            <button
+              type="button"
+              data-bs-target="#blogCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#blogCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#blogCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- footer  -->
-    <footer class="footer-section text-white py-5">
+    <!-- My life on InstaGram -->
+
+    <section class="instagram-section text-center py-5">
       <div class="container">
-        <!-- Top Heading -->
-        <div class="row mb-4">
-          <div class="col-md-10">
-            <h3 class="fw-bold mb-0 animated-title">
-              <span style="--char-index: 0">E</span
-              ><span style="--char-index: 1">x</span
-              ><span style="--char-index: 2">p</span
-              ><span style="--char-index: 3">e</span
-              ><span style="--char-index: 4">r</span
-              ><span style="--char-index: 5">t</span>
-              <span style="--char-index: 6"> </span>
-              <span style="--char-index: 7">G</span
-              ><span style="--char-index: 8">u</span
-              ><span style="--char-index: 9">i</span
-              ><span style="--char-index: 10">d</span
-              ><span style="--char-index: 11">a</span
-              ><span style="--char-index: 12">n</span
-              ><span style="--char-index: 13">c</span
-              ><span style="--char-index: 14">e</span>
-              <span style="--char-index: 15"> </span>
-              <span style="--char-index: 16">F</span
-              ><span style="--char-index: 17">o</span
-              ><span style="--char-index: 18">r</span>
-              <span style="--char-index: 19"> </span>
-              <span style="--char-index: 20">L</span
-              ><span style="--char-index: 21">o</span
-              ><span style="--char-index: 22">n</span
-              ><span style="--char-index: 23">g</span>
-              <span style="--char-index: 24"> </span>
-              <span style="--char-index: 25">T</span
-              ><span style="--char-index: 26">e</span
-              ><span style="--char-index: 27">r</span
-              ><span style="--char-index: 28">m</span>
-              <span style="--char-index: 29"> </span>
-              <span style="--char-index: 30">B</span
-              ><span style="--char-index: 31">u</span
-              ><span style="--char-index: 32">s</span
-              ><span style="--char-index: 33">i</span
-              ><span style="--char-index: 34">n</span
-              ><span style="--char-index: 35">e</span
-              ><span style="--char-index: 36">s</span
-              ><span style="--char-index: 37">s</span>
-              <span style="--char-index: 38"> </span>
-              <span style="--char-index: 39">S</span
-              ><span style="--char-index: 40">u</span
-              ><span style="--char-index: 41">c</span
-              ><span style="--char-index: 42">c</span
-              ><span style="--char-index: 43">e</span
-              ><span style="--char-index: 44">s</span
-              ><span style="--char-index: 45">s</span
-              ><span style="--char-index: 46">.</span>
-            </h3>
-          </div>
-          <div class="col-md-2 text-md-end mt-3 mt-md-0">
-            <img src="assets/img/logo-badge.png" alt="Badge" width="100" />
-          </div>
+        <div class="gold-splash-bg position-relative">
+          <h2 class="insta-heading">
+            <span class="script-font"
+              >Are you ready to step into your next phase ?</span
+            >
+            <!-- <span class="serif-font">INSTAGRAM</span> -->
+          </h2>
         </div>
-
-        <hr class="footer-divider" />
-
-        <!-- Footer  -->
-        <div class="row py-4">
-          <!-- Logo + Description -->
-          <div class="col-md-4 mb-4 mb-md-0">
-            <div class="mb-3">
-              <img src="assets/img/logo-white.png" alt="Rowix" width="120" />
-            </div>
-            <p>
-              At Dignity, we believe in the power of collaboration, innovation,
-              and decisions and capturegrowth ourselves.
-            </p>
-            <div class="social-icons d-flex gap-3 mt-3">
-              <a href="#" class="icon-circle"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="icon-circle"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="icon-circle"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-
-          <!--  Links -->
-          <div class="col-md-5 mb-4 mb-md-0 border-start border-light ps-md-4">
-            <div class="row">
-              <div class="col-6">
-                <h6 class="fw-semibold">Used For Link</h6>
-                <ul class="list-unstyled small">
-                  <li style="cursor: pointer">
-                    <a href="home.html" style="color: white">– Home</a>
-                  </li>
-
-                  <li style="cursor: pointer">
-                    <a href="about-us.html" style="color: white">– About Us</a>
-                  </li>
-                  <li style="cursor: pointer">
-                    <a href="services.html" style="color: white"
-                      >– Our Service</a
-                    >
-                  </li>
-                  <li>– Portfolio</li>
-                  <li style="cursor: pointer">
-                    <a href="contactus.html" style="color: white"
-                      >– Contact Us</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="col-6">
-                <h6 class="fw-semibold invisible">Used For Link</h6>
-                <ul class="list-unstyled small">
-                  <li>– Blog</li>
-                  <li>– Blog Details</li>
-                  <li>– Service</li>
-                  <li>– Service Details</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact Info -->
-          <div class="col-md-3">
-            <h6 class="fw-semibold">Contact Info</h6>
-            <ul class="list-unstyled small">
-              <li>
-                <i class="fas fa-map-marker-alt me-2"></i> Address: 1801 S
-                Extension Rd, Mesa Az 85210
-              </li>
-              <li><i class="fas fa-phone-alt me-2"></i> +1 (888) 404-6348</li>
-              <li>
-                <i class="fas fa-envelope me-2"></i>
-                contact@dignitymedicaltraining.com
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <hr class="footer-divider" />
-
-        <!-- Bottom -->
-        <div class="text-center small mt-3">
-          Copyright 2024 © Dignity. All Rights Reserved. Website Design by:
-          Master Bazar
-        </div>
+        <a href="consultingabout.html" class="btn join-btn mt-4"
+          >› Book An Alignment Call</a
+        >
+        <a href="home.html" class="btn join-btn mt-4">› New Home</a>
       </div>
-    </footer>
+    </section>
 
+    <!-- Bootstrap JS -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/home.js"></script>
+    <script src="consulting.js"></script>
   </body>
 </html>
