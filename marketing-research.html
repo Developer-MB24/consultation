@@ -3,12 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Marketing-Research</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/human-resources.css" />
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
   </head>
   <body>
+    <!-- nav  -->
+    <header class="main-header py-3 shadow-sm">
+      <div
+        class="container-fluid px-4 d-flex align-items-center justify-content-between"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="d-flex align-items-center text-decoration-none"
+        >
+          <img
+            src="assets/img/logo.png"
+            alt=" Logo"
+            style="height: 40px"
+            class="me-2"
+          />
+        </a>
+
+        <!-- Navigation -->
+        <nav class="d-none d-lg-flex align-items-center gap-4">
+          <!-- HOME -->
+          <div class="dropdown">
+            <a
+              href="home.html"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >HOME</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="home.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="#">Home 2</a></li>
+            </ul>
+          </div>
+
+          <!-- PAGES -->
+          <div class="dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle active"
+              data-bs-toggle="dropdown"
+              >PAGES</a
+            >
+            <ul class="dropdown-menu pages-dropdown">
+              <li>
+                <a class="dropdown-item" href="about-us.html">ABOUT US</a>
+              </li>
+              <li><a class="dropdown-item" href="#">OUR TEAM</a></li>
+              <li><a class="dropdown-item" href="#">TEAM DETAILS</a></li>
+              <li>
+                <a class="dropdown-item active" href="services.html"
+                  >OUR SERVICE</a
+                >
+              </li>
+
+              <!-- SERVICE Submenu -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">SERVICE</a>
+                <ul class="dropdown-menu submenu">
+                  <li>
+                    <a class="dropdown-item" href="human-resources.html"
+                      >HUMAN RESOURCES</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="expert-consultation.html"
+                      >EXPERT CONSULTATION</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="financial-management.html"
+                      >FINANCIAL MANAGEMENT</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">PROJECT MANAGEMENT</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="marketing-research.html"
+                      >MARKETING RESEARCH</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="#">PRICING PLAN</a></li>
+
+              <!-- SHOP Submenu -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">SHOP</a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                  <li><a class="dropdown-item" href="#">Shop Single</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="#">FAQS</a></li>
+              <li><a class="dropdown-item" href="#">404</a></li>
+            </ul>
+          </div>
+
+          <!-- PORTFOLIO -->
+          <div class="dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >PORTFOLIO</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Portfolio Grid</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio Single</a></li>
+            </ul>
+          </div>
+
+          <!-- BLOG -->
+          <div class="dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >BLOG</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog List</a></li>
+              <li><a class="dropdown-item" href="#">Blog Details</a></li>
+            </ul>
+          </div>
+
+          <!-- CONTACT US (no dropdown) -->
+          <a href="contactus.html" class="nav-link">CONTACT US</a>
+        </nav>
+
+        <!-- Right Icons -->
+        <div class="d-flex align-items-center gap-3">
+          <!-- Search -->
+          <button class="icon-btn">
+            <i class="fas fa-search fa-lg text-dark-green"></i>
+          </button>
+
+          <!-- Cart -->
+          <div class="position-relative icon-circle bg-light">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark-green"
+              >0</span
+            >
+          </div>
+
+          <!-- Let's Talk -->
+          <a
+            href="contact.html"
+            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold"
+            >LET'S TALK</a
+          >
+        </div>
+      </div>
+    </header>
     <!-- Hero Section -->
     <section class="about-hero">
       <div class="container content">

@@ -9,6 +9,163 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
   </head>
   <body>
+    <!-- nav  -->
+    <header class="main-header py-3 shadow-sm">
+      <div
+        class="container-fluid px-4 d-flex align-items-center justify-content-between"
+      >
+        <!-- Logo -->
+        <a
+          href="index.html"
+          class="d-flex align-items-center text-decoration-none"
+        >
+          <img
+            src="assets/img/logo.png"
+            alt=" Logo"
+            style="height: 40px"
+            class="me-2"
+          />
+        </a>
+
+        <!-- Navigation -->
+        <nav class="d-none d-lg-flex align-items-center gap-4">
+          <!-- HOME -->
+          <div class="dropdown">
+            <a
+              href="home.html"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >HOME</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="home.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="#">Home 2</a></li>
+            </ul>
+          </div>
+
+          <!-- PAGES -->
+          <div class="dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle active"
+              data-bs-toggle="dropdown"
+              >PAGES</a
+            >
+            <ul class="dropdown-menu pages-dropdown">
+              <li>
+                <a class="dropdown-item" href="about-us.html">ABOUT US</a>
+              </li>
+              <li><a class="dropdown-item" href="#">OUR TEAM</a></li>
+              <li><a class="dropdown-item" href="#">TEAM DETAILS</a></li>
+              <li>
+                <a class="dropdown-item active" href="services.html"
+                  >OUR SERVICE</a
+                >
+              </li>
+
+              <!-- SERVICE Submenu -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">SERVICE</a>
+                <ul class="dropdown-menu submenu">
+                  <li>
+                    <a class="dropdown-item" href="human-resources.html"
+                      >HUMAN RESOURCES</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="expert-consultation.html"
+                      >EXPERT CONSULTATION</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="financial-management.html"
+                      >FINANCIAL MANAGEMENT</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">PROJECT MANAGEMENT</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="marketing-research.html"
+                      >MARKETING RESEARCH</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="#">PRICING PLAN</a></li>
+
+              <!-- SHOP Submenu -->
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">SHOP</a>
+                <ul class="dropdown-menu submenu">
+                  <li><a class="dropdown-item" href="#">Shop Grid</a></li>
+                  <li><a class="dropdown-item" href="#">Shop Single</a></li>
+                </ul>
+              </li>
+
+              <li><a class="dropdown-item" href="#">FAQS</a></li>
+              <li><a class="dropdown-item" href="#">404</a></li>
+            </ul>
+          </div>
+
+          <!-- PORTFOLIO -->
+          <div class="dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >PORTFOLIO</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Portfolio Grid</a></li>
+              <li><a class="dropdown-item" href="#">Portfolio Single</a></li>
+            </ul>
+          </div>
+
+          <!-- BLOG -->
+          <div class="dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              data-bs-toggle="dropdown"
+              >BLOG</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog List</a></li>
+              <li><a class="dropdown-item" href="#">Blog Details</a></li>
+            </ul>
+          </div>
+
+          <!-- CONTACT US (no dropdown) -->
+          <a href="contactus.html" class="nav-link">CONTACT US</a>
+        </nav>
+
+        <!-- Right Icons -->
+        <div class="d-flex align-items-center gap-3">
+          <!-- Search -->
+          <button class="icon-btn">
+            <i class="fas fa-search fa-lg text-dark-green"></i>
+          </button>
+
+          <!-- Cart -->
+          <div class="position-relative icon-circle bg-light">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span
+              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark-green"
+              >0</span
+            >
+          </div>
+
+          <!-- Let's Talk -->
+          <a
+            href="contact.html"
+            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold"
+            >LET'S TALK</a
+          >
+        </div>
+      </div>
+    </header>
     <!-- Hero Section -->
     <section class="about-hero">
       <div class="container content">
@@ -43,9 +200,47 @@
             <p class="text-success fw-semibold mb-1">
               <i class="fas fa-arrow-right me-2 text-success"></i>WHAT ABOUT US
             </p>
-            <h2 class="fw-bold mb-3">
-              Empowering Your Growth<br />With Strategies
+            <h2 class="fw-bold mb-3 animated-title">
+              <span style="--char-index: 0">E</span
+              ><span style="--char-index: 1">m</span
+              ><span style="--char-index: 2">p</span
+              ><span style="--char-index: 3">o</span
+              ><span style="--char-index: 4">w</span
+              ><span style="--char-index: 5">e</span
+              ><span style="--char-index: 6">r</span
+              ><span style="--char-index: 7">i</span
+              ><span style="--char-index: 8">n</span
+              ><span style="--char-index: 9">g</span>
+              <span style="--char-index: 10"> </span>
+              <span style="--char-index: 11">Y</span
+              ><span style="--char-index: 12">o</span
+              ><span style="--char-index: 13">u</span
+              ><span style="--char-index: 14">r</span>
+              <span style="--char-index: 15"> </span>
+              <span style="--char-index: 16">G</span
+              ><span style="--char-index: 17">r</span
+              ><span style="--char-index: 18">o</span
+              ><span style="--char-index: 19">w</span
+              ><span style="--char-index: 20">t</span
+              ><span style="--char-index: 21">h</span>
+              <br />
+              <span style="--char-index: 22">W</span
+              ><span style="--char-index: 23">i</span
+              ><span style="--char-index: 24">t</span
+              ><span style="--char-index: 25">h</span>
+              <span style="--char-index: 26"> </span>
+              <span style="--char-index: 27">S</span
+              ><span style="--char-index: 28">t</span
+              ><span style="--char-index: 29">r</span
+              ><span style="--char-index: 30">a</span
+              ><span style="--char-index: 31">t</span
+              ><span style="--char-index: 32">e</span
+              ><span style="--char-index: 33">g</span
+              ><span style="--char-index: 34">i</span
+              ><span style="--char-index: 35">e</span
+              ><span style="--char-index: 36">s</span>
             </h2>
+
             <p class="mb-4">
               We are a team of dedicated professionals with decades of
               experience across various industries. Our mission is to provide
@@ -115,8 +310,55 @@
         <p class="text-center text-uppercase mb-1">
           <i class="fas fa-filter me-2"></i>Our Skill
         </p>
-        <h2 class="text-center fw-bold mb-5">
-          Digitize Your Business Now With<br />Our Best Experts
+        <h2 class="text-center fw-bold mb-5 animated-title">
+          <span style="--char-index: 0">D</span
+          ><span style="--char-index: 1">i</span
+          ><span style="--char-index: 2">g</span
+          ><span style="--char-index: 3">i</span
+          ><span style="--char-index: 4">t</span
+          ><span style="--char-index: 5">i</span
+          ><span style="--char-index: 6">z</span
+          ><span style="--char-index: 7">e</span>
+          <span style="--char-index: 8"> </span>
+          <span style="--char-index: 9">Y</span
+          ><span style="--char-index: 10">o</span
+          ><span style="--char-index: 11">u</span
+          ><span style="--char-index: 12">r</span>
+          <span style="--char-index: 13"> </span>
+          <span style="--char-index: 14">B</span
+          ><span style="--char-index: 15">u</span
+          ><span style="--char-index: 16">s</span
+          ><span style="--char-index: 17">i</span
+          ><span style="--char-index: 18">n</span
+          ><span style="--char-index: 19">e</span
+          ><span style="--char-index: 20">s</span
+          ><span style="--char-index: 21">s</span>
+          <span style="--char-index: 22"> </span>
+          <span style="--char-index: 23">N</span
+          ><span style="--char-index: 24">o</span
+          ><span style="--char-index: 25">w</span>
+          <span style="--char-index: 26"> </span>
+          <span style="--char-index: 27">W</span
+          ><span style="--char-index: 28">i</span
+          ><span style="--char-index: 29">t</span
+          ><span style="--char-index: 30">h</span>
+          <br />
+          <span style="--char-index: 31">O</span
+          ><span style="--char-index: 32">u</span
+          ><span style="--char-index: 33">r</span>
+          <span style="--char-index: 34"> </span>
+          <span style="--char-index: 35">B</span
+          ><span style="--char-index: 36">e</span
+          ><span style="--char-index: 37">s</span
+          ><span style="--char-index: 38">t</span>
+          <span style="--char-index: 39"> </span>
+          <span style="--char-index: 40">E</span
+          ><span style="--char-index: 41">x</span
+          ><span style="--char-index: 42">p</span
+          ><span style="--char-index: 43">e</span
+          ><span style="--char-index: 44">r</span
+          ><span style="--char-index: 45">t</span
+          ><span style="--char-index: 46">s</span>
         </h2>
 
         <div class="row">
@@ -217,10 +459,48 @@
             <p class="text-uppercase text-success fw-bold mb-2">
               <i class="fas fa-filter me-2"></i>Our Award
             </p>
-            <h1 class="fw-bold display-6 lh-sm mb-3">
-              Bringing Visionary The <br />
-              Concepts To Life
+            <h1 class="fw-bold display-6 lh-sm mb-3 animated-title">
+              <span style="--char-index: 0">B</span
+              ><span style="--char-index: 1">r</span
+              ><span style="--char-index: 2">i</span
+              ><span style="--char-index: 3">n</span
+              ><span style="--char-index: 4">g</span
+              ><span style="--char-index: 5">i</span
+              ><span style="--char-index: 6">n</span
+              ><span style="--char-index: 7">g</span>
+              <span style="--char-index: 8"> </span>
+              <span style="--char-index: 9">V</span
+              ><span style="--char-index: 10">i</span
+              ><span style="--char-index: 11">s</span
+              ><span style="--char-index: 12">i</span
+              ><span style="--char-index: 13">o</span
+              ><span style="--char-index: 14">n</span
+              ><span style="--char-index: 15">a</span
+              ><span style="--char-index: 16">r</span
+              ><span style="--char-index: 17">y</span>
+              <span style="--char-index: 18"> </span>
+              <span style="--char-index: 19">T</span
+              ><span style="--char-index: 20">h</span
+              ><span style="--char-index: 21">e</span>
+              <br />
+              <span style="--char-index: 22">C</span
+              ><span style="--char-index: 23">o</span
+              ><span style="--char-index: 24">n</span
+              ><span style="--char-index: 25">c</span
+              ><span style="--char-index: 26">e</span
+              ><span style="--char-index: 27">p</span
+              ><span style="--char-index: 28">t</span
+              ><span style="--char-index: 29">s</span>
+              <span style="--char-index: 30"> </span>
+              <span style="--char-index: 31">T</span
+              ><span style="--char-index: 32">o</span>
+              <span style="--char-index: 33"> </span>
+              <span style="--char-index: 34">L</span
+              ><span style="--char-index: 35">i</span
+              ><span style="--char-index: 36">f</span
+              ><span style="--char-index: 37">e</span>
             </h1>
+
             <p class="text-muted mb-4 fs-5">
               We are a team of dedicated professionals with decades of
               experience across industries. Our mission is to provide.
@@ -335,9 +615,48 @@
         <p class="text-uppercase text-success fw-bold mb-2">
           <i class="fas fa-filter me-2"></i>Our Skill
         </p>
-        <h2 class="fw-bold display-5 mb-5">
-          We Draw On Global Network To <br />
-          Assemble Ask
+        <h2 class="fw-bold display-5 mb-5 animated-title">
+          <span style="--char-index: 0">W</span
+          ><span style="--char-index: 1">e</span>
+          <span style="--char-index: 2"> </span>
+          <span style="--char-index: 3">D</span
+          ><span style="--char-index: 4">r</span
+          ><span style="--char-index: 5">a</span
+          ><span style="--char-index: 6">w</span>
+          <span style="--char-index: 7"> </span>
+          <span style="--char-index: 8">O</span
+          ><span style="--char-index: 9">n</span>
+          <span style="--char-index: 10"> </span>
+          <span style="--char-index: 11">G</span
+          ><span style="--char-index: 12">l</span
+          ><span style="--char-index: 13">o</span
+          ><span style="--char-index: 14">b</span
+          ><span style="--char-index: 15">a</span
+          ><span style="--char-index: 16">l</span>
+          <span style="--char-index: 17"> </span>
+          <span style="--char-index: 18">N</span
+          ><span style="--char-index: 19">e</span
+          ><span style="--char-index: 20">t</span
+          ><span style="--char-index: 21">w</span
+          ><span style="--char-index: 22">o</span
+          ><span style="--char-index: 23">r</span
+          ><span style="--char-index: 24">k</span>
+          <span style="--char-index: 25"> </span>
+          <span style="--char-index: 26">T</span
+          ><span style="--char-index: 27">o</span>
+          <br />
+          <span style="--char-index: 28">A</span
+          ><span style="--char-index: 29">s</span
+          ><span style="--char-index: 30">s</span
+          ><span style="--char-index: 31">e</span
+          ><span style="--char-index: 32">m</span
+          ><span style="--char-index: 33">b</span
+          ><span style="--char-index: 34">l</span
+          ><span style="--char-index: 35">e</span>
+          <span style="--char-index: 36"> </span>
+          <span style="--char-index: 37">A</span
+          ><span style="--char-index: 38">s</span
+          ><span style="--char-index: 39">k</span>
         </h2>
 
         <div class="row justify-content-center g-4">
@@ -390,9 +709,50 @@
         <p class="text-center text-uppercase text-success fw-bold">
           <i class="fas fa-filter me-2"></i>Blog
         </p>
-        <h2 class="text-center fw-bold mb-5">
-          Fostering Collaboration To <br />
-          Achieve Business
+        <h2 class="text-center fw-bold mb-5 animated-title">
+          <span style="--char-index: 0">F</span
+          ><span style="--char-index: 1">o</span
+          ><span style="--char-index: 2">s</span
+          ><span style="--char-index: 3">t</span
+          ><span style="--char-index: 4">e</span
+          ><span style="--char-index: 5">r</span
+          ><span style="--char-index: 6">i</span
+          ><span style="--char-index: 7">n</span
+          ><span style="--char-index: 8">g</span>
+          <span style="--char-index: 9"> </span>
+          <span style="--char-index: 10">C</span
+          ><span style="--char-index: 11">o</span
+          ><span style="--char-index: 12">l</span
+          ><span style="--char-index: 13">l</span
+          ><span style="--char-index: 14">a</span
+          ><span style="--char-index: 15">b</span
+          ><span style="--char-index: 16">o</span
+          ><span style="--char-index: 17">r</span
+          ><span style="--char-index: 18">a</span
+          ><span style="--char-index: 19">t</span
+          ><span style="--char-index: 20">i</span
+          ><span style="--char-index: 21">o</span
+          ><span style="--char-index: 22">n</span>
+          <span style="--char-index: 23"> </span>
+          <span style="--char-index: 24">T</span
+          ><span style="--char-index: 25">o</span>
+          <br />
+          <span style="--char-index: 26">A</span
+          ><span style="--char-index: 27">c</span
+          ><span style="--char-index: 28">h</span
+          ><span style="--char-index: 29">i</span
+          ><span style="--char-index: 30">e</span
+          ><span style="--char-index: 31">v</span
+          ><span style="--char-index: 32">e</span>
+          <span style="--char-index: 33"> </span>
+          <span style="--char-index: 34">B</span
+          ><span style="--char-index: 35">u</span
+          ><span style="--char-index: 36">s</span
+          ><span style="--char-index: 37">i</span
+          ><span style="--char-index: 38">n</span
+          ><span style="--char-index: 39">e</span
+          ><span style="--char-index: 40">s</span
+          ><span style="--char-index: 41">s</span>
         </h2>
 
         <!-- Blog Card 1 -->

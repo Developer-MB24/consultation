@@ -1,3 +1,121 @@
+.main-header {
+  background-color: #fff;
+}
+
+.logo-text {
+  color: #000;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.nav-link:hover {
+  color: #1c2d59;
+}
+
+.nav-link.active {
+  background-color: #1c2d59;
+  color: white !important;
+  border-radius: 10px;
+}
+
+.btn-dark-green {
+  background-color: #1c2d59;
+  border: none;
+}
+
+.btn-dark-green:hover {
+  background-color: #f27b21;
+  color: white;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #1c2d59;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icon-circle i {
+  color: #1c2d59;
+  transition: color 0.3s ease;
+}
+
+.icon-circle:hover {
+  background-color: #f0f0f0;
+}
+
+.icon-circle:hover i {
+  color: #1c2d59;
+}
+
+.bg-dark-green {
+  background-color: #1c2d59 !important;
+}
+
+/* Dropdowns */
+.dropdown-menu {
+  border-radius: 10px;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 10px 16px;
+  font-weight: 500;
+  color: #111;
+  position: relative;
+}
+
+.dropdown-item:hover,
+.dropdown-item.active {
+  background-color: #1c2d59;
+  color: white;
+}
+
+/* Submenu styling */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 220px;
+  padding: 0.5rem 0;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-submenu:hover .submenu {
+  display: block;
+}
+
+.dropdown-submenu > .dropdown-toggle::after {
+  content: "›";
+  float: right;
+  border: none;
+}
+
 .about-hero {
   background-color: #f9f7f3;
   background-image: url("../img/home/process1.webp");
@@ -374,4 +492,18 @@ img.hover-image {
 .icon-circle:hover {
   background-color: #f27b21;
   color: #fff;
+}
+
+/* ANIMATED TITLE STYLING */
+.animated-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+  transition-delay: calc(20ms * var(--char-index));
+}
+
+.animated-title.visible span {
+  opacity: 1;
+  transform: translateX(0);
 }
