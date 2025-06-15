@@ -1,3 +1,6 @@
+body {
+  font-family: Georgia;
+}
 .main-header {
   background-color: #fff;
 }
@@ -373,7 +376,7 @@
 
 /* Subtitle Style */
 .section-subtitle {
-  color: #198754;
+  color: #1c2d59;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
@@ -389,7 +392,7 @@
 
 /* SECTION SUBTITLE */
 .section-subtitle {
-  color: #198754;
+  color: #1c2d59;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
