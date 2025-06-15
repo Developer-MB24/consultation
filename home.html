@@ -25,24 +25,37 @@
         >
           <img
             src="assets/img/logo.png"
-            alt=" Logo"
+            alt="Logo"
             style="height: 40px"
             class="me-2"
           />
         </a>
 
-        <!-- Navigation -->
+        <!-- Hamburger for mobile view -->
+        <button
+          class="d-lg-none border-0 bg-transparent"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon-custom"></span>
+        </button>
+
+        <!-- Navigation (desktop only) -->
         <nav class="d-none d-lg-flex align-items-center gap-4">
           <!-- HOME -->
           <div class="dropdown">
             <a
-              href="home.html"
+              href="index.html"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
               >HOME</a
             >
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="home.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
               <li><a class="dropdown-item" href="#">Home 2</a></li>
             </ul>
           </div>
@@ -141,7 +154,7 @@
             </ul>
           </div>
 
-          <!-- CONTACT US (no dropdown) -->
+          <!-- CONTACT -->
           <a href="contactus.html" class="nav-link">CONTACT US</a>
         </nav>
 
@@ -170,6 +183,18 @@
         </div>
       </div>
     </header>
+
+    <!-- Mobile menu (below header) -->
+    <div class="collapse d-lg-none" id="mobileMenu">
+      <div class="mobile-menu p-3">
+        <ul class="list-unstyled mb-0">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li><a class="nav-link" href="services.html">Our Services</a></li>
+          <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- Hero section  -->
     <section class="hero-section">
       <div class="hero-overlay">
@@ -880,7 +905,7 @@
         <a href="consultingabout.html" class="btn join-btn mt-4"
           >› Book An Alignment Call</a
         >
-        <a href="home.html" class="btn join-btn mt-4">› New Home</a>
+        <a href="index.html" class="btn join-btn mt-4">› New Home</a>
       </div>
     </section>
 

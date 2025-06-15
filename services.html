@@ -21,24 +21,37 @@
         >
           <img
             src="assets/img/logo.png"
-            alt=" Logo"
+            alt="Logo"
             style="height: 40px"
             class="me-2"
           />
         </a>
 
-        <!-- Navigation -->
+        <!-- Hamburger for mobile view -->
+        <button
+          class="d-lg-none border-0 bg-transparent"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon-custom"></span>
+        </button>
+
+        <!-- Navigation (desktop only) -->
         <nav class="d-none d-lg-flex align-items-center gap-4">
           <!-- HOME -->
           <div class="dropdown">
             <a
-              href="home.html"
+              href="index.html"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
               >HOME</a
             >
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="home.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
               <li><a class="dropdown-item" href="#">Home 2</a></li>
             </ul>
           </div>
@@ -137,7 +150,7 @@
             </ul>
           </div>
 
-          <!-- CONTACT US (no dropdown) -->
+          <!-- CONTACT -->
           <a href="contactus.html" class="nav-link">CONTACT US</a>
         </nav>
 
@@ -167,6 +180,18 @@
       </div>
     </header>
 
+    <!-- Mobile menu (below header) -->
+    <div class="collapse d-lg-none" id="mobileMenu">
+      <div class="mobile-menu p-3">
+        <ul class="list-unstyled mb-0">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li><a class="nav-link" href="services.html">Our Services</a></li>
+          <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Hero Section -->
     <section class="about-hero">
       <div class="container content">
@@ -186,8 +211,8 @@
     <!-- our service  -->
     <section class="our-service-section py-5">
       <div class="container">
-        <p class="text-center text-success text-uppercase fw-bold">
-          <i class="fas fa-filter me-2"></i>Our Service
+        <p class="text-center text-uppercase fw-bold" style="color: #1c2d59">
+          <i class="fas fa-filter me-2" style="color: #1c2d59"></i>Our Service
         </p>
         <h2 class="text-center fw-bold mb-5 animated-title">
           <span style="--char-index: 0">E</span
@@ -312,8 +337,9 @@
           <div
             class="col-lg-5 mb-4 mb-lg-0 d-flex flex-column justify-content-start"
           >
-            <p class="text-success text-uppercase fw-bold">
-              <i class="fas fa-filter me-2"></i>What About Us
+            <p class="text-uppercase fw-bold" style="color: #1c2d59">
+              <i class="fas fa-filter me-2" style="color: #1c2d59"></i>What
+              About Us
             </p>
             <h2 class="fw-bold mb-3 animated-title">
               <span style="--char-index: 0">W</span
@@ -384,27 +410,23 @@
               class="img-fluid rounded mb-3"
               alt="Why Choose Us"
             />
-            <h5 class="text-success fw-bold">Why Choose Us</h5>
+            <h5 class="fw-bold" style="color: #1c2d59">Why Choose Us</h5>
             <ul class="list-unstyled text-muted mt-3">
               <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>Fast & Easy
-                Process
+                <i class="fas fa-check-circle me-2"></i>Fast & Easy Process
               </li>
               <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>Control
-                Over Financial Policy
+                <i class="fas fa-check-circle me-2"></i>Control Over Financial
+                Policy
               </li>
               <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>20+ Year Of
-                Experience
+                <i class="fas fa-check-circle me-2"></i>20+ Year Of Experience
               </li>
               <li class="mb-2">
-                <i class="fas fa-check-circle text-success me-2"></i>Save Your
-                Money
+                <i class="fas fa-check-circle me-2"></i>Save Your Money
               </li>
               <li>
-                <i class="fas fa-check-circle text-success me-2"></i>Compliment
-                Management
+                <i class="fas fa-check-circle me-2"></i>Compliment Management
               </li>
             </ul>
           </div>
@@ -414,36 +436,36 @@
         <div class="row text-center mt-5">
           <div class="col-md-4 mb-4">
             <div
-              class="circle-progress border border-success rounded-circle mx-auto d-flex justify-content-center align-items-center"
+              class="circle-progress border rounded-circle mx-auto d-flex justify-content-center align-items-center"
               style="width: 120px; height: 120px"
             >
               <h4 class="fw-bold m-0">82%</h4>
             </div>
-            <h6 class="fw-semibold mt-3 text-success">Completed Work</h6>
+            <h6 class="fw-semibold mt-3">Completed Work</h6>
             <p class="text-muted small">
               It is a long established fact that content of a page
             </p>
           </div>
           <div class="col-md-4 mb-4">
             <div
-              class="circle-progress border border-success rounded-circle mx-auto d-flex justify-content-center align-items-center"
-              style="width: 120px; height: 120px"
+              class="circle-progress border rounded-circle mx-auto d-flex justify-content-center align-items-center"
+              style="width: 120px; height: 120px; border-color: #1c2d59"
             >
               <h4 class="fw-bold m-0">62%</h4>
             </div>
-            <h6 class="fw-semibold mt-3 text-success">Active Work</h6>
+            <h6 class="fw-semibold mt-3">Active Work</h6>
             <p class="text-muted small">
               It is a long established fact that content of a page
             </p>
           </div>
           <div class="col-md-4 mb-4">
             <div
-              class="circle-progress border border-success rounded-circle mx-auto d-flex justify-content-center align-items-center"
-              style="width: 120px; height: 120px"
+              class="circle-progress border rounded-circle mx-auto d-flex justify-content-center align-items-center"
+              style="width: 120px; height: 120px; border: #1c2d59"
             >
               <h4 class="fw-bold m-0">55%</h4>
             </div>
-            <h6 class="fw-semibold mt-3 text-success">Future Work</h6>
+            <h6 class="fw-semibold mt-3">Future Work</h6>
             <p class="text-muted small">
               It is a long established fact that content of a page
             </p>
@@ -458,8 +480,9 @@
         <div class="row align-items-center">
           <!-- Left Column -->
           <div class="col-lg-5 mb-4 mb-lg-0">
-            <p class="text-success text-uppercase fw-bold">
-              <i class="fas fa-filter me-2"></i>Why Choose Us
+            <p class="text-uppercase fw-bold" style="color: #1c2d59">
+              <i class="fas fa-filter me-2" style="color: #1c2d59"></i>Why
+              Choose Us
             </p>
             <h2 class="fw-bold mb-3 animated-title">
               <span style="--char-index: 0">S</span
@@ -599,7 +622,9 @@
     <section class="services-section py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <p class="section-subtitle"><i>&#9660;</i> OUR SERVICE</p>
+          <p class="section-subtitle fw-bold" style="color: #1c2d59">
+            <i>&#9660;</i> OUR SERVICE
+          </p>
           <h2 class="section-title animated-title">
             <span style="--char-index: 0">T</span
             ><span style="--char-index: 1">a</span
@@ -722,8 +747,8 @@
     <!-- Testimonial  -->
     <section class="testimonial-section py-5">
       <div class="container text-center">
-        <p class="text-success text-uppercase fw-bold">
-          <i class="fas fa-filter me-2"></i>Testimonial
+        <p class="text-uppercase fw-bold" style="color: #1c2d59">
+          <i class="fas fa-filter me-2" style="color: #1c2d59"></i>Testimonial
         </p>
         <h2 class="fw-bold mb-5 animated-title">
           <span style="--char-index: 0">P</span
@@ -791,9 +816,7 @@
               the readable content of a page when looking at its layout."
             </p>
             <h5 class="fw-bold mb-0" id="testimonial-name">Sophia Martinez</h5>
-            <small class="text-success" id="testimonial-role"
-              >Client Manager</small
-            >
+            <small class="" id="testimonial-role">Client Manager</small>
           </div>
 
           <!-- Decorative Avatars -->
@@ -899,7 +922,7 @@
                 <h6 class="fw-semibold">Used For Link</h6>
                 <ul class="list-unstyled small">
                   <li style="cursor: pointer">
-                    <a href="home.html" style="color: white">– Home</a>
+                    <a href="index.html" style="color: white">– Home</a>
                   </li>
 
                   <li style="cursor: pointer">

@@ -21,24 +21,37 @@
         >
           <img
             src="assets/img/logo.png"
-            alt=" Logo"
+            alt="Logo"
             style="height: 40px"
             class="me-2"
           />
         </a>
 
-        <!-- Navigation -->
+        <!-- Hamburger for mobile view -->
+        <button
+          class="d-lg-none border-0 bg-transparent"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon-custom"></span>
+        </button>
+
+        <!-- Navigation (desktop only) -->
         <nav class="d-none d-lg-flex align-items-center gap-4">
           <!-- HOME -->
           <div class="dropdown">
             <a
-              href="home.html"
-              class="nav-link dropdown-toggle active"
+              href="index.html"
+              class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
               >HOME</a
             >
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="home.html">Home 1</a></li>
+              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
               <li><a class="dropdown-item" href="#">Home 2</a></li>
             </ul>
           </div>
@@ -47,7 +60,7 @@
           <div class="dropdown">
             <a
               href="#"
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle active"
               data-bs-toggle="dropdown"
               >PAGES</a
             >
@@ -137,7 +150,7 @@
             </ul>
           </div>
 
-          <!-- CONTACT US (no dropdown) -->
+          <!-- CONTACT -->
           <a href="contactus.html" class="nav-link">CONTACT US</a>
         </nav>
 
@@ -166,6 +179,18 @@
         </div>
       </div>
     </header>
+
+    <!-- Mobile menu (below header) -->
+    <div class="collapse d-lg-none" id="mobileMenu">
+      <div class="mobile-menu p-3">
+        <ul class="list-unstyled mb-0">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li><a class="nav-link" href="services.html">Our Services</a></li>
+          <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- Carousel Container -->
     <div class="carousel-wrapper position-relative">
       <!-- Hero Carousel -->
@@ -358,9 +383,7 @@
                 <a href="#" class="btn btn-about">ABOUT US</a>
                 <div class="support-info mt-3 mt-lg-0">
                   <strong>Get Support</strong><br />
-                  <a href="mailto:info@peacefulqode.com"
-                    >info@peacefulqode.com</a
-                  >
+                  <a href="mailto:info@gmail.com">info@gmail.com</a>
                 </div>
               </div>
             </div>
@@ -374,7 +397,9 @@
     <section class="services-section py-5">
       <div class="container">
         <div class="text-center mb-5">
-          <p class="section-subtitle"><i>&#9660;</i> OUR SERVICE</p>
+          <p class="section-subtitle" style="color: #1c2d59">
+            <i>&#9660;</i> OUR SERVICE
+          </p>
           <h2 class="section-title animated-title">
             <span style="--char-index: 0">T</span
             ><span style="--char-index: 1">a</span
@@ -497,7 +522,7 @@
     <!-- Our Process -->
     <section class="process-section py-5">
       <div class="container text-center">
-        <p class="text-success fw-semibold mb-1">PROCESS</p>
+        <p class="fw-semibold mb-1">PROCESS</p>
         <h2 class="fw-bold mb-5 animated-title">
           <span style="--char-index: 0">C</span
           ><span style="--char-index: 1">r</span
@@ -615,7 +640,7 @@
     <!-- portfolio -->
     <section class="portfolio-section py-5">
       <div class="container text-center">
-        <p class="text-success fw-semibold mb-1">PORTFOLIO</p>
+        <p class="fw-semibold mb-1" style="color: #fff">PORTFOLIO</p>
         <h2 class="fw-bold mb-5 text-white animated-title">
           <span style="--char-index: 0">C</span
           ><span style="--char-index: 1">r</span
@@ -748,7 +773,7 @@
           <div class="row align-items-start">
             <!-- Left Column -->
             <div class="col-md-4 mb-4">
-              <p class="text-success fw-semibold mb-1">OUR SERVICE</p>
+              <p class="fw-semibold mb-1">OUR SERVICE</p>
               <h2 class="fw-bold mb-4 animated-title">
                 <span style="--char-index: 0">P</span
                 ><span style="--char-index: 1">r</span
@@ -931,7 +956,7 @@
     <!-- OUR TEAM -->
     <section class="team-section py-5">
       <div class="container text-center">
-        <p class="text-success fw-semibold mb-1">OUR TEAM</p>
+        <p class="fw-semibold mb-1">OUR TEAM</p>
         <h2 class="fw-bold mb-5 animated-title">
           <span style="--char-index: 0">C</span
           ><span style="--char-index: 1">o</span
@@ -1047,7 +1072,7 @@
     <section class="testimonial-section py-5">
       <div class="container">
         <div class="text-center mb-4">
-          <p class="text-success fw-semibold">TESTIMONIAL</p>
+          <p class="fw-semibold">TESTIMONIAL</p>
           <h2 class="fw-bold animated-title">
             <span style="--char-index: 0">P</span
             ><span style="--char-index: 1">r</span
@@ -1150,7 +1175,7 @@
                     <h6 class="mb-0 fw-bold" id="testimonial-name">
                       James Walker
                     </h6>
-                    <small class="text-success" id="testimonial-title"
+                    <small class="" id="testimonial-title"
                       >CLIENT MANAGER</small
                     >
                   </div>
@@ -1173,7 +1198,7 @@
       <div class="container">
         <!-- Heading -->
         <div class="mb-4">
-          <p class="text-success fw-semibold">CONTACT US</p>
+          <p class="fw-semibold">CONTACT US</p>
           <h2 class="fw-bold animated-title">
             <span style="--char-index: 0">O</span
             ><span style="--char-index: 1">u</span
@@ -1369,7 +1394,7 @@
                 <h6 class="fw-semibold">Used For Link</h6>
                 <ul class="list-unstyled small">
                   <li style="cursor: pointer">
-                    <a href="home.html" style="color: white">– Home</a>
+                    <a href="index.html" style="color: white">– Home</a>
                   </li>
 
                   <li style="cursor: pointer">

@@ -115,7 +115,55 @@
   float: right;
   border: none;
 }
+/* Mobile Hamburger Icon */
+.navbar-toggler-icon-custom {
+  width: 24px;
+  height: 2px;
+  background-color: #1c2d59;
+  display: block;
+  position: relative;
+  margin-top: 4px;
+}
 
+.navbar-toggler-icon-custom::before,
+.navbar-toggler-icon-custom::after {
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: #1c2d59;
+  position: absolute;
+  left: 0;
+}
+
+.navbar-toggler-icon-custom::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon-custom::after {
+  top: 8px;
+}
+
+/* Mobile Menu Style */
+@media (max-width: 991.98px) {
+  .mobile-menu {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .mobile-menu .nav-link {
+    padding: 10px 0;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    display: block;
+  }
+
+  .mobile-menu .nav-link:hover {
+    color: #1c2d59;
+  }
+}
+
+/* ............  */
 .about-hero {
   background-color: #f9f7f3;
   background-image: url("../img/home/process1.webp");
