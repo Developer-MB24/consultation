@@ -219,7 +219,7 @@
 
 /* our skills  */
 .skills-section {
-  background-color: #1c4a38;
+  background-color: #1c2d59;
 }
 
 .skill-box {
@@ -293,10 +293,10 @@ img.hover-image {
 }
 
 .award-link {
-  color: #1c4a38;
+  color: #1c2d59;
   text-decoration: none;
   font-weight: bold;
-  border-bottom: 2px solid #1c4a38;
+  border-bottom: 2px solid #1c2d59;
   padding-bottom: 2px;
 }
 
@@ -451,9 +451,9 @@ img.hover-image {
 
 /* On hover: all turn into consistent green theme */
 .skill-circle:hover {
-  background-color: #1c4a38 !important;
+  background-color: #1c2d59 !important;
   color: #fff !important;
-  border-color: #1c4a38;
+  border-color: #1c2d59;
 }
 
 .skill-circle:hover p,
@@ -503,7 +503,7 @@ img.hover-image {
   content: "\f35d"; /* Font Awesome arrow-up-right */
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #1c4a38;
+  color: #1c2d59;
   font-size: 20px;
   position: absolute;
   right: 30px;
