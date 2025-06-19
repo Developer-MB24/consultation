@@ -44,16 +44,7 @@
         <nav class="d-none d-lg-flex align-items-center gap-4">
           <!-- HOME -->
           <div class="dropdown">
-            <a
-              href="index.html"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >HOME</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="index.html">Home 1</a></li>
-              <li><a class="dropdown-item" href="#">Home 2</a></li>
-            </ul>
+            <a href="index.html" class="nav-link">Home</a>
           </div>
 
           <!-- PAGES -->
@@ -62,27 +53,16 @@
               href="#"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >PAGES</a
+              >Services</a
             >
             <ul class="dropdown-menu pages-dropdown">
               <li>
-                <a class="dropdown-item" href="about-us.html">ABOUT US</a>
-              </li>
-              <li><a class="dropdown-item" href="ourteam.html">OUR TEAM</a></li>
-              <li>
-                <a class="dropdown-item" href="teamdetails.html"
-                  >TEAM DETAILS</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item active" href="services.html"
-                  >OUR SERVICE</a
-                >
+                <a class="dropdown-item" href="services.html">OUR SERVICE</a>
               </li>
 
               <!-- SERVICE Submenu -->
               <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">SERVICE</a>
+                <a class="dropdown-item dropdown-toggle" href="#">SERVICES</a>
                 <ul class="dropdown-menu submenu">
                   <li>
                     <a class="dropdown-item" href="human-resources.html"
@@ -109,59 +89,25 @@
                   </li>
                 </ul>
               </li>
-
-              <li>
-                <a class="dropdown-item" href="pricingplan.html"
-                  >PRICING PLAN</a
-                >
-              </li>
-
-              <!-- SHOP Submenu -->
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="shop.html"
-                  >SHOP</a
-                >
-                <ul class="dropdown-menu submenu">
-                  <li><a class="dropdown-item" href="#">Shop Grid</a></li>
-                  <li><a class="dropdown-item" href="#">Shop Single</a></li>
-                </ul>
-              </li>
-
-              <li><a class="dropdown-item" href="faq.html">FAQS</a></li>
-              <li><a class="dropdown-item" href="#">404</a></li>
             </ul>
           </div>
 
           <!-- PORTFOLIO -->
           <div class="dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >PORTFOLIO</a
-            >
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Portfolio Grid</a></li>
-              <li><a class="dropdown-item" href="#">Portfolio Single</a></li>
-            </ul>
+            <a href="about-us.html" class="nav-link">About Us</a>
           </div>
 
           <!-- BLOG -->
           <div class="dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >BLOG</a
-            >
-            <ul class="dropdown-menu">
+            <a href="#" class="nav-link">Blog</a>
+            <!-- <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">Blog List</a></li>
               <li><a class="dropdown-item" href="#">Blog Details</a></li>
-            </ul>
+            </ul> -->
           </div>
 
           <!-- CONTACT -->
-          <a href="contactus.html" class="nav-link active">CONTACT US</a>
+          <a href="contactus.html" class="nav-link active">Contact Us</a>
         </nav>
 
         <!-- Right Icons -->
@@ -190,130 +136,56 @@
       </div>
     </header>
 
-    <!-- Mobile menu  -->
+    <!-- Mobile menu -->
     <div class="collapse d-lg-none" id="mobileMenu">
       <div class="mobile-menu p-3">
         <ul class="list-unstyled mb-0">
           <li><a class="nav-link" href="index.html">Home</a></li>
 
-          <!-- Pages Dropdown -->
+          <!-- Services Dropdown -->
           <li>
             <button
               class="nav-link w-100 text-start dropdown-toggle"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#pagesSubmenu"
+              data-bs-target="#servicesSubmenu"
               aria-expanded="false"
             >
-              Pages
+              Services
             </button>
-            <ul class="collapse list-unstyled ps-3" id="pagesSubmenu">
-              <li><a class="nav-link" href="about-us.html">About Us</a></li>
-              <li><a class="nav-link" href="ourteam.html">Our Team</a></li>
+            <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
+              <li><a class="nav-link" href="services.html">Our Service</a></li>
               <li>
-                <a class="nav-link" href="teamdetails.html">Team Details</a>
-              </li>
-              <li><a class="nav-link" href="services.html">Our Services</a></li>
-
-              <!-- Services Submenu -->
-              <li>
-                <button
-                  class="nav-link w-100 text-start dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#servicesSubmenu"
-                  aria-expanded="false"
+                <a class="nav-link" href="human-resources.html"
+                  >Human Resources</a
                 >
-                  Service
-                </button>
-                <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
-                  <li>
-                    <a class="nav-link" href="human-resources.html"
-                      >Human Resources</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-link" href="expert-consultation.html"
-                      >Expert Consultation</a
-                    >
-                  </li>
-                  <li>
-                    <a class="nav-link" href="financial-management.html"
-                      >Financial Management</a
-                    >
-                  </li>
-                  <li><a class="nav-link" href="#">Project Management</a></li>
-                  <li>
-                    <a class="nav-link" href="marketing-research.html"
-                      >Marketing Research</a
-                    >
-                  </li>
-                </ul>
               </li>
-
-              <!-- Shop Submenu -->
               <li>
-                <button
-                  class="nav-link w-100 text-start dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#shopSubmenu"
-                  aria-expanded="false"
+                <a class="nav-link" href="expert-consultation.html"
+                  >Expert Consultation</a
                 >
-                  Shop
-                </button>
-                <ul class="collapse list-unstyled ps-3" id="shopSubmenu">
-                  <li><a class="nav-link" href="shop.html">Shop Grid</a></li>
-                  <li><a class="nav-link" href="#">Shop Single</a></li>
-                </ul>
               </li>
-
               <li>
-                <a class="nav-link" href="pricingplan.html">Pricing Plan</a>
+                <a class="nav-link" href="financial-management.html"
+                  >Financial Management</a
+                >
               </li>
-              <li><a class="nav-link" href="faq.html">FAQs</a></li>
-              <li><a class="nav-link" href="#">404</a></li>
+              <li><a class="nav-link" href="#">Project Management</a></li>
+              <li>
+                <a class="nav-link" href="marketing-research.html"
+                  >Marketing Research</a
+                >
+              </li>
             </ul>
           </li>
 
-          <!-- Portfolio Dropdown -->
-          <li>
-            <button
-              class="nav-link w-100 text-start dropdown-toggle"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#portfolioSubmenu"
-              aria-expanded="false"
-            >
-              Portfolio
-            </button>
-            <ul class="collapse list-unstyled ps-3" id="portfolioSubmenu">
-              <li><a class="nav-link" href="#">Portfolio Grid</a></li>
-              <li><a class="nav-link" href="#">Portfolio Single</a></li>
-            </ul>
-          </li>
-
-          <!-- Blog Dropdown -->
-          <li>
-            <button
-              class="nav-link w-100 text-start dropdown-toggle"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#blogSubmenu"
-              aria-expanded="false"
-            >
-              Blog
-            </button>
-            <ul class="collapse list-unstyled ps-3" id="blogSubmenu">
-              <li><a class="nav-link" href="#">Blog List</a></li>
-              <li><a class="nav-link" href="#">Blog Details</a></li>
-            </ul>
-          </li>
-
+          <li><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li><a class="nav-link" href="#">Blog</a></li>
           <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
         </ul>
       </div>
     </div>
+
     <section class="contact-hero-section position-relative">
       <img
         src="assets/img/home/process1.webp"
@@ -553,7 +425,6 @@
 
         <hr class="footer-divider" />
 
-        <!-- Footer  -->
         <div class="row py-4">
           <!-- Logo + Description -->
           <div class="col-md-4 mb-4 mb-md-0">
@@ -584,20 +455,32 @@
                 <h6 class="fw-semibold">Used For Link</h6>
                 <ul class="list-unstyled small">
                   <li style="cursor: pointer">
-                    <a href="index.html" style="color: white">– Home</a>
+                    <a
+                      href="index.html"
+                      style="color: white; text-decoration: none"
+                      >– Home</a
+                    >
                   </li>
 
                   <li style="cursor: pointer">
-                    <a href="about-us.html" style="color: white">– About Us</a>
+                    <a
+                      href="about-us.html"
+                      style="color: white; text-decoration: none"
+                      >– About Us</a
+                    >
                   </li>
                   <li style="cursor: pointer">
-                    <a href="services.html" style="color: white"
+                    <a
+                      href="services.html"
+                      style="color: white; text-decoration: none"
                       >– Our Service</a
                     >
                   </li>
-                  <li>– Portfolio</li>
+
                   <li style="cursor: pointer">
-                    <a href="contactus.html" style="color: white"
+                    <a
+                      href="contactus.html"
+                      style="color: white; text-decoration: none"
                       >– Contact Us</a
                     >
                   </li>
@@ -606,10 +489,43 @@
               <div class="col-6">
                 <h6 class="fw-semibold invisible">Used For Link</h6>
                 <ul class="list-unstyled small">
-                  <li>– Blog</li>
-                  <li>– Blog Details</li>
-                  <li>– Service</li>
-                  <li>– Service Details</li>
+                  <li>
+                    <a
+                      href="human-resources.html"
+                      style="color: white; text-decoration: none"
+                    >
+                      – Human Resources
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="expert-consultation.html"
+                      style="color: white; text-decoration: none"
+                    >
+                      – Expert Consultation
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="financial-management.html"
+                      style="color: white; text-decoration: none"
+                    >
+                      – Financial Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" style="color: white; text-decoration: none">
+                      – Project Management
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="marketing-research.html"
+                      style="color: white; text-decoration: none"
+                    >
+                      – Marketing Research
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
