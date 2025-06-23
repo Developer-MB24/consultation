@@ -403,7 +403,7 @@ h1 {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: rgba(28, 45, 89, 0.8);
+  background-color: #1c2d59;
   z-index: 1;
   transition: width 0.4s ease;
   border-radius: 8px;
@@ -418,7 +418,7 @@ h1 {
 .service-box .arrow {
   position: relative;
   z-index: 2;
-  transition: color 0.4s ease;
+  transition: color 0.4s ease, border-color 0.4s ease;
 }
 
 .service-box:hover .text,
@@ -458,7 +458,7 @@ h1 {
 }
 
 .service-box:hover .arrow {
-  border-color: white;
+  border-color: #1c2d59;
 }
 
 @media (max-width: 768px) {
