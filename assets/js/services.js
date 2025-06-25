@@ -79,3 +79,48 @@ setInterval(() => {
 }, 4000);
 
 showTestimonial(current);
+
+// nav
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.querySelector(".dropdown");
+  const dropdownToggle = dropdown.querySelector(".nav-link");
+  const dropdownMenu = dropdown.querySelector(".dropdown-menu");
+
+  function enableHoverDropdown() {
+    dropdown.addEventListener("mouseenter", showDropdown);
+    dropdown.addEventListener("mouseleave", hideDropdown);
+  }
+
+  function disableHoverDropdown() {
+    dropdown.removeEventListener("mouseenter", showDropdown);
+    dropdown.removeEventListener("mouseleave", hideDropdown);
+    dropdownMenu.classList.remove("show");
+  }
+
+  function showDropdown() {
+    dropdownMenu.classList.add("show");
+  }
+
+  function hideDropdown() {
+    dropdownMenu.classList.remove("show");
+  }
+
+  function handleResize() {
+    if (window.innerWidth >= 992) {
+      enableHoverDropdown();
+    } else {
+      disableHoverDropdown();
+    }
+  }
+
+  // Initial setup
+  handleResize();
+
+  // Update on window resize
+  window.addEventListener("resize", handleResize);
+
+  // Clicking the link should still navigate (do nothing here)
+  dropdownToggle.addEventListener("click", function (e) {
+    // Let default behavior continue (navigate to services.html)
+  });
+});

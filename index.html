@@ -43,57 +43,53 @@
         <!-- Navigation (desktop only) -->
         <nav class="d-none d-lg-flex align-items-center gap-4">
           <!-- HOME -->
-          <div class="dropdown">
+          <div class="dropdown active">
             <a href="index.html" class="nav-link active">Home</a>
           </div>
 
-          <!-- PAGES -->
-          <div class="dropdown">
+          <!-- SERVICES -->
+          <div class="dropdown position-relative">
             <a
-              href="#"
+              href="services.html"
               class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Services</a
+              id="servicesDropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
-            <ul class="dropdown-menu pages-dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
               <li>
-                <a class="dropdown-item" href="services.html">OUR SERVICE</a>
+                <a class="dropdown-item" href="healthcare-business.html"
+                  >Healthcare Business Startup Consulting</a
+                >
               </li>
-
-              <!-- SERVICE Submenu -->
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">SERVICES</a>
-                <ul class="dropdown-menu submenu">
-                  <li>
-                    <a class="dropdown-item" href="human-resources.html"
-                      >HUMAN RESOURCES</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="expert-consultation.html"
-                      >EXPERT CONSULTATION</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="financial-management.html"
-                      >FINANCIAL MANAGEMENT</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">PROJECT MANAGEMENT</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="marketing-research.html"
-                      >MARKETING RESEARCH</a
-                    >
-                  </li>
-                </ul>
+              <li>
+                <a class="dropdown-item" href="licensing&regulatory.html"
+                  >Licensing & Regulatory Compliance</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="staff-training.html"
+                  >Staff Training & Compliance Programs</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="policy&procedure.html"
+                  >Policy & Procedure Development</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="business-growth.html"
+                  >Business Growth & Automation Solutions</a
+                >
               </li>
             </ul>
           </div>
 
           <!-- PORTFOLIO -->
-          <div class="dropdown">
+          <div class="active">
             <a href="about-us.html" class="nav-link">About Us</a>
           </div>
 
@@ -113,18 +109,18 @@
         <!-- Right Icons -->
         <div class="d-flex align-items-center gap-3">
           <!-- Search -->
-          <button class="icon-btn">
+          <!-- <button class="icon-btn">
             <i class="fas fa-search fa-lg text-dark-green"></i>
-          </button>
+          </button> -->
 
           <!-- Cart -->
-          <div class="position-relative icon-circle bg-light">
+          <!-- <div class="position-relative icon-circle bg-light">
             <i class="fas fa-shopping-bag fa-lg"></i>
             <span
               class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark-green"
               >0</span
             >
-          </div>
+          </div> -->
 
           <!-- Let's Talk -->
           <a
@@ -156,24 +152,28 @@
             <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
               <li><a class="nav-link" href="services.html">Our Service</a></li>
               <li>
-                <a class="nav-link" href="human-resources.html"
-                  >Human Resources</a
+                <a class="nav-link" href="healthcare-business.html"
+                  >Healthcare Business Startup Consulting</a
                 >
               </li>
               <li>
-                <a class="nav-link" href="expert-consultation.html"
-                  >Expert Consultation</a
+                <a class="nav-link" href="licensing&regulatory.html"
+                  >Licensing & Regulatory Compliance</a
                 >
               </li>
               <li>
-                <a class="nav-link" href="financial-management.html"
-                  >Financial Management</a
+                <a class="nav-link" href="staff-training.html"
+                  >Staff Training & Compliance Programs</a
                 >
               </li>
-              <li><a class="nav-link" href="#">Project Management</a></li>
               <li>
-                <a class="nav-link" href="marketing-research.html"
-                  >Marketing Research</a
+                <a class="nav-link" href="policy&procedure.html"
+                  >Policy & Procedure Development</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="business-growth.html"
+                  >Business Growth & Automation Solutions</a
                 >
               </li>
             </ul>
@@ -186,15 +186,14 @@
       </div>
     </div>
     <!-- hero  -->
-    <section class="position-relative text-center">
+    <section class="position-relative text-center hero-video-section">
       <!-- Video -->
       <video
-        class="w-100"
+        class="w-100 h-100 object-fit-cover"
         autoplay
         muted
         loop
         playsinline
-        style="background: transparent"
       >
         <source src="assets/img/consulting/homebanner.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -202,25 +201,23 @@
 
       <!-- Overlay content -->
       <div
-        class="position-absolute top-50 start-50 translate-middle text-white"
-        style="z-index: 2"
+        class="position-absolute top-50 start-50 translate-middle text-white text-overlay"
       >
-        <h1 class="display-5 fw-bold mb-4">
+        <h1 class="fw-bold mb-4">
           Expert Healthcare Consulting to Stay Compliant and Grow
         </h1>
         <a
           href="#contact"
-          class="btn px-4 py-2"
+          class="btn"
           style="background-color: #1c2d59; color: #fff"
         >
           Let’s Build Something Great
         </a>
       </div>
 
-      <!-- Overlay shading (optional) -->
+      <!-- Overlay shading -->
       <div
-        class="position-absolute top-0 start-0 w-100 h-100"
-        style="background: rgba(0, 0, 0, 0.4); z-index: 1"
+        class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"
       ></div>
     </section>
 
@@ -324,7 +321,7 @@
           <div class="col-lg-6">
             <div class="about-image">
               <img
-                src="assets/img/consulting/What-I-bring-to-the-table.jpeg"
+                src="assets/img/consulting/homeabout.jpeg"
                 alt="Support Team"
                 class="img-fluid w-100 h-100 object-cover"
               />
@@ -546,127 +543,154 @@
 
         <div class="service-list">
           <!-- Service 1 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/startup.jpg"
+          <a
+            href="healthcare-business.html"
+            class="text-decoration-none text-dark"
           >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-lightbulb"></i></div>
-            <div class="text">
-              <h5>Healthcare Business Startup Consulting</h5>
-              <p>
-                Get assistance with business planning, entity formation, service
-                model development, and market positioning.
-              </p>
+            <div
+              class="service-box hover-slide"
+              data-bg="assets/img/consulting/startup.jpg"
+            >
+              <div class="hover-bg"></div>
+              <div class="icon"><i class="bi bi-lightbulb"></i></div>
+              <div class="text">
+                <h5>Healthcare Business Startup Consulting</h5>
+                <p>
+                  Get assistance with business planning, entity formation,
+                  service model development, and market positioning.
+                </p>
+              </div>
+              <div class="arrow">&rarr;</div>
             </div>
-            <div class="arrow">&rarr;</div>
-          </div>
+          </a>
 
           <!-- Service 2 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/licensing.jpg"
+          <a
+            href="licensing&regulatory.html"
+            class="text-decoration-none text-dark"
           >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-file-earmark-check"></i></div>
-            <div class="text">
-              <h5>Licensing & Regulatory Compliance</h5>
-              <p>
-                We assist with applications, documentation, inspections, and
-                regulatory readiness for a wide range of care models.
-              </p>
+            <div
+              class="service-box hover-slide"
+              data-bg="assets/img/consulting/licensing.jpg"
+            >
+              <div class="hover-bg"></div>
+              <div class="icon"><i class="bi bi-file-earmark-check"></i></div>
+              <div class="text">
+                <h5>Licensing & Regulatory Compliance</h5>
+                <p>
+                  We assist with applications, documentation, inspections, and
+                  regulatory readiness for a wide range of care models.
+                </p>
+              </div>
+              <div class="arrow">&rarr;</div>
             </div>
-            <div class="arrow">&rarr;</div>
-          </div>
+          </a>
 
           <!-- Service 3 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/policies.jpg"
+          <a
+            href="policy&procedure.html"
+            class="text-decoration-none text-dark"
           >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-journal-text"></i></div>
-            <div class="text">
-              <h5>Policy & Procedure Development</h5>
-              <p>
-                Customize operational manuals, clinical policies, HR procedures,
-                and administrative guidelines to align with your service model
-                and licensing board expectations.
-              </p>
+            <div
+              class="service-box hover-slide"
+              data-bg="assets/img/consulting/policies.jpg"
+            >
+              <div class="hover-bg"></div>
+              <div class="icon"><i class="bi bi-journal-text"></i></div>
+              <div class="text">
+                <h5>Policy & Procedure Development</h5>
+                <p>
+                  Customize operational manuals, clinical policies, HR
+                  procedures, and administrative guidelines to align with your
+                  service model and licensing board expectations.
+                </p>
+              </div>
+              <div class="arrow">&rarr;</div>
             </div>
-            <div class="arrow">&rarr;</div>
-          </div>
+          </a>
 
           <!-- Service 4 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/training.jpg"
-          >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-mortarboard"></i></div>
-            <div class="text">
-              <h5>Staff Training & Compliance Programs</h5>
-              <p>
-                Stay ahead of audits and reviews with our compliance training.
-                We offer online and in-person programs tailored to your facility
-                type and state requirements.
-              </p>
+          <a href="staff-training.html" class="text-decoration-none text-dark">
+            <div
+              class="service-box hover-slide"
+              data-bg="assets/img/consulting/training.jpg"
+            >
+              <div class="hover-bg"></div>
+              <div class="icon"><i class="bi bi-mortarboard"></i></div>
+              <div class="text">
+                <h5>Staff Training & Compliance Programs</h5>
+                <p>
+                  Stay ahead of audits and reviews with our compliance training.
+                  We offer online and in-person programs tailored to your
+                  facility type and state requirements.
+                </p>
+              </div>
+              <div class="arrow">&rarr;</div>
             </div>
-            <div class="arrow">&rarr;</div>
-          </div>
+          </a>
 
           <!-- Service 5 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/it.jpg"
-          >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-hdd-network"></i></div>
-            <div class="text">
-              <h5>IT Services</h5>
-              <p>
-                Build a strong online presence with our HIPAA-compliant web
-                solutions, EHR integrations, and healthcare-focused IT services.
-              </p>
+          <!-- <a href="it-services.html" class="text-decoration-none text-dark">
+            <div
+              class="service-box hover-slide"
+              data-bg="assets/img/consulting/it.jpg"
+            >
+              <div class="hover-bg"></div>
+              <div class="icon"><i class="bi bi-hdd-network"></i></div>
+              <div class="text">
+                <h5>IT Services</h5>
+                <p>
+                  Build a strong online presence with our HIPAA-compliant web
+                  solutions, EHR integrations, and healthcare-focused IT
+                  services.
+                </p>
+              </div>
+              <div class="arrow">&rarr;</div>
             </div>
-            <div class="arrow">&rarr;</div>
-          </div>
+          </a> -->
 
           <!-- Service 6 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/automation.jpg"
-          >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
-            <div class="text">
-              <h5>Business Growth and Automation Solutions</h5>
-              <p>
-                Streamline your operations through technology. We also offer
-                process automation for scheduling, billing, and compliance
-                tracking to help you save time.
-              </p>
+          <a href="business-growth.html" class="text-decoration-none text-dark">
+            <div
+              class="service-box hover-slide"
+              data-bg="assets/img/consulting/automation.jpg"
+            >
+              <div class="hover-bg"></div>
+              <div class="icon"><i class="bi bi-gear-wide-connected"></i></div>
+              <div class="text">
+                <h5>Business Growth and Automation Solutions</h5>
+                <p>
+                  Streamline your operations through technology. We also offer
+                  process automation for scheduling, billing, and compliance
+                  tracking to help you save time.
+                </p>
+              </div>
+              <div class="arrow">&rarr;</div>
             </div>
-            <div class="arrow">&rarr;</div>
-          </div>
+          </a>
 
           <!-- Service 7 -->
-          <div
-            class="service-box hover-slide"
-            data-bg="assets/img/consulting/marketing.jpg"
+          <!-- <a
+            href="branding-marketing.html"
+            class="text-decoration-none text-dark"
           >
-            <div class="hover-bg"></div>
-            <div class="icon"><i class="bi bi-megaphone"></i></div>
-            <div class="text">
-              <h5>Branding, Marketing & Lead Generation</h5>
-              <p>
-                We help you build brand that grow on trust and visibility. We
-                create and execute marketing campaigns that connect you with
-                patients, families, and referral sources.
-              </p>
+            <div
+              class="service-box hover-slide"
+              data-bg="assets/img/consulting/marketing.jpg"
+            >
+              <div class="hover-bg"></div>
+              <div class="icon"><i class="bi bi-megaphone"></i></div>
+              <div class="text">
+                <h5>Branding, Marketing & Lead Generation</h5>
+                <p>
+                  We help you build brand that grow on trust and visibility. We
+                  create and execute marketing campaigns that connect you with
+                  patients, families, and referral sources.
+                </p>
+              </div>
+              <div class="arrow">&rarr;</div>
             </div>
-            <div class="arrow">&rarr;</div>
-          </div>
+          </a> -->
         </div>
       </div>
     </section>
@@ -779,7 +803,7 @@
             <div class="process-card position-relative">
               <div class="circle-img mx-auto position-relative">
                 <img
-                  src="assets/img/home/process1.webp"
+                  src="assets/img/consulting/process1.jpeg"
                   alt="Discovery & Consultation"
                   class="img-fluid rounded-circle"
                 />
@@ -803,7 +827,7 @@
             <div class="process-card position-relative">
               <div class="circle-img mx-auto position-relative">
                 <img
-                  src="assets/img/home/process1.webp"
+                  src="assets/img/consulting/process2.jpeg"
                   alt="Customized Strategy"
                   class="img-fluid rounded-circle"
                 />
@@ -827,7 +851,7 @@
             <div class="process-card position-relative">
               <div class="circle-img mx-auto position-relative">
                 <img
-                  src="assets/img/home/process1.webp"
+                  src="assets/img/consulting/process3.jpeg"
                   alt="Execution & Support"
                   class="img-fluid rounded-circle"
                 />
@@ -1028,9 +1052,9 @@
               ><span style="--char-index: 39">s</span>
             </h2>
 
-            <button class="btn btn-dark-green px-4 py-2 rounded-pill">
+            <!-- <button class="btn btn-dark-green px-4 py-2 rounded-pill">
               VIEW MORE
-            </button>
+            </button> -->
           </div>
 
           <!-- Right Column -->
@@ -1710,6 +1734,14 @@
                       >– Contact Us</a
                     >
                   </li>
+                  <li>
+                    <a
+                      href="policy&procedure.html"
+                      style="color: white; text-decoration: none"
+                    >
+                      – Policy & Procedure Development
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div class="col-6">
@@ -1717,39 +1749,34 @@
                 <ul class="list-unstyled small">
                   <li>
                     <a
-                      href="human-resources.html"
+                      href="healthcare-business.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Human Resources
+                      – Healthcare Business Startup Consulting
                     </a>
                   </li>
                   <li>
                     <a
-                      href="expert-consultation.html"
+                      href="licensing&regulatory.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Expert Consultation
+                      – Licensing & Regulatory Compliance
                     </a>
                   </li>
                   <li>
                     <a
-                      href="financial-management.html"
+                      href="staff-training.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Financial Management
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style="color: white; text-decoration: none">
-                      – Project Management
+                      – Staff Training & Compliance Programs
                     </a>
                   </li>
                   <li>
                     <a
-                      href="marketing-research.html"
+                      href="business-growth.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Marketing Research
+                      – Business Growth & Automation Solutions
                     </a>
                   </li>
                 </ul>

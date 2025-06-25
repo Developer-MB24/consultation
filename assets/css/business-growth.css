@@ -145,6 +145,12 @@ body {
 .navbar-toggler-icon-custom::after {
   top: 8px;
 }
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
 
 /* Mobile Menu Style */
 @media (max-width: 991.98px) {
@@ -167,8 +173,20 @@ body {
 }
 
 .about-hero {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* .about-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+} */
+
+/* .about-hero {
   background-color: #f9f7f3;
-  background-image: url("../img/consulting/service2.jpeg");
+  background-image: url("../img/consulting/service5.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,23 +195,23 @@ body {
   display: flex;
   align-items: center;
   z-index: 1;
-}
+} */
 
 /* REMOVE THIS OVERLAY */
-.about-hero::before {
-  /* content: ''; */
-  /* position: absolute;
+/* .about-hero::before {
+  content: '';
+  position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-color: rgba(255, 255, 255, 0.85);
-  z-index: 2; */
-}
+  z-index: 2;
+} */
 
 /* Keep this so text stays visible */
-.about-hero .content {
+/* .about-hero .content {
   position: relative;
   z-index: 3;
-}
+} */
 
 .breadcrumb-box {
   background-color: #1c2d59;

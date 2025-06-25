@@ -145,6 +145,12 @@ body {
 .navbar-toggler-icon-custom::after {
   top: 8px;
 }
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
 
 /* Mobile Menu Style */
 @media (max-width: 991.98px) {
@@ -168,75 +174,31 @@ body {
 
 /* Hero Section  */
 
-.carousel-wrapper {
-  position: relative;
-}
-
-.hero-slide {
+.hero-video-section {
   height: 100vh;
-  background-size: cover;
-  background-position: center bottom;
-  display: flex;
-  align-items: center;
-  color: white;
+  min-height: 400px;
+  overflow: hidden;
 }
 
-.text-container {
-  z-index: 2;
-  max-width: 700px;
+.hero-video-section video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.subheading {
-  font-size: 16px;
-  font-weight: bold;
-  color: #cce3dc;
-  margin-bottom: 10px;
+.text-overlay {
+  padding: 0 15px;
+  width: 100%;
 }
 
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 20px;
+.text-overlay h1 {
+  font-size: 2rem;
 }
 
-.description {
-  font-size: 18px;
-  color: #f1f1f1;
-  margin-bottom: 25px;
-}
-
-.btn-discover {
-  background-color: #1c2d59;
-  color: white;
-  border-radius: 25px;
-  padding: 10px 25px;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-.btn-discover:hover {
-  background-color: #f27b21;
-}
-.static-arrow-button {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 80px;
-  background-color: #1c2d59;
-  border-radius: 50%;
-  border: 6px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.static-arrow-button span {
-  font-size: 32px;
-  color: white;
+@media (min-width: 768px) {
+  .text-overlay h1 {
+    font-size: 2.5rem;
+  }
 }
 
 /* Next section content */
@@ -632,8 +594,52 @@ body {
   font-size: 1rem;
 }
 
-/* services  */
-.services-section {
+/* what can we expect  */
+/* Base style for service items */
+.service-item {
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 100%;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Reset text color */
+.service-item h5,
+.service-item p,
+.service-item .number {
+  color: inherit;
+}
+
+/* Hover styles: alternate colors */
+.col-sm-6:nth-child(odd) .service-item:hover {
+  background-color: #1c2d59;
+  color: #fff;
+}
+
+.col-sm-6:nth-child(even) .service-item:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
+
+/* Ensure inner text also changes on hover */
+.col-sm-6:nth-child(odd) .service-item:hover h5,
+.col-sm-6:nth-child(odd) .service-item:hover p,
+.col-sm-6:nth-child(odd) .service-item:hover .number,
+.col-sm-6:nth-child(even) .service-item:hover h5,
+.col-sm-6:nth-child(even) .service-item:hover p,
+.col-sm-6:nth-child(even) .service-item:hover .number {
+  color: #fff;
+}
+
+/* Optional lift effect */
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* .services-section {
   font-family: Georgia, serif;
 }
 
@@ -676,7 +682,7 @@ body {
   display: none;
   z-index: 999;
   pointer-events: none;
-}
+} */
 
 /* video section  */
 

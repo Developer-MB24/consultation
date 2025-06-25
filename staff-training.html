@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Financial Management</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/financial-management.css" />
+    <link rel="stylesheet" href="assets/css/staff-training.css" />
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
   </head>
   <body>
@@ -47,54 +47,50 @@
             <a href="index.html" class="nav-link">Home</a>
           </div>
 
-          <!-- PAGES -->
-          <div class="dropdown">
+          <!-- SERVICES -->
+          <div class="dropdown position-relative">
             <a
-              href="#"
+              href="services.html"
               class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Services</a
+              id="servicesDropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
-            <ul class="dropdown-menu pages-dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
               <li>
-                <a class="dropdown-item" href="services.html">OUR SERVICE</a>
+                <a class="dropdown-item" href="healthcare-business.html"
+                  >Healthcare Business Startup Consulting</a
+                >
               </li>
-
-              <!-- SERVICE Submenu -->
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">SERVICES</a>
-                <ul class="dropdown-menu submenu">
-                  <li>
-                    <a class="dropdown-item" href="human-resources.html"
-                      >HUMAN RESOURCES</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="expert-consultation.html"
-                      >EXPERT CONSULTATION</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="financial-management.html"
-                      >FINANCIAL MANAGEMENT</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">PROJECT MANAGEMENT</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="marketing-research.html"
-                      >MARKETING RESEARCH</a
-                    >
-                  </li>
-                </ul>
+              <li>
+                <a class="dropdown-item" href="licensing&regulatory.html"
+                  >Licensing & Regulatory Compliance</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="staff-training.html"
+                  >Staff Training & Compliance Programs</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="policy&procedure.html"
+                  >Policy & Procedure Development</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="business-growth.html"
+                  >Business Growth & Automation Solutions</a
+                >
               </li>
             </ul>
           </div>
 
           <!-- PORTFOLIO -->
-          <div class="dropdown">
-            <a href="about-us.html" class="nav-link">About Us</a>
+          <div class="active">
+            <a href="about-us.html" class="nav-link active">About Us</a>
           </div>
 
           <!-- BLOG -->
@@ -113,18 +109,18 @@
         <!-- Right Icons -->
         <div class="d-flex align-items-center gap-3">
           <!-- Search -->
-          <button class="icon-btn">
+          <!-- <button class="icon-btn">
             <i class="fas fa-search fa-lg text-dark-green"></i>
-          </button>
+          </button> -->
 
           <!-- Cart -->
-          <div class="position-relative icon-circle bg-light">
+          <!-- <div class="position-relative icon-circle bg-light">
             <i class="fas fa-shopping-bag fa-lg"></i>
             <span
               class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark-green"
               >0</span
             >
-          </div>
+          </div> -->
 
           <!-- Let's Talk -->
           <a
@@ -156,24 +152,28 @@
             <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
               <li><a class="nav-link" href="services.html">Our Service</a></li>
               <li>
-                <a class="nav-link" href="human-resources.html"
-                  >Human Resources</a
+                <a class="nav-link" href="healthcare-business.html"
+                  >Healthcare Business Startup Consulting</a
                 >
               </li>
               <li>
-                <a class="nav-link" href="expert-consultation.html"
-                  >Expert Consultation</a
+                <a class="nav-link" href="licensing&regulatory.html"
+                  >Licensing & Regulatory Compliance</a
                 >
               </li>
               <li>
-                <a class="nav-link" href="financial-management.html"
-                  >Financial Management</a
+                <a class="nav-link" href="staff-training.html"
+                  >Staff Training & Compliance Programs</a
                 >
               </li>
-              <li><a class="nav-link" href="#">Project Management</a></li>
               <li>
-                <a class="nav-link" href="marketing-research.html"
-                  >Marketing Research</a
+                <a class="nav-link" href="policy&procedure.html"
+                  >Policy & Procedure Development</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="business-growth.html"
+                  >Business Growth & Automation Solutions</a
                 >
               </li>
             </ul>
@@ -187,18 +187,11 @@
     </div>
     <!-- Hero Section -->
     <section class="about-hero">
-      <div class="container content">
-        <div class="row">
-          <!-- <div class="col-md-6">
-            <h1 class="display-5 fw-bold">Financial Management</h1>
-            <div class="breadcrumb-box mt-3">
-              <a href="index.html">Home</a>
-              <span class="mx-1">&gt;</span>
-              <span>Financial Management</span>
-            </div>
-          </div> -->
-        </div>
-      </div>
+      <img
+        src="assets/img/consulting/service3.jpeg"
+        alt="Banner"
+        class="img-fluid w-100"
+      />
     </section>
 
     <div class="container py-4">
@@ -207,38 +200,38 @@
         <div class="col-lg-3 mb-4">
           <div class="list-group mb-4">
             <a
-              href="human-resources.html"
+              href="healthcare-business.html"
               class="list-group-item list-group-item-action"
             >
-              Human Resources
+              Healthcare Business Startup Consulting
             </a>
             <a
-              href="expert-consultation.html"
+              href="licensing&regulatory.html"
               class="list-group-item list-group-item-action"
             >
-              Expert Consultation
+              Licensing & Regulatory Compliance
             </a>
             <a
-              href="financial-management.html"
+              href="staff-training.html"
               class="list-group-item list-group-item-action active"
             >
-              Financial Management
+              Staff Training & Compliance Programs
             </a>
             <a
-              href="project-management.html"
+              href="policy&procedure.html"
               class="list-group-item list-group-item-action"
             >
-              Project Management
+              Policy & Procedure Development
             </a>
             <a
-              href="marketing-research.html"
+              href="business-growth.html"
               class="list-group-item list-group-item-action"
             >
-              Marketing Research
+              Business Growth & Automation Solutions
             </a>
           </div>
 
-          <div class="card text-center mt-4">
+          <div class="card text-center">
             <img
               src="assets/img/home/process1.webp"
               class="card-img-top"
@@ -248,13 +241,14 @@
               <h6 class="card-title fw-bold">
                 Ready to Strengthen Your Team & Compliance Score?
               </h6>
-              <p class="mb-3 text-muted fw-semibold">
+              <p class="mb-2 text-muted fw-semibold">
                 We make staff training easy, effective, and inspection-ready—so
-                you can focus on care, not citations.
+                you can focus on care, not citations.<br />
+                Schedule a Staff Training Consultation Today
               </p>
               <a
                 href="contactus.html"
-                class="btn btn-dark-green"
+                class="btn btn-dark-green mt-2"
                 style="color: white"
                 >Let’s Talk</a
               >
@@ -339,24 +333,51 @@
             <div class="col-md-6">
               <h5 class="fw-semibold mb-2">Why Staff Training Matters?</h5>
               <ul class="list-unstyled">
-                <li>● Required for initial licensing and renewal compliance</li>
-                <li>● Reduces risk of citations, fines, and lawsuits</li>
-                <li>● Builds team confidence and performance</li>
-                <li>● Promotes patient safety and quality of care</li>
                 <li>
-                  ● Ensures consistent adherence to state and federal
-                  regulations
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Required for initial licensing and renewal compliance
+                </li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Reduces risk of citations, fines, and lawsuits
+                </li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Builds team confidence and performance
+                </li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Promotes patient safety and quality of care
+                </li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Ensures consistent adherence to state and federal regulations
                 </li>
               </ul>
             </div>
             <div class="col-md-6">
               <h5 class="fw-semibold mb-2">What We Offer</h5>
               <ul class="list-unstyled">
-                <li>● Initial Staff Compliance Training</li>
-                <li>● Annual & Ongoing Training Programs</li>
-                <li>● Survey-Ready Documentation & Tracking</li>
-                <li>● Custom In-Service Sessions (On-Site or Virtual)</li>
-                <li>● Corrective Action & Deficiency-Driven Training</li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Initial Staff Compliance Training
+                </li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Annual & Ongoing Training Programs
+                </li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Survey-Ready Documentation & Tracking
+                </li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Custom In-Service Sessions (On-Site or Virtual)
+                </li>
+                <li>
+                  <i class="fas fa-check-circle me-2" style="color: #1c2d59"></i
+                  >Corrective Action & Deficiency-Driven Training
+                </li>
               </ul>
             </div>
           </div>
@@ -371,28 +392,93 @@
             <div class="col-md-6 mb-3">
               <div class="icon-box p-3 h-100 border rounded">
                 <div class="mb-2"><strong>📊 Who We Work With</strong></div>
-                <p class="mb-0 text-muted">
-                  ● Behavioral Health Residential Facilities (BHRFs)<br />
-                  ● Assisted Living & Memory Care Homes<br />
-                  ● DDD Group Homes<br />
-                  ● Home Health Care & Non-Medical Agencies<br />
-                  ● Intensive Outpatient Programs (IOPs)<br />
-                  ● Clinics, Day Programs & Medical Practices
-                </p>
+                <ul class="list-unstyled mb-0 text-muted text-start">
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Behavioral Health Residential Facilities (BHRFs)
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Assisted Living & Memory Care Homes
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >DDD Group Homes
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Home Health Care & Non-Medical Agencies
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Intensive Outpatient Programs (IOPs)
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Clinics, Day Programs & Medical Practices
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <div class="icon-box p-3 h-100 border rounded">
                 <div class="mb-2"><strong>📈 Why Choose Us?</strong></div>
-                <p class="mb-0 text-muted">
-                  ● 20+ years of healthcare compliance & operations expertise<br />
-                  ● State-specific training aligned with licensing
-                  expectations<br />
-                  ● Available on-site, virtually, or on-demand<br />
-                  ● Includes all training records & certificates for licensing
-                  audits<br />
-                  ● Customizable for your facility type and service model
-                </p>
+                <ul class="list-unstyled mb-0 text-muted text-start">
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >20+ years of healthcare compliance & operations expertise
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >State-specific training aligned with licensing expectations
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Available on-site, virtually, or on-demand
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Includes all training records & certificates for licensing
+                    audits
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Customizable for your facility type and service model
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -522,6 +608,14 @@
                       >– Contact Us</a
                     >
                   </li>
+                  <li>
+                    <a
+                      href="policy&procedure.html"
+                      style="color: white; text-decoration: none"
+                    >
+                      – Policy & Procedure Development
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div class="col-6">
@@ -529,39 +623,34 @@
                 <ul class="list-unstyled small">
                   <li>
                     <a
-                      href="human-resources.html"
+                      href="healthcare-business.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Human Resources
+                      – Healthcare Business Startup Consulting
                     </a>
                   </li>
                   <li>
                     <a
-                      href="expert-consultation.html"
+                      href="licensing&regulatory.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Expert Consultation
+                      – Licensing & Regulatory Compliance
                     </a>
                   </li>
                   <li>
                     <a
-                      href="financial-management.html"
+                      href="staff-training.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Financial Management
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style="color: white; text-decoration: none">
-                      – Project Management
+                      – Staff Training & Compliance Programs
                     </a>
                   </li>
                   <li>
                     <a
-                      href="marketing-research.html"
+                      href="business-growth.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Marketing Research
+                      – Business Growth & Automation Solutions
                     </a>
                   </li>
                 </ul>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Human Resources</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/human-resources.css" />
+    <link rel="stylesheet" href="assets/css/healthcare-business.css" />
 
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
   </head>
@@ -48,54 +48,50 @@
             <a href="index.html" class="nav-link">Home</a>
           </div>
 
-          <!-- PAGES -->
-          <div class="dropdown">
+          <!-- SERVICES -->
+          <div class="dropdown position-relative">
             <a
-              href="#"
+              href="services.html"
               class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Services</a
+              id="servicesDropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
             >
-            <ul class="dropdown-menu pages-dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
               <li>
-                <a class="dropdown-item" href="services.html">OUR SERVICE</a>
+                <a class="dropdown-item" href="healthcare-business.html"
+                  >Healthcare Business Startup Consulting</a
+                >
               </li>
-
-              <!-- SERVICE Submenu -->
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">SERVICES</a>
-                <ul class="dropdown-menu submenu">
-                  <li>
-                    <a class="dropdown-item" href="human-resources.html"
-                      >HUMAN RESOURCES</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="expert-consultation.html"
-                      >EXPERT CONSULTATION</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="financial-management.html"
-                      >FINANCIAL MANAGEMENT</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">PROJECT MANAGEMENT</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="marketing-research.html"
-                      >MARKETING RESEARCH</a
-                    >
-                  </li>
-                </ul>
+              <li>
+                <a class="dropdown-item" href="licensing&regulatory.html"
+                  >Licensing & Regulatory Compliance</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="staff-training.html"
+                  >Staff Training & Compliance Programs</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="policy&procedure.html"
+                  >Policy & Procedure Development</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="business-growth.html"
+                  >Business Growth & Automation Solutions</a
+                >
               </li>
             </ul>
           </div>
 
           <!-- PORTFOLIO -->
-          <div class="dropdown">
-            <a href="about-us.html" class="nav-link">About Us</a>
+          <div class="active">
+            <a href="about-us.html" class="nav-link active">About Us</a>
           </div>
 
           <!-- BLOG -->
@@ -114,18 +110,18 @@
         <!-- Right Icons -->
         <div class="d-flex align-items-center gap-3">
           <!-- Search -->
-          <button class="icon-btn">
+          <!-- <button class="icon-btn">
             <i class="fas fa-search fa-lg text-dark-green"></i>
-          </button>
+          </button> -->
 
           <!-- Cart -->
-          <div class="position-relative icon-circle bg-light">
+          <!-- <div class="position-relative icon-circle bg-light">
             <i class="fas fa-shopping-bag fa-lg"></i>
             <span
               class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark-green"
               >0</span
             >
-          </div>
+          </div> -->
 
           <!-- Let's Talk -->
           <a
@@ -157,24 +153,28 @@
             <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
               <li><a class="nav-link" href="services.html">Our Service</a></li>
               <li>
-                <a class="nav-link" href="human-resources.html"
-                  >Human Resources</a
+                <a class="nav-link" href="healthcare-business.html"
+                  >Healthcare Business Startup Consulting</a
                 >
               </li>
               <li>
-                <a class="nav-link" href="expert-consultation.html"
-                  >Expert Consultation</a
+                <a class="nav-link" href="licensing&regulatory.html"
+                  >Licensing & Regulatory Compliance</a
                 >
               </li>
               <li>
-                <a class="nav-link" href="financial-management.html"
-                  >Financial Management</a
+                <a class="nav-link" href="staff-training.html"
+                  >Staff Training & Compliance Programs</a
                 >
               </li>
-              <li><a class="nav-link" href="#">Project Management</a></li>
               <li>
-                <a class="nav-link" href="marketing-research.html"
-                  >Marketing Research</a
+                <a class="nav-link" href="policy&procedure.html"
+                  >Policy & Procedure Development</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="business-growth.html"
+                  >Business Growth & Automation Solutions</a
                 >
               </li>
             </ul>
@@ -186,20 +186,14 @@
         </ul>
       </div>
     </div>
+
     <!-- Hero Section -->
     <section class="about-hero">
-      <div class="container content">
-        <!-- <div class="row">
-          <div class="col-md-6">
-            <h1 class="display-5 fw-bold">Human Resources</h1>
-            <div class="breadcrumb-box mt-3">
-              <a href="index.html">Home</a>
-              <span class="mx-1">&gt;</span>
-              <span>Human Resources</span>
-            </div>
-          </div>
-        </div> -->
-      </div>
+      <img
+        src="assets/img/consulting/service1.jpeg"
+        alt="Banner"
+        class="img-fluid w-100"
+      />
     </section>
 
     <div class="container py-4">
@@ -208,34 +202,34 @@
         <div class="col-lg-3 mb-4">
           <div class="list-group mb-4">
             <a
-              href="human-resources.html"
+              href="healthcare-business.html"
               class="list-group-item list-group-item-action active"
             >
-              Human Resources
+              Healthcare Business Startup Consulting
             </a>
             <a
-              href="expert-consultation.html"
+              href="licensing&regulatory.html"
               class="list-group-item list-group-item-action"
             >
-              Expert Consultation
+              Licensing & Regulatory Compliance
             </a>
             <a
-              href="financial-management.html"
+              href="staff-training.html"
               class="list-group-item list-group-item-action"
             >
-              Financial Management
+              Staff Training & Compliance Programs
             </a>
             <a
-              href="project-management.html"
+              href="policy&procedure.html"
               class="list-group-item list-group-item-action"
             >
-              Project Management
+              Policy & Procedure Development
             </a>
             <a
-              href="marketing-research.html"
+              href="business-growth.html"
               class="list-group-item list-group-item-action"
             >
-              Marketing Research
+              Business Growth & Automation Solutions
             </a>
           </div>
 
@@ -382,13 +376,34 @@
             <div class="col-md-6">
               <h5 class="fw-semibold mb-2">What We Offer?</h5>
               <ul class="list-unstyled">
-                <li>✅ Facility Type Guidance & Business Structuring</li>
-                <li>✅ Licensing Application Support</li>
-                <li>✅ Policy & SOP Development</li>
-                <li>✅ Staffing & Training Consultation</li>
-                <li>✅ Facility Setup & Operations Readiness</li>
-                <li>✅ Digital Infrastructure for Healthcare Startups</li>
-                <li>✅ Post-Launch Support & Growth Planning</li>
+                <li>
+                  <i class="fas fa-check-circle" style="color: #1c2d59"></i>
+                  Facility Type Guidance & Business Structuring
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" style="color: #1c2d59"></i>
+                  Licensing Application Support
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" style="color: #1c2d59"></i>
+                  Policy & SOP Development
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" style="color: #1c2d59"></i>
+                  Staffing & Training Consultation
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" style="color: #1c2d59"></i>
+                  Facility Setup & Operations Readiness
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" style="color: #1c2d59"></i>
+                  Digital Infrastructure for Healthcare Startups
+                </li>
+                <li>
+                  <i class="fas fa-check-circle" style="color: #1c2d59"></i>
+                  Post-Launch Support & Growth Planning
+                </li>
               </ul>
             </div>
           </div>
@@ -402,28 +417,92 @@
           <div class="row text-center">
             <div class="col-md-6 mb-3">
               <div class="icon-box p-3 h-100 border rounded">
-                <div class="mb-2"><strong>📊 Financial Consulting</strong></div>
+                <div class="mb-2"><strong>📊 Who We Work With</strong></div>
                 <ul class="list-unstyled mb-0 text-muted text-start">
-                  <li>✅ Behavioral Health Entrepreneurs</li>
-                  <li>✅ Nurses & Clinicians Opening Private Practices</li>
-                  <li>✅ Assisted Living & Memory Care Startups</li>
-                  <li>✅ Home Health Care & Non-Medical Caregivers</li>
-                  <li>✅ IOP Program Founders</li>
-                  <li>✅ Social Workers Starting Group Homes (DDD)</li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Behavioral Health Entrepreneurs
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Nurses & Clinicians Opening Private Practices
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Assisted Living & Memory Care Startups
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Home Health Care & Non-Medical Caregivers
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >IOP Program Founders
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Social Workers Starting Group Homes (DDD)
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="col-md-6 mb-3">
               <div class="icon-box p-3 h-100 border rounded">
-                <div class="mb-2"><strong>📈 Business Strategy</strong></div>
+                <div class="mb-2"><strong>📈 Why Choose Us</strong></div>
                 <ul class="list-unstyled mb-0 text-muted text-start">
-                  <li>✅ 20+ years of healthcare regulatory experience</li>
-                  <li>✅ 5K successful facility launches across the U.S.</li>
                   <li>
-                    ✅ Fully customized consulting—not cookie-cutter templates
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >20+ years of healthcare regulatory experience
                   </li>
-                  <li>✅ One-on-one guidance with hands-on support</li>
-                  <li>✅ Ongoing compliance and marketing assistance</li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >5K successful facility launches across the U.S.
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Fully customized consulting—not cookie-cutter templates
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >One-on-one guidance with hands-on support
+                  </li>
+                  <li>
+                    <i
+                      class="fas fa-check-circle me-2"
+                      style="color: #1c2d59"
+                    ></i
+                    >Ongoing compliance and marketing assistance
+                  </li>
                 </ul>
               </div>
             </div>
@@ -454,7 +533,7 @@
               ><span style="--char-index: 12">n</span
               ><span style="--char-index: 13">c</span
               ><span style="--char-index: 14">e</span>
-
+              <span style="--char-index: 15"> </span>
               <span style="--char-index: 16">F</span
               ><span style="--char-index: 17">o</span
               ><span style="--char-index: 18">r</span>
@@ -554,6 +633,14 @@
                       >– Contact Us</a
                     >
                   </li>
+                  <li>
+                    <a
+                      href="policy&procedure.html"
+                      style="color: white; text-decoration: none"
+                    >
+                      – Policy & Procedure Development
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div class="col-6">
@@ -561,39 +648,34 @@
                 <ul class="list-unstyled small">
                   <li>
                     <a
-                      href="human-resources.html"
+                      href="healthcare-business.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Human Resources
+                      – Healthcare Business Startup Consulting
                     </a>
                   </li>
                   <li>
                     <a
-                      href="expert-consultation.html"
+                      href="licensing&regulatory.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Expert Consultation
+                      – Licensing & Regulatory Compliance
                     </a>
                   </li>
                   <li>
                     <a
-                      href="financial-management.html"
+                      href="staff-training.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Financial Management
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" style="color: white; text-decoration: none">
-                      – Project Management
+                      – Staff Training & Compliance Programs
                     </a>
                   </li>
                   <li>
                     <a
-                      href="marketing-research.html"
+                      href="business-growth.html"
                       style="color: white; text-decoration: none"
                     >
-                      – Marketing Research
+                      – Business Growth & Automation Solutions
                     </a>
                   </li>
                 </ul>
