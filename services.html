@@ -11,124 +11,42 @@
   <body>
     <!-- nav  -->
     <header class="main-header py-3 shadow-sm">
-      <div
-        class="container-fluid px-4 d-flex align-items-center justify-content-between"
-      >
-        <!-- Logo -->
-        <a
-          href="index.html"
-          class="d-flex align-items-center text-decoration-none"
+      <div class="container-fluid px-4">
+        <!-- Top Row: Logo & LET'S TALK Button -->
+        <div
+          class="d-flex justify-content-between align-items-center header-top"
         >
-          <img
-            src="assets/img/logo.png"
-            alt="Logo"
-            style="height: 40px"
-            class="me-2"
-          />
-        </a>
-
-        <!-- Hamburger for mobile view -->
-        <button
-          class="d-lg-none border-0 bg-transparent"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mobileMenu"
-          aria-controls="mobileMenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon-custom"></span>
-        </button>
-
-        <!-- Navigation (desktop only) -->
-        <nav class="d-none d-lg-flex align-items-center gap-4">
-          <!-- HOME -->
-          <div class="dropdown">
-            <a href="index.html" class="nav-link">Home</a>
-          </div>
-
-          <!-- SERVICES -->
-          <div class="dropdown position-relative">
-            <a
-              href="services.html"
-              class="nav-link dropdown-toggle active"
-              id="servicesDropdown"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <li>
-                <a class="dropdown-item" href="healthcare-business.html"
-                  >Healthcare Business Startup Consulting</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="licensing&regulatory.html"
-                  >Licensing & Regulatory Compliance</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="staff-training.html"
-                  >Staff Training & Compliance Programs</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="policy&procedure.html"
-                  >Policy & Procedure Development</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="business-growth.html"
-                  >Business Growth & Automation Solutions</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- PORTFOLIO -->
-          <div class="active">
-            <a href="about-us.html" class="nav-link">About Us</a>
-          </div>
-
-          <!-- BLOG -->
-          <div class="dropdown">
-            <a href="#" class="nav-link">Blog</a>
-            <!-- <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Blog List</a></li>
-              <li><a class="dropdown-item" href="#">Blog Details</a></li>
-            </ul> -->
-          </div>
-
-          <!-- CONTACT -->
-          <a href="contactus.html" class="nav-link">Contact Us</a>
-        </nav>
-
-        <!-- Right Icons -->
-        <div class="d-flex align-items-center gap-3">
-          <!-- Search -->
-          <!-- <button class="icon-btn">
-            <i class="fas fa-search fa-lg text-dark-green"></i>
-          </button> -->
-
-          <!-- Cart -->
-          <!-- <div class="position-relative icon-circle bg-light">
-            <i class="fas fa-shopping-bag fa-lg"></i>
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark-green"
-              >0</span
-            >
-          </div> -->
-
-          <!-- Let's Talk -->
+          <a
+            href="index.html"
+            class="d-flex align-items-center text-decoration-none"
+          >
+            <img src="assets/img/logo.png" alt="Logo" style="height: 40px" />
+          </a>
           <a
             href="contact.html"
             class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold"
-            >LET'S TALK</a
           >
+            LET'S TALK
+          </a>
         </div>
+
+        <!-- Bottom Row: Navigation -->
+        <nav class="d-flex justify-content-center flex-wrap gap-4 mt-3">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="services.html" class="nav-link active">Our Services</a>
+
+          <!-- Shortened service links -->
+          <a href="healthcare-business.html" class="nav-link">Startup</a>
+          <a href="licensing&regulatory.html" class="nav-link">Compliance</a>
+          <a href="staff-training.html" class="nav-link">Training</a>
+          <a href="policy&procedure.html" class="nav-link">Policies</a>
+          <a href="business-growth.html" class="nav-link">Growth</a>
+
+          <!-- Other main pages -->
+          <a href="about-us.html" class="nav-link">About Us</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="contactus.html" class="nav-link">Contact</a>
+        </nav>
       </div>
     </header>
 
@@ -137,51 +55,23 @@
       <div class="mobile-menu p-3">
         <ul class="list-unstyled mb-0">
           <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="services.html">Our Services</a></li>
 
-          <!-- Services Dropdown -->
+          <!-- Shortened individual service links -->
           <li>
-            <button
-              class="nav-link w-100 text-start dropdown-toggle"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#servicesSubmenu"
-              aria-expanded="false"
-            >
-              Services
-            </button>
-            <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
-              <li><a class="nav-link" href="services.html">Our Service</a></li>
-              <li>
-                <a class="nav-link" href="healthcare-business.html"
-                  >Healthcare Business Startup Consulting</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="licensing&regulatory.html"
-                  >Licensing & Regulatory Compliance</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="staff-training.html"
-                  >Staff Training & Compliance Programs</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="policy&procedure.html"
-                  >Policy & Procedure Development</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="business-growth.html"
-                  >Business Growth & Automation Solutions</a
-                >
-              </li>
-            </ul>
+            <a class="nav-link" href="healthcare-business.html">Startup</a>
           </li>
+          <li>
+            <a class="nav-link" href="licensing&regulatory.html">Compliance</a>
+          </li>
+          <li><a class="nav-link" href="staff-training.html">Training</a></li>
+          <li><a class="nav-link" href="policy&procedure.html">Policies</a></li>
+          <li><a class="nav-link" href="business-growth.html">Growth</a></li>
 
+          <!-- Other links -->
           <li><a class="nav-link" href="about-us.html">About Us</a></li>
           <li><a class="nav-link" href="#">Blog</a></li>
-          <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li><a class="nav-link" href="contactus.html">Contact</a></li>
         </ul>
       </div>
     </div>

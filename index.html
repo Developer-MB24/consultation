@@ -11,124 +11,42 @@
   <body>
     <!-- nav  -->
     <header class="main-header py-3 shadow-sm">
-      <div
-        class="container-fluid px-4 d-flex align-items-center justify-content-between"
-      >
-        <!-- Logo -->
-        <a
-          href="index.html"
-          class="d-flex align-items-center text-decoration-none"
+      <div class="container-fluid px-4">
+        <!-- Top Row: Logo & LET'S TALK Button -->
+        <div
+          class="d-flex justify-content-between align-items-center header-top"
         >
-          <img
-            src="assets/img/logo.png"
-            alt="Logo"
-            style="height: 40px"
-            class="me-2"
-          />
-        </a>
-
-        <!-- Hamburger for mobile view -->
-        <button
-          class="d-lg-none border-0 bg-transparent"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mobileMenu"
-          aria-controls="mobileMenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon-custom"></span>
-        </button>
-
-        <!-- Navigation (desktop only) -->
-        <nav class="d-none d-lg-flex align-items-center gap-4">
-          <!-- HOME -->
-          <div class="dropdown active">
-            <a href="index.html" class="nav-link active">Home</a>
-          </div>
-
-          <!-- SERVICES -->
-          <div class="dropdown position-relative">
-            <a
-              href="services.html"
-              class="nav-link dropdown-toggle"
-              id="servicesDropdown"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Services
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <li>
-                <a class="dropdown-item" href="healthcare-business.html"
-                  >Healthcare Business Startup Consulting</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="licensing&regulatory.html"
-                  >Licensing & Regulatory Compliance</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="staff-training.html"
-                  >Staff Training & Compliance Programs</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="policy&procedure.html"
-                  >Policy & Procedure Development</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="business-growth.html"
-                  >Business Growth & Automation Solutions</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- PORTFOLIO -->
-          <div class="active">
-            <a href="about-us.html" class="nav-link">About Us</a>
-          </div>
-
-          <!-- BLOG -->
-          <div class="dropdown">
-            <a href="#" class="nav-link">Blog</a>
-            <!-- <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Blog List</a></li>
-              <li><a class="dropdown-item" href="#">Blog Details</a></li>
-            </ul> -->
-          </div>
-
-          <!-- CONTACT -->
-          <a href="contactus.html" class="nav-link">Contact Us</a>
-        </nav>
-
-        <!-- Right Icons -->
-        <div class="d-flex align-items-center gap-3">
-          <!-- Search -->
-          <!-- <button class="icon-btn">
-            <i class="fas fa-search fa-lg text-dark-green"></i>
-          </button> -->
-
-          <!-- Cart -->
-          <!-- <div class="position-relative icon-circle bg-light">
-            <i class="fas fa-shopping-bag fa-lg"></i>
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark-green"
-              >0</span
-            >
-          </div> -->
-
-          <!-- Let's Talk -->
+          <a
+            href="index.html"
+            class="d-flex align-items-center text-decoration-none"
+          >
+            <img src="assets/img/logo.png" alt="Logo" style="height: 40px" />
+          </a>
           <a
             href="contact.html"
             class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold"
-            >LET'S TALK</a
           >
+            LET'S TALK
+          </a>
         </div>
+
+        <!-- Bottom Row: Navigation -->
+        <nav class="d-flex justify-content-center flex-wrap gap-4 mt-3">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="services.html" class="nav-link">Our Services</a>
+
+          <!-- Shortened service links -->
+          <a href="healthcare-business.html" class="nav-link">Startup</a>
+          <a href="licensing&regulatory.html" class="nav-link">Compliance</a>
+          <a href="staff-training.html" class="nav-link">Training</a>
+          <a href="policy&procedure.html" class="nav-link">Policies</a>
+          <a href="business-growth.html" class="nav-link">Growth</a>
+
+          <!-- Other main pages -->
+          <a href="about-us.html" class="nav-link">About Us</a>
+          <a href="#" class="nav-link">Blog</a>
+          <a href="contactus.html" class="nav-link">Contact</a>
+        </nav>
       </div>
     </header>
 
@@ -137,57 +55,29 @@
       <div class="mobile-menu p-3">
         <ul class="list-unstyled mb-0">
           <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="services.html">Our Services</a></li>
 
-          <!-- Services Dropdown -->
+          <!-- Shortened individual service links -->
           <li>
-            <button
-              class="nav-link w-100 text-start dropdown-toggle"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#servicesSubmenu"
-              aria-expanded="false"
-            >
-              Services
-            </button>
-            <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
-              <li><a class="nav-link" href="services.html">Our Service</a></li>
-              <li>
-                <a class="nav-link" href="healthcare-business.html"
-                  >Healthcare Business Startup Consulting</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="licensing&regulatory.html"
-                  >Licensing & Regulatory Compliance</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="staff-training.html"
-                  >Staff Training & Compliance Programs</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="policy&procedure.html"
-                  >Policy & Procedure Development</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="business-growth.html"
-                  >Business Growth & Automation Solutions</a
-                >
-              </li>
-            </ul>
+            <a class="nav-link" href="healthcare-business.html">Startup</a>
           </li>
+          <li>
+            <a class="nav-link" href="licensing&regulatory.html">Compliance</a>
+          </li>
+          <li><a class="nav-link" href="staff-training.html">Training</a></li>
+          <li><a class="nav-link" href="policy&procedure.html">Policies</a></li>
+          <li><a class="nav-link" href="business-growth.html">Growth</a></li>
 
+          <!-- Other links -->
           <li><a class="nav-link" href="about-us.html">About Us</a></li>
           <li><a class="nav-link" href="#">Blog</a></li>
-          <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
+          <li><a class="nav-link" href="contactus.html">Contact</a></li>
         </ul>
       </div>
     </div>
     <!-- hero  -->
     <section class="position-relative text-center hero-video-section">
-      <!-- Video -->
+      <!-- Background Video -->
       <video
         class="w-100 h-100 object-fit-cover"
         autoplay
@@ -199,11 +89,12 @@
         Your browser does not support the video tag.
       </video>
 
-      <!-- Overlay content -->
+      <!-- Overlay Text and Button -->
       <div
-        class="position-absolute top-50 start-50 translate-middle text-white text-overlay"
+        class="position-absolute text-overlay text-white"
+        style="top: 40%; left: 50%; transform: translateX(-50%)"
       >
-        <h1 class="fw-bold mb-4">
+        <h1 class="fw-bold mb-4" style="color: #fff">
           Expert Healthcare Consulting to Stay Compliant and Grow
         </h1>
         <a
@@ -214,11 +105,6 @@
           Let’s Build Something Great
         </a>
       </div>
-
-      <!-- Overlay shading -->
-      <div
-        class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-50"
-      ></div>
     </section>
 
     <!-- Carousel Container -->
@@ -1221,25 +1107,23 @@
       </section> -->
 
       <!-- Modal Popup -->
-      <section class="video-section text-center py-5">
-        <div class="container">
-          <video
-            width="100%"
-            height="auto"
-            controls
-            autoplay
-            muted
-            playsinline
-            loop
-            poster="assets/img/consulting/video-thumbnail.jpg"
-          >
-            <source
-              src="assets/img/consulting/greetingvideo.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
-        </div>
+      <section class="video-section-full">
+        <video
+          class="w-100"
+          height="auto"
+          controls
+          autoplay
+          muted
+          playsinline
+          loop
+          poster="assets/img/consulting/video-thumbnail.jpg"
+        >
+          <source
+            src="assets/img/consulting/greetingvideo.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
       </section>
 
       <!-- <div class="video-modal" id="videoModal">
@@ -1502,14 +1386,14 @@
 
     <!-- contact us  -->
     <section class="contact-section py-5">
-      <div class="container">
+      <div class="container-fluid px-0">
         <!-- Heading -->
-        <div class="mb-4">
+        <div class="mb-4 px-4">
           <p class="fw-semibold">CONTACT US</p>
           <h2 class="fw-bold animated-title">
             <span style="--char-index: 0">W</span
-            ><span style="--char-index: 1">e</span>
-            <span style="--char-index: 2">’</span
+            ><span style="--char-index: 1">e</span
+            ><span style="--char-index: 2">’</span
             ><span style="--char-index: 3">r</span
             ><span style="--char-index: 4">e</span>
             <span style="--char-index: 5"> </span>
@@ -1537,8 +1421,8 @@
             ><span style="--char-index: 27">g</span
             ><span style="--char-index: 28">a</span
             ><span style="--char-index: 29">t</span
-            ><span style="--char-index: 30">e</span>
-            <span style="--char-index: 31">,</span>
+            ><span style="--char-index: 30">e</span
+            ><span style="--char-index: 31">,</span>
             <br />
             <span style="--char-index: 32">L</span
             ><span style="--char-index: 33">a</span
@@ -1559,10 +1443,10 @@
           </h2>
         </div>
 
-        <div class="row g-5 align-items-center">
-          <!-- Left Form -->
-          <div class="col-md-6">
-            <form>
+        <div class="row g-0 align-items-stretch">
+          <!-- Left: Contact Form -->
+          <div class="col-md-6 form-container d-flex align-items-center px-4">
+            <form class="w-100">
               <div class="row g-3">
                 <div class="col-md-6">
                   <input
@@ -1575,7 +1459,7 @@
                   <input
                     type="email"
                     class="form-control custom-input"
-                    placeholder="Email Address"
+                    placeholder="Confirm Email"
                   />
                 </div>
                 <div class="col-md-6">
@@ -1611,20 +1495,13 @@
             </form>
           </div>
 
-          <!-- Right: World Map with Overlay -->
-          <div class="col-md-6 position-relative">
-            <div class="map-wrapper position-relative">
-              <img
-                src="assets/img/consulting/contactform.jpeg"
-                alt="World Map"
-                class="img-fluid"
-              />
-              <!-- Pin locations -->
-              <span class="map-dot" style="top: 40%; left: 52%"></span>
-              <span class="map-dot" style="top: 22%; left: 12%"></span>
-              <span class="map-dot" style="top: 28%; left: 65%"></span>
-              <span class="map-dot" style="top: 42%; left: 75%"></span>
-            </div>
+          <!-- Right: Full-cover Image -->
+          <div class="col-md-6 p-0">
+            <img
+              src="assets/img/consulting/contactform.jpeg"
+              alt="World Map"
+              class="w-100 h-100 object-fit-cover"
+            />
           </div>
         </div>
       </div>
