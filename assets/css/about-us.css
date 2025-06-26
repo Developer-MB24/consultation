@@ -203,7 +203,87 @@ body {
 }
 
 /* our skills  */
+
 .skills-section {
+  background-color: #1c2d59;
+}
+
+.skill-box {
+  height: 120px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Slight zoom on entire box */
+.skill-box:hover {
+  transform: scale(1.02);
+}
+
+.skill-content,
+.hover-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.skill-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom the text inside on hover */
+.skill-box:hover .skill-text {
+  transform: scale(1.05);
+}
+
+/* REMOVE hover image — disable any image display */
+img.hover-image {
+  display: none !important;
+}
+
+/* Circular Icon Style */
+.icon-circle {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: zoom icon a bit too */
+.skill-box:hover .icon-circle {
+  transform: scale(1.1);
+}
+
+/* Remove hover-content image behavior */
+.hover-content {
+  display: none;
+}
+
+.skill-box.hovered .skill-content {
+  display: none;
+}
+
+.skill-box.hovered .hover-content {
+  display: flex;
+}
+
+/* .skills-section {
   background-color: #1c2d59;
 }
 
@@ -239,10 +319,10 @@ img.hover-image {
   object-fit: cover;
   border-radius: 10px;
   margin: 0 20px;
-}
+} */
 
 /* Circular Icon Style */
-.icon-circle {
+/* .icon-circle {
   width: 42px;
   height: 42px;
   border: 2px solid #fff;
@@ -252,10 +332,10 @@ img.hover-image {
   justify-content: center;
   font-size: 16px;
   color: #fff;
-}
+} */
 
 /* Hover effect */
-.hover-content {
+/* .hover-content {
   display: none;
 }
 
@@ -265,7 +345,7 @@ img.hover-image {
 
 .skill-box.hovered .hover-content {
   display: flex;
-}
+} */
 
 /* Our Award */
 .award-section {
@@ -498,33 +578,27 @@ img.hover-image {
 }
 
 /* footer  */
-.footer-section {
+.footer-top-header {
   background-color: #1c2d59;
-  color: #fff;
-  font-family: Georgia, serif;
+  color: white;
 }
 
-.footer-divider {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+.footer-main-content {
+  background-color: #ffffff;
 }
 
-.icon-circle {
-  width: 36px;
-  height: 36px;
-  background: #fff;
+.footer-main-content a {
   color: #1c2d59;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
 }
 
-.icon-circle:hover {
-  background-color: #f27b21;
-  color: #fff;
+.footer-main-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #1c2d59;
+  color: white;
 }
 
 /* ANIMATED TITLE STYLING */

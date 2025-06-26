@@ -1026,33 +1026,27 @@ body {
 }
 
 /* footer  */
-.footer-section {
+.footer-top-header {
   background-color: #1c2d59;
-  color: #fff;
-  font-family: Georgia, serif;
+  color: white;
 }
 
-.footer-divider {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+.footer-main-content {
+  background-color: #ffffff;
 }
 
-.icon-circle {
-  width: 36px;
-  height: 36px;
-  background: #fff;
+.footer-main-content a {
   color: #1c2d59;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
   text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s;
 }
 
-.icon-circle:hover {
-  background-color: #f27b21;
-  color: #fff;
+.footer-main-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #1c2d59;
+  color: white;
 }
 
 /* ANIMATED TITLE STYLING */
