@@ -14,181 +14,105 @@
   </head>
   <body>
     <!-- nav  -->
-    <header class="main-header py-3 shadow-sm">
-      <div
-        class="container-fluid px-4 d-flex align-items-center justify-content-between"
-      >
-        <!-- Logo -->
-        <a
-          href="index.html"
-          class="d-flex align-items-center text-decoration-none"
+    <header class="main-header py-4 shadow-sm">
+      <div class="container-fluid px-4">
+        <!-- Top Row -->
+        <div
+          class="d-flex justify-content-between align-items-center header-top mb-3"
         >
-          <img
-            src="assets/img/logo.png"
-            alt="Logo"
-            style="height: 40px"
-            class="me-2"
-          />
-        </a>
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="d-flex align-items-center text-decoration-none"
+          >
+            <img
+              src="assets/img/consulting/consulting-logo.png"
+              alt="Logo"
+              style="height: 90px; width: 180px"
+            />
+          </a>
 
-        <!-- Hamburger for mobile view -->
-        <button
-          class="d-lg-none border-0 bg-transparent"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mobileMenu"
-          aria-controls="mobileMenu"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon-custom"></span>
-        </button>
-
-        <!-- Navigation (desktop only) -->
-        <nav class="d-none d-lg-flex align-items-center gap-4">
-          <!-- HOME -->
-          <div class="dropdown">
+          <!-- Center Nav - Desktop Only -->
+          <nav class="main-nav d-none d-md-flex gap-4">
             <a href="index.html" class="nav-link">Home</a>
-          </div>
-
-          <!-- PAGES -->
-          <div class="dropdown">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              >Services</a
-            >
-            <ul class="dropdown-menu pages-dropdown">
-              <li>
-                <a class="dropdown-item" href="services.html">OUR SERVICE</a>
-              </li>
-
-              <!-- SERVICE Submenu -->
-              <li class="dropdown-submenu">
-                <a class="dropdown-item dropdown-toggle" href="#">SERVICES</a>
-                <ul class="dropdown-menu submenu">
-                  <li>
-                    <a class="dropdown-item" href="human-resources.html"
-                      >HUMAN RESOURCES</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="expert-consultation.html"
-                      >EXPERT CONSULTATION</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="financial-management.html"
-                      >FINANCIAL MANAGEMENT</a
-                    >
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">PROJECT MANAGEMENT</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="marketing-research.html"
-                      >MARKETING RESEARCH</a
-                    >
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-          <!-- PORTFOLIO -->
-          <div class="dropdown">
             <a href="about-us.html" class="nav-link">About Us</a>
-          </div>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+          </nav>
 
-          <!-- BLOG -->
-          <div class="dropdown">
-            <a href="#" class="nav-link">Blog</a>
-            <!-- <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Blog List</a></li>
-              <li><a class="dropdown-item" href="#">Blog Details</a></li>
-            </ul> -->
-          </div>
+          <!-- Let's Talk Button -->
+          <a
+            href="contactus.html"
+            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold d-none d-md-inline"
+            style="margin-right: 30px"
+          >
+            LET'S TALK
+          </a>
 
-          <!-- CONTACT -->
-          <a href="contactus.html" class="nav-link">Contact Us</a>
+          <!-- Hamburger Button for Mobile -->
+          <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fs-4 text-dark"></i>
+          </button>
+        </div>
+
+        <!-- Bottom Row (Desktop Only): Seven Services -->
+        <nav
+          class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3"
+        >
+          <a href="healthcare-business.html" class="service-link">Startup</a>
+          <a href="licensing&regulatory.html" class="service-link"
+            >Compliance</a
+          >
+          <a href="staff-training.html" class="service-link">Training</a>
+          <a href="policy&procedure.html" class="service-link">Policies</a>
+          <a href="business-growth.html" class="service-link">Growth</a>
+          <a href="technology.html" class="service-link">Technology</a>
+          <a href="automation.html" class="service-link">Branding</a>
         </nav>
 
-        <!-- Right Icons -->
-        <div class="d-flex align-items-center gap-3">
-          <!-- Search -->
-          <button class="icon-btn">
-            <i class="fas fa-search fa-lg text-dark-green"></i>
-          </button>
-
-          <!-- Cart -->
-          <div class="position-relative icon-circle bg-light">
-            <i class="fas fa-shopping-bag fa-lg"></i>
-            <span
-              class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark-green"
-              >0</span
-            >
+        <!-- Mobile Menu Collapse -->
+        <div class="collapse d-lg-none" id="mobileMenu">
+          <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
+            <ul class="list-unstyled mb-0">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about-us.html">About Us</a></li>
+              <li><a class="nav-link" href="services.html">Our Services</a></li>
+              <li><a class="nav-link" href="blog.html">Blog</a></li>
+              <hr />
+              <li>
+                <a class="nav-link" href="healthcare-business.html">Startup</a>
+              </li>
+              <li>
+                <a class="nav-link" href="licensing&regulatory.html"
+                  >Compliance</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="staff-training.html">Training</a>
+              </li>
+              <li>
+                <a class="nav-link" href="policy&procedure.html">Policies</a>
+              </li>
+              <li>
+                <a class="nav-link" href="business-growth.html">Growth</a>
+              </li>
+              <li><a class="nav-link" href="technology.html">Technology</a></li>
+              <li><a class="nav-link" href="automation.html">Branding</a></li>
+              <hr />
+              <li><a class="nav-link" href="contactus.html">Contact</a></li>
+            </ul>
           </div>
-
-          <!-- Let's Talk -->
-          <a
-            href="contact.html"
-            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold"
-            >LET'S TALK</a
-          >
         </div>
       </div>
     </header>
-
-    <!-- Mobile menu -->
-    <div class="collapse d-lg-none" id="mobileMenu">
-      <div class="mobile-menu p-3">
-        <ul class="list-unstyled mb-0">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-
-          <!-- Services Dropdown -->
-          <li>
-            <button
-              class="nav-link w-100 text-start dropdown-toggle"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#servicesSubmenu"
-              aria-expanded="false"
-            >
-              Services
-            </button>
-            <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
-              <li><a class="nav-link" href="services.html">Our Service</a></li>
-              <li>
-                <a class="nav-link" href="human-resources.html"
-                  >Human Resources</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="expert-consultation.html"
-                  >Expert Consultation</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="financial-management.html"
-                  >Financial Management</a
-                >
-              </li>
-              <li><a class="nav-link" href="#">Project Management</a></li>
-              <li>
-                <a class="nav-link" href="marketing-research.html"
-                  >Marketing Research</a
-                >
-              </li>
-            </ul>
-          </li>
-
-          <li><a class="nav-link" href="about-us.html">About Us</a></li>
-          <li><a class="nav-link" href="#">Blog</a></li>
-          <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
     <!-- Hero  -->
     <section class="hero-section">
       <div class="hero-overlay">

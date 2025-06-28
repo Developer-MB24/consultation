@@ -4,10 +4,69 @@ body {
 .main-header {
   background-color: #fff;
 }
+.main-header {
+  background-color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.main-nav .nav-link {
+  color: #1c2d59;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav .nav-link:hover {
+  color: #f27b21;
+}
+
+.service-nav .service-link {
+  color: #1c2d59;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.service-nav .service-link:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
+
+.btn-dark-green {
+  background-color: #1c2d59;
+  border: none;
+}
+
+.btn-dark-green:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
 .header-top {
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
   margin-bottom: 10px;
+}
+.main-logo {
+  width: 140px; /* or 160px, or whatever you prefer */
+  height: auto; /* maintain aspect ratio */
+  object-fit: contain;
+}
+
+.logo-container {
+  max-width: 150px; /* or whatever fits nicely */
+}
+
+.main-nav .nav-link {
+  font-weight: 500;
+  color: #1c2d59;
+  transition: color 0.3s ease;
+}
+
+.main-nav .nav-link:hover {
+  color: #f27b21;
 }
 
 .logo-text {
@@ -192,7 +251,7 @@ body {
 }
 
 .text-overlay {
-  top: 30% !important; /* or 35% for higher */
+  top: 85% !important; /* or 35% for higher */
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -204,6 +263,16 @@ body {
 @media (min-width: 768px) {
   .text-overlay h1 {
     font-size: 2.5rem;
+  }
+}
+.hero-video-section video {
+  max-height: 100vh;
+}
+
+@media (max-width: 576px) {
+  .hero-video-section .text-overlay a {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
 

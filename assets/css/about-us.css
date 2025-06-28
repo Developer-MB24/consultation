@@ -210,6 +210,7 @@ body {
 
 .skills-section {
   background-color: #1c2d59;
+  font-family: Georgia, serif;
 }
 
 .skill-box {
@@ -224,16 +225,14 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Slight zoom on entire box */
 .skill-box:hover {
   transform: scale(1.02);
 }
 
-.skill-content,
-.hover-content {
+.skill-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
 }
 
@@ -245,46 +244,41 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Zoom the text inside on hover */
 .skill-box:hover .skill-text {
   transform: scale(1.05);
 }
 
-/* REMOVE hover image — disable any image display */
-img.hover-image {
+.skill-text span {
+  font-size: 1.1rem;
+  color: #f27b21;
+}
+
+.skill-text h5 {
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+/* Hide unused hover behavior */
+.hover-content,
+img.hover-image,
+.skill-box.hovered .hover-content {
   display: none !important;
 }
 
-/* Circular Icon Style */
-.icon-circle {
-  width: 42px;
-  height: 42px;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  color: #fff;
-  transition: transform 0.3s ease;
+.animated-title span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+  animation-delay: calc(var(--char-index) * 0.03s);
 }
 
-/* Optional: zoom icon a bit too */
-.skill-box:hover .icon-circle {
-  transform: scale(1.1);
-}
-
-/* Remove hover-content image behavior */
-.hover-content {
-  display: none;
-}
-
-.skill-box.hovered .skill-content {
-  display: none;
-}
-
-.skill-box.hovered .hover-content {
-  display: flex;
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* .skills-section {
@@ -359,6 +353,7 @@ img.hover-image {
 .award-img {
   width: 80px;
   height: auto;
+  transition: transform 0.3s ease;
 }
 
 .award-link {
@@ -367,11 +362,37 @@ img.hover-image {
   font-weight: bold;
   border-bottom: 2px solid #1c2d59;
   padding-bottom: 2px;
+  transition: color 0.3s ease, border-color 0.3s ease;
 }
 
 .award-link:hover {
   color: #f27b21;
   border-color: #f27b21;
+}
+
+/* 🔸 Vision Card Hover Effect */
+.award-section .d-flex {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.award-section .d-flex:hover {
+  background-color: #f27b21;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔸 Change text color to white on hover */
+.award-section .d-flex:hover h5,
+.award-section .d-flex:hover p,
+.award-section .d-flex:hover span {
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+
+/* 🔸 Image hover zoom */
+.award-section .d-flex:hover .award-img {
+  transform: scale(1.05);
 }
 
 /* video section  */

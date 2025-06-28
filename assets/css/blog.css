@@ -1,0 +1,179 @@
+body {
+  font-family: Georgia, serif;
+}
+.main-header {
+  background-color: #fff;
+}
+.main-header {
+  background-color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.main-nav .nav-link {
+  color: #1c2d59;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav .nav-link:hover {
+  color: #f27b21;
+}
+
+.service-nav .service-link {
+  color: #1c2d59;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.service-nav .service-link:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
+
+.btn-dark-green {
+  background-color: #1c2d59;
+  border: none;
+}
+
+.btn-dark-green:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
+.header-top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+/* hero section  */
+.blog-hero {
+  background-color: #1c2d59;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-hero h1 {
+  line-height: 1.3;
+}
+
+.blog-hero input[type="email"] {
+  max-width: 300px;
+  border-radius: 50px;
+  padding: 0.75rem 1.25rem;
+  border: none;
+}
+
+.blog-hero .btn {
+  border-radius: 50px;
+  height: 100%;
+}
+
+.blog-hero .form-control:focus {
+  box-shadow: none;
+  border-color: #0f305f;
+}
+
+/* Optional background circle */
+.blog-hero::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  right: -150px;
+  width: 500px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 0;
+}
+.blog-hero form .form-control {
+  min-width: 250px;
+  flex: 1 1 auto;
+}
+
+@media (max-width: 576px) {
+  .blog-hero form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .blog-hero form .form-control,
+  .blog-hero form .btn {
+    width: 100%;
+  }
+}
+
+/* .........................  */
+
+/* blog  */
+
+.blog-grid-section {
+  background-color: #fff;
+}
+
+.blog-card img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.blog-card h5 {
+  font-size: 1.1rem;
+  color: #1c2d59;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.blog-tags .badge {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.blog-tags .badge:hover {
+  background-color: #f27b21;
+  color: #fff;
+  border-color: #f27b21;
+}
+/* Optional: Add some spacing */
+.blog-grid-section .btn {
+  font-weight: 500;
+}
+
+.blog-grid-section .btn:hover {
+  background-color: #f27b21;
+  color: #fff;
+  border-color: #f27b21;
+}
+
+/* footer  */
+.footer-top-header {
+  background-color: #1c2d59;
+  color: white;
+}
+
+.footer-main-content {
+  background-color: #ffffff;
+}
+
+.footer-main-content a {
+  color: #1c2d59;
+  text-decoration: none;
+}
+
+.footer-main-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #1c2d59;
+  color: white;
+}
