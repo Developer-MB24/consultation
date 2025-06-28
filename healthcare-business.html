@@ -11,71 +11,105 @@
   </head>
   <body>
     <!-- nav  -->
-    <header class="main-header py-3 shadow-sm">
+    <header class="main-header py-4 shadow-sm">
       <div class="container-fluid px-4">
-        <!-- Top Row: Logo & LET'S TALK Button -->
+        <!-- Top Row -->
         <div
-          class="d-flex justify-content-between align-items-center header-top"
+          class="d-flex justify-content-between align-items-center header-top mb-3"
         >
+          <!-- Logo -->
           <a
             href="index.html"
             class="d-flex align-items-center text-decoration-none"
           >
-            <img src="assets/img/logo.png" alt="Logo" style="height: 40px" />
+            <img
+              src="assets/img/consulting/consulting-logo.png"
+              alt="Logo"
+              style="height: 90px; width: 180px"
+            />
           </a>
+
+          <!-- Center Nav - Desktop Only -->
+          <nav class="main-nav d-none d-md-flex gap-4">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about-us.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+          </nav>
+
+          <!-- Let's Talk Button -->
           <a
             href="contactus.html"
-            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold"
+            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold d-none d-md-inline"
+            style="margin-right: 30px"
           >
             LET'S TALK
           </a>
+
+          <!-- Hamburger Button for Mobile -->
+          <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fs-4 text-dark"></i>
+          </button>
         </div>
 
-        <!-- Bottom Row: Navigation -->
-        <nav class="d-flex justify-content-center flex-wrap gap-4 mt-3">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="services.html" class="nav-link">Our Services</a>
-
-          <!-- Shortened service links -->
-          <a href="healthcare-business.html" class="nav-link active">Startup</a>
-          <a href="licensing&regulatory.html" class="nav-link">Compliance</a>
-          <a href="staff-training.html" class="nav-link">Training</a>
-          <a href="policy&procedure.html" class="nav-link">Policies</a>
-          <a href="business-growth.html" class="nav-link">Growth</a>
-
-          <!-- Other main pages -->
-          <a href="about-us.html" class="nav-link">About Us</a>
-          <a href="#" class="nav-link">Blog</a>
-          <a href="contactus.html" class="nav-link">Contact</a>
+        <!-- Bottom Row (Desktop Only): Seven Services -->
+        <nav
+          class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3"
+        >
+          <a href="healthcare-business.html" class="service-link">Startup</a>
+          <a href="licensing&regulatory.html" class="service-link"
+            >Compliance</a
+          >
+          <a href="staff-training.html" class="service-link">Training</a>
+          <a href="policy&procedure.html" class="service-link">Policies</a>
+          <a href="business-growth.html" class="service-link">Growth</a>
+          <a href="technology.html" class="service-link">Technology</a>
+          <a href="automation.html" class="service-link">Branding</a>
         </nav>
+
+        <!-- Mobile Menu Collapse -->
+        <div class="collapse d-lg-none" id="mobileMenu">
+          <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
+            <ul class="list-unstyled mb-0">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about-us.html">About Us</a></li>
+              <li><a class="nav-link" href="services.html">Our Services</a></li>
+              <li><a class="nav-link" href="blog.html">Blog</a></li>
+              <hr />
+              <li>
+                <a class="nav-link" href="healthcare-business.html">Startup</a>
+              </li>
+              <li>
+                <a class="nav-link" href="licensing&regulatory.html"
+                  >Compliance</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="staff-training.html">Training</a>
+              </li>
+              <li>
+                <a class="nav-link" href="policy&procedure.html">Policies</a>
+              </li>
+              <li>
+                <a class="nav-link" href="business-growth.html">Growth</a>
+              </li>
+              <li><a class="nav-link" href="technology.html">Technology</a></li>
+              <li><a class="nav-link" href="automation.html">Branding</a></li>
+              <hr />
+              <li><a class="nav-link" href="contactus.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
-
-    <!-- Mobile menu -->
-    <div class="collapse d-lg-none" id="mobileMenu">
-      <div class="mobile-menu p-3">
-        <ul class="list-unstyled mb-0">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="services.html">Our Services</a></li>
-
-          <!-- Shortened individual service links -->
-          <li>
-            <a class="nav-link" href="healthcare-business.html">Startup</a>
-          </li>
-          <li>
-            <a class="nav-link" href="licensing&regulatory.html">Compliance</a>
-          </li>
-          <li><a class="nav-link" href="staff-training.html">Training</a></li>
-          <li><a class="nav-link" href="policy&procedure.html">Policies</a></li>
-          <li><a class="nav-link" href="business-growth.html">Growth</a></li>
-
-          <!-- Other links -->
-          <li><a class="nav-link" href="about-us.html">About Us</a></li>
-          <li><a class="nav-link" href="#">Blog</a></li>
-          <li><a class="nav-link" href="contactus.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
 
     <!-- Hero Section -->
     <section class="about-hero">
@@ -468,6 +502,9 @@
                     <li>
                       <a href="policy&procedure.html">– Policy & Procedure</a>
                     </li>
+                    <li>
+                      <a href="policy&procedure.html">– IT Services</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="col-6">
@@ -486,6 +523,9 @@
                     <li><a href="staff-training.html">– Staff Training</a></li>
                     <li>
                       <a href="business-growth.html">– Growth & Automation</a>
+                    </li>
+                    <li>
+                      <a href="business-growth.html">– Branding</a>
                     </li>
                   </ul>
                 </div>

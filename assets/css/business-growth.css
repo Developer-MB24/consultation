@@ -124,6 +124,20 @@ body {
   background-color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
+.icon-box {
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+.icon-box:hover {
+  background-color: #f5f8fc; /* or any light color you prefer */
+  box-shadow: 0 0 12px rgba(28, 45, 89, 0.2);
+  border: 1px solid #1c2d59;
+}
+
+.icon-box:hover i {
+  color: #1c2d59 !important;
+}
 
 /* ul li::marker {
   content: "✔ ";
