@@ -1,0 +1,161 @@
+/* Global Font */
+body {
+  font-family: Georgia, serif;
+}
+
+/* Header */
+.main-header {
+  background-color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.header-top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.main-nav .nav-link {
+  color: #1c2d59;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.main-nav .nav-link:hover {
+  color: #f27b21;
+}
+
+/* Top Services Nav */
+.service-nav .service-link {
+  color: #1c2d59;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.service-nav .service-link:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
+
+/* Buttons */
+.btn-dark-green {
+  background-color: #1c2d59;
+  color: #fff;
+  border: none;
+}
+
+.btn-dark-green:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
+
+/* Global Warning Button Style */
+.btn-warning {
+  background-color: #f27b21;
+  border-color: #f27b21;
+  color: #fff;
+}
+
+.btn-warning:hover {
+  background-color: #1c2d59;
+  color: white;
+  border-color: #f27b21;
+}
+
+/* Outline Button (View All Products) */
+.btn-outline-primary {
+  border-color: #f27b21 !important;
+  color: #f27b21 !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: #f27b21 !important;
+  color: #fff !important;
+  border-color: #f27b21 !important;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #0d1f3c;
+}
+
+/* Product Cards Section */
+.text-dark-blue {
+  color: #0d1f3c;
+}
+
+.documentation-section .card,
+.featured-products-section .card {
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.documentation-section .card:hover,
+.featured-products-section .card:hover {
+  transform: translateY(-4px);
+}
+
+.featured-products-section h6 {
+  font-size: 0.95rem;
+}
+
+/* Testimonials */
+.bg-dark-blue {
+  background-color: #0d1f3c;
+}
+
+.testimonials-section .card {
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+.testimonials-section p {
+  font-size: 0.95rem;
+}
+
+.testimonials-section h6 {
+  font-size: 1rem;
+}
+
+.testimonials-section .text-warning {
+  font-size: 1.25rem;
+}
+
+/* Newsletter Section */
+.newsletter-section input:focus,
+.newsletter-section button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 31, 60, 0.25);
+  outline: none;
+}
+
+/* Footer */
+.footer-top-header {
+  background-color: #1c2d59;
+  color: white;
+}
+
+.footer-main-content {
+  background-color: #ffffff;
+}
+
+.footer-main-content a {
+  color: #1c2d59;
+  text-decoration: none;
+}
+
+.footer-main-content a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #1c2d59;
+  color: white;
+}

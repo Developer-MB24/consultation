@@ -3,12 +3,12 @@ body {
 }
 .main-header {
   background-color: #fff;
-}
-.main-header {
-  background-color: #fff;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
 
 .main-nav .nav-link {
@@ -62,6 +62,20 @@ body {
 
 .icon-box:hover i {
   color: #1c2d59 !important;
+}
+
+/* sidebar  */
+
+/* Make sidebar sticky within its column */
+.sticky-sidebar {
+  position: sticky;
+  top: 110px; /* Adjust this if header is taller/shorter */
+  z-index: 100;
+}
+
+/* Optional: make sure card inside also respects height */
+.sticky-sidebar .card {
+  height: auto;
 }
 
 /* ....  */

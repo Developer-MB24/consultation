@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual and Contracts</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/manual&contracts.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <header class="main-header py-4 shadow-sm">
+      <div class="container-fluid px-4">
+        <!-- Top Row -->
+        <div
+          class="d-flex justify-content-between align-items-center header-top mb-3"
+        >
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="d-flex align-items-center text-decoration-none"
+          >
+            <img
+              src="assets/img/consulting/consulting-logo.png"
+              alt="Logo"
+              style="height: 90px; width: 200px"
+            />
+          </a>
+
+          <!-- Center Nav - Desktop Only -->
+          <nav class="main-nav d-none d-md-flex gap-4">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about-us.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link active">Blog</a>
+          </nav>
+
+          <!-- Let's Talk Button -->
+          <a
+            href="contactus.html"
+            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold d-none d-md-inline"
+            style="margin-right: 30px"
+          >
+            LET'S TALK
+          </a>
+
+          <!-- Hamburger Button for Mobile -->
+          <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fs-4 text-dark"></i>
+          </button>
+        </div>
+
+        <!-- Bottom Row (Desktop Only): Seven Services -->
+        <nav
+          class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3"
+        >
+          <a href="healthcare-business.html" class="service-link">Startup</a>
+          <a href="licensing&regulatory.html" class="service-link"
+            >Compliance</a
+          >
+          <a href="staff-training.html" class="service-link">Training</a>
+          <a href="policy&procedure.html" class="service-link">Policies</a>
+          <a href="business-growth.html" class="service-link">Growth</a>
+          <a href="technology.html" class="service-link">Technology</a>
+          <a href="automation.html" class="service-link">Branding</a>
+          <a href="manual&contracts.html" class="service-link">Contract</a>
+        </nav>
+
+        <!-- Mobile Menu Collapse -->
+        <div class="collapse d-lg-none" id="mobileMenu">
+          <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
+            <ul class="list-unstyled mb-0">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about-us.html">About Us</a></li>
+              <li><a class="nav-link" href="services.html">Our Services</a></li>
+              <li><a class="nav-link" href="blog.html">Blog</a></li>
+              <hr />
+              <li>
+                <a class="nav-link" href="healthcare-business.html">Startup</a>
+              </li>
+              <li>
+                <a class="nav-link" href="licensing&regulatory.html"
+                  >Compliance</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="staff-training.html">Training</a>
+              </li>
+              <li>
+                <a class="nav-link" href="policy&procedure.html">Policies</a>
+              </li>
+              <li>
+                <a class="nav-link" href="business-growth.html">Growth</a>
+              </li>
+              <li><a class="nav-link" href="technology.html">Technology</a></li>
+              <li><a class="nav-link" href="automation.html">Branding</a></li>
+              <hr />
+              <li><a class="nav-link" href="contactus.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero  -->
+    <section class="hero-section position-relative">
+      <div class="position-relative">
+        <!-- Full-width Image -->
+        <img
+          src="assets/img/consulting/Manual-and-Contracts.jpeg"
+          alt="Healthcare Documentation"
+          class="w-100 img-fluid"
+        />
+
+        <!-- Bottom-left Button -->
+        <a
+          href="#"
+          class="btn btn-warning fw-semibold rounded-pill px-4 py-2 position-absolute"
+          style="bottom: 70px; left: 60px"
+        >
+          Browse Manuals
+        </a>
+      </div>
+    </section>
+
+    <!-- <section
+      class="hero-section py-5 bg-dark-blue text-white position-relative"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+         
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h1 class="fw-bold mb-3">
+              <span class="text-white">Professional Healthcare</span><br />
+              <span class="text-warning">Documentation</span>
+              <span class="text-white">Solutions</span>
+            </h1>
+            <p class="mb-4">
+              Comprehensive medical procedure manuals, training materials, and
+              contracts designed specifically for healthcare and senior care
+              facilities. Ensure compliance and excellence in patient care.
+            </p>
+            <div class="d-flex gap-3">
+              <a
+                href="#"
+                class="btn btn-warning text-dark fw-semibold rounded-pill px-4 py-2"
+              >
+                Browse Manuals
+              </a>
+              <a
+                href="#"
+                class="btn btn-outline-light fw-semibold rounded-pill px-4 py-2"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <div
+              class="card border-0 shadow-lg"
+              style="transform: rotate(2deg)"
+            >
+              <img
+                src="assets/img/consulting/stethoscope-heart.png"
+                alt="Healthcare Documentation"
+                class="card-img-top"
+              />
+              <div class="card-body text-start">
+                <h5 class="card-title fw-semibold mb-1">
+                  Complete Documentation Suite
+                </h5>
+                <p class="card-text small text-muted">
+                  Everything you need to maintain the highest standard in files
+                  and compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="row text-center text-white mt-5">
+          <div class="col-md-4 mb-3">
+            <i class="fas fa-shield-alt fa-2x mb-2"></i>
+            <p class="mb-0">HIPAA Compliant</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <i class="fas fa-lock fa-2x mb-2"></i>
+            <p class="mb-0">Industry Certified</p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <i class="fas fa-users fa-2x mb-2"></i>
+            <p class="mb-0">95% Retention</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Product Cards Section -->
+    <section class="documentation-section py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5 text-dark-blue">
+          Professional Healthcare Documentation
+        </h2>
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/img/manuals1.png"
+                class="card-img-top"
+                alt="Manuals"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">
+                  Medical Procedure Manuals
+                </h5>
+                <p class="card-text small">
+                  Standardized procedure manuals tailored for nursing homes and
+                  healthcare centers.
+                </p>
+                <p class="fw-bold small">Starting at $239</p>
+                <a href="#" class="btn btn-warning text-white fw-semibold w-100"
+                  >View Manual</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/img/training2.png"
+                class="card-img-top"
+                alt="Training"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Training Materials</h5>
+                <p class="card-text small">
+                  Staff training kits and orientation packets to ensure
+                  compliance and preparedness.
+                </p>
+                <p class="fw-bold small">Starting at $199</p>
+                <a href="#" class="btn btn-warning text-white fw-semibold w-100"
+                  >View Material</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/img/contracts3.png"
+                class="card-img-top"
+                alt="Contracts"
+              />
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Healthcare Contracts</h5>
+                <p class="card-text small">
+                  Professionally crafted legal contracts and forms specific to
+                  the healthcare industry.
+                </p>
+                <p class="fw-bold small">Starting at $110</p>
+                <a href="#" class="btn btn-warning text-white fw-semibold w-100"
+                  >View Contracts</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products-section py-5">
+      <div class="container">
+        <h3 class="text-center fw-bold text-dark-blue mb-5">
+          Featured Products
+        </h3>
+        <div class="row g-4">
+          <!-- Product 1 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/img/product1.png"
+                class="card-img-top"
+                alt="Product 1"
+              />
+              <div class="card-body text-center">
+                <h6 class="fw-semibold mb-1">Emergency Response Manual</h6>
+                <p class="small mb-1 text-muted">Healthcare Protocol</p>
+                <p class="fw-bold mb-2">$249</p>
+                <button class="btn btn-warning btn-sm w-100">
+                  🛒 Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/img/product2.png"
+                class="card-img-top"
+                alt="Product 2"
+              />
+              <div class="card-body text-center">
+                <h6 class="fw-semibold mb-1">
+                  Senior Care Training Certificate
+                </h6>
+                <p class="small mb-1 text-muted">Training Kit</p>
+                <p class="fw-bold mb-2">$229</p>
+                <button class="btn btn-warning btn-sm w-100">
+                  🛒 Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/img/product3.png"
+                class="card-img-top"
+                alt="Product 3"
+              />
+              <div class="card-body text-center">
+                <h6 class="fw-semibold mb-1">
+                  Healthcare Employment Contracts
+                </h6>
+                <p class="small mb-1 text-muted">Legal Document</p>
+                <p class="fw-bold mb-2">$179</p>
+                <button class="btn btn-warning btn-sm w-100">
+                  🛒 Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="col-md-3">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="assets/img/product4.png"
+                class="card-img-top"
+                alt="Product 4"
+              />
+              <div class="card-body text-center">
+                <h6 class="fw-semibold mb-1">Medication Control Protocol</h6>
+                <p class="small mb-1 text-muted">Procedure Manual</p>
+                <p class="fw-bold mb-2">$149</p>
+                <button class="btn btn-warning btn-sm w-100">
+                  🛒 Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-outline-primary fw-semibold"
+            >View All Products</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-dark-blue text-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h3 class="fw-bold">Trusted by Healthcare Professionals</h3>
+          <p class="text-light">
+            See what our clients say about our documentation solutions
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4">
+            <div class="card testimonial-card h-100 p-4 shadow-sm border-0">
+              <div class="mb-2 text-warning">★★★★★</div>
+              <p class="text-dark mb-4">
+                “The procedure materials from DMT have transformed our daily
+                operations. The clarity and comprehensiveness of the manuals
+                significantly improved our staff onboarding and patient care
+                quality.”
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/img/testimonial1.png"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Dr. Sarah"
+                />
+                <div>
+                  <h6 class="mb-0 fw-semibold text-dark">Dr. Sarah Mitchell</h6>
+                  <small class="text-muted"
+                    >Chief Medical Advisor, Sunrise Senior Care</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="col-md-4">
+            <div class="card testimonial-card h-100 p-4 shadow-sm border-0">
+              <div class="mb-2 text-warning">★★★★★</div>
+              <p class="text-dark mb-4">
+                “Outstanding training materials that have streamlined our
+                onboarding process. New team members are now fully prepared and
+                confident in their roles within days instead of weeks.”
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/img/testimonial2.png"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Michael"
+                />
+                <div>
+                  <h6 class="mb-0 fw-semibold text-dark">Michael Rodriguez</h6>
+                  <small class="text-muted"
+                    >HR Administrator, Heritage Healthcare Center</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="col-md-4">
+            <div class="card testimonial-card h-100 p-4 shadow-sm border-0">
+              <div class="mb-2 text-warning">★★★★★</div>
+              <p class="text-dark mb-4">
+                “The contract templates have saved countless hours and legal
+                fees. Everything is simplified, yet comprehensive — a perfect
+                fit for our needs.”
+              </p>
+              <div class="d-flex align-items-center">
+                <img
+                  src="assets/img/testimonial3.png"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                  alt="Jennifer"
+                />
+                <div>
+                  <h6 class="mb-0 fw-semibold text-dark">Jennifer Thompson</h6>
+                  <small class="text-muted"
+                    >IT Director, Compassionate Care Solutions</small
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription Section -->
+    <section class="newsletter-section py-5" style="background-color: #f27b21">
+      <div class="container">
+        <div
+          class="bg-white rounded-4 shadow-sm p-5 text-center mx-auto"
+          style="max-width: 600px"
+        >
+          <div class="mb-3">
+            <i class="fas fa-envelope fa-2x text-dark"></i>
+          </div>
+          <h4 class="fw-bold text-dark mb-3">
+            Stay Updated with Healthcare Best Practices
+          </h4>
+          <p class="text-muted mb-4">
+            Get the latest updates on healthcare regulations, new procedure
+            manuals, and exclusive offers delivered to your inbox.
+          </p>
+          <form class="d-flex justify-content-center gap-2 flex-wrap">
+            <input
+              type="email"
+              class="form-control rounded-pill px-4"
+              placeholder="Enter your email address"
+              style="max-width: 300px"
+              required
+            />
+            <button
+              class="btn btn-dark-green rounded-pill px-4 fw-semibold"
+              type="submit"
+            >
+              Subscribe
+            </button>
+          </form>
+          <small class="d-block mt-3 text-muted">
+            No spam, unsubscribe at any time. We respect your privacy.
+          </small>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer-section text-white">
+      <!-- Top Blue Header -->
+      <div class="footer-top-header py-5 text-center">
+        <h3 class="fw-bold mb-0 animated-title">
+          Expert Guidance For Long Term Business Success.
+        </h3>
+      </div>
+
+      <!-- White Footer Content -->
+      <div class="footer-main-content text-dark py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Logo + Description -->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="mb-3">
+                <img src="assets/img/logo-white.png" alt="Rowix" width="120" />
+              </div>
+              <p>
+                At Dignity, we believe in the power of collaboration,
+                innovation, and decisions and capture growth ourselves.
+              </p>
+              <div class="social-icons d-flex gap-3 mt-3">
+                <a href="#" class="icon-circle"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="icon-circle"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="icon-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-5 mb-4 mb-md-0 border-start ps-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h6 class="fw-semibold">Used For Link</h6>
+                  <ul class="list-unstyled small">
+                    <li><a href="index.html">– Home</a></li>
+                    <li><a href="about-us.html">– About Us</a></li>
+                    <li><a href="services.html">– Our Service</a></li>
+                    <li><a href="contactus.html">– Contact Us</a></li>
+                    <li>
+                      <a href="policy&procedure.html">– Policy & Procedure</a>
+                    </li>
+                    <li>
+                      <a href="policy&procedure.html">– IT Services</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <h6 class="fw-semibold invisible">Used For Link</h6>
+                  <ul class="list-unstyled small">
+                    <li>
+                      <a href="healthcare-business.html"
+                        >– Healthcare Startup</a
+                      >
+                    </li>
+                    <li>
+                      <a href="licensing&regulatory.html"
+                        >– Licensing & Compliance</a
+                      >
+                    </li>
+                    <li><a href="staff-training.html">– Staff Training</a></li>
+                    <li>
+                      <a href="business-growth.html">– Growth & Automation</a>
+                    </li>
+                    <li>
+                      <a href="business-growth.html">– Branding</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3">
+              <h6 class="fw-semibold">Contact Info</h6>
+              <ul class="list-unstyled small">
+                <li>
+                  <i class="fas fa-map-marker-alt me-2"></i>
+                  <a
+                    href="https://www.google.com/maps?q=1801+S+Extension+Rd,+Mesa+Az+85210"
+                    target="_blank"
+                  >
+                    1801 S Extension Rd, Mesa Az 85210
+                  </a>
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt me-2"></i>
+                  <a href="tel:+18884046348">+1 (888) 404-6348</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope me-2"></i>
+                  <a href="mailto:contact@dignitymedicaltraining.com">
+                    contact@dignitymedicaltraining.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Blue Footer -->
+      <div class="footer-bottom text-center small py-3">
+        Copyright 2024 © Dignity. All Rights Reserved. Website Design by: Master
+        Bazar
+      </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>
