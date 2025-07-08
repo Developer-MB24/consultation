@@ -53,8 +53,8 @@ body {
 /* Hero Section  */
 
 .hero-video-section {
-  height: 90vh; /* ↓ reduced from 100vh */
-  min-height: 300px; /* ↓ slightly reduced for small screens */
+  height: 90vh;
+  min-height: 300px;
   overflow: hidden;
   position: relative;
 }
@@ -63,7 +63,7 @@ body {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  max-height: 90vh; /* ↓ cap video height */
+  max-height: 90vh;
 }
 
 .text-overlay {
@@ -73,11 +73,14 @@ body {
   text-align: center;
   position: absolute;
   width: 100%;
+  padding: 0 1rem; /* Adds side padding for mobile */
   z-index: 10;
 }
 
 .text-overlay h1 {
   font-size: 2rem;
+  color: #fff;
+  line-height: 1.2;
 }
 
 @media (min-width: 768px) {
@@ -87,9 +90,36 @@ body {
 }
 
 @media (max-width: 576px) {
+  .hero-video-section {
+    height: auto;
+  }
+
+  .hero-video-section video {
+    height: auto;
+    min-height: 300px;
+    aspect-ratio: 7/16; /* Helps mobile devices scale the video better */
+  }
+
+  .text-overlay {
+    position: relative; /* Pushes text below video on mobile */
+    transform: none;
+    left: 0;
+    bottom: 0;
+    padding: 1rem 1rem 2rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000 100%);
+    color: #fff;
+    text-align: center;
+  }
+
+  .text-overlay h1 {
+    font-size: 1.5rem;
+  }
+
   .hero-video-section .text-overlay a {
     font-size: 14px;
     padding: 10px 20px;
+    display: inline-block;
+    margin-top: 1rem;
   }
 }
 
@@ -107,9 +137,7 @@ body {
 }
 
 .about-image {
-  position: relative;
   height: 100%;
-  min-height: 500px;
 }
 
 .about-image img {
@@ -120,31 +148,22 @@ body {
 
 .about-content {
   background-color: #fff;
-}
-
-.about-subheading {
-  font-weight: bold;
-  color: #1c2d59;
-  text-transform: uppercase;
-  font-size: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
 }
 
 .about-heading {
-  font-size: 36px;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .about-description {
   color: #555;
-  margin-bottom: 20px;
-}
-
-.testimonial-img {
-  width: 80px;
-  height: 60px;
-  object-fit: cover;
-  border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
 .btn-about {
@@ -159,11 +178,6 @@ body {
 .btn-about:hover {
   background-color: #f27b21;
   color: white;
-}
-
-.support-info a {
-  color: #198754;
-  text-decoration: none;
 }
 
 /* .center-icon {
@@ -799,11 +813,13 @@ body {
   font-family: Georgia, serif;
 }
 
+/* Form and Image containers are naturally stacked on mobile using Bootstrap col-12/col-md-6 */
 .form-container,
 .image-container {
-  width: 50%;
+  width: 100%;
 }
 
+/* Input Styles */
 .custom-input {
   background-color: #f4f0e9;
   border: 1px solid #ddd;
@@ -817,6 +833,7 @@ body {
   color: #666;
 }
 
+/* Button */
 .btn-dark-green {
   background-color: #1c2d59;
   border: none;
@@ -825,10 +842,52 @@ body {
 
 .btn-dark-green:hover {
   background-color: #f27b21;
+  color: #fff;
 }
 
+/* Image Fitting */
 .object-fit-cover {
   object-fit: cover;
+}
+
+/* Animated Title Fix */
+.animated-title span {
+  display: inline-block;
+  white-space: nowrap;
+  line-height: 1.3;
+}
+
+/* Fix breaks and stacking on small screens */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .form-container {
+    padding: 1rem !important;
+  }
+
+  .animated-title {
+    font-size: 1.6rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+  }
+
+  .btn-dark-green {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .custom-input {
+    font-size: 0.9rem;
+    padding: 0.65rem 0.75rem;
+  }
+
+  .contact-section img {
+    height: 250px;
+    object-fit: cover;
+  }
 }
 
 /* Optional: Remove right margins and ensure spacing is reset */
@@ -964,15 +1023,13 @@ body {
 }
 
 /* ANIMATED TITLE STYLING */
-.animated-title span {
-  display: inline-block;
+.animated-title {
   opacity: 0;
-  transform: translateX(-5px);
-  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
-  transition-delay: calc(20ms * var(--char-index));
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.animated-title.visible span {
+.animated-title.visible {
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }

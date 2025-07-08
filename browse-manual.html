@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browse Manual</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/browse-manual.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <header class="main-header py-4 shadow-sm">
+      <div class="container-fluid px-4">
+        <!-- Top Row -->
+        <div
+          class="d-flex justify-content-between align-items-center header-top mb-3"
+        >
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="d-flex align-items-center text-decoration-none"
+          >
+            <img
+              src="assets/img/consulting/consulting-logo.png"
+              alt="Logo"
+              style="height: 90px; width: 200px"
+            />
+          </a>
+
+          <!-- Center Nav - Desktop Only -->
+          <nav class="main-nav d-none d-md-flex gap-4">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about-us.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link active">Blog</a>
+          </nav>
+
+          <!-- Let's Talk Button -->
+          <a
+            href="contactus.html"
+            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold d-none d-md-inline"
+            style="margin-right: 30px"
+          >
+            LET'S TALK
+          </a>
+
+          <!-- Hamburger Button for Mobile -->
+          <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fs-4 text-dark"></i>
+          </button>
+        </div>
+
+        <!-- Bottom Row (Desktop Only): Seven Services -->
+        <nav
+          class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3"
+        >
+          <a href="healthcare-business.html" class="service-link">Startup</a>
+          <a href="licensing&regulatory.html" class="service-link"
+            >Compliance</a
+          >
+          <a href="staff-training.html" class="service-link">Training</a>
+          <a href="policy&procedure.html" class="service-link">Policies</a>
+          <a href="business-growth.html" class="service-link">Growth</a>
+          <a href="technology.html" class="service-link">Technology</a>
+          <a href="automation.html" class="service-link">Branding</a>
+          <a href="manual&contracts.html" class="service-link">Contract</a>
+        </nav>
+
+        <!-- Mobile Menu Collapse -->
+        <div class="collapse d-lg-none" id="mobileMenu">
+          <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
+            <ul class="list-unstyled mb-0">
+              <li><a class="nav-link" href="index.html">Home</a></li>
+              <li><a class="nav-link" href="about-us.html">About Us</a></li>
+              <li><a class="nav-link" href="services.html">Our Services</a></li>
+              <li><a class="nav-link" href="blog.html">Blog</a></li>
+              <hr />
+              <li>
+                <a class="nav-link" href="healthcare-business.html">Startup</a>
+              </li>
+              <li>
+                <a class="nav-link" href="licensing&regulatory.html"
+                  >Compliance</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="staff-training.html">Training</a>
+              </li>
+              <li>
+                <a class="nav-link" href="policy&procedure.html">Policies</a>
+              </li>
+              <li>
+                <a class="nav-link" href="business-growth.html">Growth</a>
+              </li>
+              <li><a class="nav-link" href="technology.html">Technology</a></li>
+              <li><a class="nav-link" href="automation.html">Branding</a></li>
+              <a href="manual&contracts.html" class="nav-link">Contract</a>
+              <hr />
+              <li><a class="nav-link" href="contactus.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="browse-section py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar Filter -->
+          <aside class="col-lg-3 mb-4">
+            <div class="filter-box bg-white p-3 rounded shadow-sm">
+              <h5 class="fw-bold mb-3">Search</h5>
+              <input
+                type="text"
+                class="form-control mb-4"
+                placeholder="Search"
+              />
+
+              <h5 class="fw-bold mb-3">Pharmacy</h5>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="dpharma" />
+                <label class="form-check-label" for="dpharma">D Pharma</label>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" id="bpharma" />
+                <label class="form-check-label" for="bpharma">B Pharma</label>
+              </div>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="mpharma" />
+                <label class="form-check-label" for="mpharma">M.Pharma</label>
+              </div>
+
+              <h5 class="fw-bold mb-3">Price</h5>
+              <div class="mb-2">
+                <label for="min">Min:</label>
+                <input type="number" id="min" class="form-control" value="0" />
+              </div>
+              <div>
+                <label for="max">Max:</label>
+                <input
+                  type="number"
+                  id="max"
+                  class="form-control"
+                  value="100000"
+                />
+              </div>
+            </div>
+          </aside>
+
+          <!-- Product Cards -->
+          <div class="col-lg-9">
+            <div class="row g-4">
+              <!-- Product Card -->
+              <!-- Product Card1 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card2 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card3 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card4 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card5 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card6 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card7 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card8 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card9 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- Product Card10 -->
+              <div class="col-md-6 col-xl-4">
+                <div class="product-card bg-white rounded shadow-sm p-3 h-100">
+                  <div class="position-relative">
+                    <span
+                      class="badge bg-success position-absolute top-0 start-0 m-2"
+                      >20% Off</span
+                    >
+                    <img
+                      src="assets/img/consulting/book.webp"
+                      alt="Book"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                  <h6 class="mt-3 fw-semibold">
+                    CBS Confident Pharmacy Series...
+                  </h6>
+                  <p class="mb-1 text-success fw-bold">
+                    ₹ 280 <del class="text-muted ms-2">₹ 350</del>
+                  </p>
+                  <button class="btn-lock mt-2">
+                    <i class="fas fa-lock"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer-section text-white">
+      <!-- Top Blue Header -->
+      <div class="footer-top-header py-5 text-center">
+        <h3 class="fw-bold mb-0 animated-title">
+          Expert Guidance For Long Term Business Success.
+        </h3>
+      </div>
+
+      <!-- White Footer Content -->
+      <div class="footer-main-content text-dark py-5">
+        <div class="container">
+          <div class="row">
+            <!-- Logo + Description -->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="mb-3">
+                <img src="assets/img/logo-white.png" alt="Rowix" width="120" />
+              </div>
+              <p>
+                At Dignity, we believe in the power of collaboration,
+                innovation, and decisions and capture growth ourselves.
+              </p>
+              <div class="social-icons d-flex gap-3 mt-3">
+                <a href="#" class="icon-circle"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="#" class="icon-circle"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="icon-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-5 mb-4 mb-md-0 border-start ps-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h6 class="fw-semibold">Used For Link</h6>
+                  <ul class="list-unstyled small">
+                    <li><a href="index.html">– Home</a></li>
+                    <li><a href="about-us.html">– About Us</a></li>
+                    <li><a href="services.html">– Our Service</a></li>
+                    <li><a href="contactus.html">– Contact Us</a></li>
+                    <li>
+                      <a href="policy&procedure.html">– Policy & Procedure</a>
+                    </li>
+                    <li>
+                      <a href="policy&procedure.html">– IT Services</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <h6 class="fw-semibold invisible">Used For Link</h6>
+                  <ul class="list-unstyled small">
+                    <li>
+                      <a href="healthcare-business.html"
+                        >– Healthcare Startup</a
+                      >
+                    </li>
+                    <li>
+                      <a href="licensing&regulatory.html"
+                        >– Licensing & Compliance</a
+                      >
+                    </li>
+                    <li><a href="staff-training.html">– Staff Training</a></li>
+                    <li>
+                      <a href="business-growth.html">– Growth & Automation</a>
+                    </li>
+                    <li>
+                      <a href="business-growth.html">– Branding</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3">
+              <h6 class="fw-semibold">Contact Info</h6>
+              <ul class="list-unstyled small">
+                <li>
+                  <i class="fas fa-map-marker-alt me-2"></i>
+                  <a
+                    href="https://www.google.com/maps?q=1801+S+Extension+Rd,+Mesa+Az+85210"
+                    target="_blank"
+                  >
+                    1801 S Extension Rd, Mesa Az 85210
+                  </a>
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt me-2"></i>
+                  <a href="tel:+18884046348">+1 (888) 404-6348</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope me-2"></i>
+                  <a href="mailto:contact@dignitymedicaltraining.com">
+                    contact@dignitymedicaltraining.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Blue Footer -->
+      <div class="footer-bottom text-center small py-3">
+        Copyright 2024 © Dignity. All Rights Reserved. Website Design by: Master
+        Bazar
+      </div>
+    </footer>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>

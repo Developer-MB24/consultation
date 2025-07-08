@@ -158,20 +158,22 @@ document.addEventListener("DOMContentLoaded", () => {
 // animation.js
 
 window.addEventListener("DOMContentLoaded", () => {
+  // Animate .animated-title elements on scroll
   const observer = new IntersectionObserver(
-    (entries) => {
+    (entries, observerInstance) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("visible");
+          observerInstance.unobserve(entry.target); // Animate once
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.3 }
   );
 
-  document
-    .querySelectorAll(".animated-title")
-    .forEach((el) => observer.observe(el));
+  document.querySelectorAll(".animated-title").forEach((el) => {
+    observer.observe(el);
+  });
 });
 
 // nav

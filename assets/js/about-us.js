@@ -59,7 +59,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // animation.js
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
+  const animatedTitles = document.querySelectorAll(".animated-title");
+
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -68,12 +70,10 @@ window.addEventListener("DOMContentLoaded", () => {
         }
       });
     },
-    { threshold: 0.5 }
+    { threshold: 0.2 }
   );
 
-  document
-    .querySelectorAll(".animated-title")
-    .forEach((el) => observer.observe(el));
+  animatedTitles.forEach((el) => observer.observe(el));
 });
 
 // nav

@@ -86,6 +86,21 @@ body {
 .hero-section {
   background-color: #0d1f3c;
 }
+.hero-btn {
+  bottom: 70px;
+  left: 60px;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .hero-btn {
+    bottom: 10px;
+    left: 20px;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
 
 /* Product Cards Section */
 .text-dark-blue {
@@ -158,4 +173,16 @@ body {
 .footer-bottom {
   background-color: #1c2d59;
   color: white;
+}
+
+/* animation */
+.animated-title {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animated-title.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
