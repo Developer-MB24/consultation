@@ -50,7 +50,7 @@ body {
   margin-bottom: 10px;
 }
 /* hero  */
-.about-hero {
+/* .about-hero {
   background-color: #f9f7f3;
   background-image: url("../img/home/process1.webp");
   background-position: center center;
@@ -61,7 +61,7 @@ body {
   display: flex;
   align-items: center;
   z-index: 1;
-}
+} */
 
 /* REMOVE THIS OVERLAY */
 .about-hero::before {
@@ -470,7 +470,7 @@ body {
   box-shadow: 0 0 0 1px #ccc;
 }
 
-/* Carefully tuned placements to mimic circular orbit */
+/* */
 .avatar-1 {
   top: 10%;
   left: 15%;
