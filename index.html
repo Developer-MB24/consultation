@@ -14,53 +14,53 @@
     <header class="main-header py-4 shadow-sm">
       <div class="container-fluid px-4">
         <!-- Top Row -->
-        <div
-          class="d-flex justify-content-between align-items-center header-top mb-3"
-        >
-          <!-- Logo -->
-          <a
-            href="index.html"
-            class="d-flex align-items-center text-decoration-none"
-          >
-            <img
-              src="assets/img/consulting/consulting-logo.png"
-              alt="Logo"
-              style="height: 90px; width: 200px"
-            />
-          </a>
+        <div class="row align-items-center mb-3">
+          <!-- Logo Column -->
+          <div class="col-md-3 d-flex align-items-center">
+            <a href="index.html" class="text-decoration-none">
+              <img
+                src="assets/img/consulting/consulting-logo.jpeg"
+                alt="Logo"
+                class="img-fluid"
+                style="max-height: 100px; width: auto"
+              />
+            </a>
+          </div>
 
-          <!-- Center Nav - Desktop Only -->
-          <nav class="main-nav d-none d-md-flex gap-4">
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about-us.html" class="nav-link">About Us</a>
-            <a href="services.html" class="nav-link">Services</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-          </nav>
+          <!-- Center Nav Column -->
+          <div class="col-md-6 d-none d-md-flex justify-content-center">
+            <nav class="main-nav d-flex gap-4">
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="about-us.html" class="nav-link">About Us</a>
+              <a href="services.html" class="nav-link">Services</a>
+              <a href="blog.html" class="nav-link">Blog</a>
+            </nav>
+          </div>
 
-          <!-- Let's Talk Button -->
-          <a
-            href="contactus.html"
-            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold d-none d-md-inline"
-            style="margin-right: 30px"
-          >
-            LET'S TALK
-          </a>
-
-          <!-- Hamburger Button for Mobile -->
-          <button
-            class="btn d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mobileMenu"
-            aria-controls="mobileMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars fs-4 text-dark"></i>
-          </button>
+          <!-- Button Column -->
+          <div class="col-md-3 d-flex justify-content-end">
+            <a
+              href="contactus.html"
+              class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold d-none d-md-inline"
+            >
+              LET'S TALK
+            </a>
+            <!-- Hamburger Button for Mobile -->
+            <button
+              class="btn d-md-none"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-bars fs-4 text-dark"></i>
+            </button>
+          </div>
         </div>
 
-        <!-- Bottom Row (Desktop Only): Seven Services -->
+        <!-- Bottom Row: Seven Services (Desktop Only) -->
         <nav
           class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3"
         >
@@ -73,11 +73,11 @@
           <a href="business-growth.html" class="service-link">Growth</a>
           <a href="technology.html" class="service-link">Technology</a>
           <a href="automation.html" class="service-link">Branding</a>
-          <a href="manual&contracts.html" class="service-link">Products </a>
+          <a href="manual&contracts.html" class="service-link">Products</a>
         </nav>
 
-        <!-- Mobile Menu Collapse -->
-        <div class="collapse d-lg-none" id="mobileMenu">
+        <!-- Mobile Menu -->
+        <div class="collapse d-md-none" id="mobileMenu">
           <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
             <ul class="list-unstyled mb-0">
               <li><a class="nav-link" href="index.html">Home</a></li>
@@ -105,7 +105,7 @@
               <li><a class="nav-link" href="technology.html">Technology</a></li>
               <li><a class="nav-link" href="automation.html">Branding</a></li>
               <li>
-                <a class="nav-link" href="manual&contracts.html">Products </a>
+                <a class="nav-link" href="manual&contracts.html">Products</a>
               </li>
               <hr />
               <li><a class="nav-link" href="contactus.html">Contact</a></li>
@@ -403,9 +403,8 @@
               <div class="text">
                 <h5>Staff Training & Compliance Programs</h5>
                 <p>
-                  Stay ahead of audits and reviews with our compliance training.
-                  We offer online and in-person programs tailored to your
-                  facility type and state requirements.
+                  Essential kits, manuals, and guides to help healthcare
+                  startups streamline credentialing and launch with confidence.
                 </p>
               </div>
               <div class="arrow">&rarr;</div>
