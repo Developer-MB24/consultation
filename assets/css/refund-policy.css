@@ -1,9 +1,11 @@
-/* Global Font */
 body {
   font-family: Georgia, serif;
+  font-size: 1.1rem;
+  background-color: #f9f9f9;
+  color: #000000;
+  margin: 0;
 }
 
-/* Header */
 .main-header {
   background-color: #fff;
   padding-top: 1.5rem;
@@ -12,12 +14,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1030;
-}
-
-.header-top {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
 }
 
 .main-nav .nav-link {
@@ -30,7 +26,6 @@ body {
   color: #f27b21;
 }
 
-/* Top Services Nav */
 .service-nav .service-link {
   color: #1c2d59;
   font-weight: 500;
@@ -45,10 +40,8 @@ body {
   color: #fff;
 }
 
-/* Buttons */
 .btn-dark-green {
   background-color: #1c2d59;
-  color: #fff;
   border: none;
 }
 
@@ -56,99 +49,82 @@ body {
   background-color: #f27b21;
   color: #fff;
 }
-
-/* Global Warning Button Style */
-.btn-warning {
-  background-color: #f27b21;
-  border-color: #f27b21;
-  color: #fff;
+.header-top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-.btn-warning:hover {
-  background-color: #1c2d59;
-  color: white;
-  border-color: #f27b21;
+.faq-section {
+  background-color: #1d3563;
+
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-/* Outline Button (View All Products) */
-.btn-outline-primary {
-  border-color: #f27b21 !important;
+.faq-heading {
+  font-family: Georgia, serif;
+  color: #1d3563;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #555;
+}
+
+.text-orange {
   color: #f27b21 !important;
 }
 
-.btn-outline-primary:hover {
-  background-color: #f27b21 !important;
-  color: #fff !important;
-  border-color: #f27b21 !important;
+/* Section Headers */
+.faq-section h5 {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: #1d3563;
+  margin-bottom: 0.75rem;
 }
 
-/* Hero Section */
-.hero-section {
-  background-color: #0d1f3c;
+/* Lists */
+.faq-section ul {
+  padding-left: 1.5rem;
 }
-.hero-btn {
-  bottom: 50px;
-  left: 90px;
+
+.faq-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+.faq-section a {
+  color: #f27b21;
+  text-decoration: underline;
+}
+
+.faq-section a:hover {
+  text-decoration: none;
+}
+
+/* Accordion (if used elsewhere in page) */
+.accordion-item {
+  padding: 20px;
+}
+
+.accordion-button {
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #f7f7f7;
+  color: #1d3563;
+}
+
+.accordion-body {
+  font-family: Georgia, serif;
   font-size: 1rem;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-  .hero-btn {
-    bottom: 10px;
-    left: 20px;
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
-}
-
-/* Product Cards Section */
-.text-dark-blue {
-  color: #0d1f3c;
-}
-
-.documentation-section .card,
-.featured-products-section .card {
-  border-radius: 12px;
-  transition: transform 0.2s ease;
-}
-
-.documentation-section .card:hover,
-.featured-products-section .card:hover {
-  transform: translateY(-4px);
-}
-
-.featured-products-section h6 {
-  font-size: 0.95rem;
-}
-
-/* Testimonials */
-.bg-dark-blue {
-  background-color: #0d1f3c;
-}
-
-.testimonials-section .card {
   background-color: #ffffff;
-  border-radius: 12px;
-}
-
-.testimonials-section p {
-  font-size: 0.95rem;
-}
-
-.testimonials-section h6 {
-  font-size: 1rem;
-}
-
-.testimonials-section .text-warning {
-  font-size: 1.25rem;
-}
-
-/* Newsletter Section */
-.newsletter-section input:focus,
-.newsletter-section button:focus {
-  box-shadow: 0 0 0 0.2rem rgba(13, 31, 60, 0.25);
-  outline: none;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 /* footer  */
@@ -219,16 +195,4 @@ body {
   overflow-wrap: break-word;
   display: inline-block;
   max-width: 100%;
-}
-
-/* animation */
-.animated-title {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.animated-title.visible {
-  opacity: 1;
-  transform: translateY(0);
 }

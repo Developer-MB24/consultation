@@ -10,6 +10,7 @@
   </head>
   <body>
     <!-- nav  -->
+
     <header class="main-header py-4 shadow-sm">
       <div class="container-fluid px-4">
         <!-- Top Row -->
@@ -24,12 +25,15 @@
             <img
               src="assets/img/consulting/consulting-logo.png"
               alt="Logo"
-              style="height: 90px; width: 200px"
+              style="height: 50px"
             />
           </a>
 
           <!-- Center Nav - Desktop Only -->
-          <nav class="main-nav d-none d-md-flex gap-4">
+          <nav
+            class="main-nav d-none d-md-flex gap-4"
+            style="margin-right: 60px"
+          >
             <a href="index.html" class="nav-link">Home</a>
             <a href="about-us.html" class="nav-link">About Us</a>
             <a href="services.html" class="nav-link">Services</a>
@@ -841,8 +845,9 @@
                     <li>
                       <a href="policy&procedure.html">– Policy & Procedure</a>
                     </li>
+                    <li><a href="policy&procedure.html">– IT Services</a></li>
                     <li>
-                      <a href="policy&procedure.html">– IT Services</a>
+                      <a href="sms-terms.html">– SMS Terms & Conditions</a>
                     </li>
                   </ul>
                 </div>
@@ -863,9 +868,8 @@
                     <li>
                       <a href="business-growth.html">– Growth & Automation</a>
                     </li>
-                    <li>
-                      <a href="business-growth.html">– Branding</a>
-                    </li>
+                    <li><a href="business-growth.html">– Branding</a></li>
+                    <li><a href="refund-policy.html">– Refund Policy</a></li>
                   </ul>
                 </div>
               </div>
@@ -875,22 +879,37 @@
             <div class="col-md-3">
               <h6 class="fw-semibold">Contact Info</h6>
               <ul class="list-unstyled small">
-                <li>
-                  <i class="fas fa-map-marker-alt me-2"></i>
+                <!-- Address -->
+                <li class="mb-3 d-flex">
+                  <i class="fas fa-map-marker-alt me-2 pt-1"></i>
                   <a
                     href="https://www.google.com/maps?q=1801+S.+Extension+Rd,+Mesa,+AZ,+United+States,+Arizona"
                     target="_blank"
                   >
-                    1801 S. Extension Rd, Mesa, AZ, United States, Arizona
+                    1801 S. Extension Rd, Mesa, AZ, 85210,United States, Arizona
                   </a>
                 </li>
-                <li>
-                  <i class="fas fa-phone-alt me-2"></i>
-                  <a href="tel:+18884041237">+1 (888)-404-1237</a>
+
+                <!-- Phone 1 -->
+                <li class="mb-2 d-flex">
+                  <i class="fas fa-phone-alt me-2 pt-1"></i>
+                  <a href="tel:+18884041237" class="text-nowrap"
+                    >+1 (888)-404-1237</a
+                  >
                 </li>
-                <li>
-                  <i class="fas fa-envelope me-2"></i>
-                  <a href="mailto:contact@dignitymedicaltraining.com">
+
+                <!-- Phone 2 -->
+                <li class="mb-2 d-flex">
+                  <i class="fas fa-phone-alt me-2 pt-1"></i>
+                  <a href="tel:+14806260611" class="text-nowrap"
+                    >+1 (480)-626-0611</a
+                  >
+                </li>
+
+                <!-- Email -->
+                <li class="d-flex">
+                  <i class="fas fa-envelope me-2 pt-1"></i>
+                  <a href="mailto:contact@dignitybusinessconsulting.com">
                     contact@dignitybusinessconsulting.com
                   </a>
                 </li>
@@ -905,7 +924,6 @@
         Copyright 2025 @ Dignity Business Consulting
       </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/services.js"></script>

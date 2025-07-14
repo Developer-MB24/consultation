@@ -10,56 +10,60 @@
   </head>
   <body>
     <!-- nav  -->
+
     <header class="main-header py-4 shadow-sm">
       <div class="container-fluid px-4">
         <!-- Top Row -->
-        <div class="row align-items-center mb-3">
-          <!-- Logo Column -->
-          <div class="col-md-3 d-flex align-items-center">
-            <a href="index.html" class="text-decoration-none">
-              <img
-                src="assets/img/consulting/consulting-logo.jpeg"
-                alt="Logo"
-                class="img-fluid"
-                style="max-height: 120px; width: auto"
-              />
-            </a>
-          </div>
+        <div
+          class="d-flex justify-content-between align-items-center header-top mb-3"
+        >
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="d-flex align-items-center text-decoration-none"
+          >
+            <img
+              src="assets/img/consulting/consulting-logo.png"
+              alt="Logo"
+              style="height: 50px"
+            />
+          </a>
 
-          <!-- Center Nav Column -->
-          <div class="col-md-6 d-none d-md-flex justify-content-center">
-            <nav class="main-nav d-flex gap-4">
-              <a href="index.html" class="nav-link">Home</a>
-              <a href="about-us.html" class="nav-link">About Us</a>
-              <a href="services.html" class="nav-link">Services</a>
-              <a href="blog.html" class="nav-link">Blog</a>
-            </nav>
-          </div>
+          <!-- Center Nav - Desktop Only -->
+          <nav
+            class="main-nav d-none d-md-flex gap-4"
+            style="margin-right: 60px"
+          >
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="about-us.html" class="nav-link">About Us</a>
+            <a href="services.html" class="nav-link">Services</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+          </nav>
 
-          <!-- Button Column -->
-          <div class="col-md-3 d-flex justify-content-end">
-            <a
-              href="contactus.html"
-              class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold d-none d-md-inline"
-            >
-              LET'S TALK
-            </a>
-            <!-- Hamburger Button for Mobile -->
-            <button
-              class="btn d-md-none"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#mobileMenu"
-              aria-controls="mobileMenu"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="fas fa-bars fs-4 text-dark"></i>
-            </button>
-          </div>
+          <!-- Let's Talk Button -->
+          <a
+            href="contactus.html"
+            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-semibold d-none d-md-inline"
+            style="margin-right: 30px"
+          >
+            LET'S TALK
+          </a>
+
+          <!-- Hamburger Button for Mobile -->
+          <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fs-4 text-dark"></i>
+          </button>
         </div>
 
-        <!-- Bottom Row: Seven Services (Desktop Only) -->
+        <!-- Bottom Row (Desktop Only): Seven Services -->
         <nav
           class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3"
         >
@@ -72,11 +76,11 @@
           <a href="business-growth.html" class="service-link">Growth</a>
           <a href="technology.html" class="service-link">Technology</a>
           <a href="automation.html" class="service-link">Branding</a>
-          <a href="manual&contracts.html" class="service-link">Products</a>
+          <a href="manual&contracts.html" class="service-link">Products </a>
         </nav>
 
-        <!-- Mobile Menu -->
-        <div class="collapse d-md-none" id="mobileMenu">
+        <!-- Mobile Menu Collapse -->
+        <div class="collapse d-lg-none" id="mobileMenu">
           <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
             <ul class="list-unstyled mb-0">
               <li><a class="nav-link" href="index.html">Home</a></li>
@@ -104,7 +108,7 @@
               <li><a class="nav-link" href="technology.html">Technology</a></li>
               <li><a class="nav-link" href="automation.html">Branding</a></li>
               <li>
-                <a class="nav-link" href="manual&contracts.html">Products</a>
+                <a class="nav-link" href="manual&contracts.html">Products </a>
               </li>
               <hr />
               <li><a class="nav-link" href="contactus.html">Contact</a></li>
@@ -227,8 +231,9 @@
                     <li>
                       <a href="policy&procedure.html">– Policy & Procedure</a>
                     </li>
+                    <li><a href="policy&procedure.html">– IT Services</a></li>
                     <li>
-                      <a href="policy&procedure.html">– IT Services</a>
+                      <a href="sms-terms.html">– SMS Terms & Conditions</a>
                     </li>
                   </ul>
                 </div>
@@ -249,9 +254,8 @@
                     <li>
                       <a href="business-growth.html">– Growth & Automation</a>
                     </li>
-                    <li>
-                      <a href="business-growth.html">– Branding</a>
-                    </li>
+                    <li><a href="business-growth.html">– Branding</a></li>
+                    <li><a href="refund-policy.html">– Refund Policy</a></li>
                   </ul>
                 </div>
               </div>
@@ -261,22 +265,29 @@
             <div class="col-md-3">
               <h6 class="fw-semibold">Contact Info</h6>
               <ul class="list-unstyled small">
-                <li>
-                  <i class="fas fa-map-marker-alt me-2"></i>
+                <li class="mb-2 d-flex align-items-start">
+                  <i class="fas fa-map-marker-alt me-2 mt-1"></i>
                   <a
                     href="https://www.google.com/maps?q=1801+S.+Extension+Rd,+Mesa,+AZ,+United+States,+Arizona"
                     target="_blank"
                   >
-                    1801 S. Extension Rd, Mesa, AZ, United States, Arizona
+                    1801 S. Extension Rd, Mesa, AZ, 85210,United States, Arizona
                   </a>
                 </li>
-                <li>
-                  <i class="fas fa-phone-alt me-2"></i>
-                  <a href="tel:+18884041237">+1 (888)-404-1237</a>
+                <li class="mb-2">
+                  <div class="d-flex align-items-center mb-1">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <a href="tel:+18884041237">+1 (888)-404-1237</a>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <a href="tel:+14806260611">+1 (480)-626-0611</a>
+                  </div>
                 </li>
-                <li>
+
+                <li class="d-flex align-items-center">
                   <i class="fas fa-envelope me-2"></i>
-                  <a href="mailto:contact@dignitymedicaltraining.com">
+                  <a href="mailto:contact@dignitybusinessconsulting.com">
                     contact@dignitybusinessconsulting.com
                   </a>
                 </li>
@@ -291,6 +302,7 @@
         Copyright 2025 @ Dignity Business Consulting
       </div>
     </footer>
+
     <!-- Bootstrap JS -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/human-resources.js"></script>
