@@ -3,14 +3,22 @@ body {
 }
 .main-header {
   background-color: #fff;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
   z-index: 1030;
 }
 
+/* Top Logo + Menu Row Padding Reduced */
+.header-top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+/* Main Nav */
 .main-nav .nav-link {
   color: #1c2d59;
   font-weight: 500;
@@ -21,6 +29,7 @@ body {
   color: #f27b21;
 }
 
+/* Services Nav Bar */
 .service-nav .service-link {
   color: #1c2d59;
   font-weight: 500;
@@ -35,6 +44,7 @@ body {
   color: #fff;
 }
 
+/* CTA Button */
 .btn-dark-green {
   background-color: #1c2d59;
   border: none;
@@ -43,11 +53,6 @@ body {
 .btn-dark-green:hover {
   background-color: #f27b21;
   color: #fff;
-}
-.header-top {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
 }
 .icon-box {
   transition: all 0.3s ease;

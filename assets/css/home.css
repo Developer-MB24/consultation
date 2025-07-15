@@ -5,8 +5,8 @@ body {
 /* Main Header Height Reduced */
 .main-header {
   background-color: #fff;
-  padding-top: 0.75rem; /* 12px */
-  padding-bottom: 0.75rem; /* 12px */
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
@@ -16,8 +16,8 @@ body {
 /* Top Logo + Menu Row Padding Reduced */
 .header-top {
   border-bottom: 1px solid #ccc;
-  padding-bottom: 5px; /* Previously 10px */
-  margin-bottom: 5px; /* Previously 10px */
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 /* Main Nav */
