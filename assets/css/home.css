@@ -1,16 +1,26 @@
 body {
   font-family: Georgia;
 }
+
+/* Main Header Height Reduced */
 .main-header {
   background-color: #fff;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0.75rem; /* 12px */
+  padding-bottom: 0.75rem; /* 12px */
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
   z-index: 1030;
 }
 
+/* Top Logo + Menu Row Padding Reduced */
+.header-top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px; /* Previously 10px */
+  margin-bottom: 5px; /* Previously 10px */
+}
+
+/* Main Nav */
 .main-nav .nav-link {
   color: #1c2d59;
   font-weight: 500;
@@ -21,6 +31,7 @@ body {
   color: #f27b21;
 }
 
+/* Services Nav Bar */
 .service-nav .service-link {
   color: #1c2d59;
   font-weight: 500;
@@ -35,6 +46,7 @@ body {
   color: #fff;
 }
 
+/* CTA Button */
 .btn-dark-green {
   background-color: #1c2d59;
   border: none;
@@ -43,11 +55,6 @@ body {
 .btn-dark-green:hover {
   background-color: #f27b21;
   color: #fff;
-}
-.header-top {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
 }
 
 /* Hero Section  */
@@ -1005,21 +1012,13 @@ body {
   font-weight: 400;
 }
 
-/* Top Blue Header */
-.footer-top-header {
-  background-color: #1c2d59;
-  color: white;
-  font-weight: 700; /* bold */
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-}
-
-/* Main White Area */
+/* Merged into main content */
 .footer-main-content {
   background-color: #ffffff;
   color: #000000;
   font-weight: 400;
   font-size: 1.1rem;
+  padding-bottom: 2rem;
 }
 
 /* Footer Links */
@@ -1055,12 +1054,12 @@ body {
   font-size: 1.1rem;
 }
 
-/* Optional: make p and li match too */
 .footer-section p,
 .footer-section li {
   font-size: 1.1rem;
   font-weight: 400;
 }
+
 .footer-main-content a[href^="mailto"] {
   word-break: break-word;
   overflow-wrap: break-word;
