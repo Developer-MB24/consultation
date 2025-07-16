@@ -32,6 +32,10 @@ body {
 }
 
 /* Services Nav Bar */
+.logo-img {
+  width: 249px;
+  height: auto;
+}
 .service-nav .service-link {
   color: #1c2d59;
   font-weight: 500;
