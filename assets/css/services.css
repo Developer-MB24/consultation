@@ -175,7 +175,7 @@ body {
 }
 
 .btn-success:hover {
-  background-color: #155d3a;
+  background-color: #f27b21;
 }
 
 /* Why Choose Us List */
@@ -296,7 +296,7 @@ body {
 .section-title {
   font-size: 30px;
   font-weight: 700;
-  color: #1d1d1d;
+
   text-align: center;
   margin-bottom: 40px;
 }

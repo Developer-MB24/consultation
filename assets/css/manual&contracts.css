@@ -1,25 +1,27 @@
 /* Global Font */
 body {
-  font-family: Georgia, serif;
+  font-family: Georgia;
 }
 
-/* Header */
+/* Main Header Height Reduced */
 .main-header {
   background-color: #fff;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
   z-index: 1030;
 }
 
+/* Top Logo + Menu Row Padding Reduced */
 .header-top {
   border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
 }
 
+/* Main Nav */
 .main-nav .nav-link {
   color: #1c2d59;
   font-weight: 500;
@@ -30,7 +32,11 @@ body {
   color: #f27b21;
 }
 
-/* Top Services Nav */
+/* Services Nav Bar */
+.logo-img {
+  width: 380px;
+  height: auto;
+}
 .service-nav .service-link {
   color: #1c2d59;
   font-weight: 500;
@@ -45,41 +51,15 @@ body {
   color: #fff;
 }
 
-/* Buttons */
+/* CTA Button */
 .btn-dark-green {
   background-color: #1c2d59;
-  color: #fff;
   border: none;
 }
 
 .btn-dark-green:hover {
   background-color: #f27b21;
   color: #fff;
-}
-
-/* Global Warning Button Style */
-.btn-warning {
-  background-color: #f27b21;
-  border-color: #f27b21;
-  color: #fff;
-}
-
-.btn-warning:hover {
-  background-color: #1c2d59;
-  color: white;
-  border-color: #f27b21;
-}
-
-/* Outline Button (View All Products) */
-.btn-outline-primary {
-  border-color: #f27b21 !important;
-  color: #f27b21 !important;
-}
-
-.btn-outline-primary:hover {
-  background-color: #f27b21 !important;
-  color: #fff !important;
-  border-color: #f27b21 !important;
 }
 
 /* Hero Section */

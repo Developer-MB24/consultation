@@ -105,7 +105,7 @@ body {
 
 /* On hover: background, icon color, border, shadow */
 .bg-white:hover {
-  background-color: #f5f8fc; /* Light blueish tone (or any color you prefer) */
+  background-color: #f5f8fc;
   box-shadow: 0 0 12px rgba(28, 45, 89, 0.2);
   /* border: 1px solid #1c2d59; */
 }
