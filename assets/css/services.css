@@ -11,7 +11,7 @@ body {
   z-index: 1030;
 }
 
-/* Top Logo + Menu Row Padding Reduced */
+/* Top Logo */
 .header-top {
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
@@ -31,7 +31,7 @@ body {
 
 /* Services Nav Bar */
 .logo-img {
-  width: 380px;
+  width: 450px;
   height: auto;
 }
 .service-nav .service-link {
@@ -551,6 +551,11 @@ body {
   font-size: 1.1rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+/* Move Logo towards left */
+.footer-main-content .col-md-4 {
+  text-align: left;
 }
 
 /* Links inside main content */
