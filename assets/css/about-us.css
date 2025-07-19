@@ -147,7 +147,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Hide unused hover behavior */
 .hover-content,
 img.hover-image,
 .skill-box.hovered .hover-content {
@@ -258,7 +257,6 @@ img.hover-image {
   border-color: #f27b21;
 }
 
-/* 🔸 Vision Card Hover Effect */
 .award-section .d-flex {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
@@ -270,7 +268,6 @@ img.hover-image {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* 🔸 Change text color to white on hover */
 .award-section .d-flex:hover h5,
 .award-section .d-flex:hover p,
 .award-section .d-flex:hover span {
@@ -278,7 +275,7 @@ img.hover-image {
   transition: color 0.3s ease;
 }
 
-/* 🔸 Image hover zoom */
+/*  Image hover zoom */
 .award-section .d-flex:hover .award-img {
   transform: scale(1.05);
 }
@@ -317,7 +314,6 @@ img.hover-image {
   transform: scale(1.1);
 }
 
-/* Inner triangle */
 .play-icon {
   width: 0;
   height: 0;
@@ -327,7 +323,6 @@ img.hover-image {
   margin-left: 5px;
 }
 
-/* Outer circle ring 1 */
 .play-btn::before,
 .play-btn::after {
   content: "";
@@ -351,7 +346,6 @@ img.hover-image {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Modal Styles */
 .video-modal {
   display: none;
   position: fixed;
@@ -420,14 +414,12 @@ img.hover-image {
   color: #212529;
 }
 
-/* Special initial color for the 3rd circle */
 .skill-circle.bg-success {
   background-color: #285a48 !important;
   color: #fff;
   border: none;
 }
 
-/* On hover: all turn into consistent green theme */
 .skill-circle:hover {
   background-color: #1c2d59 !important;
   color: #fff !important;
@@ -478,7 +470,7 @@ img.hover-image {
 }
 
 .blog-list-item:hover::after {
-  content: "\f35d"; /* Font Awesome arrow-up-right */
+  content: "\f35d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #1c2d59;
@@ -489,8 +481,6 @@ img.hover-image {
   transform: translateY(-50%);
   z-index: 2;
 }
-
-/* footer  */
 
 /* ANIMATED TITLE STYLING */
 .animated-title {

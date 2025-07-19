@@ -60,14 +60,12 @@ body {
 }
 /* sidebar  */
 
-/* Make sidebar sticky within its column */
 .sticky-sidebar {
   position: sticky;
-  top: 110px; /* Adjust this if header is taller/shorter */
+  top: 110px;
   z-index: 100;
 }
 
-/* Optional: make sure card inside also respects height */
 .sticky-sidebar .card {
   height: auto;
 }
@@ -102,7 +100,7 @@ body {
 }
 
 .icon-box:hover {
-  background-color: #f5f8fc; /* or any light color you prefer */
+  background-color: #f5f8fc;
   box-shadow: 0 0 12px rgba(28, 45, 89, 0.2);
   border: 1px solid #1c2d59;
 }
@@ -131,8 +129,6 @@ body {
   content: "✔ ";
   color: #f27b21;
 } */
-
-/* footer  */
 
 /* ANIMATED TITLE STYLING */
 .animated-title {

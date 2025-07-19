@@ -29,7 +29,6 @@ body {
   color: #f27b21;
 }
 
-/* Services Nav Bar */
 .logo-img {
   width: 450px;
   height: auto;
@@ -48,7 +47,6 @@ body {
   color: #fff;
 }
 
-/* CTA Button */
 .btn-dark-green {
   background-color: #1c2d59;
   border: none;
@@ -72,7 +70,6 @@ body {
   z-index: 1;
 } */
 
-/* REMOVE THIS OVERLAY */
 .about-hero::before {
   /* content: ''; */
   /* position: absolute;
@@ -82,7 +79,6 @@ body {
   z-index: 2; */
 }
 
-/* Keep this so text stays visible */
 .about-hero .content {
   position: relative;
   z-index: 3;
@@ -178,7 +174,6 @@ body {
   background-color: #f27b21;
 }
 
-/* Why Choose Us List */
 .what-about-us-section ul li {
   font-size: 0.95rem;
   line-height: 1.6;
@@ -188,7 +183,6 @@ body {
   font-size: 1rem;
 }
 
-/* Circle progress style */
 .circle-progress {
   width: 120px;
   height: 120px;
@@ -206,7 +200,6 @@ body {
   font-size: 1.5rem;
 }
 
-/* Force top alignment across all columns */
 .what-about-us-section .row.align-items-start {
   display: flex;
   flex-wrap: wrap;
@@ -218,7 +211,6 @@ body {
   justify-content: flex-start;
 }
 
-/* Make center image match height */
 .about-image {
   height: 365px;
   object-fit: cover;
@@ -230,7 +222,6 @@ body {
   background: #fff;
 }
 
-/* Card style */
 .choose-card {
   background-color: #f9f7f3;
   border-radius: 10px;
@@ -239,7 +230,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect */
 .choose-card:hover {
   background-color: #1c2d59;
   color: #fff;
@@ -250,7 +240,6 @@ body {
   color: #fff;
 }
 
-/* Active/Default highlighted card */
 .choose-card.active {
   background-color: #1c2d59;
   color: #fff;
@@ -276,7 +265,7 @@ body {
 }
 
 /* Section Title */
-/* SECTION BACKGROUND */
+
 .services-section {
   background-color: #f9f8f3;
   padding: 60px 0;
@@ -315,14 +304,12 @@ body {
   transform: translateX(0);
 } */
 
-/* SERVICE LIST WRAPPER */
 .service-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* INDIVIDUAL SERVICE BOX */
 .service-box {
   position: relative;
   border-radius: 8px;
@@ -338,7 +325,6 @@ body {
   transition: background-image 0.5s ease;
 }
 
-/* HOVER BACKGROUND FILL */
 .hover-bg {
   position: absolute;
   top: 0;
@@ -355,7 +341,6 @@ body {
   width: 100%;
 }
 
-/* ICON / TEXT / ARROW Z-INDEX ON TOP */
 .service-box .icon,
 .service-box .text,
 .service-box .arrow {
@@ -364,14 +349,12 @@ body {
   transition: color 0.4s ease;
 }
 
-/* COLOR CHANGE ON HOVER */
 .service-box:hover .text,
 .service-box:hover .arrow,
 .service-box:hover .icon {
   color: white;
 }
 
-/* HEADING TEXT INSIDE SERVICE */
 .service-box h5 {
   font-weight: 600;
   margin-bottom: 5px;
@@ -534,7 +517,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Headline section with blue bg */
 .footer-headline {
   background-color: #1c2d59;
   color: white;
@@ -543,7 +525,6 @@ body {
   font-weight: 700;
 }
 
-/* Main Footer Content */
 .footer-main-content {
   background-color: #ffffff;
   color: #000000;
@@ -553,12 +534,10 @@ body {
   padding-bottom: 3rem;
 }
 
-/* Move Logo towards left */
 .footer-main-content .col-md-4 {
   text-align: left;
 }
 
-/* Links inside main content */
 .footer-main-content a {
   color: black;
   text-decoration: none;
@@ -569,14 +548,12 @@ body {
   text-decoration: underline;
 }
 
-/* Icon links */
 .social-icons .icon-circle {
   color: #1c2d59;
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-/* Bottom Copyright */
 .footer-bottom {
   background-color: #1c2d59;
   color: white;
@@ -584,21 +561,18 @@ body {
   font-weight: 400;
 }
 
-/* Section Headings */
 .footer-section h6 {
   font-weight: 700;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
 }
 
-/* Ensure p and li are same weight */
 .footer-section p,
 .footer-section li {
   font-size: 1.1rem;
   font-weight: 400;
 }
 
-/* Handle email break */
 .footer-main-content a[href^="mailto"] {
   word-break: break-word;
   overflow-wrap: break-word;

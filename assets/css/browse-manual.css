@@ -148,7 +148,6 @@ body {
   color: white;
 }
 
-/* Lock Button (icon-only) */
 .btn-lock {
   background-color: #1c2d59;
   color: white;
@@ -165,7 +164,7 @@ body {
   color: white;
 }
 
-/* Responsive Fixes */
+/* Responsive  */
 @media (max-width: 767.98px) {
   .product-card img {
     height: 200px;
@@ -180,8 +179,6 @@ body {
     font-size: 1rem;
   }
 }
-
-/* footer  */
 
 /* animate  */
 .animated-title {

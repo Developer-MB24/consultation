@@ -2,7 +2,6 @@ body {
   font-family: Georgia;
 }
 
-/* Main Header Height Reduced */
 .main-header {
   background-color: #fff;
   padding-top: 0.75rem;
@@ -84,7 +83,7 @@ body {
   text-align: center;
   position: absolute;
   width: 100%;
-  padding: 0 1rem; /* Adds side padding for mobile */
+  padding: 0 1rem;
   z-index: 10;
 }
 
@@ -108,11 +107,11 @@ body {
   .hero-video-section video {
     height: auto;
     min-height: 300px;
-    aspect-ratio: 7/16; /* Helps mobile devices scale the video better */
+    aspect-ratio: 7/16;
   }
 
   .text-overlay {
-    position: relative; /* Pushes text below video on mobile */
+    position: relative;
     transform: none;
     left: 0;
     bottom: 0;
@@ -448,7 +447,6 @@ body {
   transform: translateY(-5px);
 }
 
-/* Hover Circle Icon */
 .overlay-icon {
   position: absolute;
   top: 50%;
@@ -470,7 +468,6 @@ body {
   opacity: 1;
 }
 
-/*  Arrow */
 .arrow-up-right {
   width: 12px;
   height: 12px;
@@ -479,7 +476,6 @@ body {
   transform: rotate(25deg);
 }
 
-/* Tag Badge */
 .tag-badge {
   display: inline-block;
   position: absolute;
@@ -495,7 +491,6 @@ body {
   z-index: 2;
 }
 
-/* Title Text */
 .title {
   margin-top: 10px;
   font-weight: bold;
@@ -508,7 +503,7 @@ body {
 }
 
 /* what can we expect  */
-/* Base style for service items */
+
 .service-item {
   padding: 20px;
   border-radius: 8px;
@@ -517,14 +512,12 @@ body {
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Reset text color */
 .service-item h5,
 .service-item p,
 .service-item .number {
   color: inherit;
 }
 
-/* Hover styles: alternate colors */
 .col-sm-6:nth-child(odd) .service-item:hover {
   background-color: #1c2d59;
   color: #fff;
@@ -535,7 +528,6 @@ body {
   color: #fff;
 }
 
-/* Ensure inner text also changes on hover */
 .col-sm-6:nth-child(odd) .service-item:hover h5,
 .col-sm-6:nth-child(odd) .service-item:hover p,
 .col-sm-6:nth-child(odd) .service-item:hover .number,
@@ -545,7 +537,6 @@ body {
   color: #fff;
 }
 
-/* Optional lift effect */
 .service-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -630,7 +621,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Inner triangle */
 .play-icon {
   width: 0;
   height: 0;
@@ -640,7 +630,6 @@ body {
   margin-left: 5px;
 }
 
-/* Outer circle ring 1 */
 .play-btn::before,
 .play-btn::after {
   content: "";
@@ -664,7 +653,6 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-/* Modal Styles */
 .video-modal {
   display: none;
   position: fixed;
@@ -819,7 +807,6 @@ body {
   font-family: Georgia, serif;
 }
 
-/* Form and Image containers are naturally stacked on mobile using Bootstrap col-12/col-md-6 */
 .form-container,
 .image-container {
   width: 100%;
@@ -850,19 +837,17 @@ body {
   color: #fff;
 }
 
-/* Image Fitting */
+/* Image */
 .object-fit-cover {
   object-fit: cover;
 }
 
-/* Animated Title Fix */
 .animated-title span {
   display: inline-block;
   white-space: nowrap;
   line-height: 1.3;
 }
 
-/* Fix breaks and stacking on small screens */
 @media (max-width: 768px) {
   .contact-section {
     padding: 2rem 1rem;
@@ -895,7 +880,6 @@ body {
   }
 }
 
-/* Optional: Remove right margins and ensure spacing is reset */
 .container-fluid,
 .row {
   margin-right: 0 !important;
@@ -1011,7 +995,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Headline section with blue bg */
 .footer-headline {
   background-color: #1c2d59;
   color: white;
@@ -1030,7 +1013,6 @@ body {
   padding-bottom: 3rem;
 }
 
-/* Move Logo towards left */
 .footer-main-content .col-md-4 {
   text-align: left;
 }
@@ -1068,7 +1050,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Ensure p and li are same weight */
 .footer-section p,
 .footer-section li {
   font-size: 1.1rem;

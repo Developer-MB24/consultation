@@ -3,7 +3,6 @@ body {
   font-family: Georgia;
 }
 
-/* Main Header Height Reduced */
 .main-header {
   background-color: #fff;
   padding-top: 0.75rem;
@@ -72,7 +71,6 @@ body {
   font-size: 1rem;
 }
 
-/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .hero-btn {
     bottom: 10px;
@@ -130,8 +128,6 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(13, 31, 60, 0.25);
   outline: none;
 }
-
-/* footer  */
 
 /* animation */
 .animated-title {

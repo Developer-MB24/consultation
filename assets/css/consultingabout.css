@@ -646,7 +646,7 @@ body {
 /* Ready to take the next step?  */
 .call-to-action-section {
   background: url("../img/home/slider1.jpeg") no-repeat center center;
-  background-size: cover; /* full image */
+  background-size: cover;
   background-position: center;
   padding: 6rem 1rem;
   font-family: Georgia, serif;
