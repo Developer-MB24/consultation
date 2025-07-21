@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Human Resources</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/healthcare-business.css" />
     <link rel="stylesheet" href="assets/css/home.css" />
-    <link rel="stylesheet" href="assets/css/human-resources.css" />
+
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
   </head>
   <body>
@@ -153,212 +155,306 @@
         </div>
       </div>
     </header>
-    <header class="main-header shadow-sm py-4">
-      <div class="container-fluid px-4">
-        <!-- Top Row -->
-        <div
-          class="d-flex justify-content-between align-items-center header-top mb-3"
-        >
-          <!-- Logo -->
-          <a
-            href="index.html"
-            class="d-flex align-items-center text-decoration-none"
-          >
-            <img
-              src="assets/img/consulting/consulting-logo.png"
-              alt="Logo"
-              class="logo-img"
-            />
-          </a>
 
-          <!-- Center Nav - Desktop Only -->
-          <nav
-            class="main-nav d-none d-md-flex gap-4 fw-bold"
-            style="margin-right: 60px"
-          >
-            <a href="index.html" class="nav-link fw-bold">Home</a>
-            <a href="about-us.html" class="nav-link fw-bold">About Us</a>
-            <a href="services.html" class="nav-link fw-bold">Services</a>
-            <a href="blog.html" class="nav-link fw-bold">Blog</a>
-            <a href="manual&contracts.html" class="nav-link fw-bold"
-              >Products</a
-            >
-          </nav>
-
-          <!-- Let's Talk Button -->
-          <a
-            href="contactus.html"
-            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-bold d-none d-md-inline"
-            style="margin-right: 30px"
-          >
-            LET'S TALK
-          </a>
-
-          <!-- Hamburger Button for Mobile -->
-          <button
-            class="btn d-lg-none"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mobileMenu"
-            aria-controls="mobileMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars fs-4 text-dark"></i>
-          </button>
-        </div>
-
-        <!-- Bottom Row (Desktop Only): Seven Services -->
-        <nav
-          class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3 fw-bold"
-        >
-          <a href="healthcare-business.html" class="service-link fw-bold"
-            >Startup</a
-          >
-          <a href="licensing&regulatory.html" class="service-link fw-bold"
-            >Compliance</a
-          >
-          <a href="staff-training.html" class="service-link fw-bold"
-            >Training</a
-          >
-          <a href="policy&procedure.html" class="service-link fw-bold"
-            >Policies</a
-          >
-          <a href="business-growth.html" class="service-link fw-bold">Growth</a>
-          <a href="technology.html" class="service-link fw-bold">Technology</a>
-          <a href="automation.html" class="service-link fw-bold">Branding</a>
-          <a href="healthcare-credentialing.html" class="service-link fw-bold"
-            >Credentialing</a
-          >
-        </nav>
-
-        <!-- Mobile Menu Collapse -->
-        <div class="collapse d-lg-none" id="mobileMenu">
-          <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
-            <ul class="list-unstyled mb-0 fw-bold">
-              <li><a class="nav-link fw-bold" href="index.html">Home</a></li>
-              <li>
-                <a class="nav-link fw-bold" href="about-us.html">About Us</a>
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="services.html"
-                  >Our Services</a
-                >
-              </li>
-              <li><a class="nav-link fw-bold" href="blog.html">Blog</a></li>
-              <hr />
-              <li>
-                <a class="nav-link fw-bold" href="healthcare-business.html"
-                  >Startup</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="licensing&regulatory.html"
-                  >Compliance</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="staff-training.html"
-                  >Training</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="policy&procedure.html"
-                  >Policies</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="business-growth.html"
-                  >Growth</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="technology.html"
-                  >Technology</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="automation.html">Branding</a>
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="healthcare-credentialing.html"
-                  >Credentialing</a
-                >
-              </li>
-              <hr />
-              <li>
-                <a class="nav-link fw-bold" href="contactus.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Mobile menu -->
-    <div class="collapse d-lg-none" id="mobileMenu">
-      <div class="mobile-menu p-3">
-        <ul class="list-unstyled mb-0">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-
-          <!-- Services Dropdown -->
-          <li>
-            <button
-              class="nav-link w-100 text-start dropdown-toggle"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#servicesSubmenu"
-              aria-expanded="false"
-            >
-              Services
-            </button>
-            <ul class="collapse list-unstyled ps-3" id="servicesSubmenu">
-              <li><a class="nav-link" href="services.html">Our Service</a></li>
-              <li>
-                <a class="nav-link" href="human-resources.html"
-                  >Human Resources</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="expert-consultation.html"
-                  >Expert Consultation</a
-                >
-              </li>
-              <li>
-                <a class="nav-link" href="financial-management.html"
-                  >Financial Management</a
-                >
-              </li>
-              <li><a class="nav-link" href="#">Project Management</a></li>
-              <li>
-                <a class="nav-link" href="marketing-research.html"
-                  >Marketing Research</a
-                >
-              </li>
-            </ul>
-          </li>
-
-          <li><a class="nav-link" href="about-us.html">About Us</a></li>
-          <li><a class="nav-link" href="#">Blog</a></li>
-          <li><a class="nav-link" href="contactus.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
     <!-- Hero Section -->
     <section class="about-hero">
-      <div class="container content">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="display-5 fw-bold">Team Details</h1>
-            <div class="breadcrumb-box mt-3">
-              <a href="index.html">Home</a>
-              <span class="mx-1">&gt;</span>
-              <span>Team Details</span>
+      <img
+        src="assets/img/services/medical-billing-banner.jpeg"
+        alt="Banner"
+        class="img-fluid w-100"
+      />
+    </section>
+
+    <div class="container py-4">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-lg-3 mb-4">
+          <div class="sticky-sidebar">
+            <!-- Sidebar content here -->
+            <div class="list-group mb-4">
+              <a
+                href="healthcare-business.html"
+                class="list-group-item list-group-item-action"
+              >
+                Healthcare Business Startup Consulting
+              </a>
+              <a
+                href="licensing&regulatory.html"
+                class="list-group-item list-group-item-action"
+              >
+                Licensing & Regulatory Compliance
+              </a>
+              <a
+                href="staff-training.html"
+                class="list-group-item list-group-item-action"
+              >
+                Staff Training & Compliance Programs
+              </a>
+              <a
+                href="policy&procedure.html"
+                class="list-group-item list-group-item-action"
+              >
+                Policy & Procedure Development
+              </a>
+              <a
+                href="business-growth.html"
+                class="list-group-item list-group-item-action"
+              >
+                Business Growth & Automation Solutions
+              </a>
+              <a
+                href="healthcare-credentialing.html"
+                class="list-group-item list-group-item-action"
+              >
+                Healthcare Credentialing
+              </a>
+              <a
+                href="accounting-bookkeeping&tax-services.html"
+                class="list-group-item list-group-item-action"
+              >
+                Accounting, Bookkeeping & Tax Services
+              </a>
+              <a
+                href="accreditation-for-healthcare.html"
+                class="list-group-item list-group-item-action active"
+              >
+                Medical Billing
+              </a>
+              <a
+                href="accreditation-for-healthcare.html"
+                class="list-group-item list-group-item-action"
+              >
+                Accreditation for healthcare
+              </a>
+            </div>
+
+            <div class="card text-center">
+              <img
+                src="assets/img/consulting/letstalk.jpeg"
+                class="card-img-top"
+                alt="Consultation Image"
+              />
+              <div class="card-body">
+                <h6 class="card-title fw-bold">
+                  Let’s Optimize Your Revenue — Together
+                </h6>
+                <p class="mb-2 fw-semibold">
+                  Whether you're a startup or a seasoned clinic ready to grow,
+                  our billing services help you create sustainable income
+                  without sacrificing ethics or efficiency.
+                </p>
+                <a
+                  href="contactus.html"
+                  class="btn btn-dark-green mt-2"
+                  style="color: white"
+                >
+                  Book a Discovery Call
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
+        <!-- Main Content -->
+        <div class="col-lg-9">
+          <h4 class="fw-bold display-6 mb-3 animated-title custom-heading">
+            Turn Care Into Revenue — Accurately, Ethically, and Efficiently
+          </h4>
+
+          <p class="custom-paragraph">
+            At Dignity Business Consulting, we understand that medical billing
+            is more than paperwork; it’s the financial heartbeat of your
+            healthcare organization. Every time your team delivers care, whether
+            it’s a physical exam, diagnostic test, or counseling session, we
+            ensure that it gets coded, submitted to payers, and reimbursed
+            correctly.
+          </p>
+          <p class="custom-paragraph">
+            Without accurate billing, even the most exceptional care remains
+            unpaid. And without payment, your clinic becomes a charity with a
+            waiting room. Whether you run a behavioral health clinic, home care
+            agency, or physician group, your mission depends on a steady,
+            compliant, and optimized revenue cycle. That’s where we come in.
+          </p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h5 class="fw-semibold mb-2">
+                Why You Need Medical Billing Services?
+              </h5>
+              <ul class="custom-paragraph ps-3">
+                <li class="mb-2">
+                  Protect Cash Flow – Clean billing ensures timely reimbursement
+                  from both payers and patients.
+                </li>
+                <li class="mb-2">
+                  Stay Compliant – Incorrect coding and documentation can
+                  trigger audits, recoupments, and penalties.
+                </li>
+                <li class="mb-2">
+                  Avoid Revenue Leaks – Lost or denied claims, poor follow-up,
+                  and outdated systems mean missed income.
+                </li>
+                <li class="mb-2">
+                  Free Up Time – Outsource your billing to experts and reclaim
+                  your time for what matters most — patient care.
+                </li>
+                <li>
+                  Support Growth – Strategic billing insights help you scale
+                  with clarity, from adding providers to expanding services.
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <h5 class="fw-semibold mb-2">
+                Common Pitfalls We Help You Avoid
+              </h5>
+              <ul class="custom-paragraph ps-3">
+                <li class="mb-2">Wrong codes → claim denials</li>
+                <li class="mb-2">Delayed submissions → delayed payments</li>
+                <li class="mb-2">Missing documentation → audit risk</li>
+                <li class="mb-2">Lack of credentialing → services denied</li>
+                <li>No follow-up system → lost revenue</li>
+              </ul>
+            </div>
+          </div>
+
+          <img
+            src="assets/img/services/medical-billing.jpeg"
+            class="img-fluid my-4 w-100"
+            alt="Team Meeting"
+          />
+
+          <section class="py-5">
+            <div class="container">
+              <div class="row g-4">
+                <!-- Who We Work With -->
+                <div class="col-md-6">
+                  <div class="p-4 shadow rounded h-100 bg-white">
+                    <h5
+                      class="fw-bold mb-3"
+                      style="color: #1c2d59; font-size: 1.33rem"
+                    >
+                      Who We Work With?
+                    </h5>
+
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i
+                        >Behavioral Health Clinics
+                      </li>
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i
+                        >Home Health & Companion Care Agencies
+                      </li>
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i
+                        >Outpatient Primary Care and Urgent Care
+                      </li>
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i
+                        >Substance Use Treatment Centers
+                      </li>
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i
+                        >Telehealth Startups & Concierge Practices
+                      </li>
+                      <li>
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i
+                        >Wellness Clinics & Integrative Health Providers
+                      </li>
+                      <li class="mt-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i
+                        >Medical Staffing Agencies & Group Practices
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="col-md-6">
+                  <div class="p-4 shadow rounded h-100 bg-white">
+                    <h5
+                      class="fw-bold mb-3"
+                      style="color: #1c2d59; font-size: 1.33rem"
+                    >
+                      Why Choose Us?
+                    </h5>
+
+                    <ul class="list-unstyled">
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i>
+                        Healthcare-Specific Expertise
+                      </li>
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i>
+                        Transparent Reporting & Real-Time Dashboards
+                      </li>
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i>
+                        Full Revenue Cycle Management (RCM)
+                      </li>
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i>
+                        Denial Prevention & Appeals
+                      </li>
+                      <li class="mb-2">
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i>
+                        HIPAA-Compliant Processes
+                      </li>
+                      <li>
+                        <i
+                          class="fas fa-check-circle me-2"
+                          style="color: #f27b21"
+                        ></i>
+                        Spiritually Aligned, Integrity-Led Service
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-    </section>
+    </div>
 
     <!-- footer  -->
     <footer class="footer-section text-white">
@@ -511,7 +607,6 @@
         Copyright 2025 © Dignity Business Consulting
       </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/human-resources.js"></script>
