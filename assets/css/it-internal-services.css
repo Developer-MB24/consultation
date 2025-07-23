@@ -1,0 +1,157 @@
+/* Hero Section Background */
+.software-hero-section {
+  background-image: url("assets/img/services/IT-Page-Banner.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Rotating Globe */
+.rotating-globe {
+  width: 220px;
+  height: 220px;
+  background-image: url("assets/img/services/it-internal-globe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: rotateGlobe 20s linear infinite;
+}
+
+@keyframes rotateGlobe {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.breadcrumb {
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #ffffff;
+}
+
+.z-1 {
+  z-index: 1;
+  position: relative;
+}
+.z-2 {
+  z-index: 2;
+  position: relative;
+}
+
+/* 2nd section  */
+.custom-heading {
+  font-family: Georgia, serif;
+  color: #1c2d59;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.custom-paragraph {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.benefit-item {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #1c2d59;
+}
+
+.lab-team-section img {
+  border-radius: 1rem;
+}
+
+/* 3rd section  */
+.technology-insight-section img {
+  border-radius: 1rem;
+}
+
+.custom-paragraph {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* carousel  */
+.brand-carousel-section {
+  background-color: #fff;
+  position: relative;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-track {
+  animation: scrollCarousel 25s linear infinite;
+  display: flex;
+  gap: 4rem;
+}
+
+.carousel-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.trustpilot-static img {
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+/* Carousel Animation */
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* 4th section  */
+.faq-section .accordion-button {
+  font-family: Georgia, serif;
+  background-color: transparent;
+  color: #1c2d59;
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  color: #1c2d59;
+  background-color: transparent;
+}
+
+.faq-section .accordion-body {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  color: #444;
+}
+
+.call-box {
+  background-color: #1c2d59;
+  font-family: Georgia, serif;
+  font-size: 16px;
+}

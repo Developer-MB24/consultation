@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>IT Internal Services</title>
+    <meta
+      name="description"
+      content="Maximize deductions and reduce tax stress with strategic tax planning for clinics, solo practitioners, and healthcare agencies."
+    />
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/it-internal-services.css" />
+    <link rel="stylesheet" href="assets/css/home.css" />
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <header class="main-header shadow-sm py-4">
+      <div class="container-fluid px-4">
+        <!-- Top Row -->
+        <div
+          class="d-flex justify-content-between align-items-center header-top mb-3"
+        >
+          <!-- Logo -->
+          <a
+            href="index.html"
+            class="d-flex align-items-center text-decoration-none"
+          >
+            <img
+              src="assets/img/consulting/consulting-logo.png"
+              alt="Logo"
+              class="logo-img"
+            />
+          </a>
+
+          <!-- Center Nav - Desktop Only -->
+          <nav
+            class="main-nav d-none d-md-flex gap-4 fw-bold"
+            style="margin-right: 60px"
+          >
+            <a href="index.html" class="nav-link fw-bold">Home</a>
+            <a href="about-us.html" class="nav-link fw-bold">About Us</a>
+            <a href="services.html" class="nav-link fw-bold">Services</a>
+            <a href="blog.html" class="nav-link fw-bold">Blog</a>
+            <a href="manual&contracts.html" class="nav-link fw-bold"
+              >Products</a
+            >
+          </nav>
+
+          <!-- Let's Talk Button -->
+          <a
+            href="contactus.html"
+            class="btn btn-dark-green text-white px-4 py-2 rounded-pill fw-bold d-none d-md-inline"
+            style="margin-right: 30px"
+          >
+            LET'S TALK
+          </a>
+
+          <!-- Hamburger Button for Mobile -->
+          <button
+            class="btn d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars fs-4 text-dark"></i>
+          </button>
+        </div>
+
+        <!-- Bottom Row (Desktop Only): Seven Services -->
+        <nav
+          class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3 fw-bold"
+        >
+          <a href="healthcare-business.html" class="service-link fw-bold"
+            >Startup</a
+          >
+          <a href="licensing&regulatory.html" class="service-link fw-bold"
+            >Compliance</a
+          >
+          <a href="staff-training.html" class="service-link fw-bold"
+            >Training</a
+          >
+          <a href="policy&procedure.html" class="service-link fw-bold"
+            >Policies</a
+          >
+          <a href="business-growth.html" class="service-link fw-bold">Growth</a>
+          <a href="technology.html" class="service-link fw-bold">Technology</a>
+          <a href="automation.html" class="service-link fw-bold">Branding</a>
+          <a href="healthcare-credentialing.html" class="service-link fw-bold"
+            >Credentialing</a
+          >
+        </nav>
+
+        <!-- Mobile Menu Collapse -->
+        <div class="collapse d-lg-none" id="mobileMenu">
+          <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
+            <ul class="list-unstyled mb-0 fw-bold">
+              <li><a class="nav-link fw-bold" href="index.html">Home</a></li>
+              <li>
+                <a class="nav-link fw-bold" href="about-us.html">About Us</a>
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="services.html"
+                  >Our Services</a
+                >
+              </li>
+              <li><a class="nav-link fw-bold" href="blog.html">Blog</a></li>
+              <hr />
+              <li>
+                <a class="nav-link fw-bold" href="healthcare-business.html"
+                  >Startup</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="licensing&regulatory.html"
+                  >Compliance</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="staff-training.html"
+                  >Training</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="policy&procedure.html"
+                  >Policies</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="business-growth.html"
+                  >Growth</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="technology.html"
+                  >Technology</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="automation.html">Branding</a>
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="healthcare-credentialing.html"
+                  >Credentialing</a
+                >
+              </li>
+              <hr />
+              <li>
+                <a class="nav-link fw-bold" href="contactus.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- <section class="software-hero-section position-relative text-white">
+      <div class="container-fluid px-5">
+        <div class="row align-items-center min-vh-60 py-5">
+          
+          <div class="col-lg-6 z-2">
+            <div class="mb-4">
+              <h1 class="display-4 fw-bold">Software Development</h1>
+              <div class="breadcrumb-nav d-flex align-items-center">
+                <i class="fas fa-diamond me-2" style="color: #f27b21"></i>
+                <nav>
+                  <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item">
+                      <a href="#" class="text-white fw-semibold">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active text-white fw-bold">
+                      Software Development
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="rotating-globe mt-5"></div>
+          </div>
+
+         
+          <div class="col-lg-6 z-1">
+            <img
+              src="assets/img/services/IT-Page-Banner.jpeg"
+              alt="Digital Globe"
+              class="img-fluid w-100"
+            />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <img
+        src="assets/img/services/IT-Page-Banner.jpeg"
+        alt="Banner"
+        class="img-fluid w-100"
+      />
+    </section>
+
+    <!-- 2nd section  -->
+    <section>
+      <section class="lab-team-section py-4 px-3">
+        <div class="container-fluid">
+          <img
+            src="assets/img/services/2nd sec.jpg"
+            alt="Tech Team in Lab"
+            class="img-fluid w-100 rounded-4 shadow-sm"
+          />
+        </div>
+      </section>
+
+      <section class="service-overview-section py-5">
+        <div class="container-fluid px-lg-5">
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <h2 class="custom-heading mb-3">
+                <i class="fas fa-cogs me-2" style="color: #1c2d59"></i>
+                Service Overview
+              </h2>
+              <p class="custom-paragraph">
+                At tempus aenean sapien torquent sed diam class efficitur mus
+                morbi eros dictum quam augue ac laor eet ligula libero mi
+                commodo nibh hac fermentum orci ad pharetra consequat justo duis
+                turpis lorem elit dui consectetur magnis lacinia odio per
+                placerat feugiat vestibulum volutpat mauris mollis primis
+                imperdiet posu ere ex enim gravida pellentesque vulputate
+                malesuada dictumst fames interdum cursus an te tellus porta
+                ullamcorper accumsan non eu adipiscing is the integer venenatis
+                sagittis arcu curae finibus ridi culus aliquam velit lobortis
+                senectus vitae sollicitudin sit consectetuer ultricies rutrum
+                parturient pede nisi nascetur habitant netus quisque elementum.
+              </p>
+
+              <h2 class="custom-heading mt-5 mb-3">
+                <i class="fas fa-check-double me-2" style="color: #1c2d59"></i>
+                Benefits Our Services
+              </h2>
+              <p class="custom-paragraph">
+                At tempus aenean sapien torquent sed diam class efficitur mus
+                morbi eros dictum quam augue ac laor eet ligula libero mi
+                commodo nibh hac fermentum orci ad pharetra consequat justo duis
+                turpis lorem elit dui consectetur magnis lacinia odio per
+                placerat congue vestibulum volutpat mauris mollis.
+              </p>
+
+              <div class="row mt-4">
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="benefit-item d-flex align-items-start">
+                    <i
+                      class="fas fa-chart-bar me-2 mt-1"
+                      style="color: #1c2d59"
+                    ></i>
+                    <span>Big Data Consulting</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="benefit-item d-flex align-items-start">
+                    <i
+                      class="fas fa-sync-alt me-2 mt-1"
+                      style="color: #1c2d59"
+                    ></i>
+                    <span>Digital Transformation</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="benefit-item d-flex align-items-start">
+                    <i
+                      class="fas fa-server me-2 mt-1"
+                      style="color: #1c2d59"
+                    ></i>
+                    <span>Managed IT Services</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="benefit-item d-flex align-items-start">
+                    <i
+                      class="fas fa-lightbulb me-2 mt-1"
+                      style="color: #1c2d59"
+                    ></i>
+                    <span>Digital Innovation</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="benefit-item d-flex align-items-start">
+                    <i class="fas fa-gem me-2 mt-1" style="color: #1c2d59"></i>
+                    <span>Best Value Solutions</span>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-3">
+                  <div class="benefit-item d-flex align-items-start">
+                    <i
+                      class="fas fa-rocket me-2 mt-1"
+                      style="color: #1c2d59"
+                    ></i>
+                    <span>Cutting-Edge IT</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- 3rd section  -->
+    <section class="technology-insight-section py-5">
+      <div class="container">
+        <!-- Row of Images -->
+        <div class="row g-4 mb-4">
+          <div class="col-md-4">
+            <img
+              src="assets/img/services/3rd sec.jpg"
+              alt="Tech Team 1"
+              class="img-fluid rounded-4 shadow-sm w-100"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/img/services/3rd sec.jpg"
+              alt="Tech Team 2"
+              class="img-fluid rounded-4 shadow-sm w-100"
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/img/services/3rd sec.jpg"
+              alt="Tech Team 3"
+              class="img-fluid rounded-4 shadow-sm w-100"
+            />
+          </div>
+        </div>
+
+        <!-- Paragraph Text -->
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <p class="custom-paragraph">
+              At tempus aenean sapien torquent sed diam class efficitur mus
+              morbi eros dictum quam augue ac laor eet ligula libero mi commodo
+              nibh hac fermentum orci ad pellentesque vulputate malesuada
+              dictumst fames interdum cursus an te tellus porta ullamcorper
+              accumsan non eu adipiscing integer venenatis sagittis arcu curae
+              finibus ridi culus aliquam velit lobortis senectus vitae
+              sollicitudin sit consectetuer ultricies rutrum parturient pede
+              nisi nascetur habitant netus quisque elementum inceptos nam felis
+              penatibus feugiat or if you would like to report a security
+              violation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-carousel-section py-5">
+      <div class="container-fluid px-lg-5">
+        <div class="d-flex align-items-center gap-4 overflow-hidden">
+          <!-- Static Trustpilot Block -->
+          <div
+            class="trustpilot-static d-flex align-items-center flex-shrink-0 me-5"
+          >
+            <!-- Avatars -->
+            <div class="d-flex align-items-center me-3">
+              <img
+                src="assets/img/logos/avatar1.jpg"
+                class="rounded-circle me-n2"
+                width="40"
+                height="40"
+                alt="user1"
+              />
+              <img
+                src="assets/img/logos/avatar2.jpg"
+                class="rounded-circle me-n2"
+                width="40"
+                height="40"
+                alt="user2"
+              />
+              <img
+                src="assets/img/logos/avatar3.jpg"
+                class="rounded-circle me-n2"
+                width="40"
+                height="40"
+                alt="user3"
+              />
+              <img
+                src="assets/img/logos/avatar4.jpg"
+                class="rounded-circle"
+                width="40"
+                height="40"
+                alt="user4"
+              />
+            </div>
+            <!-- Trustpilot -->
+            <div>
+              <div class="fw-bold d-flex align-items-center mb-1">
+                <i class="fas fa-star text-success me-1"></i> Trustpilot
+              </div>
+              <div>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Moving Carousel -->
+          <div class="carousel-wrapper">
+            <div class="carousel-track d-flex align-items-center">
+              <img
+                src="assets/img/services/razorpay.png"
+                alt="Sisense"
+                class="carousel-logo"
+              />
+              <img
+                src="assets/img/services/razorpay.png"
+                alt="Workato"
+                class="carousel-logo"
+              />
+              <img
+                src="assets/img/services/razorpay.png"
+                alt="Razorpay"
+                class="carousel-logo"
+              />
+              <img
+                src="assets/img/services/razorpay.png"
+                alt="Workato"
+                class="carousel-logo"
+              />
+
+              <!-- Repeat for seamless loop -->
+              <img
+                src="assets/img/logos/sisense.png"
+                alt="Sisense"
+                class="carousel-logo"
+              />
+              <img
+                src="assets/img/logos/workato.png"
+                alt="Workato"
+                class="carousel-logo"
+              />
+              <img
+                src="assets/img/logos/razorpay.png"
+                alt="Razorpay"
+                class="carousel-logo"
+              />
+              <img
+                src="assets/img/logos/workato.png"
+                alt="Workato"
+                class="carousel-logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4th section  -->
+    <section class="faq-section py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left: Accordion -->
+          <div class="col-lg-6">
+            <div class="accordion" id="faqAccordion">
+              <!-- Item 1 -->
+              <div class="accordion-item border-0 mb-3">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                    aria-expanded="true"
+                    aria-controls="faq1"
+                  >
+                    What industries do you specialize in?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    What is your typical project timeline and how do you ensure
+                    deadlines? These titles are designed to capture the essence
+                    of your agency and make a strong first impression. Industry
+                    Solutions start with a simple contact.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                    aria-expanded="false"
+                    aria-controls="faq2"
+                  >
+                    How can I get a quote for my project?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    You can get a quote by contacting our team through the
+                    website or phone. We'll assess your requirements and provide
+                    a detailed estimate.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                    aria-expanded="false"
+                    aria-controls="faq3"
+                  >
+                    Do you provide post-project support?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, we provide continuous post-project support to ensure
+                    everything runs smoothly after delivery.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="accordion-item border-0 mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                    aria-expanded="false"
+                    aria-controls="faq4"
+                  >
+                    How can I contact you for more information?
+                  </button>
+                </h2>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Feel free to call us at (704) 555-0127 or use our contact
+                    form to request more details.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                    aria-expanded="false"
+                    aria-controls="faq5"
+                  >
+                    What are your business hours?
+                  </button>
+                </h2>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    We are available Monday to Friday, 9 AM to 6 PM EST.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Image and CTA -->
+          <div class="col-lg-6 mt-4 mt-lg-0 position-relative">
+            <img
+              src="assets/img/services/4th sec.png"
+              class="img-fluid rounded-4 shadow"
+              alt="Team Support"
+            />
+            <div
+              class="call-box position-absolute bottom-0 start-0 m-4 p-3 px-4 rounded-3 text-white d-flex align-items-center gap-2"
+            >
+              <i class="fas fa-phone-alt"></i>
+              <span>(888) 404-1237</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact us  -->
+    <section class="contact-section py-5">
+      <div class="container-fluid px-0">
+        <!-- Heading -->
+        <div class="mb-4 px-4">
+          <p class="fw-semibold custom-paragraph">CONTACT US</p>
+
+          <h2 class="fw-bold animated-title custom-heading">
+            We’re Here to Help You Navigate,<br />
+            Launch and Grow.
+          </h2>
+        </div>
+
+        <div
+          class="row g-0 align-items-stretch flex-md-row flex-column-reverse"
+        >
+          <!-- Image on Left (Desktop), Bottom (Mobile) -->
+          <div class="col-md-6 p-0">
+            <img
+              src="assets/img/consulting/contactform.jpeg"
+              alt="World Map"
+              class="w-100 h-100 object-fit-cover"
+            />
+          </div>
+
+          <!-- Form on Right (Desktop), Top (Mobile) -->
+          <div class="col-md-6 d-flex align-items-center px-4">
+            <form class="w-100">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    placeholder="Confirm Email"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    rows="5"
+                    class="form-control custom-input"
+                    placeholder="How Can We Help You? Get In Touch"
+                  ></textarea>
+                </div>
+                <!-- SMS Consent -->
+                <div class="col-12">
+                  <div class="form-check mb-4">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="smsConsent"
+                      required
+                    />
+                    <label class="form-check-label text-dark" for="smsConsent">
+                      <strong>Consent</strong><br />
+                      By checking this box, I consent to receive text messages
+                      from
+                      <strong>Dignity Business Consulting</strong> related to
+                      conversational purposes, appointment reminders, follow-up
+                      on cases, order confirmations, etc. You may reply STOP to
+                      opt-out at any time. For assistance, reply HELP. Messages
+                      and data rates may apply. Message frequency will vary.
+                      <!-- Learn more on
+                      <a
+                        href="#"
+                        class="text-decoration-underline"
+                        target="_blank"
+                      >
+                        SMS Terms & Conditions and Privacy Policy </a
+                      >. -->
+                    </label>
+                    <div class="invalid-feedback">
+                      You must provide consent before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mb-2">
+                  <button
+                    type="submit"
+                    class="btn btn-dark-green rounded-pill px-4 py-2 fw-bold text-white"
+                  >
+                    Let’s Connect
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="footer-section text-white">
+      <!-- Headline Section with Blue Background -->
+      <div class="footer-headline text-center px-3">
+        <h3 class="fw-bold mb-0 animated-title">
+          Expert Guidance For Long Term Business Success.
+        </h3>
+      </div>
+
+      <!-- Main White Area -->
+      <div class="footer-main-content text-dark">
+        <div class="px-3">
+          <div class="row">
+            <!-- Logo + Description -->
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="text-center">
+                <img
+                  src="assets/img/logo-white.png"
+                  alt="Dignity Logo"
+                  style="height: auto; width: 80%; max-width: 250px"
+                />
+              </div>
+
+              <div
+                class="social-icons d-flex justify-content-center gap-3 mt-4"
+              >
+                <a
+                  href="https://www.facebook.com/profile.php?id=61577766730675"
+                  class="icon-circle"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" class="icon-circle">
+                  <i class="fab fa-instagram"></i>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/company/dignity-business-consulting/about/"
+                  class="icon-circle"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!--  (Twitter) -->
+                <a href="https://x.com/" class="icon-circle">
+                  <i class="fab fa-x-twitter"></i>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://www.youtube.com/" class="icon-circle">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-5 mb-4 mb-md-0 border-start ps-md-4">
+              <div class="row">
+                <div class="col-6">
+                  <h6 class="fw-semibold">Quick Links</h6>
+                  <ul class="list-unstyled small">
+                    <li class="mb-3"><a href="index.html">– Home</a></li>
+                    <li class="mb-3"><a href="about-us.html">– About Us</a></li>
+                    <li class="mb-3">
+                      <a href="services.html">– Our Service</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="contactus.html">– Contact Us</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="policy&procedure.html">– Policy & Procedure</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="it-services.html">– IT Services</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="sms-terms.html">– SMS Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <h6 class="fw-semibold invisible">Used For Link</h6>
+                  <ul class="list-unstyled small">
+                    <li class="mb-3">
+                      <a href="healthcare-business.html"
+                        >– Healthcare Startup</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a href="licensing&regulatory.html"
+                        >– Licensing & Compliance</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a href="staff-training.html">– Staff Training</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="business-growth.html">– Growth & Automation</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="business-growth.html">– Branding</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="refund-policy.html">– Refund Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-md-3">
+              <h6 class="fw-semibold">Contact Info</h6>
+              <ul class="list-unstyled small">
+                <li class="mb-3 d-flex align-items-start">
+                  <i class="fas fa-map-marker-alt me-2 mt-1"></i>
+                  <a
+                    href="https://www.google.com/maps?q=1801+S.+Extension+Rd,+Mesa,+AZ,+United+States,+Arizona"
+                    target="_blank"
+                  >
+                    1801 S. Extension Rd, Mesa, AZ, 85210, United States
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <a href="tel:+18884041237">+1 (888)-404-1237</a>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="fas fa-phone-alt me-2"></i>
+                    <a href="tel:+14806260611">+1 (480)-626-0611</a>
+                  </div>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="fas fa-envelope me-2"></i>
+                  <a href="mailto:contact@dignitybusinessconsulting.com">
+                    contact@dignitybusinessconsulting.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Blue Footer -->
+      <div class="footer-bottom text-center small py-3">
+        Copyright 2025 © Dignity Business Consulting
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/human-resources.js"></script>
+  </body>
+</html>
