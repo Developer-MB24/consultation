@@ -32,7 +32,7 @@ body {
   border-radius: 0;
 }
 .icon-circle {
-  background-color: #f27b21;
+  background-color: #1c2d59;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -72,6 +72,18 @@ body {
   z-index: 1;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Ensure consistent card height */
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
 }
 
 /* Orange hover background effect */
@@ -99,6 +111,7 @@ body {
   margin-bottom: 0.5rem;
   position: relative;
   z-index: 2;
+  line-height: 1.4;
 }
 
 .service-card p {
@@ -108,11 +121,13 @@ body {
 }
 
 /* Icon styling */
-.service-card .icon-service {
+.service-card .icon-service,
+.service-card i {
   color: #f27b21;
   position: relative;
   z-index: 2;
   transition: color 0.3s ease;
+  font-size: 2rem;
   margin: 1rem 0;
 }
 
@@ -122,16 +137,33 @@ body {
   color: #fff !important;
 }
 
-.service-card:hover .icon-service {
+.service-card:hover .icon-service,
+.service-card:hover i {
   color: #fff;
 }
 
-/* CTA bar */
+/* READ MORE footer */
+.read-more-footer {
+  background-color: #1c2d59;
+  color: white;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  transition: filter 0.3s ease;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.read-more-footer:hover {
+  filter: brightness(1.05);
+}
+
+/* CTA box */
 .cta-border-box {
   border: 2px solid #1c2d59;
   background-color: #fff;
   font-family: Georgia, serif;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
 }
-
-/* Third Section  */
