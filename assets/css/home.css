@@ -65,24 +65,20 @@ body {
     height: auto;
   }
 
-  /* Adjust main header spacing */
   .main-header {
     padding-top: 0.5rem !important;
     padding-bottom: 0.5rem !important;
   }
 
-  /* 🔥 Hide main nav and CTA button */
   .main-nav,
   .btn-dark-green {
     display: none !important;
   }
 
-  /* Optional: align hamburger to right if needed */
   .header-top .btn.d-lg-none {
     margin-left: auto;
   }
 
-  /* Style the service links for tablet */
   .service-nav {
     flex-wrap: wrap;
     justify-content: center;
