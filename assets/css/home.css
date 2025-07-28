@@ -888,6 +888,38 @@ body {
 .floating-image-wrapper.active {
   opacity: 1;
 }
+@media (max-width: 767px) {
+  .team-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .team-info {
+    order: 1;
+    margin-bottom: 10px;
+  }
+
+  .team-arrow {
+    order: 2;
+    margin-top: 10px;
+  }
+
+  .team-row h5 {
+    font-size: 1rem;
+  }
+
+  .team-arrow .arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+
+  .floating-image-wrapper {
+    display: none;
+  }
+}
 
 /* Contact us  */
 .contact-section {
