@@ -220,3 +220,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Let default behavior continue (navigate to services.html)
   });
 });
+
+// hide header
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("mainNavbar");
+  const footer = document.getElementById("pageFooter");
+
+  const footerTop = footer.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (footerTop < windowHeight) {
+    navbar.style.display = "none";
+  } else {
+    navbar.style.display = "";
+  }
+});

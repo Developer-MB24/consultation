@@ -105,9 +105,10 @@ body {
   }
 
   .hero-video-section video {
+    width: 100%;
     height: auto;
-    min-height: 300px;
-    aspect-ratio: 7/16;
+    object-fit: contain;
+    display: block;
   }
 
   .text-overlay {
@@ -1074,4 +1075,86 @@ body {
 .animated-title.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Fix container overflow in mobile and center all elements */
+@media (max-width: 767.98px) {
+  .container,
+  .row,
+  .col,
+  .col-md-3,
+  .col-md-9,
+  .sidebar,
+  section,
+  .topbar,
+  .card,
+  .card-body,
+  .input-group,
+  .navbar {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .topbar,
+  nav,
+  .sidebar {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .navbar img,
+  .logo img,
+  .logo-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .text-center,
+  .text-end,
+  .text-start {
+    text-align: center !important;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group .form-control {
+    text-align: center;
+  }
+
+  button,
+  .btn,
+  .form-control {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .calendar-sidebar,
+  .calendar-column {
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .calendar-container {
+    padding: 1rem;
+  }
 }

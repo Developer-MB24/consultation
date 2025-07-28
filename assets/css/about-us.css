@@ -392,7 +392,7 @@ img.hover-image {
   cursor: pointer;
 }
 
-/* Our Skill */
+/* Our Achievment */
 
 .our-skill-section {
   background-color: #fefcf6;
@@ -412,6 +412,7 @@ img.hover-image {
   transition: all 0.3s ease;
   background-color: #fff;
   color: #212529;
+  text-align: center;
 }
 
 .skill-circle.bg-success {
@@ -430,6 +431,32 @@ img.hover-image {
 .skill-circle:hover i,
 .skill-circle:hover h2 {
   color: #fff !important;
+}
+
+/* ✅ Mobile Responsive Styles */
+@media (max-width: 576px) {
+  .skill-circle {
+    width: 160px;
+    height: 160px;
+    padding: 15px;
+  }
+
+  .skill-circle h2 {
+    font-size: 1.5rem;
+  }
+
+  .skill-circle p {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }
+
+  .custom-heading {
+    font-size: 1.5rem;
+  }
+
+  .custom-paragraph {
+    font-size: 0.875rem;
+  }
 }
 
 /* Blog */
