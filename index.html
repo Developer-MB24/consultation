@@ -313,8 +313,12 @@
               <div
                 class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-3"
               >
-                <a href="#" class="btn dignity-button">Learn More</a>
-                <a href="#" class="btn dignity-button">Get Support</a>
+                <a href="about-us.html" class="btn dignity-button"
+                  >Learn More</a
+                >
+                <a href="contactus.html" class="btn dignity-button"
+                  >Get Support</a
+                >
               </div>
             </div>
           </div>
@@ -344,7 +348,7 @@
             class="text-decoration-none text-dark"
           >
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-dark-hover"
               data-bg="assets/img/consulting/startup.jpg"
             >
               <div class="hover-bg"></div>
@@ -366,7 +370,7 @@
             class="text-decoration-none text-dark"
           >
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-orange-hover"
               data-bg="assets/img/consulting/licensing.jpg"
             >
               <div class="hover-bg"></div>
@@ -388,7 +392,7 @@
             class="text-decoration-none text-dark"
           >
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-dark-hover"
               data-bg="assets/img/consulting/policies.jpg"
             >
               <div class="hover-bg"></div>
@@ -410,7 +414,7 @@
             class="text-decoration-none text-dark"
           >
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-orange-hover"
               data-bg="assets/img/consulting/policies.jpg"
             >
               <div class="hover-bg"></div>
@@ -429,7 +433,7 @@
           <!-- Service 4 -->
           <a href="staff-training.html" class="text-decoration-none text-dark">
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-dark-hover"
               data-bg="assets/img/consulting/training.jpg"
             >
               <div class="hover-bg"></div>
@@ -447,15 +451,18 @@
           </a>
 
           <!-- Service 5 -->
-          <a href="it-services.html" class="text-decoration-none text-dark">
+          <a
+            href="digital-solutions.html"
+            class="text-decoration-none text-dark"
+          >
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-orange-hover"
               data-bg="assets/img/consulting/it.jpg"
             >
               <div class="hover-bg"></div>
               <div class="icon"><i class="bi bi-hdd-network"></i></div>
               <div class="text">
-                <h5>IT Services</h5>
+                <h5>Digital Solutions</h5>
                 <p>
                   Build a strong online presence with our HIPAA-compliant web
                   solutions, EHR integrations, and healthcare-focused IT
@@ -469,7 +476,7 @@
           <!-- Service 6 -->
           <a href="business-growth.html" class="text-decoration-none text-dark">
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-dark-hover"
               data-bg="assets/img/consulting/automation.jpg"
             >
               <div class="hover-bg"></div>
@@ -492,7 +499,7 @@
             class="text-decoration-none text-dark"
           >
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-orange-hover"
               data-bg="assets/img/consulting/marketing.jpg"
             >
               <div class="hover-bg"></div>
@@ -514,7 +521,7 @@
             class="text-decoration-none text-dark"
           >
             <div
-              class="service-box hover-slide"
+              class="service-box hover-slide bg-dark-hover"
               data-bg="assets/img/consulting/marketing.jpg"
             >
               <div class="hover-bg"></div>
@@ -938,9 +945,11 @@
           Your future success starts with a conversation. <br />
           Let's make it happen.
         </p>
-
-        <button class="dignity-button-new mt-3">Schedule Now</button>
       </div>
+
+      <section class="bg-white py-4 text-center">
+        <button class="dignity-button-new">Schedule Now</button>
+      </section>
     </section>
 
     <!-- video section  -->
@@ -1213,30 +1222,38 @@
                 </div>
                 <!-- SMS Consent -->
                 <div class="col-12">
-                  <div class="form-check mb-4">
+                  <div class="form-check mb-2 d-flex align-items-start">
                     <input
-                      class="form-check-input"
+                      class="form-check-input mt-1 me-2"
                       type="checkbox"
                       id="smsConsent"
                       required
                     />
-                    <label class="form-check-label text-dark" for="smsConsent">
-                      <strong>Consent</strong><br />
+                    <label
+                      class="form-check-label"
+                      for="smsConsent"
+                      style="
+                        font-size: 0.73rem;
+                        font-style: italic;
+                        line-height: 1.2;
+                      "
+                    >
                       By checking this box, I consent to receive text messages
                       from
-                      <strong>Dignity Business Consulting</strong> related to
+                      <strong>Dignity Medical Training</strong> related to
                       conversational purposes, appointment reminders, follow-up
                       on cases, order confirmations, etc. You may reply STOP to
-                      opt-out at any time. For assistance, reply HELP. Messages
+                      opt-out at any time. For assistance reply HELP. Messages
                       and data rates may apply. Message frequency will vary.
-                      <!-- Learn more on
+                      Learn more on
                       <a
                         href="#"
                         class="text-decoration-underline"
                         target="_blank"
+                        style="color: #1c2d59"
                       >
                         SMS Terms & Conditions and Privacy Policy </a
-                      >. -->
+                      >.
                     </label>
                     <div class="invalid-feedback">
                       You must provide consent before submitting.

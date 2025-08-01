@@ -203,8 +203,9 @@ body {
     left: 0;
     bottom: 0;
     padding: 1rem 1rem 2rem;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, #000 100%);
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, #000 100%); */
     color: #fff;
+    background: white;
     text-align: center;
   }
 
@@ -367,10 +368,17 @@ body {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #1c2d59;
   z-index: 1;
   transition: width 0.4s ease;
   border-radius: 8px;
+}
+
+.bg-dark-hover .hover-bg {
+  background-color: #1c2d59;
+}
+
+.bg-orange-hover .hover-bg {
+  background-color: #f27b21;
 }
 
 .service-box:hover .hover-bg {
@@ -421,9 +429,10 @@ body {
 }
 
 .service-box:hover .arrow {
-  border-color: #1c2d59;
+  border-color: white;
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .service-box {
     flex-direction: column;
