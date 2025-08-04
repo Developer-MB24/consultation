@@ -130,6 +130,22 @@ body {
   color: #f27b21;
 } */
 
+.icon-hover {
+  background-color: #1c2d59;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  font-size: 0.55rem;
+}
+
+li:hover .icon-hover {
+  background-color: #f27b21;
+}
 /* ANIMATED TITLE STYLING */
 .animated-title {
   opacity: 0;

@@ -1,0 +1,23 @@
+.icon-hover {
+  background-color: #1c2d59;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.hover-icon-item:hover .icon-hover {
+  background-color: #f27b21;
+}
+
+.hover-icon-item .text-wrap {
+  line-height: 1.6;
+  font-family: Georgia, serif;
+  color: black;
+}
