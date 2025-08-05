@@ -7,16 +7,7 @@
   overflow: hidden;
 }
 
-/* Rotating Globe */
-.rotating-globe {
-  width: 220px;
-  height: 220px;
-  background-image: url("assets/img/services/it-internal-globe.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  animation: rotateGlobe 20s linear infinite;
-}
-
+/* ........... */
 .icon-box {
   background-color: #f27b21;
   color: #fff;
@@ -35,6 +26,42 @@
 
 .icon-card:hover .icon-box {
   background-color: #1c2d59;
+}
+
+.col-md-6.col-lg-4 {
+  display: flex;
+}
+
+.col-md-6.col-lg-4 > div {
+  flex: 1;
+  display: flex;
+}
+
+.benefit-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.benefit-item i {
+  color: #1c2d59;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: scale(1.03);
+  background-color: #f8f9fa;
+}
+
+.benefit-item:hover i {
+  color: #f27b21;
+  transform: scale(1.1);
 }
 
 @keyframes rotateGlobe {

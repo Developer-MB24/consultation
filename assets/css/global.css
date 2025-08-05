@@ -18,7 +18,7 @@ body {
 .custom-paragraph {
   font-family: Georgia, serif;
   font-size: 20px;
-  color: black;
+  color: black !important;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
