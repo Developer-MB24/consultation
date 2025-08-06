@@ -79,6 +79,16 @@ body {
     padding: 10px 20px;
   }
 }
+/* Streamline Compliance. Standardize Care. Empower Your Facility. */
+
+.policy-section h2 {
+  color: #1c2d59;
+}
+
+.policy-section p {
+  color: #333;
+  line-height: 1.7;
+}
 
 /* Product Cards Section */
 .text-dark-blue {

@@ -92,6 +92,30 @@ body {
 }
 /* .....  */
 
+/* modal content  */
+.modal-content {
+  border-radius: 12px;
+  background-color: #fff;
+  color: #1c2d59;
+  font-family: Georgia, serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content h5 {
+  color: #1c2d59;
+}
+
+.btn-dark-green {
+  background-color: #1c2d59;
+  color: white;
+  border: none;
+}
+.btn-dark-green:hover {
+  background-color: #f27b21;
+}
+
+/* ........... */
+
 .contact-detail-section {
   font-family: Georgia, serif;
 }

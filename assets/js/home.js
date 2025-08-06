@@ -235,3 +235,24 @@ window.addEventListener("scroll", function () {
     navbar.style.display = "";
   }
 });
+
+// modal content
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".contact-section form");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent actual submission
+
+      // Show modal
+      const thankYouModal = new bootstrap.Modal(
+        document.getElementById("thankYouModal")
+      );
+      thankYouModal.show();
+
+      // Optional: Reset form fields
+      form.reset();
+    });
+  }
+});

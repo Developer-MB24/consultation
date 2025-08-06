@@ -324,128 +324,109 @@ body {
 
 /* Our servives section3 */
 
+/* Section base background */
 .services-section {
   background-color: #f9f8f3;
+  font-family: Georgia, serif;
 }
 
-.section-subtitle {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
-.section-title {
-  font-size: 30px;
-  font-weight: 700;
-  color: #1d1d1d;
-}
-
-.service-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
+/* Core service box styling */
 .service-box {
   position: relative;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  padding: 20px 30px;
-  box-shadow: 0 0 0 1px #e0e0e0;
   overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  height: 100%;
+  transition: all 0.3s ease;
   z-index: 1;
-  background-color: white;
-  background-size: cover;
-  background-position: center;
-  transition: background-image 0.5s ease;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Hover overlay background (starts hidden) */
 .hover-bg {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 0;
+  background-color: transparent;
   z-index: 1;
-  transition: width 0.4s ease;
-  border-radius: 8px;
+  transition: width 0.4s ease, background-color 0.3s ease;
+  border-radius: 10px;
 }
 
-.bg-dark-hover .hover-bg {
+/* Show blue on hover for dark class */
+.bg-dark-hover:hover .hover-bg {
+  width: 100%;
   background-color: #1c2d59;
 }
 
-.bg-orange-hover .hover-bg {
+/* Show orange on hover for orange class */
+.bg-orange-hover:hover .hover-bg {
+  width: 100%;
   background-color: #f27b21;
 }
 
-.service-box:hover .hover-bg {
-  width: 100%;
-}
-
-.service-box .icon,
+/* Ensure content is on top of hover background */
 .service-box .text,
 .service-box .arrow {
   position: relative;
   z-index: 2;
-  transition: color 0.4s ease, border-color 0.4s ease;
+  transition: color 0.3s ease;
 }
 
-.service-box:hover .text,
-.service-box:hover .arrow,
-.service-box:hover .icon {
-  color: white;
-}
-
+/* Text styles */
 .service-box h5 {
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.service-box .icon {
-  flex: 0 0 60px;
-  font-size: 32px;
-  color: #1c2d59;
+.service-box p {
+  margin: 0;
 }
 
-.service-box .text {
-  flex: 1;
-  padding: 0 20px;
+/* Change text color on hover */
+.bg-dark-hover:hover .text,
+.bg-orange-hover:hover .text,
+.bg-dark-hover:hover .arrow,
+.bg-orange-hover:hover .arrow {
+  color: #fff;
 }
 
-.service-box .arrow {
-  font-size: 22px;
+/* Arrow button styling */
+.arrow {
+  font-size: 24px;
   font-weight: bold;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 2px solid #1c2d59;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #1c2d59;
+  align-self: flex-start;
+  margin-top: auto;
+  transition: all 0.3s ease;
 }
 
-.service-box:hover .arrow {
-  border-color: white;
+/* Arrow color on hover */
+.bg-dark-hover:hover .arrow,
+.bg-orange-hover:hover .arrow {
+  border-color: #fff;
+  color: #fff;
 }
 
-/* Mobile Styles */
+/* Responsive spacing */
 @media (max-width: 768px) {
   .service-box {
-    flex-direction: column;
-    align-items: flex-start;
+    padding: 20px;
   }
 
-  .service-box .text {
-    padding: 10px 0;
-  }
-
-  .service-box .arrow {
-    align-self: flex-end;
-    margin-top: 10px;
+  .arrow {
+    margin-top: auto;
   }
 }
 
@@ -601,42 +582,59 @@ body {
 
 /* what can we expect  */
 
+.services-section {
+  background-color: #f9f8f3;
+  font-family: Georgia, serif;
+}
+
 .service-item {
-  padding: 20px;
-  border-radius: 8px;
-  min-height: 100%;
-  background-color: #f9f9f9;
-  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: white;
+  color: #1c2d59;
+  border-radius: 10px;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  height: 100%;
 }
 
 .service-item h5,
 .service-item p,
-.service-item .number {
-  color: inherit;
+.service-item h6 {
+  transition: color 0.4s ease;
 }
 
-.col-sm-6:nth-child(odd) .service-item:hover {
+/* Hover for dark blue */
+.hover-dark:hover {
   background-color: #1c2d59;
-  color: #fff;
+  color: white !important;
+}
+.hover-dark:hover h5,
+.hover-dark:hover h6,
+.hover-dark:hover p {
+  color: white !important;
 }
 
-.col-sm-6:nth-child(even) .service-item:hover {
+/* Hover for orange */
+.hover-orange:hover {
   background-color: #f27b21;
-  color: #fff;
+  color: white !important;
+}
+.hover-orange:hover h5,
+.hover-orange:hover h6,
+.hover-orange:hover p {
+  color: white !important;
 }
 
-.col-sm-6:nth-child(odd) .service-item:hover h5,
-.col-sm-6:nth-child(odd) .service-item:hover p,
-.col-sm-6:nth-child(odd) .service-item:hover .number,
-.col-sm-6:nth-child(even) .service-item:hover h5,
-.col-sm-6:nth-child(even) .service-item:hover p,
-.col-sm-6:nth-child(even) .service-item:hover .number {
-  color: #fff;
+/* Optional: make number larger or styled */
+.number {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
 }
 
-.service-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+/* Optional: spacing and paragraph color */
+.custom-paragraph {
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 /* .services-section {
@@ -1038,6 +1036,28 @@ body {
 .px-0 {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+/* modal content  */
+.modal-content {
+  border-radius: 12px;
+  background-color: #fff;
+  color: #1c2d59;
+  font-family: Georgia, serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content h5 {
+  color: #1c2d59;
+}
+
+.btn-dark-green {
+  background-color: #1c2d59;
+  color: white;
+  border: none;
+}
+.btn-dark-green:hover {
+  background-color: #f27b21;
 }
 
 /* .map-wrapper {

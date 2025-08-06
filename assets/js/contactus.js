@@ -52,14 +52,33 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Initial setup
   handleResize();
 
-  // Update on window resize
   window.addEventListener("resize", handleResize);
 
-  // Clicking the link should still navigate (do nothing here)
-  dropdownToggle.addEventListener("click", function (e) {
-    // Let default behavior continue (navigate to services.html)
-  });
+  dropdownToggle.addEventListener("click", function (e) {});
+});
+
+// modal content
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  const consent = document.getElementById("smsConsent");
+
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (!consent.checked) {
+        consent.classList.add("is-invalid");
+        return;
+      }
+
+      const modal = new bootstrap.Modal(
+        document.getElementById("thankYouModal")
+      );
+      modal.show();
+      form.reset();
+    });
+  }
 });
