@@ -1,6 +1,7 @@
 body {
   font-family: Georgia, serif;
 }
+/* Header  */
 .main-header {
   background-color: #fff;
   padding-top: 0.75rem;
@@ -11,22 +12,40 @@ body {
   z-index: 1030;
 }
 
-/* Top Logo */
 .header-top {
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
   margin-bottom: 5px;
 }
 
-/* Main Nav */
-.main-nav .nav-link {
-  color: #1c2d59;
-  font-weight: 500;
-  transition: color 0.3s ease;
+/* Logo Image */
+.logo-img {
+  width: 450px;
+  height: auto;
 }
 
-.main-nav .nav-link:hover {
-  color: #f27b21;
+.nav-link {
+  color: #1c2d59 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.4;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  background-color: #f27b21;
+  color: #fff !important;
+  border-radius: 8px;
+}
+@media (max-width: 991.98px) {
+  .main-nav,
+  .service-nav {
+    display: none !important;
+  }
 }
 
 /* Services Nav Bar */

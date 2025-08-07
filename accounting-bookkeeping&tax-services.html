@@ -23,7 +23,7 @@
   <body>
     <!-- nav  -->
 
-    <header class="main-header shadow-sm py-4">
+    <header id="mainNavbar" class="main-header">
       <div class="container-fluid px-4">
         <!-- Top Row -->
         <div
@@ -78,84 +78,115 @@
           </button>
         </div>
 
-        <!-- Bottom Row (Desktop Only): Seven Services -->
+        <!-- Bottom Row (Desktop Services Nav) -->
         <nav
-          class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3 fw-bold"
+          class="service-nav d-none d-md-flex flex-wrap justify-content-center gap-4 mt-3 fw-bold"
         >
-          <a href="healthcare-business.html" class="service-link fw-bold"
-            >Startup</a
+          <a href="healthcare-business.html" class="nav-link fw-bold"
+            >Healthcare<br />Startup</a
           >
-          <a href="licensing&regulatory.html" class="service-link fw-bold"
-            >Compliance</a
+          <a href="policy&procedure.html" class="nav-link fw-bold"
+            >Policy &<br />Procedure</a
           >
-          <a href="staff-training.html" class="service-link fw-bold"
-            >Training</a
+          <a href="licensing&regulatory.html" class="nav-link fw-bold"
+            >Licensing &<br />Compliance</a
           >
-          <a href="policy&procedure.html" class="service-link fw-bold"
-            >Policies</a
+          <a href="staff-training.html" class="nav-link fw-bold"
+            >Training &<br />Compliance</a
           >
-          <a href="business-growth.html" class="service-link fw-bold">Growth</a>
-          <a href="technology.html" class="service-link fw-bold">Technology</a>
-          <a href="automation.html" class="service-link fw-bold">Branding</a>
-          <a href="healthcare-credentialing.html" class="service-link fw-bold"
-            >Credentialing</a
+          <a href="business-growth.html" class="nav-link fw-bold"
+            >Growth &<br />Automation</a
           >
+          <a href="healthcare-credentialing.html" class="nav-link fw-bold"
+            >Healthcare<br />Credentialing</a
+          >
+          <a href="digital-solutions.html" class="nav-link fw-bold"
+            >Digital Solutions &<br />Marketing</a
+          >
+          <a
+            href="accounting-bookkeeping&tax-services.html"
+            class="nav-link fw-bold"
+            >Accounts &<br />Bookkeeping</a
+          >
+          <!-- <a href="accreditation-for-healthcare.html" class="nav-link fw-bold"
+            >Healthcare<br />Accreditation</a
+          > -->
         </nav>
 
-        <!-- Mobile Menu Collapse -->
+        <!-- Mobile Menu -->
         <div class="collapse d-lg-none" id="mobileMenu">
           <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
             <ul class="list-unstyled mb-0 fw-bold">
+              <!-- Primary Menu -->
               <li><a class="nav-link fw-bold" href="index.html">Home</a></li>
               <li>
                 <a class="nav-link fw-bold" href="about-us.html">About Us</a>
               </li>
               <li>
-                <a class="nav-link fw-bold" href="services.html"
-                  >Our Services</a
-                >
+                <a class="nav-link fw-bold" href="services.html">Services</a>
               </li>
               <li><a class="nav-link fw-bold" href="blog.html">Blog</a></li>
+              <li>
+                <a class="nav-link fw-bold" href="manual&contracts.html"
+                  >Products</a
+                >
+              </li>
+
               <hr />
+
+              <!-- Service Nav (flat text) -->
               <li>
                 <a class="nav-link fw-bold" href="healthcare-business.html"
-                  >Startup</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="licensing&regulatory.html"
-                  >Compliance</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="staff-training.html"
-                  >Training</a
+                  >Healthcare Startup</a
                 >
               </li>
               <li>
                 <a class="nav-link fw-bold" href="policy&procedure.html"
-                  >Policies</a
+                  >Policy & Procedure</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="licensing&regulatory.html"
+                  >Licensing & Compliance</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="staff-training.html"
+                  >Training & Compliance</a
                 >
               </li>
               <li>
                 <a class="nav-link fw-bold" href="business-growth.html"
-                  >Growth</a
+                  >Growth & Automation</a
                 >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="technology.html"
-                  >Technology</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="automation.html">Branding</a>
               </li>
               <li>
                 <a class="nav-link fw-bold" href="healthcare-credentialing.html"
-                  >Credentialing</a
+                  >Healthcare Credentialing</a
                 >
               </li>
+              <li>
+                <a class="nav-link fw-bold" href="digital-solutions.html"
+                  >Digital Solutions & Marketing</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link fw-bold"
+                  href="accounting-bookkeeping&tax-services.html"
+                  >Accounts & Bookkeeping</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link fw-bold"
+                  href="accreditation-for-healthcare.html"
+                  >Healthcare Accreditation</a
+                >
+              </li>
+
               <hr />
+
               <li>
                 <a class="nav-link fw-bold" href="contactus.html">Contact</a>
               </li>
@@ -632,6 +663,133 @@
         >
           Book A Call
         </a>
+      </div>
+    </section>
+
+    <!-- Explore Other Services -->
+    <section class="other-services-section py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="custom-heading fw-bold">Explore other Services</h2>
+        </div>
+
+        <div class="row justify-content-between g-3">
+          <!-- Card 1 -->
+          <div class="col-6 col-md-4 col-lg">
+            <div
+              class="service-card d-flex flex-column text-center h-100 p-0 rounded overflow-hidden"
+            >
+              <div
+                class="card-body p-4 flex-grow-1 d-flex flex-column justify-content-center"
+              >
+                <h6 class="custom-heading">Website Design & Development</h6>
+                <i class="fas fa-laptop-code service-icon mb-3"></i>
+              </div>
+              <a
+                href="website-design&development.html"
+                class="read-more-footer py-2 text-decoration-none"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-6 col-md-4 col-lg">
+            <div
+              class="service-card d-flex flex-column text-center h-100 p-0 rounded overflow-hidden"
+            >
+              <div
+                class="card-body p-4 flex-grow-1 d-flex flex-column justify-content-center"
+              >
+                <h6 class="custom-heading">Customized Software Development</h6>
+                <i class="fas fa-code service-icon mb-3"></i>
+              </div>
+              <a
+                href="customized-software-development.html"
+                class="read-more-footer py-2 text-decoration-none"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-6 col-md-4 col-lg">
+            <div
+              class="service-card d-flex flex-column text-center h-100 p-0 rounded overflow-hidden"
+            >
+              <div
+                class="card-body p-4 flex-grow-1 d-flex flex-column justify-content-center"
+              >
+                <h6 class="custom-heading">Branding & Digital Marketing</h6>
+                <i class="fas fa-bullhorn service-icon mb-3"></i>
+              </div>
+              <a
+                href="branding&digital-marketing.html"
+                class="read-more-footer py-2 text-decoration-none"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-6 col-md-4 col-lg">
+            <div
+              class="service-card d-flex flex-column text-center h-100 p-0 rounded overflow-hidden"
+            >
+              <div
+                class="card-body p-4 flex-grow-1 d-flex flex-column justify-content-center"
+              >
+                <h6 class="custom-heading">SaaS Product Development</h6>
+                <i class="fas fa-cloud service-icon mb-3"></i>
+              </div>
+              <a
+                href="saas-product-development.html"
+                class="read-more-footer py-2 text-decoration-none"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="col-6 col-md-4 col-lg">
+            <div
+              class="service-card d-flex flex-column text-center h-100 p-0 rounded overflow-hidden"
+            >
+              <div
+                class="card-body p-4 flex-grow-1 d-flex flex-column justify-content-center"
+              >
+                <h6 class="custom-heading">
+                  Online Reputation Management (ORM)
+                </h6>
+                <i class="fas fa-user-shield service-icon mb-3"></i>
+              </div>
+              <a
+                href="online-reputation-management.html"
+                class="read-more-footer py-2 text-decoration-none"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="col-6 col-md-4 col-lg">
+            <div
+              class="service-card d-flex flex-column text-center h-100 p-0 rounded overflow-hidden"
+            >
+              <div
+                class="card-body p-4 flex-grow-1 d-flex flex-column justify-content-center"
+              >
+                <h6 class="custom-heading">Lead Generation</h6>
+                <i class="fas fa-users service-icon mb-3"></i>
+              </div>
+              <a
+                href="lead-generation.html"
+                class="read-more-footer py-2 text-decoration-none"
+                >READ MORE</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!-- footer  -->
