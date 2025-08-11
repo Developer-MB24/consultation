@@ -150,57 +150,97 @@ body {
     z-index: 1;
   }
 }
+@media (min-width: 320px) and (max-width: 568px) {
+  .main-header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  /* Smaller logo */
+  .logo-img {
+    width: 230px;
+    height: auto;
+  }
+
+  .header-top {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .main-nav,
+  .service-nav,
+  .btn-dark-green {
+    display: none !important;
+  }
+
+  .header-top .btn.d-lg-none {
+    margin-left: auto;
+    padding: 0.25rem 0.5rem;
+  }
+
+  #mobileMenu .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-radius: 6px;
+  }
+
+  /* Active/hover in mobile menu */
+  #mobileMenu .nav-link:hover,
+  #mobileMenu .nav-link.active {
+    background-color: #f27b21;
+    color: #fff !important;
+  }
+
+  .hero-video-section,
+  .hero-video-section video {
+    position: relative;
+    z-index: 1;
+  }
+}
 
 /* Hero Section */
 .hero-section {
   background-color: #0d1f3c;
 }
-.hero-btn {
-  bottom: 142px;
-  left: 550px;
-  font-size: 1rem;
+
+.hero-btn-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 150px;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
 }
 
 .hero-btn {
+  position: static;
+  pointer-events: auto;
   background-color: #f27b21;
-  color: #fff;
-  font-family: Georgia, serif;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  color: white;
 }
-
 .hero-btn:hover {
   background-color: #f27b21;
   color: #fff;
-  font-family: Georgia, serif;
-  cursor: pointer;
 }
-@media (max-width: 768px) {
-  .hero-btn {
-    bottom: 10px;
-    left: 95px;
-    font-size: 0.9rem;
-    padding: 10px 20px;
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-btn-wrap {
+    bottom: 30px;
   }
 }
 
-/* Tablet devices */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .hero-btn {
-    bottom: 80px;
-    left: 310px;
-    font-size: 0.95rem;
-    padding: 12px 24px;
-  }
-}
-@media (min-width: 884px) and (max-width: 1104px) {
-  .hero-btn {
-    bottom: 85px;
-    left: 350px;
-    font-size: 0.95rem;
-    padding: 12px 24px;
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-btn-wrap {
+    bottom: 10px;
   }
 }
 

@@ -96,7 +96,7 @@ body {
   color: #fff;
 }
 /* Phone (≤600px) */
-@media (max-width: 600px) {
+@media (min-width: 360px) and (max-width: 883px) {
   .main-header {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -109,7 +109,60 @@ body {
 
   /* Smaller logo */
   .logo-img {
-    width: 310px;
+    width: 280px;
+    height: auto;
+  }
+
+  .header-top {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .main-nav,
+  .service-nav,
+  .btn-dark-green {
+    display: none !important;
+  }
+
+  .header-top .btn.d-lg-none {
+    margin-left: auto;
+    padding: 0.25rem 0.5rem;
+  }
+
+  #mobileMenu .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-radius: 6px;
+  }
+
+  /* Active/hover in mobile menu */
+  #mobileMenu .nav-link:hover,
+  #mobileMenu .nav-link.active {
+    background-color: #f27b21;
+    color: #fff !important;
+  }
+
+  .hero-video-section,
+  .hero-video-section video {
+    position: relative;
+    z-index: 1;
+  }
+}
+@media (min-width: 320px) and (max-width: 568px) {
+  .main-header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  /* Smaller logo */
+  .logo-img {
+    width: 230px;
     height: auto;
   }
 
