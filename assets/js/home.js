@@ -256,3 +256,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// active links
+document.addEventListener("DOMContentLoaded", function () {
+  let currentPath = window.location.pathname.split("/").pop();
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    if (link.getAttribute("href") === currentPath) {
+      link.classList.add("active");
+    }
+  });
+});

@@ -4,6 +4,83 @@ body {
   color: black;
 }
 
+/* Header  */
+.main-header {
+  background-color: #fff;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.header-top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+/* Logo Image */
+.logo-img {
+  width: 450px;
+  height: auto;
+}
+
+.nav-link {
+  color: #1c2d59 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  line-height: 1.4;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  background-color: #f27b21;
+  color: #fff !important;
+  border-radius: 8px;
+}
+@media (max-width: 991.98px) {
+  .main-nav,
+  .service-nav {
+    display: none !important;
+  }
+}
+
+/* Services Nav Bar */
+.logo-img {
+  width: 450px;
+  height: auto;
+}
+.service-nav .service-link {
+  color: #1c2d59;
+  font-weight: 500;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.service-nav .service-link:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
+
+/* CTA Button */
+.btn-dark-green {
+  background-color: #1c2d59;
+  border: none;
+}
+
+.btn-dark-green:hover {
+  background-color: #f27b21;
+  color: #fff;
+}
+/* .......  */
 .it-expert-section {
   background-color: #f9f9f9;
 }
@@ -192,4 +269,75 @@ body {
 
 .img-hover-zoom img:hover {
   transform: scale(1.05);
+}
+
+/* footer  */
+.footer-section {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+}
+
+.footer-headline {
+  background-color: #1c2d59;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.footer-main-content {
+  background-color: #ffffff;
+  color: #000000;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-main-content .col-md-4 {
+  text-align: left;
+}
+
+.footer-main-content a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-main-content a:hover {
+  text-decoration: underline;
+}
+
+.social-icons .icon-circle {
+  color: #1c2d59;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  background-color: #1c2d59;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.footer-section h6 {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.footer-main-content a[href^="mailto"] {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  display: inline-block;
+  max-width: 100%;
 }

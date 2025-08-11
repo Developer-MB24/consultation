@@ -41,6 +41,26 @@ body {
   color: #fff !important;
   border-radius: 8px;
 }
+/* Active / current page */
+.main-nav .nav-link.active,
+.service-nav .nav-link.active,
+.mobile-menu .nav-link.active,
+.nav-link[aria-current="page"] {
+  background-color: #f27b21;
+  color: #fff !important;
+  border-radius: 8px;
+}
+
+.nav-link.active:hover {
+  background-color: #f27b21;
+  color: #fff !important;
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid #f27b21;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
 @media (max-width: 991.98px) {
   .main-nav,
   .service-nav {
@@ -48,7 +68,6 @@ body {
   }
 }
 
-/* Services Nav Bar */
 .logo-img {
   width: 450px;
   height: auto;
@@ -67,7 +86,6 @@ body {
   color: #fff;
 }
 
-/* CTA Button */
 .btn-dark-green {
   background-color: #1c2d59;
   border: none;
@@ -76,6 +94,60 @@ body {
 .btn-dark-green:hover {
   background-color: #f27b21;
   color: #fff;
+}
+/* Phone (≤600px) */
+@media (max-width: 600px) {
+  .main-header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  /* Smaller logo */
+  .logo-img {
+    width: 310px;
+    height: auto;
+  }
+
+  .header-top {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .main-nav,
+  .service-nav,
+  .btn-dark-green {
+    display: none !important;
+  }
+
+  .header-top .btn.d-lg-none {
+    margin-left: auto;
+    padding: 0.25rem 0.5rem;
+  }
+
+  #mobileMenu .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-radius: 6px;
+  }
+
+  /* Active/hover in mobile menu */
+  #mobileMenu .nav-link:hover,
+  #mobileMenu .nav-link.active {
+    background-color: #f27b21;
+    color: #fff !important;
+  }
+
+  .hero-video-section,
+  .hero-video-section video {
+    position: relative;
+    z-index: 1;
+  }
 }
 /* ............  */
 .about-hero {
@@ -538,4 +610,84 @@ img.hover-image {
 .animated-title.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  /* overflow-x: hidden; */
+  max-width: 100%;
+}
+
+/* Fix container overflow in mobile and center all elements */
+@media (max-width: 767.98px) {
+  .container,
+  .row,
+  .col,
+  .col-md-3,
+  .col-md-9,
+  .sidebar,
+  section,
+  .card,
+  .card-body,
+  .input-group {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* .topbar,
+  nav,
+  .sidebar {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .navbar img,
+  .logo img,
+  .logo-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  } */
+
+  .text-center,
+  .text-end,
+  .text-start {
+    text-align: center !important;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group .form-control {
+    text-align: center;
+  }
+
+  button,
+  .btn,
+  .form-control {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .calendar-sidebar,
+  .calendar-column {
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .calendar-container {
+    padding: 1rem;
+  }
 }

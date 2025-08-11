@@ -42,6 +42,26 @@ body {
   color: #fff !important;
   border-radius: 8px;
 }
+/* Active / current page */
+.main-nav .nav-link.active,
+.service-nav .nav-link.active,
+.mobile-menu .nav-link.active,
+.nav-link[aria-current="page"] {
+  background-color: #f27b21;
+  color: #fff !important;
+  border-radius: 8px;
+}
+
+.nav-link.active:hover {
+  background-color: #f27b21;
+  color: #fff !important;
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid #f27b21;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
 @media (max-width: 991.98px) {
   .main-nav,
   .service-nav {
@@ -49,7 +69,6 @@ body {
   }
 }
 
-/* Services Nav Bar */
 .logo-img {
   width: 450px;
   height: auto;
@@ -68,7 +87,6 @@ body {
   color: #fff;
 }
 
-/* CTA Button */
 .btn-dark-green {
   background-color: #1c2d59;
   border: none;
@@ -78,44 +96,65 @@ body {
   background-color: #f27b21;
   color: #fff;
 }
-@media (min-width: 601px) and (max-width: 991px) {
+/* Phone (≤600px) */
+@media (max-width: 600px) {
+  .main-header {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1100;
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  /* Smaller logo */
   .logo-img {
-    width: 540px !important;
+    width: 310px;
     height: auto;
   }
 
-  .main-header {
-    padding-top: 0.5rem !important;
-    padding-bottom: 0.5rem !important;
+  .header-top {
+    margin-bottom: 0.25rem;
+    padding-bottom: 0.25rem;
   }
 
   .main-nav,
+  .service-nav,
   .btn-dark-green {
     display: none !important;
   }
 
   .header-top .btn.d-lg-none {
     margin-left: auto;
+    padding: 0.25rem 0.5rem;
   }
 
-  .service-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
+  #mobileMenu .nav-link {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-radius: 6px;
   }
 
-  .service-nav .service-link {
-    font-size: 0.85rem;
-    padding: 4px 10px;
-    white-space: nowrap;
+  /* Active/hover in mobile menu */
+  #mobileMenu .nav-link:hover,
+  #mobileMenu .nav-link.active {
+    background-color: #f27b21;
+    color: #fff !important;
+  }
+
+  .hero-video-section,
+  .hero-video-section video {
+    position: relative;
+    z-index: 1;
   }
 }
 
 /* Hero Section */
 
 .hero-video-section {
-  height: 90vh;
+  height: 100vh;
   min-height: 300px;
   overflow: hidden;
   position: relative;
@@ -128,116 +167,65 @@ body {
   display: block;
 }
 
-.text-overlay {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  padding: 0 1rem;
-  text-align: center;
-  z-index: 10;
+/* Button BELOW the video */
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  background: transparent;
 }
 
-.text-overlay h1 {
-  font-size: 2rem;
-  color: #fff;
-  line-height: 1.2;
-}
-
-.hero-video-section .text-overlay a {
+.dignity-button {
   font-size: 18px;
   padding: 14px 28px;
   background-color: #1c2d59;
   color: #fff;
   border: none;
   border-radius: 4px;
-  margin-top: 1rem;
-  display: inline-block;
   text-decoration: none;
-  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+.dignity-button:hover {
+  background-color: #f27b21;
 }
 
-/* 577px to 768px */
-@media screen and (min-width: 577px) and (max-width: 768px) {
+/* 577px–768px */
+@media (min-width: 577px) and (max-width: 768px) {
   .hero-video-section {
     height: auto !important;
-    overflow: hidden;
-    padding: 0;
-    margin: 0;
   }
-
   .hero-video-section video {
     width: 100% !important;
     height: auto !important;
     object-fit: contain !important;
-    display: block;
-    margin: 0 auto;
   }
-
-  .text-overlay {
-    position: relative !important;
-    transform: none !important;
-    left: 0 !important;
-    bottom: 0 !important;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), #000);
-    padding: 2rem 1rem;
-    text-align: center;
+  .hero-cta {
+    padding: 20px 0;
   }
-
-  .text-overlay h1 {
-    font-size: 1.75rem;
-    color: #fff;
-  }
-
-  .text-overlay a {
+  .dignity-button {
     font-size: 16px;
     padding: 12px 24px;
-    background-color: #1c2d59;
-    color: #fff;
-    border-radius: 4px;
-    display: inline-block;
-    margin-top: 1rem;
-    max-width: 90%;
-    text-decoration: none;
   }
 }
 
-/*  up to 576px */
+/* ≤576px */
 @media (max-width: 576px) {
   .hero-video-section {
     height: auto;
+    min-height: 0;
+    overflow: visible;
   }
-
   .hero-video-section video {
     width: 100%;
     height: auto;
+    max-height: none;
     object-fit: contain;
-    max-height: 100vh;
+    display: block;
   }
 
-  .text-overlay {
-    position: relative;
-    transform: none;
-    left: 0;
-    bottom: 0;
-    padding: 1rem 1rem 2rem;
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, #000 100%); */
-    color: #fff;
-    background: white;
-    text-align: center;
-  }
-
-  .text-overlay h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-video-section .text-overlay a {
-    font-size: 14px;
-    padding: 10px 20px;
-    margin-top: 1rem;
-    max-width: 100%;
-    white-space: normal;
+  .hero-cta {
+    margin-top: 10px;
+    padding-top: 0;
   }
 }
 
@@ -1266,13 +1254,13 @@ body {
 }
 
 /* Prevent horizontal scrolling */
-html,
+/* html,
 body {
   overflow-x: hidden;
   max-width: 100%;
 }
 
-/* Fix container overflow in mobile and center all elements */
+
 @media (max-width: 767.98px) {
   .container,
   .row,
@@ -1308,6 +1296,86 @@ body {
     display: block;
     margin: 0 auto;
   }
+
+  .text-center,
+  .text-end,
+  .text-start {
+    text-align: center !important;
+  }
+
+  .input-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group .form-control {
+    text-align: center;
+  }
+
+  button,
+  .btn,
+  .form-control {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .calendar-sidebar,
+  .calendar-column {
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .calendar-container {
+    padding: 1rem;
+  }
+} */
+
+/* Prevent horizontal scrolling */
+html,
+body {
+  /* overflow-x: hidden; */
+  max-width: 100%;
+}
+
+/* Fix container overflow in mobile and center all elements */
+@media (max-width: 767.98px) {
+  .container,
+  .row,
+  .col,
+  .col-md-3,
+  .col-md-9,
+  .sidebar,
+  section,
+  .card,
+  .card-body,
+  .input-group {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* .topbar,
+  nav,
+  .sidebar {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .navbar img,
+  .logo img,
+  .logo-img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  } */
 
   .text-center,
   .text-end,
