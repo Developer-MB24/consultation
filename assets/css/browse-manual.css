@@ -1,7 +1,7 @@
 body {
   font-family: Georgia, serif;
 }
-/* Header  */
+
 /* Header  */
 .main-header {
   background-color: #fff;
@@ -137,7 +137,6 @@ body {
     border-radius: 6px;
   }
 
-  /* Active/hover in mobile menu */
   #mobileMenu .nav-link:hover,
   #mobileMenu .nav-link.active {
     background-color: #f27b21;
@@ -165,7 +164,7 @@ body {
   border-radius: 6px;
 }
 
-/* Product Card Styling */
+/* Product Card  */
 .product-card {
   background-color: #fff;
   border-radius: 8px;

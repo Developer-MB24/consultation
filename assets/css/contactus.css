@@ -197,7 +197,6 @@ body {
   display: block;
 }
 
-/* ============ RESPONSIVE STYLES ============ */
 @media (max-width: 768px) {
   .contact-detail-section .card {
     margin-bottom: 1.5rem;

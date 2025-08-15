@@ -247,7 +247,7 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-/* Container to apply transition effect */
+
 .main-img,
 .overlay-img {
   overflow: hidden;

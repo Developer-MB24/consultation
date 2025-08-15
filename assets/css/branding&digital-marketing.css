@@ -1,4 +1,4 @@
-/* Hero Section Background */
+/* Hero Section  */
 .software-hero-section {
   background-image: url("assets/img/services/IT-Page-Banner.jpeg");
   background-size: cover;
@@ -209,7 +209,6 @@
   background-color: #f4f4fa;
 }
 
-/* Card base */
 .service-card {
   background-color: #fff;
   transition: color 0.3s ease;

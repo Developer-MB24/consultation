@@ -25,6 +25,61 @@ document.addEventListener("DOMContentLoaded", () => {
   let current = sections.findIndex((s) => s.classList.contains("active"));
   if (current < 0) current = 0;
 
+  // --- Signature pad refs ---
+  const canvas = document.getElementById("signaturePad");
+  const sigClear = document.getElementById("sigClear");
+  const sigHidden = document.getElementById("signatureData");
+  let ctx = null;
+  let drawing = false;
+
+  // FIX: size the canvas only when visible (not while hidden)
+  const fit = () => {
+    if (!canvas) return;
+    // If the canvas (or its ancestors) are display:none, offsetParent is null
+    if (canvas.offsetParent === null) return;
+
+    const ratio = Math.max(window.devicePixelRatio || 1, 1);
+    const w = canvas.clientWidth || canvas.parentElement?.clientWidth || 600;
+    const h = 200; // matches your intended visual height
+
+    // Setting width/height resets the transform, so set them first
+    canvas.width = Math.floor(w * ratio);
+    canvas.height = Math.floor(h * ratio);
+    canvas.style.height = h + "px";
+
+    ctx = canvas.getContext("2d");
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+    ctx.lineWidth = 2;
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "#000";
+  };
+
+  const pos = (e) => {
+    const r = canvas.getBoundingClientRect();
+    const p = e.touches ? e.touches[0] : e;
+    return { x: p.clientX - r.left, y: p.clientY - r.top };
+  };
+
+  const start = (e) => {
+    if (!ctx) fit(); // FIX: ensure we’re sized before first draw
+    drawing = true;
+    const { x, y } = pos(e);
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+  };
+  const move = (e) => {
+    if (!drawing || !ctx) return;
+    const { x, y } = pos(e);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+  };
+  const end = () => {
+    drawing = false;
+    if (sigHidden && canvas) {
+      sigHidden.value = canvas.toDataURL("image/png");
+    }
+  };
+
   function showStep(i) {
     if (i < 0 || i >= sections.length) return;
 
@@ -43,6 +98,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     current = i;
+
+    // FIX: if this step contains the signature pad, size it now (after it’s visible)
+    if (canvas && sections[i] && sections[i].contains(canvas)) {
+      requestAnimationFrame(fit);
+    }
   }
 
   function validateCurrent() {
@@ -53,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return ok;
   }
 
-  // Wire Next/Prev buttons (no inline handlers needed)
+  // Wire Next/Prev buttons
   document.querySelectorAll("[data-next]").forEach((btn) => {
     btn.addEventListener("click", () => {
       if (!validateCurrent()) return;
@@ -93,53 +153,12 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  // Signature (optional: clear button)
-  const canvas = document.getElementById("signaturePad");
-  const sigClear = document.getElementById("sigClear");
-  const sigHidden = document.getElementById("signatureData");
+  // Signature events (added once)
   if (canvas) {
-    const ctx = canvas.getContext("2d");
-    let drawing = false;
-
-    const fit = () => {
-      const ratio = Math.max(window.devicePixelRatio || 1, 1);
-      const w = canvas.clientWidth;
-      const h = 200; // matches your HTML height
-      canvas.width = w * ratio;
-      canvas.height = h * ratio;
-      ctx.scale(ratio, ratio);
-      ctx.lineWidth = 2;
-      ctx.lineCap = "round";
-      ctx.strokeStyle = "#000";
-    };
-    fit();
-    window.addEventListener("resize", fit);
-
-    const pos = (e) => {
-      const r = canvas.getBoundingClientRect();
-      const p = e.touches ? e.touches[0] : e;
-      return { x: p.clientX - r.left, y: p.clientY - r.top };
-    };
-    const start = (e) => {
-      drawing = true;
-      const { x, y } = pos(e);
-      ctx.beginPath();
-      ctx.moveTo(x, y);
-    };
-    const move = (e) => {
-      if (!drawing) return;
-      const { x, y } = pos(e);
-      ctx.lineTo(x, y);
-      ctx.stroke();
-    };
-    const end = () => {
-      drawing = false;
-      if (sigHidden) sigHidden.value = canvas.toDataURL("image/png");
-    };
-
     canvas.addEventListener("mousedown", start);
     canvas.addEventListener("mousemove", move);
     window.addEventListener("mouseup", end);
+
     canvas.addEventListener(
       "touchstart",
       (e) => {
@@ -158,17 +177,25 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     canvas.addEventListener("touchend", end);
 
+    // FIX: only refit on resize if actually visible
+    window.addEventListener("resize", () => {
+      if (canvas && canvas.offsetParent !== null) fit();
+    });
+
     if (sigClear)
       sigClear.addEventListener("click", () => {
-        fit();
+        // Clear without changing size
+        if (!ctx) fit();
+        if (!ctx) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         if (sigHidden) sigHidden.value = "";
       });
   }
 
-  // Submit -> show modal (kept simple)
+  // Submit -> show modal
   const finalForm = document.getElementById("dbc-form-6");
   const modalEl = document.getElementById("dbcConfirmModal");
-  if (finalForm && modalEl) {
+  if (finalForm && modalEl && window.bootstrap) {
     finalForm.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!validateCurrent()) return;

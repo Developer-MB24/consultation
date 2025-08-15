@@ -220,7 +220,6 @@ body {
   display: block;
 }
 
-/* Button BELOW the video */
 .hero-cta {
   display: flex;
   justify-content: center;
@@ -384,13 +383,11 @@ body {
 
 /* Our servives section3 */
 
-/* Section base background */
 .services-section {
   background-color: #f9f8f3;
   font-family: Georgia, serif;
 }
 
-/* Core service box styling */
 .service-box {
   position: relative;
   overflow: hidden;
@@ -404,7 +401,6 @@ body {
   flex-direction: column;
 }
 
-/* Hover overlay background (starts hidden) */
 .hover-bg {
   position: absolute;
   top: 0;
@@ -417,19 +413,16 @@ body {
   border-radius: 10px;
 }
 
-/* Show blue on hover for dark class */
 .bg-dark-hover:hover .hover-bg {
   width: 100%;
   background-color: #1c2d59;
 }
 
-/* Show orange on hover for orange class */
 .bg-orange-hover:hover .hover-bg {
   width: 100%;
   background-color: #f27b21;
 }
 
-/* Ensure content is on top of hover background */
 .service-box .text,
 .service-box .arrow {
   position: relative;
@@ -447,7 +440,6 @@ body {
   margin: 0;
 }
 
-/* Change text color on hover */
 .bg-dark-hover:hover .text,
 .bg-orange-hover:hover .text,
 .bg-dark-hover:hover .arrow,
@@ -661,7 +653,6 @@ body {
   transition: color 0.4s ease;
 }
 
-/* Hover for dark blue */
 .hover-dark:hover {
   background-color: #1c2d59;
   color: white !important;
@@ -672,7 +663,6 @@ body {
   color: white !important;
 }
 
-/* Hover for orange */
 .hover-orange:hover {
   background-color: #f27b21;
   color: white !important;
@@ -683,7 +673,6 @@ body {
   color: white !important;
 }
 
-/* Optional: make number larger or styled */
 .number {
   font-size: 18px;
   font-weight: bold;
@@ -691,7 +680,6 @@ body {
   display: block;
 }
 
-/* Optional: spacing and paragraph color */
 .custom-paragraph {
   font-size: 16px;
   line-height: 1.6;
@@ -950,7 +938,6 @@ body {
   border: none;
 }
 
-/* Floating Image */
 .floating-image-wrapper {
   position: absolute;
   left: 50%;
@@ -1265,7 +1252,6 @@ body {
   font-weight: 500;
 }
 
-/* Bottom Copyright */
 .footer-bottom {
   background-color: #1c2d59;
   color: white;
@@ -1286,7 +1272,6 @@ body {
   font-weight: 400;
 }
 
-/* Handle email break */
 .footer-main-content a[href^="mailto"] {
   word-break: break-word;
   overflow-wrap: break-word;
@@ -1395,7 +1380,6 @@ body {
   max-width: 100%;
 }
 
-/* Fix container overflow in mobile and center all elements */
 @media (max-width: 767.98px) {
   .container,
   .row,
