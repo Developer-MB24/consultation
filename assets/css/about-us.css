@@ -577,7 +577,7 @@ img.hover-image {
   color: #fff !important;
 }
 
-/* ✅ Mobile Responsive Styles */
+/*  Mobile Responsive  */
 @media (max-width: 576px) {
   .skill-circle {
     width: 160px;
@@ -672,7 +672,7 @@ body {
   max-width: 100%;
 }
 
-/* Fix container overflow in mobile and center all elements */
+/*  container overflow problem Fix in mobile  */
 @media (max-width: 767.98px) {
   .container,
   .row,

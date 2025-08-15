@@ -126,7 +126,6 @@ body {
   /* border: 1px solid #1c2d59; */
 }
 
-/* Change icon color on hover */
 .bg-white:hover i {
   color: #1c2d59 !important;
 }

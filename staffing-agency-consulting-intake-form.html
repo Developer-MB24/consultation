@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DBC | Staffing Agency Consulting Intake Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="assets/favicon.ico.jpeg" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/staffing-agency-consulting-intake-form.css"
+    />
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <header class="dbc-header py-3 border-bottom">
+      <div class="container d-flex align-items-center">
+        <img
+          src="assets/img/consulting/consulting-logo.png"
+          class="dbc-logo img-fluid"
+          alt="Dignity Business Consulting logo"
+        />
+        <!-- <div class="flex-grow-1">
+          <h1 class="h4 mb-0">Dignity Business Consulting (DBC)</h1>
+          <p class="mb-0 small text-muted">
+            Staffing Agency Consulting Intake Form
+          </p>
+        </div> -->
+      </div>
+    </header>
+
+    <main id="dbc-intake" class="py-4">
+      <div class="container">
+        <!-- Title -->
+        <div class="dbc-title card shadow-sm mb-4 d-flex align-items-center">
+          <div class="card-body">
+            <h2 class="h4 fw-bold mb-0">
+              Staffing Agency Consulting Intake Form
+            </h2>
+          </div>
+        </div>
+
+        <!-- Progress / Steps -->
+        <div class="dbc-step-progress mb-4" aria-label="Step progress">
+          <div class="dbc-step" id="dbc-step-0">
+            <span class="dbc-step-label">Section </span>
+            <div class="dbc-circle">1</div>
+          </div>
+          <div class="dbc-line" aria-hidden="true"></div>
+
+          <div class="dbc-step" id="dbc-step-1">
+            <span class="dbc-step-label">Section </span>
+            <div class="dbc-circle">2</div>
+          </div>
+          <div class="dbc-line" aria-hidden="true"></div>
+
+          <div class="dbc-step" id="dbc-step-2">
+            <span class="dbc-step-label">Section </span>
+            <div class="dbc-circle">3</div>
+          </div>
+          <div class="dbc-line" aria-hidden="true"></div>
+
+          <div class="dbc-step" id="dbc-step-3">
+            <span class="dbc-step-label">Section </span>
+            <div class="dbc-circle">4</div>
+          </div>
+          <div class="dbc-line" aria-hidden="true"></div>
+
+          <div class="dbc-step" id="dbc-step-4">
+            <span class="dbc-step-label">Section </span>
+            <div class="dbc-circle">5</div>
+          </div>
+          <div class="dbc-line" aria-hidden="true"></div>
+
+          <div class="dbc-step" id="dbc-step-5">
+            <span class="dbc-step-label">Section </span>
+            <div class="dbc-circle">6</div>
+          </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="dbcTabContent">
+          <!-- SECTION 1: CLIENT INFORMATION -->
+          <section
+            class="tab-pane fade show active"
+            id="dbc-section-1"
+            role="tabpanel"
+            aria-labelledby="dbc-step-0"
+          >
+            <form id="dbc-form-1" novalidate>
+              <h3 class="h5 fw-bold mb-3">Section 1: Client Information</h3>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label fw-bold"
+                    >First Name <span class="text-danger">*</span></label
+                  >
+                  <input
+                    id="firstName"
+                    name="firstName"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">First name is required.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label fw-bold"
+                    >Last Name <span class="text-danger">*</span></label
+                  >
+                  <input
+                    id="lastName"
+                    name="lastName"
+                    type="text"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">Last name is required.</div>
+                </div>
+
+                <div class="col-12">
+                  <label for="businessName" class="form-label fw-bold"
+                    >Business Name (if applicable)</label
+                  >
+                  <input
+                    id="businessName"
+                    name="businessName"
+                    type="text"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <span class="form-label fw-bold d-block"
+                    >Business Entity Type</span
+                  >
+                  <div class="row g-2">
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="entityType"
+                          id="entityLLC"
+                          value="LLC"
+                        />
+                        <label class="form-check-label" for="entityLLC"
+                          >LLC</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="entityType"
+                          id="entityPLLC"
+                          value="PLLC"
+                        />
+                        <label class="form-check-label" for="entityPLLC"
+                          >PLLC</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="entityType"
+                          id="entityCorp"
+                          value="Corporation"
+                        />
+                        <label class="form-check-label" for="entityCorp"
+                          >Corporation</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="entityType"
+                          id="entitySole"
+                          value="Sole Proprietor"
+                        />
+                        <label class="form-check-label" for="entitySole"
+                          >Sole Proprietor</label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="input-group">
+                        <div class="input-group-text">
+                          <input
+                            class="form-check-input mt-0"
+                            type="radio"
+                            name="entityType"
+                            id="entityOtherRadio"
+                            value="Other"
+                          />
+                        </div>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="entityOther"
+                          placeholder="Other (specify)"
+                          aria-label="Other entity type"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- US Address -->
+                <div class="col-12">
+                  <label class="form-label fw-bold"
+                    >Business Address (US format)</label
+                  >
+                  <div class="row g-2">
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="addrLine1"
+                        placeholder="Address line 1"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="addrLine2"
+                        placeholder="Address line 2 (optional)"
+                      />
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="addrCity"
+                        placeholder="City"
+                      />
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="addrState"
+                        placeholder="State"
+                      />
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="addrZip"
+                        placeholder="ZIP Code"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone" class="form-label fw-bold"
+                    >Phone Number</label
+                  >
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    class="form-control"
+                    placeholder="(555) 555-5555"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label fw-bold"
+                    >Email Address</label
+                  >
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="name@example.com"
+                  />
+                </div>
+
+                <div class="col-12">
+                  <span class="form-label fw-bold d-block"
+                    >Preferred Contact Method</span
+                  >
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="prefPhone"
+                        value="Phone"
+                      />
+                      <label class="form-check-label" for="prefPhone"
+                        >Phone</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="prefEmail"
+                        value="Email"
+                      />
+                      <label class="form-check-label" for="prefEmail"
+                        >Email</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="prefText"
+                        value="Text"
+                      />
+                      <label class="form-check-label" for="prefText"
+                        >Text</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <label for="website" class="form-label fw-bold"
+                    >Website (if applicable)</label
+                  >
+                  <input
+                    id="website"
+                    name="website"
+                    type="url"
+                    class="form-control"
+                    placeholder="https://example.com"
+                  />
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-end mt-4">
+                <button type="button" class="btn btn-dbc next" data-next>
+                  Next
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 2: AGENCY OVERVIEW -->
+          <section
+            class="tab-pane fade"
+            id="dbc-section-2"
+            role="tabpanel"
+            aria-labelledby="dbc-step-1"
+          >
+            <form id="dbc-form-2" novalidate>
+              <h3 class="h5 fw-bold mb-3">Section 2: Agency Overview</h3>
+
+              <div class="mb-3">
+                <span class="form-label fw-bold d-block"
+                  >What stage is your agency in?</span
+                >
+                <div class="row g-2">
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="agencyStage"
+                        id="stageIdea"
+                        value="Idea/Planning"
+                      />
+                      <label class="form-check-label" for="stageIdea"
+                        >Idea/Planning</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="agencyStage"
+                        id="stageLicensing"
+                        value="In Process of Licensing"
+                      />
+                      <label class="form-check-label" for="stageLicensing"
+                        >In Process of Licensing</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="agencyStage"
+                        id="stageLicensedNotOp"
+                        value="Licensed but Not Operational"
+                      />
+                      <label class="form-check-label" for="stageLicensedNotOp"
+                        >Licensed but Not Operational</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="agencyStage"
+                        id="stageOperational"
+                        value="Operational"
+                      />
+                      <label class="form-check-label" for="stageOperational"
+                        >Operational</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <textarea
+                  id="agencyStageNotes"
+                  class="form-control mt-2"
+                  placeholder="Additional information"
+                  data-autosize
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <span class="form-label fw-bold d-block"
+                  >Type of Staffing Services Provided (check all that
+                  apply)</span
+                >
+                <div class="row g-2">
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="svcMedical"
+                        value="Medical"
+                      /><label class="form-check-label" for="svcMedical"
+                        >Medical</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="svcNonMedical"
+                        value="Non-Medical"
+                      /><label class="form-check-label" for="svcNonMedical"
+                        >Non-Medical</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="svcAdmin"
+                        value="Admin"
+                      /><label class="form-check-label" for="svcAdmin"
+                        >Admin</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="svcIndustrial"
+                        value="Industrial"
+                      /><label class="form-check-label" for="svcIndustrial"
+                        >Industrial</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="svcIT"
+                        value="IT"
+                      /><label class="form-check-label" for="svcIT">IT</label>
+                    </div>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <input
+                          class="form-check-input mt-0"
+                          type="checkbox"
+                          id="svcOtherCheck"
+                          value="Other"
+                        />
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="svcOtherText"
+                        placeholder="Other (specify)"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="licensedStates" class="form-label fw-bold"
+                  >States you plan to operate in or are currently
+                  licensed</label
+                >
+                <textarea
+                  id="licensedStates"
+                  class="form-control"
+                  placeholder="List states"
+                  data-autosize
+                ></textarea>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <span class="form-label fw-bold d-block"
+                    >Do you currently have any clients/contracts?</span
+                  >
+                  <div class="d-flex gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="hasClients"
+                        id="clientsYes"
+                        value="Yes"
+                      /><label class="form-check-label" for="clientsYes"
+                        >Yes</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="hasClients"
+                        id="clientsNo"
+                        value="No"
+                      /><label class="form-check-label" for="clientsNo"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="clientCount" class="form-label fw-bold"
+                    >If yes, how many?</label
+                  >
+                  <input
+                    id="clientCount"
+                    type="number"
+                    min="0"
+                    class="form-control"
+                  />
+                </div>
+              </div>
+
+              <div class="row g-3 mt-1">
+                <div class="col-md-6">
+                  <span class="form-label fw-bold d-block"
+                    >Do you have a business license and EIN?</span
+                  >
+                  <div class="d-flex gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="licenseEIN"
+                        id="licenseYes"
+                        value="Yes"
+                      /><label class="form-check-label" for="licenseYes"
+                        >Yes</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="licenseEIN"
+                        id="licenseNo"
+                        value="No"
+                      /><label class="form-check-label" for="licenseNo"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <span class="form-label fw-bold d-block"
+                    >Need assistance?</span
+                  >
+                  <div class="d-flex gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="needAssistance"
+                        id="assistYes"
+                        value="Yes"
+                      /><label class="form-check-label" for="assistYes"
+                        >Yes</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="needAssistance"
+                        id="assistNo"
+                        value="No"
+                      /><label class="form-check-label" for="assistNo"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev" data-prev>
+                  Previous
+                </button>
+                <button type="button" class="btn btn-dbc next" data-next>
+                  Next
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 3: CONSULTING NEEDS -->
+          <section
+            class="tab-pane fade"
+            id="dbc-section-3"
+            role="tabpanel"
+            aria-labelledby="dbc-step-2"
+          >
+            <form id="dbc-form-3" novalidate>
+              <h3 class="h5 fw-bold mb-3">Section 3: Consulting Needs</h3>
+
+              <div class="mb-3">
+                <span class="form-label fw-bold d-block"
+                  >What areas are you seeking support in? (check all that
+                  apply)</span
+                >
+                <div class="row g-2">
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="needLicensing"
+                        value="Licensing"
+                      /><label class="form-check-label" for="needLicensing"
+                        >Licensing</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="needBranding"
+                        value="Branding"
+                      /><label class="form-check-label" for="needBranding"
+                        >Branding</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="needPolicies"
+                        value="Policies"
+                      /><label class="form-check-label" for="needPolicies"
+                        >Policies</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="needContracts"
+                        value="Contracts"
+                      /><label class="form-check-label" for="needContracts"
+                        >Contracts</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="needSoftware"
+                        value="Software"
+                      /><label class="form-check-label" for="needSoftware"
+                        >Software</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-md-9">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <input
+                          class="form-check-input mt-0"
+                          type="checkbox"
+                          id="needOtherCheck"
+                          value="Other"
+                        />
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="needOtherText"
+                        placeholder="Other (specify)"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <span class="form-label fw-bold d-block"
+                  >Are you using any systems?</span
+                >
+                <div class="d-flex flex-wrap gap-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="sysScheduling"
+                      value="Scheduling"
+                    /><label class="form-check-label" for="sysScheduling"
+                      >Scheduling</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="sysPayroll"
+                      value="Payroll/HR"
+                    /><label class="form-check-label" for="sysPayroll"
+                      >Payroll/HR</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="sysTime"
+                      value="Timekeeping"
+                    /><label class="form-check-label" for="sysTime"
+                      >Timekeeping</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="sysCRM"
+                      value="CRM/ATS"
+                    /><label class="form-check-label" for="sysCRM"
+                      >CRM/ATS</label
+                    >
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="sysNone"
+                      value="None"
+                    /><label class="form-check-label" for="sysNone">None</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <span class="form-label fw-bold d-block"
+                  >Would you like help setting up digital forms or automation
+                  tools?</span
+                >
+                <div class="d-flex gap-3">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="needAutomation"
+                      id="autoYes"
+                      value="Yes"
+                    /><label class="form-check-label" for="autoYes">Yes</label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="needAutomation"
+                      id="autoNo"
+                      value="No"
+                    /><label class="form-check-label" for="autoNo">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev" data-prev>
+                  Previous
+                </button>
+                <button type="button" class="btn btn-dbc next" data-next>
+                  Next
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 4: CURRENT OPERATIONS SNAPSHOT -->
+          <section
+            class="tab-pane fade"
+            id="dbc-section-4"
+            role="tabpanel"
+            aria-labelledby="dbc-step-3"
+          >
+            <form id="dbc-form-4" novalidate>
+              <h3 class="h5 fw-bold mb-3">
+                Section 4: Current Operations Snapshot
+              </h3>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="rosterCount" class="form-label fw-bold"
+                    >How many staff members are on your roster?</label
+                  >
+                  <input
+                    id="rosterCount"
+                    type="number"
+                    min="0"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <span class="form-label fw-bold d-block"
+                    >Do you have employees or 1099 contractors?</span
+                  >
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="empType"
+                        id="empEmployees"
+                        value="Employees"
+                      /><label class="form-check-label" for="empEmployees"
+                        >Employees</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="empType"
+                        id="emp1099"
+                        value="1099"
+                      /><label class="form-check-label" for="emp1099"
+                        >1099</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="empType"
+                        id="empBoth"
+                        value="Both"
+                      /><label class="form-check-label" for="empBoth"
+                        >Both</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <span class="form-label fw-bold d-block"
+                    >Do you provide benefits or onboarding materials?</span
+                  >
+                  <div class="d-flex gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="benefits"
+                        id="benefitsYes"
+                        value="Yes"
+                      /><label class="form-check-label" for="benefitsYes"
+                        >Yes</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="benefits"
+                        id="benefitsNo"
+                        value="No"
+                      /><label class="form-check-label" for="benefitsNo"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <span class="form-label fw-bold d-block"
+                    >Do you have active contracts with clients?</span
+                  >
+                  <div class="d-flex gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="activeContracts"
+                        id="contractsYes"
+                        value="Yes"
+                      /><label class="form-check-label" for="contractsYes"
+                        >Yes</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="activeContracts"
+                        id="contractsNo"
+                        value="No"
+                      /><label class="form-check-label" for="contractsNo"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+                  <textarea
+                    id="contractsDesc"
+                    class="form-control mt-2"
+                    placeholder="If yes, describe"
+                    data-autosize
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev" data-prev>
+                  Previous
+                </button>
+                <button type="button" class="btn btn-dbc next" data-next>
+                  Next
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 5: GOALS & VISION -->
+          <section
+            class="tab-pane fade"
+            id="dbc-section-5"
+            role="tabpanel"
+            aria-labelledby="dbc-step-4"
+          >
+            <form id="dbc-form-5" novalidate>
+              <h3 class="h5 fw-bold mb-3">Section 5: Goals &amp; Vision</h3>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >What are your top 3 goals for your staffing agency in the
+                  next 90 days:</label
+                >
+                <div class="row g-2">
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      id="goal1"
+                      class="form-control"
+                      placeholder="1."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      id="goal2"
+                      class="form-control"
+                      placeholder="2."
+                    />
+                  </div>
+                  <div class="col-12">
+                    <input
+                      type="text"
+                      id="goal3"
+                      class="form-control"
+                      placeholder="3."
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="successLook" class="form-label fw-bold"
+                  >What does success look like in your consulting relationship
+                  with DBC?</label
+                >
+                <textarea
+                  id="successLook"
+                  class="form-control"
+                  placeholder="Describe your expectations"
+                  data-autosize
+                ></textarea>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <span class="form-label fw-bold d-block"
+                    >Do you plan to seek funding or business credit?</span
+                  >
+                  <div class="d-flex gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="seekFunding"
+                        id="fundingYes"
+                        value="Yes"
+                      /><label class="form-check-label" for="fundingYes"
+                        >Yes</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="seekFunding"
+                        id="fundingNo"
+                        value="No"
+                      /><label class="form-check-label" for="fundingNo"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <span class="form-label fw-bold d-block">Need support?</span>
+                  <div class="d-flex gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fundingSupport"
+                        id="fundSupportYes"
+                        value="Yes"
+                      /><label class="form-check-label" for="fundSupportYes"
+                        >Yes</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="fundingSupport"
+                        id="fundSupportNo"
+                        value="No"
+                      /><label class="form-check-label" for="fundSupportNo"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev" data-prev>
+                  Previous
+                </button>
+                <button type="button" class="btn btn-dbc next" data-next>
+                  Next
+                </button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 6: CONSULTING LOGISTICS & SIGNATURE -->
+          <section
+            class="tab-pane fade"
+            id="dbc-section-6"
+            role="tabpanel"
+            aria-labelledby="dbc-step-5"
+          >
+            <form id="dbc-form-6" novalidate>
+              <h3 class="h5 fw-bold mb-3">Section 6: CONSULTING LOGISTICS</h3>
+
+              <div class="row g-3">
+                <div class="col-12">
+                  <span class="form-label fw-bold d-block"
+                    >Preferred timeframe to begin consulting support</span
+                  >
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="timeframe"
+                        id="timeASAP"
+                        value="ASAP"
+                      /><label class="form-check-label" for="timeASAP"
+                        >ASAP</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="timeframe"
+                        id="time2w"
+                        value="Within 2 weeks"
+                      /><label class="form-check-label" for="time2w"
+                        >Within 2 weeks</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="timeframe"
+                        id="time30d"
+                        value="Next 30 days"
+                      /><label class="form-check-label" for="time30d"
+                        >Next 30 days</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="timeframe"
+                        id="timeInfo"
+                        value="Just gathering info"
+                      /><label class="form-check-label" for="timeInfo"
+                        >Just gathering info</label
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <span class="form-label fw-bold d-block"
+                    >Preferred consultation format</span
+                  >
+                  <div class="d-flex flex-wrap gap-3">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="fmtZoom"
+                        value="Zoom/Google Meet"
+                      /><label class="form-check-label" for="fmtZoom"
+                        >Zoom/Google Meet</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="fmtPhone"
+                        value="Phone Call"
+                      /><label class="form-check-label" for="fmtPhone"
+                        >Phone Call</label
+                      >
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="format"
+                        id="fmtInPerson"
+                        value="In-Person"
+                      /><label class="form-check-label" for="fmtInPerson"
+                        >In-Person</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <label class="form-label fw-bold"
+                  >Preferred dates and times for kickoff meeting</label
+                >
+                <div class="row g-2 align-items-center">
+                  <div class="col-md-4">
+                    <input type="date" class="form-control" id="kickoffDate1" />
+                  </div>
+                  <div class="col-md-4">
+                    <input type="time" class="form-control" id="kickoffTime1" />
+                  </div>
+                </div>
+                <div class="row g-2 align-items-center mt-2">
+                  <div class="col-md-4">
+                    <input type="date" class="form-control" id="kickoffDate2" />
+                  </div>
+                  <div class="col-md-4">
+                    <input type="time" class="form-control" id="kickoffTime2" />
+                  </div>
+                </div>
+                <div class="row g-2 align-items-center mt-2">
+                  <div class="col-md-4">
+                    <input type="date" class="form-control" id="kickoffDate3" />
+                  </div>
+                  <div class="col-md-4">
+                    <input type="time" class="form-control" id="kickoffTime3" />
+                  </div>
+                </div>
+              </div>
+
+              <hr class="my-4" />
+
+              <!-- Signature Panel -->
+              <div class="row g-3">
+                <div class="col-lg-8">
+                  <label class="form-label fw-bold">Client Signature</label>
+                  <div class="border rounded p-2 bg-white">
+                    <canvas
+                      id="signaturePad"
+                      class="w-100"
+                      height="200"
+                      style="touch-action: none"
+                    ></canvas>
+                  </div>
+                  <div class="d-flex gap-2 mt-2">
+                    <button
+                      type="button"
+                      id="sigClear"
+                      class="btn btn-outline-secondary btn-sm"
+                    >
+                      Clear
+                    </button>
+                  </div>
+                  <input
+                    type="hidden"
+                    id="signatureData"
+                    name="signatureData"
+                  />
+                </div>
+                <div class="col-lg-4">
+                  <label for="signatureDate" class="form-label fw-bold"
+                    >Date</label
+                  >
+                  <input type="date" id="signatureDate" class="form-control" />
+                </div>
+              </div>
+
+              <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+                <button type="button" class="btn btn-dbc w-100" data-prev>
+                  Previous
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-dbc w-100"
+                  id="previewBtn"
+                >
+                  Preview
+                </button>
+                <button type="submit" class="btn btn-dbc w-100" id="submitBtn">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <!-- Submit Confirmation Modal -->
+        <div
+          class="modal fade"
+          id="dbcConfirmModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title">Thank you for reaching out</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Your intake has been submitted. The DBC team will review and
+                contact you soon.
+              </div>
+              <div class="modal-footer border-0">
+                <button
+                  type="button"
+                  class="btn btn-dbc"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/staffing-agency-consulting-intake-form.js"></script>
+  </body>
+</html>

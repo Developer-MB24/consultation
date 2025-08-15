@@ -1,0 +1,172 @@
+/* Global */
+:root {
+  --dbc-primary: #1c2d59;
+  --dbc-accent: #f27b21;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, serif;
+  color: #111;
+  background: #f7f8fb;
+}
+.dbc-logo {
+  height: 40px;
+  width: auto;
+}
+.dbc-title .card {
+  border: none;
+}
+
+/* Buttons */
+.btn-dbc {
+  background: var(--dbc-primary);
+  color: #fff;
+  border: 1px solid var(--dbc-primary);
+}
+.btn-dbc:hover,
+.btn-dbc:focus {
+  background: var(--dbc-accent);
+  border-color: var(--dbc-accent);
+  color: #fff;
+}
+.btn-outline-dbc {
+  color: var(--dbc-primary);
+  border: 1px solid var(--dbc-primary);
+  background: transparent;
+}
+.btn-outline-dbc:hover,
+.btn-outline-dbc:focus {
+  color: #fff;
+  background: var(--dbc-accent);
+  border-color: var(--dbc-accent);
+}
+
+/* Stepper */
+.dbc-step-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.dbc-step {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.dbc-step .dbc-step-label {
+  font-size: 0.9rem;
+  color: #555;
+}
+.dbc-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d1d5db;
+  background: #fff;
+  color: #666;
+  font-weight: 700;
+}
+.dbc-line {
+  flex: 1;
+  height: 2px;
+  background: #e5e7eb;
+}
+.dbc-step.active .dbc-circle {
+  border-color: var(--dbc-primary);
+  color: var(--dbc-primary);
+}
+.dbc-step.completed .dbc-circle {
+  background: var(--dbc-primary);
+  color: #fff;
+  border-color: var(--dbc-primary);
+}
+.dbc-step.active .dbc-step-label,
+.dbc-step.completed .dbc-step-label {
+  color: #000;
+}
+/* completed connector segment turns brand color */
+.dbc-line.completed {
+  background: var(--dbc-primary);
+}
+
+/* Cards / Sections */
+#dbc-intake .card {
+  border: none;
+}
+.tab-pane {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .tab-pane {
+    padding: 1.25rem;
+  }
+}
+
+/* Forms */
+.form-label {
+  margin-bottom: 0.35rem;
+}
+textarea[data-autosize] {
+  min-height: 60px;
+  overflow: hidden;
+  resize: none;
+}
+
+/* Brand-colored focus rings (no Bootstrap green) */
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--dbc-primary);
+  box-shadow: 0 0 0 0.25rem rgba(28, 45, 89, 0.25);
+}
+
+/* Checkboxes / Radios: use brand color (no green) */
+.form-check-input {
+  accent-color: var(--dbc-primary);
+}
+.form-check-input:checked {
+  background-color: var(--dbc-primary);
+  border-color: var(--dbc-primary);
+}
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(28, 45, 89, 0.25);
+  border-color: var(--dbc-primary);
+}
+
+/* Valid state overrides: remove green borders/icons */
+.is-valid,
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+  border-color: var(--dbc-primary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(28, 45, 89, 0.25) !important;
+  background-image: none !important; /* remove green check icon */
+}
+.form-check-input.is-valid,
+.was-validated .form-check-input:valid {
+  border-color: var(--dbc-primary) !important;
+  box-shadow: 0 0 0 0.25rem rgba(28, 45, 89, 0.25) !important;
+}
+
+/* Valid feedback text in brand color (optional; removes green text) */
+.valid-feedback {
+  color: var(--dbc-primary);
+}
+
+/* Signature Canvas wrapper already in HTML; make canvas responsive */
+#signaturePad {
+  display: block;
+  width: 100%;
+}
+
+/* Utility */
+.small-muted {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
