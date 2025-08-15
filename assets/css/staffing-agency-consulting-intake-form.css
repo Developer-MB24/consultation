@@ -1,4 +1,3 @@
-/* Global */
 :root {
   --dbc-primary: #1c2d59;
   --dbc-accent: #f27b21;
@@ -89,12 +88,11 @@ body {
 .dbc-step.completed .dbc-step-label {
   color: #000;
 }
-/* completed connector segment turns brand color */
+
 .dbc-line.completed {
   background: var(--dbc-primary);
 }
 
-/* Cards / Sections */
 #dbc-intake .card {
   border: none;
 }
@@ -120,14 +118,12 @@ textarea[data-autosize] {
   resize: none;
 }
 
-/* Brand-colored focus rings (no Bootstrap green) */
 .form-control:focus,
 .form-select:focus {
   border-color: var(--dbc-primary);
   box-shadow: 0 0 0 0.25rem rgba(28, 45, 89, 0.25);
 }
 
-/* Checkboxes / Radios: use brand color (no green) */
 .form-check-input {
   accent-color: var(--dbc-primary);
 }
@@ -140,7 +136,6 @@ textarea[data-autosize] {
   border-color: var(--dbc-primary);
 }
 
-/* Valid state overrides: remove green borders/icons */
 .is-valid,
 .was-validated .form-control:valid,
 .was-validated .form-select:valid {
@@ -154,18 +149,15 @@ textarea[data-autosize] {
   box-shadow: 0 0 0 0.25rem rgba(28, 45, 89, 0.25) !important;
 }
 
-/* Valid feedback text in brand color (optional; removes green text) */
 .valid-feedback {
   color: var(--dbc-primary);
 }
 
-/* Signature Canvas wrapper already in HTML; make canvas responsive */
 #signaturePad {
   display: block;
   width: 100%;
 }
 
-/* Utility */
 .small-muted {
   font-size: 0.875rem;
   color: #6b7280;

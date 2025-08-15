@@ -521,7 +521,7 @@ body {
   color: #333;
 }
 
-/* RIGHT ARROW CIRCLE */
+/* RIGHT ARROW  */
 .service-box .arrow {
   font-size: 22px;
   font-weight: bold;
@@ -745,7 +745,6 @@ body {
   background-color: #f4f4fa;
 }
 
-/* Card base */
 .service-card {
   background-color: #fff;
   transition: color 0.3s ease;
@@ -849,7 +848,6 @@ body {
   max-width: 100%;
 }
 
-/* Fix container overflow in mobile and center all elements */
 @media (max-width: 767.98px) {
   .container,
   .row,

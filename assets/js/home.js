@@ -158,7 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // animation.js
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Animate .animated-title elements on scroll
   const observer = new IntersectionObserver(
     (entries, observerInstance) => {
       entries.forEach((entry) => {
@@ -215,10 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Update on window resize
   window.addEventListener("resize", handleResize);
 
-  // Clicking the link should still navigate (do nothing here)
-  dropdownToggle.addEventListener("click", function (e) {
-    // Let default behavior continue (navigate to services.html)
-  });
+  dropdownToggle.addEventListener("click", function (e) {});
 });
 
 // hide header

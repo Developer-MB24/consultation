@@ -1,7 +1,6 @@
 // animation.js
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Animate .animated-title elements on scroll
   const observer = new IntersectionObserver(
     (entries, observerInstance) => {
       entries.forEach((entry) => {
@@ -60,33 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update on window resize
     window.addEventListener("resize", handleResize);
 
-    // Allow default navigation on click
-    dropdownToggle.addEventListener("click", function (e) {
-      // default behavior: let it navigate
-    });
+    dropdownToggle.addEventListener("click", function (e) {});
   }
 });
-
-// mobile
-// document.addEventListener("DOMContentLoaded", function () {
-//   const mobileServicesLink = document.getElementById("mobileServicesLink");
-//   const servicesSubmenu = document.getElementById("servicesSubmenu");
-
-//   let tappedOnce = false;
-
-//   mobileServicesLink.addEventListener("click", function (e) {
-//     if (window.innerWidth < 992) {
-//       // On mobile
-//       if (!tappedOnce) {
-//         e.preventDefault();
-//         const bsCollapse = new bootstrap.Collapse(servicesSubmenu, {
-//           toggle: true,
-//         });
-//         tappedOnce = true;
-//       } else {
-//         // Navigate on second tap
-//         tappedOnce = false;
-//       }
-//     }
-//   });
-// });

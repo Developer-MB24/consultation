@@ -4,7 +4,6 @@ document.querySelectorAll(".skill-box").forEach((skill) => {
   const skillText = skill.querySelector(".skill-text");
   const iconWrapper = skill.querySelector(".icon-circle");
 
-  // Create hover-content if not already
   if (!skill.querySelector(".hover-content")) {
     const hoverContent = document.createElement("div");
     hoverContent.classList.add("hover-content");
@@ -115,8 +114,5 @@ document.addEventListener("DOMContentLoaded", function () {
   // Update on window resize
   window.addEventListener("resize", handleResize);
 
-  // Clicking the link should still navigate (do nothing here)
-  dropdownToggle.addEventListener("click", function (e) {
-    // Let default behavior continue (navigate to services.html)
-  });
+  dropdownToggle.addEventListener("click", function (e) {});
 });
