@@ -1,0 +1,202 @@
+/* =========================
+   DBC Global Theme (Brand)
+   ========================= */
+:root {
+  --dbc-primary: #1c2d59;
+  --dbc-ring: 0 0 0 0.25rem rgba(28, 45, 89, 0.25);
+
+  /* Optional: keep valid state on brand */
+  --bs-success: #1c2d59;
+  --bs-success-rgb: 28, 45, 89;
+  --bs-form-valid-color: #1c2d59;
+  --bs-form-valid-border-color: #1c2d59;
+
+  /* IMPORTANT: do NOT override invalid to brand, we want red */
+  /* (Removed your previous --bs-danger / invalid overrides) */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  color: #111;
+  background: #f7f8fb;
+}
+
+/* Header / Title */
+.dbc-logo {
+  height: 40px;
+  width: auto;
+}
+.dbc-title .card {
+  border: none;
+}
+
+/* Links (brand only) */
+a {
+  color: var(--dbc-primary);
+}
+a:hover,
+a:focus {
+  color: var(--dbc-primary);
+}
+
+/* Buttons (brand only) */
+.btn-dbc {
+  background: var(--dbc-primary);
+  color: #fff;
+  border: 1px solid var(--dbc-primary);
+}
+.btn-dbc:hover,
+.btn-dbc:focus {
+  background: var(--dbc-primary);
+  border-color: var(--dbc-primary);
+  color: #fff;
+}
+.btn-outline-dbc {
+  color: var(--dbc-primary);
+  border: 1px solid var(--dbc-primary);
+  background: transparent;
+}
+.btn-outline-dbc:hover,
+.btn-outline-dbc:focus {
+  color: #fff;
+  background: var(--dbc-primary);
+  border-color: var(--dbc-primary);
+}
+.btn:focus-visible {
+  outline: none;
+  box-shadow: var(--dbc-ring);
+}
+.btn-primary {
+  background-color: var(--dbc-primary);
+  border-color: var(--dbc-primary);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--dbc-primary);
+  border-color: var(--dbc-primary);
+}
+
+/* Sections (card look if you use .card wrappers) */
+#dbc-intake .card {
+  border: none;
+}
+
+/* Forms */
+.form-label {
+  margin-bottom: 0.35rem;
+}
+
+textarea[data-autosize] {
+  min-height: 60px;
+  overflow: hidden;
+  resize: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--dbc-primary);
+  box-shadow: var(--dbc-ring);
+}
+
+/* Input groups: ring when child focused (modern browsers) */
+.input-group:has(.form-control:focus),
+.input-group:has(.form-select:focus) {
+  box-shadow: var(--dbc-ring);
+  border-radius: 0.375rem;
+}
+
+/* ===== Checkboxes / Radios (brand tick) ===== */
+#dbc-intake .form-check-input {
+  accent-color: var(--dbc-primary);
+  background-color: #fff;
+  border: 1px solid var(--dbc-primary);
+
+  /* Bootstrap custom control variables */
+  --bs-form-check-bg: #fff;
+  --bs-form-check-border-color: #1c2d59;
+  --bs-form-check-checked-bg-color: #1c2d59;
+  --bs-form-check-checked-border-color: #1c2d59;
+  --bs-form-check-checked-color: #fff; /* tick color */
+
+  --bs-form-check-valid-color: #1c2d59;
+  --bs-form-check-valid-border-color: #1c2d59;
+  /* NOTE: do not set invalid vars to brand—let red show */
+}
+
+#dbc-intake .form-check-input[type="checkbox"] {
+  /* White checkmark */
+  --bs-form-check-checked-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23fff' d='M6.173 12.927L1.4 8.154l1.414-1.414 3.359 3.359 6.014-6.014 1.414 1.414-7.428 7.428z'/%3e%3c/svg%3e");
+}
+#dbc-intake .form-check-input[type="radio"] {
+  /* White dot */
+  --bs-form-check-radio-checked-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+#dbc-intake .form-check-input:checked {
+  background-color: #1c2d59 !important;
+  border-color: #1c2d59 !important;
+}
+#dbc-intake .form-check-input:focus {
+  box-shadow: var(--dbc-ring) !important;
+  border-color: #1c2d59 !important;
+}
+#dbc-intake .form-check-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Checked/valid labels should be brand */
+#dbc-intake .form-check-input:checked ~ .form-check-label,
+#dbc-intake .form-check-input.is-valid ~ .form-check-label,
+#dbc-intake .was-validated .form-check-input:valid ~ .form-check-label {
+  color: #1c2d59 !important;
+}
+
+/* Valid states (brand), don't touch invalid here */
+.is-valid,
+.was-validated .form-control:valid,
+.was-validated .form-select:valid {
+  border-color: #1c2d59 !important;
+  box-shadow: var(--dbc-ring) !important;
+  background-image: none !important;
+}
+.valid-feedback {
+  color: #1c2d59 !important;
+}
+
+/* Signature Canvas */
+#signaturePad {
+  display: block;
+  width: 100%;
+  touch-action: none;
+}
+
+/* =========================
+   Additions requested
+   ========================= */
+/* Make invalid fields clearly red */
+.is-invalid,
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important; /* subtle red ring */
+  background-image: none !important;
+}
+.invalid-feedback {
+  color: #dc3545 !important;
+}
+
+/* Buttons full-width on small screens */
+@media (max-width: 576px) {
+  .btn.btn-dbc,
+  .btn.btn-outline-dbc {
+    width: 100%;
+  }
+  .form-check.d-flex .form-control-sm {
+    min-width: 140px;
+  }
+}

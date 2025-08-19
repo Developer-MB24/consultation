@@ -56,7 +56,7 @@ body {
 }
 .dbc-step .dbc-step-label {
   font-size: 0.9rem;
-  color: #555;
+  color: #111;
 }
 .dbc-circle {
   width: 34px;
@@ -67,7 +67,7 @@ body {
   justify-content: center;
   border: 2px solid #d1d5db;
   background: #fff;
-  color: #666;
+  color: #111;
   font-weight: 700;
 }
 .dbc-line {
@@ -141,7 +141,7 @@ textarea[data-autosize] {
 .was-validated .form-select:valid {
   border-color: var(--dbc-primary) !important;
   box-shadow: 0 0 0 0.25rem rgba(28, 45, 89, 0.25) !important;
-  background-image: none !important; /* remove green check icon */
+  background-image: none !important;
 }
 .form-check-input.is-valid,
 .was-validated .form-check-input:valid {
