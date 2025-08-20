@@ -13,7 +13,7 @@
   <body>
     <!-- nav  -->
 
-    <header class="main-header shadow-sm py-4">
+    <header id="mainNavbar" class="main-header">
       <div class="container-fluid px-4">
         <!-- Top Row -->
         <div
@@ -31,7 +31,6 @@
             />
           </a>
 
-          <!-- Center Nav - Desktop Only -->
           <nav
             class="main-nav d-none d-md-flex gap-4 fw-bold"
             style="margin-right: 60px"
@@ -54,7 +53,6 @@
             LET'S TALK
           </a>
 
-          <!-- Hamburger Button for Mobile -->
           <button
             class="btn d-lg-none"
             type="button"
@@ -68,31 +66,49 @@
           </button>
         </div>
 
-        <!-- Bottom Row (Desktop Only): Seven Services -->
         <nav
-          class="service-nav d-none d-md-flex justify-content-center flex-wrap gap-3 mt-3 fw-bold"
+          class="service-nav d-none d-md-flex flex-wrap justify-content-center gap-4 mt-3 fw-bold"
         >
-          <a href="healthcare-business.html" class="service-link fw-bold"
-            >Startup</a
+          <a href="healthcare-business.html" class="nav-link fw-bold"
+            >Healthcare<br />Startup</a
           >
-          <a href="licensing&regulatory.html" class="service-link fw-bold"
-            >Compliance</a
+          <a href="policy&procedure.html" class="nav-link fw-bold"
+            >Policies &<br />Procedures</a
           >
-          <a href="staff-training.html" class="service-link fw-bold"
-            >Training</a
+          <a href="licensing&regulatory.html" class="nav-link fw-bold"
+            >Licensing &<br />Compliance</a
           >
-          <a href="policy&procedure.html" class="service-link fw-bold"
-            >Policies</a
+          <a href="staff-training.html" class="nav-link fw-bold"
+            >Training &<br />Compliance</a
           >
-          <a href="business-growth.html" class="service-link fw-bold">Growth</a>
-          <a href="technology.html" class="service-link fw-bold">Technology</a>
-          <a href="automation.html" class="service-link fw-bold">Branding</a>
-          <a href="healthcare-credentialing.html" class="service-link fw-bold"
-            >Credentialing</a
+          <a href="business-growth.html" class="nav-link fw-bold"
+            >Growth &<br />Automation</a
+          >
+          <a href="healthcare-credentialing.html" class="nav-link fw-bold"
+            >Healthcare<br />Credentialing</a
+          >
+          <a href="digital-solutions.html" class="nav-link fw-bold"
+            >Digital Solutions &<br />Marketing</a
+          >
+
+          <a
+            class="nav-link fw-bold"
+            href="accounting-bookkeeping&tax-services.html"
+            >Accounts &<br />
+            Bookkeeping</a
+          >
+
+          <a class="nav-link fw-bold" href="accreditation-for-healthcare.html"
+            >Healthcare&<br />
+            Accreditation</a
+          >
+          <a class="nav-link fw-bold" href="medical-billing.html"
+            >Medical<br />
+            Billing</a
           >
         </nav>
 
-        <!-- Mobile Menu Collapse -->
+        <!-- Mobile Menu -->
         <div class="collapse d-lg-none" id="mobileMenu">
           <div class="mobile-menu p-3 bg-light rounded shadow-sm mt-3">
             <ul class="list-unstyled mb-0 fw-bold">
@@ -101,51 +117,74 @@
                 <a class="nav-link fw-bold" href="about-us.html">About Us</a>
               </li>
               <li>
-                <a class="nav-link fw-bold" href="services.html"
-                  >Our Services</a
-                >
+                <a class="nav-link fw-bold" href="services.html">Services</a>
               </li>
               <li><a class="nav-link fw-bold" href="blog.html">Blog</a></li>
+              <li>
+                <a class="nav-link fw-bold" href="manual&contracts.html"
+                  >Products</a
+                >
+              </li>
+
               <hr />
+
               <li>
                 <a class="nav-link fw-bold" href="healthcare-business.html"
-                  >Startup</a
+                  >Healthcare Startup</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="policy&procedure.html">
+                  Policies & Procedures</a
                 >
               </li>
               <li>
                 <a class="nav-link fw-bold" href="licensing&regulatory.html"
-                  >Compliance</a
+                  >Licensing & Compliance</a
                 >
               </li>
               <li>
                 <a class="nav-link fw-bold" href="staff-training.html"
-                  >Training</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="policy&procedure.html"
-                  >Policies</a
+                  >Training & Compliance</a
                 >
               </li>
               <li>
                 <a class="nav-link fw-bold" href="business-growth.html"
-                  >Growth</a
+                  >Growth & Automation</a
                 >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="technology.html"
-                  >Technology</a
-                >
-              </li>
-              <li>
-                <a class="nav-link fw-bold" href="automation.html">Branding</a>
               </li>
               <li>
                 <a class="nav-link fw-bold" href="healthcare-credentialing.html"
-                  >Credentialing</a
+                  >Healthcare Credentialing</a
                 >
               </li>
+              <li>
+                <a class="nav-link fw-bold" href="digital-solutions.html"
+                  >Digital Solutions & Marketing</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link fw-bold"
+                  href="accounting-bookkeeping&tax-services.html"
+                  >Accounts & Bookkeeping</a
+                >
+              </li>
+              <li>
+                <a
+                  class="nav-link fw-bold"
+                  href="accreditation-for-healthcare.html"
+                  >Healthcare Accreditation</a
+                >
+              </li>
+              <li>
+                <a class="nav-link fw-bold" href="medical-billing.html"
+                  >Medical Billing</a
+                >
+              </li>
+
               <hr />
+
               <li>
                 <a class="nav-link fw-bold" href="contactus.html">Contact</a>
               </li>

@@ -1,6 +1,3 @@
-/* =========================
-   DBC Global Theme (Brand)
-   ========================= */
 :root {
   --dbc-primary: #1c2d59;
   --dbc-ring: 0 0 0 0.25rem rgba(28, 45, 89, 0.25);
@@ -10,9 +7,6 @@
   --bs-success-rgb: 28, 45, 89;
   --bs-form-valid-color: #1c2d59;
   --bs-form-valid-border-color: #1c2d59;
-
-  /* IMPORTANT: do NOT override invalid to brand, we want red */
-  /* (Removed your previous --bs-danger / invalid overrides) */
 }
 
 * {
@@ -34,7 +28,7 @@ body {
   border: none;
 }
 
-/* Links (brand only) */
+/* Links  */
 a {
   color: var(--dbc-primary);
 }
@@ -43,7 +37,7 @@ a:focus {
   color: var(--dbc-primary);
 }
 
-/* Buttons (brand only) */
+/* Buttons  */
 .btn-dbc {
   background: var(--dbc-primary);
   color: #fff;
@@ -80,7 +74,7 @@ a:focus {
   border-color: var(--dbc-primary);
 }
 
-/* Sections (card look if you use .card wrappers) */
+/* Sections */
 #dbc-intake .card {
   border: none;
 }
@@ -102,14 +96,14 @@ textarea[data-autosize] {
   box-shadow: var(--dbc-ring);
 }
 
-/* Input groups: ring when child focused (modern browsers) */
+/* Input groups*/
 .input-group:has(.form-control:focus),
 .input-group:has(.form-select:focus) {
   box-shadow: var(--dbc-ring);
   border-radius: 0.375rem;
 }
 
-/* ===== Checkboxes / Radios (brand tick) ===== */
+/* Checkboxes*/
 #dbc-intake .form-check-input {
   accent-color: var(--dbc-primary);
   background-color: #fff;
@@ -124,15 +118,12 @@ textarea[data-autosize] {
 
   --bs-form-check-valid-color: #1c2d59;
   --bs-form-check-valid-border-color: #1c2d59;
-  /* NOTE: do not set invalid vars to brand—let red show */
 }
 
 #dbc-intake .form-check-input[type="checkbox"] {
-  /* White checkmark */
   --bs-form-check-checked-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='%23fff' d='M6.173 12.927L1.4 8.154l1.414-1.414 3.359 3.359 6.014-6.014 1.414 1.414-7.428 7.428z'/%3e%3c/svg%3e");
 }
 #dbc-intake .form-check-input[type="radio"] {
-  /* White dot */
   --bs-form-check-radio-checked-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 
@@ -149,14 +140,12 @@ textarea[data-autosize] {
   cursor: not-allowed;
 }
 
-/* Checked/valid labels should be brand */
 #dbc-intake .form-check-input:checked ~ .form-check-label,
 #dbc-intake .form-check-input.is-valid ~ .form-check-label,
 #dbc-intake .was-validated .form-check-input:valid ~ .form-check-label {
   color: #1c2d59 !important;
 }
 
-/* Valid states (brand), don't touch invalid here */
 .is-valid,
 .was-validated .form-control:valid,
 .was-validated .form-select:valid {
@@ -175,10 +164,6 @@ textarea[data-autosize] {
   touch-action: none;
 }
 
-/* =========================
-   Additions requested
-   ========================= */
-/* Make invalid fields clearly red */
 .is-invalid,
 .was-validated .form-control:invalid,
 .was-validated .form-select:invalid {
@@ -190,7 +175,6 @@ textarea[data-autosize] {
   color: #dc3545 !important;
 }
 
-/* Buttons full-width on small screens */
 @media (max-width: 576px) {
   .btn.btn-dbc,
   .btn.btn-outline-dbc {
