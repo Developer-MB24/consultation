@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // === Config =
+  // Config
   const ENABLE_AUTOSAVE = false;
   const STORAGE_KEY = "dbc-intake-autosave";
 
-  // === Sections ==============================================================
+  //  Sections
   const sections = Array.from(
     document.querySelectorAll("#dbc-sections .dbc-section")
   );
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let current = sections.findIndex((s) => s.classList.contains("active"));
   if (current < 0) current = 0;
 
-  // top-center title that mirrors each section's H3
+  // top-center title
   const topTitleEl = document.getElementById("dbc-current-title");
 
   // === Signature pad refs ==
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let ctx = null,
     drawing = false;
 
-  // Default today's date for signature date (YYYY-MM-DD)
+  // Default today's date
   if (signatureDate && !signatureDate.value) {
     const now = new Date();
     const y = now.getFullYear();
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     signatureDate.value = `${y}-${m}-${d}`;
   }
 
-  // === Signature canvas sizing ===
+  //  Signature canvas sizing
   const fit = () => {
     if (!canvas || canvas.offsetParent === null) return;
     const ratio = Math.max(window.devicePixelRatio || 1, 1);
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sigHidden && canvas) sigHidden.value = canvas.toDataURL("image/png");
   };
 
-  // === Titles & step show/hide ==============================================
+  //  Titles & step show/hide
   const sectionTitle = (sec) => {
     const fromData = sec.getAttribute("data-title");
     if (fromData) return fromData;
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  // === Validation============
+  //Validation
   function markInvalid(el) {
     el.classList.add("is-invalid");
   }
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = sections[current]?.querySelector("form");
     if (!form) return true;
 
-    // Remove stale invalid marks, then re-check
+    // Remove stale invalid marks
     form.querySelectorAll(".is-invalid").forEach(clearInvalid);
 
     const requiredFields = Array.from(form.querySelectorAll("[required]"));
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // === Navigation ===
+  //  Navigation
   const next = () => {
     if (!validateCurrent()) return;
     if (current < sections.length - 1) showStep(current + 1);
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // === Autosize textareas ====
+  //  Autosize textareas
   document.querySelectorAll("textarea[data-autosize]").forEach((ta) => {
     const resize = () => {
       ta.style.height = "auto";
@@ -301,8 +301,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (ENABLE_AUTOSAVE) loadAll();
 
-  // === Init ======
+  //  Init
   sections.forEach((s, i) => s.classList.toggle("d-none", i !== current));
   updateTopTitle(current);
   if (canvas && sections[current]?.contains(canvas)) fit();
 });
+
+// other specify
+(function () {
+  const otherRadio = document.getElementById("prefOther");
+  const otherText = document.getElementById("prefOtherText");
+  const all = document.querySelectorAll('input[name="prefComm"]');
+
+  function toggleOther() {
+    const isOther = otherRadio.checked;
+    otherText.classList.toggle("d-none", !isOther);
+    otherText.required = isOther;
+    if (!isOther) otherText.value = "";
+  }
+
+  all.forEach((r) => r.addEventListener("change", toggleOther));
+  toggleOther(); // init
+})();
