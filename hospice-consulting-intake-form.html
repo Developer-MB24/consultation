@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>DBC | Hospice Consulting Intake Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="assets/favicon.ico.jpeg" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/assisted-living-startup-consulting-intake-form.css"
+    />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <main id="dbc-intake" class="py-4">
+      <div class="container">
+        <!-- Logo & Title -->
+        <div class="text-center mb-4">
+          <img
+            src="assets/img/consulting/consulting-logo.png"
+            alt="DBC Logo"
+            style="max-height: 60px"
+          />
+          <h2 class="h4 fw-bold mt-3">Hospice Consulting Intake Form</h2>
+          <p class="mb-0 small text-muted">
+            Dignity Business Consulting | Confidential Client Profile
+          </p>
+        </div>
+
+        <h3 id="dbc-current-title" class="text-center fw-bold mb-4"></h3>
+
+        <!-- Section Container -->
+        <div id="dbc-sections">
+          <!-- SECTION 1 -->
+          <section
+            class="dbc-section active"
+            data-title="Section 1: Client Information"
+          >
+            <form id="dbc-form-1" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-bold">Full Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Enter a valid name (first letter capital, no numbers).
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Business Name (Legal &amp; DBA):</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="businessName"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Business name must start with a capital letter and not contain
+                  numbers.
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Phone Number:</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    placeholder="+11234567890"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    required
+                    maxlength="12"
+                  />
+
+                  <div class="invalid-feedback">
+                    Phone number must start with country code and have 10 digits
+                    after it.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-3 mt-2">
+                <div class="col-md-12">
+                  <label class="form-label fw-bold">Email Address:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter a valid email (must include @ and end with
+                    .com).
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <label class="form-label fw-bold"
+                  >Preferred Method of Communication:</label
+                >
+                <div class="d-flex flex-wrap gap-3">
+                  <label class="form-check"
+                    ><input type="checkbox" class="form-check-input" />
+                    Email</label
+                  >
+                  <label class="form-check"
+                    ><input type="checkbox" class="form-check-input" />
+                    Phone</label
+                  >
+                  <label class="form-check"
+                    ><input type="checkbox" class="form-check-input" />
+                    Text</label
+                  >
+                  <label class="form-check"
+                    ><input type="checkbox" class="form-check-input" />
+                    Other:</label
+                  >
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <label class="form-label fw-bold">Business Address:</label>
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Street Address"
+                />
+                <input
+                  type="text"
+                  class="form-control mb-2"
+                  placeholder="Apartment / Suite"
+                />
+                <div class="row g-2">
+                  <div class="col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="City"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="State"
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="ZIP Code"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-3">
+                <label class="form-label fw-bold"
+                  >Best Days/Times to Reach You:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g., Mon–Thu, 2–5 PM"
+                />
+              </div>
+
+              <div class="d-flex justify-content-end mt-4">
+                <button type="button" class="btn btn-dbc next">Next</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 2 -->
+          <section
+            class="dbc-section d-none"
+            data-title="Section 2: Licensing & Legal Readiness"
+          >
+            <form id="dbc-form-2" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Hospice License Number (if issued):</label
+                ><input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Date of Initial Licensing (if applicable):</label
+                ><input type="date" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Licensed Capacity (e.g., number of patients):</label
+                ><input type="text" class="form-control" />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold">License Type:</label>
+                <div class="d-flex flex-wrap gap-3">
+                  <label class="form-check"
+                    ><input type="checkbox" class="form-check-input" />
+                    Medicare-Certified Hospice</label
+                  >
+                  <label class="form-check"
+                    ><input type="checkbox" class="form-check-input" />
+                    State-Licensed Hospice</label
+                  >
+                  <label class="form-check"
+                    ><input type="checkbox" class="form-check-input" />
+                    Both</label
+                  >
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >City/County/State Issued By:</label
+                ><input type="text" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Is the hospice currently serving patients?</label
+                >
+                <div class="d-flex gap-3 flex-wrap">
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="hospiceOpen"
+                      class="form-check-input"
+                    />
+                    Yes</label
+                  >
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="hospiceOpen"
+                      class="form-check-input"
+                    />
+                    No</label
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >If not open, anticipated opening date?</label
+                ><input type="date" class="form-control" />
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev">Previous</button
+                ><button type="button" class="btn btn-dbc next">Next</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 3 -->
+          <section
+            class="dbc-section d-none"
+            data-title="Section 3: Facility & Clinical Readiness"
+          >
+            <form id="dbc-form-3" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Is your office and/or inpatient unit move-in ready?</label
+                >
+                <div class="d-flex gap-3 flex-wrap">
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="facilityReady"
+                      class="form-check-input"
+                    />
+                    Yes</label
+                  >
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="facilityReady"
+                      class="form-check-input"
+                    />
+                    No</label
+                  >
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >If no, what is pending? (check all that apply):</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Clinical equipment</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Office
+                      furnishings</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Medical supplies</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Internet & phone lines</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Safety
+                      & alarm systems</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Cleaning/Sanitation</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Other:</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Do you have a Certificate of Occupancy or Health Department
+                  approval?</label
+                >
+                <div class="d-flex gap-3 flex-wrap">
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="occupancyApproval"
+                      class="form-check-input"
+                    />
+                    Yes</label
+                  >
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="occupancyApproval"
+                      class="form-check-input"
+                    />
+                    No</label
+                  >
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Is the facility compliant with ADA and state health code
+                  requirements?</label
+                >
+                <div class="d-flex gap-3 flex-wrap">
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="adaCompliance"
+                      class="form-check-input"
+                    />
+                    Yes</label
+                  >
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="adaCompliance"
+                      class="form-check-input"
+                    />
+                    No</label
+                  >
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="adaCompliance"
+                      class="form-check-input"
+                    />
+                    Unsure</label
+                  >
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev">Previous</button
+                ><button type="button" class="btn btn-dbc next">Next</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 4 -->
+          <section
+            class="dbc-section d-none"
+            data-title="Section 4: Staffing & Operations"
+          >
+            <form id="dbc-form-4" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Do you have staff hired already?</label
+                >
+                <div class="d-flex gap-3 flex-wrap">
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="staffHired"
+                      class="form-check-input"
+                    />
+                    Yes</label
+                  >
+                  <label class="form-check"
+                    ><input
+                      type="radio"
+                      name="staffHired"
+                      class="form-check-input"
+                    />
+                    No</label
+                  >
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Staffing Status (check all that apply):</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Administrator</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Medical Director</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Registered Nurses</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Social
+                      Workers</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Chaplains/Spiritual Counselors</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Bereavement Coordinators</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      CNAs/HHAs</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Volunteers</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Office/Support Staff</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Do your staff have the following? (check all that
+                  apply)</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Licenses/Certifications</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Background Checks</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Hospice-specific training</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      CPR/First Aid</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Volunteer training program</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Compliance with Medicare CoPs</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Do you need help with: (check all that apply)</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Recruiting staff</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Orientation & training</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Employee handbooks</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Payroll setup</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Scheduling/EMR software</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev">Previous</button
+                ><button type="button" class="btn btn-dbc next">Next</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 5 -->
+          <section
+            class="dbc-section d-none"
+            data-title="Section 5: Clinical & Administrative Tools"
+          >
+            <form id="dbc-form-5" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Do you have these documents completed? (check all that
+                  apply)</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Patient Admission Packet</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Policy
+                      & Procedure Manual</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Emergency Preparedness Plan</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Pain &
+                      Symptom Management Protocols</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Bereavement Program Materials</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Patient Rights & Responsibilities</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Volunteer Program Policies</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Do you need help with: (check all that apply)</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Licensing compliance</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Clinical documentation templates</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Administrative SOPs</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Staff
+                      training materials</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Branding & marketing</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Billing & Medicare/Insurance setup</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev">Previous</button
+                ><button type="button" class="btn btn-dbc next">Next</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 6 -->
+          <section
+            class="dbc-section d-none"
+            data-title="Section 6: Marketing & Outreach"
+          >
+            <form id="dbc-form-6" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Do you currently have (check all that apply):</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Website</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Google
+                      Business Profile</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Social
+                      Media Pages</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Brochures/Flyers</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Business cards</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >Would you like help with (check all that apply):</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Building an online presence</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Creating marketing materials</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Outreach to physicians, hospitals, LTC facilities</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Referral partnerships</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev">Previous</button
+                ><button type="button" class="btn btn-dbc next">Next</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 7 -->
+          <section
+            class="dbc-section d-none"
+            data-title="Section 7: Goals & Challenges"
+          >
+            <form id="dbc-form-7" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >What are your top 3 goals in the next 90 days?</label
+                >
+                <div class="row g-2">
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="1." />
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="2." />
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="3." />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mb-2">
+                <label class="form-label fw-bold d-block"
+                  >What are the biggest challenges you’re currently facing?
+                  (check all that apply)</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Staffing</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Licensing/Medicare survey readiness</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Low
+                      referral volume</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Insurance & billing</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Financial planning</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Documentation load</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Not
+                      sure where to start</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Other:</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev">Previous</button
+                ><button type="button" class="btn btn-dbc next">Next</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 8 -->
+          <section
+            class="dbc-section d-none"
+            data-title="Section 8: Service Preferences"
+          >
+            <form id="dbc-form-8" novalidate>
+              <div class="mb-3">
+                <label class="form-label fw-bold"
+                  >What level of consulting support are you seeking? (check all
+                  that apply)</label
+                >
+                <div class="row g-2">
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      One-time setup guidance</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Full-service launch support</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Ongoing monthly consulting</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Staff
+                      training & compliance</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Marketing & referral growth</label
+                    >
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Other:</label
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-dbc prev">Previous</button
+                ><button type="button" class="btn btn-dbc next">Next</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- SECTION 9 -->
+          <section
+            class="dbc-section d-none"
+            data-title="Section 9: Additional Notes & Signature"
+          >
+            <form id="dbc-form-9" novalidate>
+              <div class="mb-3">
+                <label for="additionalNotes" class="form-label fw-bold">
+                  Please share anything else we should know about your hospice,
+                  vision, or concerns:
+                </label>
+                <textarea
+                  id="additionalNotes"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Write here..."
+                ></textarea>
+              </div>
+
+              <hr class="my-4" />
+
+              <h4 class="h6 fw-bold mb-3">Signature &amp; Consent</h4>
+              <div class="mb-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="consentAck"
+                    required
+                  />
+                  <label class="form-check-label" for="consentAck">
+                    I acknowledge that the information provided is accurate to
+                    the best of my knowledge and consent to being contacted for
+                    consulting services.
+                  </label>
+                  <div class="invalid-feedback">
+                    Please acknowledge to continue.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-lg-8">
+                  <label class="form-label fw-bold">Signature</label>
+                  <div class="border rounded p-2 bg-white">
+                    <canvas
+                      id="signaturePad"
+                      class="w-100"
+                      height="200"
+                      style="touch-action: none"
+                    ></canvas>
+                  </div>
+                  <div class="d-flex gap-2 mt-2">
+                    <button
+                      type="button"
+                      id="sigClear"
+                      class="btn btn-outline-secondary btn-sm"
+                    >
+                      Clear
+                    </button>
+                  </div>
+                  <input
+                    type="hidden"
+                    id="signatureData"
+                    name="signatureData"
+                  />
+                </div>
+                <div class="col-lg-4">
+                  <label for="signatureDate" class="form-label fw-bold"
+                    >Date</label
+                  >
+                  <input type="date" id="signatureDate" class="form-control" />
+                </div>
+              </div>
+
+              <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
+                <button type="button" class="btn btn-dbc w-100" data-prev>
+                  Previous
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-dbc w-100"
+                  id="previewBtn"
+                >
+                  Preview
+                </button>
+                <button type="submit" class="btn btn-dbc w-100" id="submitBtn">
+                  Submit
+                </button>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <!-- Submit Modal -->
+        <div
+          class="modal fade"
+          id="dbcConfirmModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title">Thank you for reaching out</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                Your intake has been submitted. The DBC team will review and
+                contact you soon.
+              </div>
+              <div class="modal-footer border-0">
+                <button
+                  type="button"
+                  class="btn btn-dbc"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/assisted-living-startup-consulting-intake-form.js"></script>
+  </body>
+</html>

@@ -3,21 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const ENABLE_AUTOSAVE = false;
   const STORAGE_KEY = "dbc-intake-autosave";
 
-  //  Sections
+  // Sections
   const sections = Array.from(
     document.querySelectorAll("#dbc-sections .dbc-section")
   );
-  if (sections.length < 2) {
-    console.warn(
-      "Only",
-      sections.length,
-      "section(s) found. Add Sections 3–9 to navigate further."
-    );
-  }
   let current = sections.findIndex((s) => s.classList.contains("active"));
   if (current < 0) current = 0;
 
-  // top-center title
   const topTitleEl = document.getElementById("dbc-current-title");
 
   // === Signature pad refs ==
@@ -38,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     signatureDate.value = `${y}-${m}-${d}`;
   }
 
-  //  Signature canvas sizing
+  // Signature canvas sizing
   const fit = () => {
     if (!canvas || canvas.offsetParent === null) return;
     const ratio = Math.max(window.devicePixelRatio || 1, 1);
@@ -77,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (sigHidden && canvas) sigHidden.value = canvas.toDataURL("image/png");
   };
 
-  //  Titles & step show/hide
+  // Section title
   const sectionTitle = (sec) => {
     const fromData = sec.getAttribute("data-title");
     if (fromData) return fromData;
@@ -104,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  //Validation
+  // Validation
   function markInvalid(el) {
     el.classList.add("is-invalid");
   }
@@ -112,17 +104,79 @@ document.addEventListener("DOMContentLoaded", () => {
     el.classList.remove("is-invalid");
   }
 
+  // === Custom Validation Rules ===
+  function customValidations(field) {
+    const val = field.value.trim();
+
+    // Names
+    if (
+      field.previousElementSibling?.textContent.includes("Full Name") ||
+      field.previousElementSibling?.textContent.includes("Business Name")
+    ) {
+      if (/\d/.test(val)) {
+        field.setCustomValidity("Name should not contain numbers.");
+        return false;
+      }
+      if (val && val[0] !== val[0].toUpperCase()) {
+        field.setCustomValidity("First letter should be capital.");
+        return false;
+      }
+    }
+
+    // DOB
+    if (field.id === "dob" || field.name === "dob") {
+      const dob = new Date(val);
+      if (!isNaN(dob.getTime())) {
+        const today = new Date();
+        let age = today.getFullYear() - dob.getFullYear();
+        const m = today.getMonth() - dob.getMonth();
+        const d = today.getDate() - dob.getDate();
+        if (m < 0 || (m === 0 && d < 0)) age--;
+        if (age < 18) {
+          field.setCustomValidity("You must be at least 18 years old.");
+          return false;
+        }
+      }
+    }
+
+    // Phone number
+    if (field.type === "tel") {
+      const phoneRegex = /^\+\d{1,3}\d{10}$/; // +1XXXXXXXXXX
+      if (!phoneRegex.test(val)) {
+        field.setCustomValidity(
+          "Phone must start with country code and have 10 digits after it."
+        );
+        return false;
+      }
+    }
+
+    // Email
+    if (field.type === "email") {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.com$/i;
+      if (!emailRegex.test(val)) {
+        field.setCustomValidity("Email must include @ and end with .com.");
+        return false;
+      }
+    }
+
+    field.setCustomValidity("");
+    return true;
+  }
+
   function validateCurrent() {
     const form = sections[current]?.querySelector("form");
     if (!form) return true;
 
-    // Remove stale invalid marks
     form.querySelectorAll(".is-invalid").forEach(clearInvalid);
 
     const requiredFields = Array.from(form.querySelectorAll("[required]"));
     let ok = true;
     for (const field of requiredFields) {
-      if (!field.checkValidity() || !field.value?.trim()) {
+      if (
+        !customValidations(field) ||
+        !field.checkValidity() ||
+        !field.value?.trim()
+      ) {
         ok = false;
         markInvalid(field);
       }
@@ -143,11 +197,12 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("input", (e) => {
     const target = e.target;
     if (target.matches("input, select, textarea")) {
-      if (target.required) {
-        if (target.checkValidity() && target.value.trim() !== "") {
-          clearInvalid(target);
-        }
-      } else {
+      customValidations(target);
+      if (
+        target.required &&
+        target.checkValidity() &&
+        target.value.trim() !== ""
+      ) {
         clearInvalid(target);
       }
       if (ENABLE_AUTOSAVE) saveAll();
@@ -156,23 +211,22 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("change", (e) => {
     const target = e.target;
     if (target.matches("input, select, textarea")) {
-      if (target.required) {
-        if (target.checkValidity() && target.value.trim() !== "") {
-          clearInvalid(target);
-        } else {
-          markInvalid(target);
-        }
-      } else {
+      customValidations(target);
+      if (
+        target.required &&
+        target.checkValidity() &&
+        target.value.trim() !== ""
+      ) {
         clearInvalid(target);
       }
       if (ENABLE_AUTOSAVE) saveAll();
     }
   });
 
-  //  Navigation
+  // Navigation
   const next = () => {
-    if (!validateCurrent()) return;
-    if (current < sections.length - 1) showStep(current + 1);
+    if (validateCurrent() && current < sections.length - 1)
+      showStep(current + 1);
   };
   const prev = () => {
     if (current > 0) showStep(current - 1);
@@ -193,7 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  //  Autosize textareas
+  // Autosize textareas
   document.querySelectorAll("textarea[data-autosize]").forEach((ta) => {
     const resize = () => {
       ta.style.height = "auto";
@@ -203,7 +257,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ta.addEventListener("input", resize);
   });
 
-  // === Signature events =====
+  // Signature events
   if (canvas) {
     canvas.addEventListener("mousedown", start);
     canvas.addEventListener("mousemove", move);
@@ -227,24 +281,83 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     canvas.addEventListener("touchend", end);
 
+    if (sigClear)
+      sigClear.addEventListener("click", () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        sigHidden.value = "";
+      });
+
     window.addEventListener("resize", () => {
       if (canvas && canvas.offsetParent !== null) fit();
     });
   }
 
-  // === Submit  ==================================
+  // === Preview ===================================
+  const previewBtn = document.getElementById("previewBtn");
+  if (previewBtn) {
+    previewBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (!validateCurrent()) return;
+
+      const data = {};
+      document
+        .querySelectorAll(
+          "#dbc-sections input, #dbc-sections select, #dbc-sections textarea"
+        )
+        .forEach((el) => {
+          const label =
+            el.closest("label")?.innerText ||
+            el.placeholder ||
+            el.name ||
+            el.id ||
+            "Field";
+          if (el.type === "checkbox") {
+            if (!data[label]) data[label] = [];
+            if (el.checked) data[label].push("✔");
+          } else if (el.type === "radio") {
+            if (el.checked) data[label] = el.value || "✔";
+          } else {
+            data[label] = el.value;
+          }
+        });
+
+      let html =
+        "<h3 class='mb-3'>Preview Your Intake</h3><ul class='list-group'>";
+      Object.entries(data).forEach(([k, v]) => {
+        if (!v || (Array.isArray(v) && v.length === 0)) return;
+        html += `<li class="list-group-item"><strong>${k}:</strong> ${
+          Array.isArray(v) ? v.join(", ") : v
+        }</li>`;
+      });
+      html += "</ul>";
+
+      const modalEl = document.getElementById("dbcConfirmModal");
+      if (modalEl) {
+        modalEl.querySelector(".modal-title").textContent = "Preview";
+        modalEl.querySelector(".modal-body").innerHTML = html;
+        const modal = new bootstrap.Modal(modalEl);
+        modal.show();
+      }
+    });
+  }
+
+  // === Submit ==================================
   const lastForm = sections.at(-1)?.querySelector("form");
   const modalEl = document.getElementById("dbcConfirmModal");
   if (lastForm && modalEl && typeof bootstrap !== "undefined") {
     lastForm.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!validateCurrent()) return;
+      modalEl.querySelector(".modal-title").textContent =
+        "Thank you for reaching out";
+      modalEl.querySelector(".modal-body").textContent =
+        "Your intake has been submitted. The DBC team will review and contact you soon.";
       const modal = new bootstrap.Modal(modalEl);
       modal.show();
     });
   }
 
-  // === Autosave (optional) =====
+  // Autosave
   function saveAll() {
     if (!ENABLE_AUTOSAVE) return;
     const data = {};
@@ -258,9 +371,7 @@ document.addEventListener("DOMContentLoaded", () => {
           el.name ||
           el.closest(".dbc-section")?.getAttribute("data-title") +
             ":" +
-            (el.placeholder || el.type) +
-            ":" +
-            (el.className || "");
+            (el.placeholder || el.type);
         if (el.type === "checkbox" || el.type === "radio") {
           data[key] = el.checked;
         } else {
@@ -269,7 +380,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   }
-
   function loadAll() {
     if (!ENABLE_AUTOSAVE) return;
     const raw = localStorage.getItem(STORAGE_KEY);
@@ -286,9 +396,7 @@ document.addEventListener("DOMContentLoaded", () => {
             el.name ||
             el.closest(".dbc-section")?.getAttribute("data-title") +
               ":" +
-              (el.placeholder || el.type) +
-              ":" +
-              (el.className || "");
+              (el.placeholder || el.type);
           if (!(key in data)) return;
           if (el.type === "checkbox" || el.type === "radio") {
             el.checked = !!data[key];
@@ -298,28 +406,36 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     } catch (_) {}
   }
-
   if (ENABLE_AUTOSAVE) loadAll();
 
-  //  Init
+  // Init
   sections.forEach((s, i) => s.classList.toggle("d-none", i !== current));
   updateTopTitle(current);
   if (canvas && sections[current]?.contains(canvas)) fit();
 });
 
-// other specify
-(function () {
-  const otherRadio = document.getElementById("prefOther");
-  const otherText = document.getElementById("prefOtherText");
-  const all = document.querySelectorAll('input[name="prefComm"]');
+// === Restrict phone input length ===
+const phoneInput = document.getElementById("phoneNumber");
+if (phoneInput) {
+  phoneInput.addEventListener("input", () => {
+    let val = phoneInput.value;
 
-  function toggleOther() {
-    const isOther = otherRadio.checked;
-    otherText.classList.toggle("d-none", !isOther);
-    otherText.required = isOther;
-    if (!isOther) otherText.value = "";
-  }
+    // Ensure it starts with +
+    if (!val.startsWith("+")) {
+      val = "+" + val.replace(/[^0-9]/g, "");
+    }
 
-  all.forEach((r) => r.addEventListener("change", toggleOther));
-  toggleOther(); // init
-})();
+    // Allow only digits after +
+    val = "+" + val.substring(1).replace(/\D/g, "");
+
+    // Split into country code + 10 digits max
+    const match = val.match(/^(\+\d{1,3})(\d*)$/);
+    if (match) {
+      let country = match[1];
+      let number = match[2].slice(0, 10); // max 10 digits
+      val = country + number;
+    }
+
+    phoneInput.value = val;
+  });
+}

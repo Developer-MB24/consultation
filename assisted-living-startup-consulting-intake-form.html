@@ -43,32 +43,79 @@
             <form id="dbc-form-1" novalidate>
               <div class="mb-3">
                 <label class="form-label fw-bold">Full Name</label>
-                <input type="text" class="form-control" required />
-                <div class="invalid-feedback">Full name is required.</div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fullName"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Enter a valid name (first letter capital, no numbers).
+                </div>
               </div>
               <div class="mb-3">
                 <label class="form-label fw-bold"
                   >Business Name (Legal &amp; DBA)</label
                 >
-                <input type="text" class="form-control" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="businessName"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Business name should not contain numbers and must start with a
+                  capital letter.
+                </div>
               </div>
 
               <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Date of Birth</label>
+                  <input
+                    type="date"
+                    id="dob"
+                    name="dob"
+                    class="form-control"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    You must be at least 18 years old.
+                  </div>
+                </div>
                 <div class="col-md-6">
                   <label class="form-label fw-bold">Phone Number</label>
                   <input
                     type="tel"
                     class="form-control"
-                    placeholder="(555) 555-5555"
+                    placeholder="+11234567890"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    required
+                    maxlength="12"
                   />
+
+                  <div class="invalid-feedback">
+                    Phone number must start with country code and have 10 digits
+                    after it.
+                  </div>
                 </div>
-                <div class="col-md-6">
+              </div>
+
+              <div class="row g-3 mt-2">
+                <div class="col-md-12">
                   <label class="form-label fw-bold">Email Address</label>
                   <input
                     type="email"
                     class="form-control"
+                    id="email"
                     placeholder="name@example.com"
+                    required
                   />
+                  <div class="invalid-feedback">
+                    Please enter a valid email (must include @ and end with
+                    .com).
+                  </div>
                 </div>
               </div>
 
@@ -89,7 +136,6 @@
                       >Email</label
                     >
                   </div>
-
                   <div class="form-check form-check-inline m-0">
                     <input
                       type="radio"
@@ -102,7 +148,6 @@
                       >Phone</label
                     >
                   </div>
-
                   <div class="form-check form-check-inline m-0">
                     <input
                       type="radio"
@@ -113,8 +158,7 @@
                     />
                     <label class="form-check-label" for="prefText">Text</label>
                   </div>
-
-                  <!-- Other + Specify (inline) -->
+                  <!-- Other + Specify -->
                   <div class="d-flex align-items-center flex-nowrap gap-2">
                     <div class="form-check form-check-inline m-0">
                       <input
@@ -128,8 +172,6 @@
                         >Other</label
                       >
                     </div>
-
-                    <!-- shown only when "Other" is selected -->
                     <input
                       type="text"
                       id="prefOtherText"
@@ -142,7 +184,7 @@
               </div>
 
               <div class="mt-3">
-                <label class="form-label fw-bold">Business Address </label>
+                <label class="form-label fw-bold">Business Address</label>
                 <input
                   type="text"
                   class="form-control mb-2"
@@ -217,34 +259,35 @@
                 <label class="form-label fw-bold">Licensed Bed Capacity</label>
                 <input type="number" class="form-control" />
               </div>
-
               <div class="mb-3">
                 <label class="form-label fw-bold">License Type</label>
                 <div class="row g-2">
                   <div class="col-12 col-sm-6 col-lg-3">
-                    <label class="form-check">
-                      <input type="checkbox" class="form-check-input" />
-                      <span class="ms-1">Assisted Living Center</span>
-                    </label>
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Assisted Living Center</label
+                    >
                   </div>
                   <div class="col-12 col-sm-6 col-lg-3">
-                    <label class="form-check">
-                      <input type="checkbox" class="form-check-input" />
-                      <span class="ms-1">Assisted Living Home</span>
-                    </label>
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" />
+                      Assisted Living Home</label
+                    >
                   </div>
                   <div class="col-12 col-sm-6 col-lg-3">
-                    <label class="form-check">
-                      <input type="checkbox" class="form-check-input" />
-                      <span class="ms-1">Memory Care</span>
-                    </label>
+                    <label class="form-check"
+                      ><input type="checkbox" class="form-check-input" /> Memory
+                      Care</label
+                    >
                   </div>
                   <div class="col-12 col-sm-6 col-lg-3">
                     <div class="d-flex align-items-center">
-                      <label class="form-check mb-0">
-                        <input type="checkbox" class="form-check-input me-2" />
-                        <span>Other</span>
-                      </label>
+                      <label class="form-check mb-0"
+                        ><input
+                          type="checkbox"
+                          class="form-check-input me-2"
+                        />Other</label
+                      >
                       <input
                         type="text"
                         class="form-control form-control-sm ms-2"
@@ -254,45 +297,41 @@
                   </div>
                 </div>
               </div>
-
               <div class="mb-3">
                 <label class="form-label fw-bold"
                   >City/County/State Issued By</label
                 >
                 <input type="text" class="form-control" />
               </div>
-
               <div class="mb-3">
                 <label class="form-label fw-bold"
                   >Is the facility currently operating?</label
                 >
                 <div class="d-flex gap-3 flex-wrap">
-                  <label class="form-check">
-                    <input
+                  <label class="form-check"
+                    ><input
                       type="radio"
                       name="facilityOpen"
                       class="form-check-input"
                     />
-                    <span class="ms-1">Yes</span>
-                  </label>
-                  <label class="form-check">
-                    <input
+                    Yes</label
+                  >
+                  <label class="form-check"
+                    ><input
                       type="radio"
                       name="facilityOpen"
                       class="form-check-input"
                     />
-                    <span class="ms-1">No</span>
-                  </label>
+                    No</label
+                  >
                 </div>
               </div>
-
               <div class="mb-3">
                 <label class="form-label fw-bold"
                   >If not open, anticipated opening date</label
                 >
                 <input type="text" class="form-control" />
               </div>
-
               <div class="d-flex justify-content-between mt-4">
                 <button type="button" class="btn btn-dbc prev">Previous</button>
                 <button type="button" class="btn btn-dbc next">Next</button>

@@ -43,38 +43,71 @@
             data-title="Section 1: Client Information"
           >
             <form id="dbc-form-1" novalidate>
+              <!-- Full Name -->
               <div class="mb-3">
                 <label class="form-label fw-bold">Full Name</label>
-                <input type="text" class="form-control" required />
-                <div class="invalid-feedback">Full name is required.</div>
+                <input type="text" class="form-control name-field" required />
+                <div class="invalid-feedback">
+                  Please enter a valid name (first letter capital, no numbers).
+                </div>
               </div>
 
+              <!-- Date of Birth -->
+              <div class="mb-3">
+                <label class="form-label fw-bold">Date of Birth</label>
+                <input type="date" class="form-control dob-field" required />
+                <div class="invalid-feedback">
+                  You must be at least 18 years old.
+                </div>
+              </div>
+
+              <!-- Business Name -->
               <div class="mb-3">
                 <label class="form-label fw-bold"
                   >Business Name (Legal &amp; DBA)</label
                 >
-                <input type="text" class="form-control" />
+                <input type="text" class="form-control name-field" />
+                <div class="invalid-feedback">
+                  Business name should not contain numbers and must start with a
+                  capital letter.
+                </div>
               </div>
 
+              <!-- Phone & Email -->
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label fw-bold">Phone Number</label>
                   <input
                     type="tel"
                     class="form-control"
-                    placeholder="(555) 555-5555"
+                    placeholder="+11234567890"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    required
+                    maxlength="12"
                   />
+
+                  <div class="invalid-feedback">
+                    Phone number must start with country code and have 10 digits
+                    after it.
+                  </div>
                 </div>
                 <div class="col-md-6">
                   <label class="form-label fw-bold">Email Address</label>
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control email-field"
                     placeholder="name@example.com"
+                    required
                   />
+                  <div class="invalid-feedback">
+                    Please enter a valid email address (must include @ and
+                    .com).
+                  </div>
                 </div>
               </div>
 
+              <!-- Preferred Communication -->
               <div class="mt-3">
                 <label class="form-label fw-bold"
                   >Preferred Method of Communication</label
@@ -117,7 +150,7 @@
                     <label class="form-check-label" for="prefText">Text</label>
                   </div>
 
-                  <!-- Other + Specify (inline) -->
+                  <!-- Other -->
                   <div class="d-flex align-items-center flex-nowrap gap-2">
                     <div class="form-check form-check-inline m-0">
                       <input
@@ -131,8 +164,6 @@
                         >Other</label
                       >
                     </div>
-
-                    <!-- shown only when "Other" is selected -->
                     <input
                       type="text"
                       id="prefOtherText"
@@ -144,8 +175,9 @@
                 </div>
               </div>
 
+              <!-- Business Address -->
               <div class="mt-3">
-                <label class="form-label fw-bold">Business Address </label>
+                <label class="form-label fw-bold">Business Address</label>
                 <input
                   type="text"
                   class="form-control mb-2"
@@ -160,14 +192,14 @@
                   <div class="col-md-4">
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control name-field"
                       placeholder="City"
                     />
                   </div>
                   <div class="col-md-4">
                     <input
                       type="text"
-                      class="form-control"
+                      class="form-control name-field"
                       placeholder="State"
                     />
                   </div>
@@ -181,6 +213,7 @@
                 </div>
               </div>
 
+              <!-- Best Time -->
               <div class="mt-3">
                 <label class="form-label fw-bold"
                   >Best Days/Times to Reach You</label
@@ -192,6 +225,7 @@
                 />
               </div>
 
+              <!-- Navigation -->
               <div class="d-flex justify-content-end mt-4">
                 <button type="button" class="btn btn-dbc next">Next</button>
               </div>
